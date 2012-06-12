@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+        
+<!-- developed by lijian -->     
+<!-- SNMP -->
+	<request-map uri="SNMPPreference">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="SNMPPreference"/>
+	</request-map>
+	<request-map uri="SNMPSaveAndTest">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="saveSNMPChange"/>
+		<response name="success" type="view" value="SNMPTest"/>
+	</request-map>
+
+	<request-map uri="SNMPSend">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="SNMPSend"/>
+		<response name="success" type="view" value="SNMPPreference"/>
+		<response name="fail" type="view" value="errorPage"/>
+		<response name="error" type="view" value="errorPage"/>
+	</request-map>		
+	<request-map uri="AddSNMPPreferences">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="AddSNMPPreferences"/>
+	</request-map>
+	<request-map uri="saveSNMPsetting">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="saveSetting"/>
+		<response name="success" type="view" value="otherSNMPTest"/>
+	</request-map>
+	<request-map uri="editSNMPseting">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="AddSNMPPreferences"/>
+	</request-map>	
+	<request-map uri="testSNMPseting">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="otherSNMPTest"/>
+	</request-map>		
+	<request-map uri="delSNMPseting">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="delSNMPseting"/>
+		<response name="success" type="view" value="SNMPPreference"/>
+	</request-map>		
+
+
+    <view-map name="SNMPPreference" type="screen" page="component://svecc/widget/SNMP/svEccSNMPScreens.xml#SNMPPreference"></view-map>
+    <view-map name="AddSNMPPreferences" type="screen" page="component://svecc/widget/SNMP/svEccSNMPScreens.xml#AddSNMPPreferences"></view-map>
+    <view-map name="SNMPTest" type="screen" page="component://svecc/widget/SNMP/svEccSNMPScreens.xml#SNMPTest"></view-map>
+    <view-map name="otherSNMPTest" type="screen" page="component://svecc/widget/SNMP/svEccSNMPScreens.xml#otherSNMPTest"></view-map>
+    <view-map name="errorPage" type="screen" page="component://svecc/widget/SNMP/svEccSNMPScreens.xml#errorPage"></view-map>			
+</site-conf>
+

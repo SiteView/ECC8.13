@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+
+
+
+    <screen name="dispGeneral">
+		<section>
+			<actions>
+				<script location="component://svecc/script/org/siteview/svecc/general/dispGeneral.bsh"/>
+			</actions>        
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		               <container style="screenlet">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.sveccGeneral}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+								<platform-specific>
+								<html>
+									<html-template location="component://svecc/webapp/ecc/general/dispGeneral.ftl" />
+								</html>
+							    </platform-specific>
+		                   </container>
+		               </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    
+</screens>

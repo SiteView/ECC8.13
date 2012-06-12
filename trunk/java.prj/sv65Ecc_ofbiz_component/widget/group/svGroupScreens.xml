@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+	<screen name="Groups">
+		<section>
+		<!--  
+			<actions>
+				<script
+					location="component://svecc/script/org/siteview/svecc/group/GroupList.bsh" />
+			</actions>
+			-->
+			<widgets>
+				<container style="screenlet">
+					<container style="screenlet-header">
+						<label style="boxhead"
+							text="${uiLabelMap.sveccMonitor}" />
+					</container>
+					<container style="screenlet-body">
+						<platform-specific>
+							<html>
+								<html-template
+									location="component://svecc/webapp/ecc/group/sjw.ftl" />
+							</html>
+						</platform-specific>
+					</container>
+				</container>
+			</widgets>
+		</section>
+	</screen>
+
+	<screen name="listGroup">
+		<section>
+			<widgets>
+				<decorator-screen name="ecc-decorator"
+					location="${parameters.mainDecoratorLocation}">
+					<decorator-section name="body">
+						<include-screen name="Groups" />
+						<include-screen name="Monitors"
+							location="component://svecc/widget/monitor/svMonitorScreens.xml" />
+					</decorator-section>
+				</decorator-screen>
+			</widgets>
+		</section>
+	</screen>
+
+
+
+	<!--  
+		
+		<screen name="get-group-children">
+		<section>
+		<actions>
+		<service service-name="getMonitorGroupChildren"></service>
+		</actions>
+		<widgets>
+		<include-screen name="display-only" location="${parameters.mainDecoratorLocation}"/>
+		</widgets>
+		</section>
+		</screen>
+		
+		<screen name="createGroup">
+		<section>
+		<widgets>
+		<decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+		<decorator-section name="body">
+		<container style="screenlet">
+		<container style="screenlet-header">
+		<label style="boxhead" text="${uiLabelMap.sveccMainPage}"/>
+		</container>
+		<container style="screenlet-body">
+		<platform-specific>
+		<html>
+		<html-template location="component://svecc/webapp/ecc/group/createGroupForm.ftl" />
+		</html>
+		</platform-specific>
+		</container>
+		</container>
+		</decorator-section>
+		</decorator-screen>
+		
+		</widgets>
+		</section>
+		</screen>
+		<screen name="modifyGroup">
+		<section>
+		<actions>
+		<service service-name="getGroupById" result-map-name="result">
+		<field-map field-name="id" env-name="parameters.id"/>
+		</service>
+		</actions>        
+		<widgets>
+		<decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+		<decorator-section name="body">
+		<container style="screenlet">
+		<container style="screenlet-header">
+		<label style="boxhead" text="${uiLabelMap.sveccMainPage}"/>
+		</container>
+		<container style="screenlet-body">
+		<platform-specific>
+		<html>
+		<html-template location="component://svecc/webapp/ecc/group/modifyGroupForm.ftl" />
+		</html>
+		</platform-specific>
+		</container>
+		</container>
+		</decorator-section>
+		</decorator-screen>
+		
+		</widgets>
+		</section>
+		</screen>
+		
+		
+		<screen name="reflashInit">
+		<section>
+		<widgets>
+		<decorator-screen name="ecc-decorator" location="${parameters.mainDecoratorLocation}">
+		<decorator-section name="body">
+		<container style="screenlet">
+		<container style="screenlet-header">
+		<label style="boxhead" text="${uiLabelMap.sveccTestGroup}"/>
+		</container>
+		<container style="screenlet-body">
+		<platform-specific><html><html-template location="component://svecc/webapp/ecc/group/reflash.ftl"/></html></platform-specific>
+		<platform-specific><html><html-template location="component://svecc/webapp/ecc/group/reflashInit.ftl"/></html></platform-specific>
+		</container>
+		</container>
+		</decorator-section>
+		</decorator-screen>
+		</widgets>
+		</section>
+		</screen>
+		
+		<screen name="jsondata">
+		<section>
+		<actions>
+		<script location="component://svecc/script/org/siteview/svecc/group/reflash.bsh"/>
+		</actions>
+		<widgets>
+		<platform-specific><html><html-template location="component://svecc/webapp/ecc/group/jSonData.ftl"/></html></platform-specific>
+		</widgets>
+		</section>
+		</screen>
+	-->
+</screens>

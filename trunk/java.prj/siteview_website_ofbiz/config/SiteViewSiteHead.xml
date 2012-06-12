@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 
+    <property key="svKeyWord">
+        <value xml:lang="en">Please enter your search keyword!</value>
+        <value xml:lang="zh">请填写搜索关键字!</value>
+    </property>
+    <property key="svMap">
+        <value xml:lang="en">Sitemap</value>
+        <value xml:lang="zh">网站地图</value>
+    </property>
+    <property key="svCall">
+        <value xml:lang="en">Toll-free Telephone Call</value>
+        <value xml:lang="zh">免费咨询电话</value>
+    </property>
+  <property key="svSearch">
+        <value xml:lang="en">Search</value>
+        <value xml:lang="zh">搜索</value>
+    </property>
+</resource>

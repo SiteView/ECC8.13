@@ -1,0 +1,31 @@
+TopAxisTitle = ("Audio Component Sales, Last Year", dimgrey, Helvetica, 12);
+LineSets = 
+	("Average",NULL,CIRCLE,10,OUTLINED,SOLID,2,NULL,NULL),
+	("Tuners",NULL,TRIANGLEUP,10,OUTLINED,SOLID,2,NULL,null),
+	("CDs",NULL,SQUARE,10,OUTLINED,SOLID,2,NULL),
+	("Receivers",NULL,DIAMOND,10,OUTLINED,SOLID,2,NULL);
+
+LineSet4 = (0,80),(1,98),(2,88),(3,64),(4,55),
+		(5,89),(6,74),(7,70),(8,71),(9,93),(10,102),(11,113);
+LineSet2 = (0,24),(1,29),(2,50),(3,74),(4,16),
+		(5,20),(6,22),(7,22),(8,26),(9,29),(10,80),(11,101);
+LineSet3 = (0,16),(1,16),(2,14),(3,12),(4,22),
+		(5,17),(6,13),(7,11),(8,29),(9,15),(10,31),(11,41);
+LineSet1 = (0,40),(1,47),(2,50),(3,50),(4,31),
+		(5,42),(6,36),(7,34),(8,42),(9,45),(10,71),(11,85);
+ColorTable	= x82AFDD, xFBDE7D, x6C5D94, x5E8109, xF189AF, xF7BB83, x00AB9C;
+DataSets = ;
+Legend = ("",black,Helvetica,10,0);
+LegendLayout = (HORIZONTAL, BOTTOM);
+Grid = (white,gainsboro,gray);
+GridLine = (BOTH, SOLID);
+LeftTitle = ("");
+LeftTics  = ("ON");
+LeftColor = black;
+LeftFormat = (INTEGER);
+Grid3DDepth = 0;
+NoteSets = ;
+BarLabels = "","","","","","","","","","","","";
+
+
+

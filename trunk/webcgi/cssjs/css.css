@@ -1,0 +1,188 @@
+body {  background:#fff;margin:0px;scrollbar-arrow-color: #115fbf;scrollbar-base-color: #fff;scrollbar-darkshadow-color: #fff;scrollbar-face-color: #add1ff;scrollbar-highlight-color: #75b2ff;scrollbar-shadow-color: #75b2ff;scrollbar-track-color: #e9f3ff;word-break: keep-all;}
+ 
+
+span.fontlink {	color: #669; TEXT-DECORATION: underline;cursor:pointer}
+span.fontlinover {COLOR: #8e001d; TEXT-DECORATION: underline;cursor:hand; }
+
+.treelink  {color: #003182;text-decoration: none;white-space: nowrap;}
+.treelinkover  {color: #003182;text-decoration: none;white-space: nowrap;background-color: #CCCCCC; cursor:pointer}
+.treelinkactive  {color: #003182;text-decoration: none;white-space: nowrap;background-color: #CCCCCC; cursor:pointer}
+.viewtreebody {padding:10px 0 0 10px;margin:0px;white-space: nowrap;width:100%;height:100%;}
+.treebackgroup{width:100%;height:100%;background-color: #F1F1F1;}
+.treerefresh{width:100%;background-color: #CCCCCC;}
+.treetxt {white-space: nowrap;}
+select { font-size:12px;}
+.combo { font-size:10px; height: 18px }
+input  { font-size:10px; height: 18px }
+button {font-size:12px;height:23px;padding:2px 0 0;color:#485464;background:#c8cbd0 url(../icons/inputbut.gif);border-top:1px solid #eceeef;border-left:1px solid #eceeef;border-right:1px solid #485464;border-bottom:1px solid #485464; cursor: pointer;}
+.wizardbutton{background-image:url(../icons/butCss.gif);cursor:	hand;font-size: 12px;font-weight:bold;padding-left: 5px;padding-right: 5px;	border:	1px solid #000000;height:24px;padding-top:4px;}
+.button_action      { color: #485464; font-size: 9px; font-family: Verdana, Arial;
+	font-weight: bold; line-height: 9px; background: #c8cbd0 url("../../../images/gui/bu_bg.png") repeat-x; cursor: pointer; height: 17px;vertical-align: baseline; border-style: solid; border-width: 1px;border-color: #eceeef #485464 #485464 #eceeef 
+}
+
+/* 公用样式定义 */
+div,ul,ol,input,form,p {margin:0px;padding:0px;}
+body,td,ul,input {font:12px Verdana,Arial,宋体;}
+a:link,a:visited,a:hover {color:#000;text-decoration:underline;}
+.commonlist {padding:0px 10px;list-style:none;line-height:20px;}
+.commonbutton {height:24px;font-size: 12px;  padding:2px 0 0;color:#485464;font-weight:bold;background:#c8cbd0 url(../icons/inputbut.gif);border-top:1px solid #eceeef;border-left:1px solid #eceeef;border-right:1px solid #485464;border-bottom:1px solid #485464; cursor:pointer;}
+.commontext {width:200px;}
+.helpimg{cursor:pointer;}
+.comments {color:#999;}
+.errors {padding:2px 6px;border:1px solid #f30;background:#eee;color:#f00; width:98%}
+.errortip{color:#f00;text-align:left;font-weight:bold;}
+.helps {padding:2px 6px;border:1px solid #369;background:#eee;color:#369; width:98%}
+.readonly {color:#000;padding:1px;border:1px solid #b3b3b3;width:40%;height:100%;background:#d4d0c8;white-space: nowrap;}
+.conditionparam {width:550px;height:50px;}
+.conditionset {width:550px;margin:0 0 5px;border:1px solid #999;background:#efefef;height:80px;}
+.imgbutton {cursor:pointer;}
+.nullLink {text-decoration:underline;cursor:pointer; }
+
+/*aler user report tree*/
+
+.RightTree { text-decoration: none; cursor:pointer}
+.RightTreeactive    { color: white; text-decoration: none; background-color: #7f8792; border: #bec5d4 ;cursor:pointer;width:100%}
+
+
+/* 表格样式定义 */
+.t1 {width:100%;width:100% !important padding:0 10px 0 0;}
+/* .t2 {border:1px solid #89b6ed;margin:5px;width:100%;width:100% !important padding:0 10px 0 0;}*/
+.t2 {border:1px solid #89b6ed;margin:5px;padding:0 0 7px;width:100%;width:100% !important padding:0 10px 7px 0;}
+
+
+.t1title {background:url(../icons/t1title.gif);color:#fff;text-align:left;border-left:1px solid #fff;border-right:1px solid #fff;height:24px;padding:0 6px;font-weight:bold;}
+.t2title {background:url(../icons/t2title.gif) repeat-x;font-weight:normal;height:19px;padding:0 6px;border-left:1px solid #fff;border-right:1px solid #fff;}
+.t2title a:link,.t2title a:visited,.t2title a:hover {text-decoration:none;}
+.t3 {width:100%;margin:5px;}
+.t3title {text-align:left;color:#243e79;background:url(../icons/t3title.gif);height:21px;}
+.t3left {width:12%;}
+.t5 {width:100%;height:100%;}
+.t6 {width:100%;height:100%; }
+.tgrouptitle{color:#fff;TEXT-DECORATION: underline;cursor:pointer;text-align:left;font-weight:bold;}
+.tgrouptitle2{color:#fff;text-align:left;font-weight:bold;}
+.t7 {border:1px solid #485464;width:100%;height:95%;}/* 杨锴使用的*/
+.t8 {width:100%;}/* 杨锴使用的*/
+.t9 {border:1px solid #ffffff;margin:5px;padding:0 0 7px;width:100%;width:100% !important padding:0 10px 7px 0;}
+.t10{border-bottom:2px solid #485464;width:100%;height:95%;}
+.t62 {border:1px solid #89b6ed;width:100%;margin:0 0 15px 0;padding:5px;height:100%; }
+.tcelltop1{font-weight:bold;border-left:1px solid #ff00ff;border-top:1px solid #ff00ff;border-bottom:1px solid #ff00ff;width:30%;}
+.tcelltop2{font-weight:bold;border-left:1px solid #ff00ff;border-top:1px solid #ff00ff;border-bottom:1px solid #ff00ff;width:5%;}
+.tcelltopright{font-weight:bold;border:1px solid #ff00ff;}
+.tcell{border-left:1px solid #ff00ff;border-bottom:1px solid #ff00ff;}
+.tcellright{border-left:1px solid #ff00ff;border-bottom:1px solid #ff00ff;border-right:1px solid #ff00ff;}
+.ttree{width:100%;}
+ttree2{border:1px solid #89b6ed;margin:5px;padding:0 0 7px;width:100%;width:100% }
+
+.tleft {width:50%;padding:5px}
+.trigtht {width:50%;padding:5px}
+.ttext {width:200px;}
+
+/* 操作栏样式定义 */
+.toolbar {width:80%;height:35px;}
+.toolbar td {text-align:center;}
+
+
+
+/* 提醒确认窗口 */
+.confirmbody {background:#fff9ec;margin:0px;SCROLLBAR-FACE-COLOR: #e8e8e8;SCROLLBAR-HIGHLIGHT-COLOR: #9b9b9b;SCROLLBAR-SHADOW-COLOR: #9b9b9b;SCROLLBAR-3DLIGHT-COLOR: #e8e8e8;SCROLLBAR-ARROW-COLOR: #919191;SCROLLBAR-TRACK-COLOR: #e8e8e8;SCROLLBAR-DARKSHADOW-COLOR: #e8e8e8;SCROLLBAR-BASE-COLOR: #e8e8e8}
+.t1confirm {width:360px;padding:10px;}
+.t1confirmtitle { background:url(../icons/t1confirmtitle.gif);padding:0 8px;font-weight:bold;height:21px;color:#fff;width:360px;}
+.alerticon {text-align:center;width:80px;}
+.alerttext {padding:0 6px;line-height:20px;}
+/*.t2confirm {width:95%;border:1px solid #ff9900;background:#fff;margin:10px 0 0;padding:7px 0;}*/
+.t2confirm {width:95%;border:0px solid #ff9900;background:#fff9ec;margin:10px 0 0;padding:7px 0;}
+.confirmtoolbar {height:30px;border-top:1px solid #ff9900;width:360px;padding:20px 0 4px}
+.confirmtoolbar td {text-align:center;}
+.popcontent {overflow:auto;height:60px;width:345px;}
+
+
+/* 新增TR CLASS */
+.tr1 {background:#fff;}
+.tr2 {background:#f3f3f3;}
+
+/* 新增必填项样式 */
+.required {padding:0 3px;font-weight:bold;color:#f60;font-size:11px;font-family:Tahoma,Arial,宋体;}
+
+/* 模式窗口样式定义 */
+.winbg {background:#fdfefe url(../icons/popwinbg3.gif)  no-repeat top;padding:8px;SCROLLBAR-FACE-COLOR: #e8e8e8;SCROLLBAR-HIGHLIGHT-COLOR: #9b9b9b;SCROLLBAR-SHADOW-COLOR: #9b9b9b;SCROLLBAR-3DLIGHT-COLOR: #e8e8e8;SCROLLBAR-ARROW-COLOR: #919191;SCROLLBAR-TRACK-COLOR: #e8e8e8;SCROLLBAR-DARKSHADOW-COLOR: #e8e8e8;SCROLLBAR-BASE-COLOR: #e8e8e8}
+.testingresult {color:#000;padding:6px;border:1px solid #b3b3b3;height:320px; overflow:auto; display:block;}
+.testingresult p {line-height:22px;}
+.testingsearch {height:48px;padding:0 5px;}
+.testingresult2 {color:#000;padding:6px;border:1px solid #b3b3b3;height:270px; overflow:auto; display:block;}
+.testingresult2 p {line-height:22px;}
+.searchbutton {background:url(../icons/searchbuttonbg.gif) no-repeat;font-weight:bold;color:#485464;border:0px;width:80px;padding:2px 0 0 8px;text-align:left;}
+
+.cell_5	 {width:5%}
+.cell_10 { width:10% }
+.cell_20 { width:20%}
+.cell_98 { width:98% }	
+.cell_40 {width:40%}
+.cell_80 {width:80%}
+
+/* 左侧导航样式 */
+.navt1 {width:119px;background:url(../icons/navbg.gif)}
+.navt1title {background:url(../icons/navt1titlebg.gif);height:24px;padding:0 8px;font-weight:bold;color:#fff;}
+.nav1list {height:560px;}
+.navt2 {width:119px;background:url(../icons/navt2bg.gif);}
+.navt2title {font-weight:bold;padding:0 8px;color:#000;height:19px;}
+.navt3 {width:119px;margin:2px 0 10px;}
+.navt3 td {padding:0 0 0 25px;height:20px;background:url(../icons/navt3left.gif) no-repeat left center;}
+.navt3 a:link {text-decoration:none;}
+.navt3 a:visited {text-decoration:none;}
+.navt3 a:hover {text-decoration:none;padding:2px;background:#5267b0;color:#fff;}
+.navt3selected {text-decoration:none;padding:2px;background:#5267b0;color:#fff;}
+.navgeneral  {cursor:pointer;}
+.navselected {cursor:pointer;padding:2px;background:#5267b0;color:#fff;}
+.navhover    {cursor:pointer;padding:2px;background:#5267b0;color:#fff;}
+
+/* 登录页面样式 */
+.loginbody {margin:0px;padding:0px;text-align:center;background:#95bde3 url(../icons/login01.gif) repeat-x top}
+.logint1 {text-align:left;margin-top:62px;}
+.logint2 {border:1px solid #72899c;width:599px;height:280px;margin:8px 0 0 8px;background:url(../icons/login05.gif) no-repeat}
+.logint3 {margin-top:83px;}
+.loginerrors {text-align:center;color:#f00;}
+.logininput {width:215px;}
+.loginbutton {height:24px;padding:2px 20px 0;color:#485464;font-weight:bold;background:#c8cbd0 url(../icons/inputbut.gif);border-top:1px solid #eceeef;border-left:1px solid #eceeef;border-right:1px solid #485464;border-bottom:1px solid #485464; cursor:pointer;}
+
+/* 主框架样式 */
+.container {padding:0 6px 6px;background:#fff url(../icons/containerbg.gif) repeat-x;width:100%;height:100%;}
+.rightcontent {padding:10px;background:#fff;width:100%;}
+.main {background:#ebf8fe url(../icons/mainbg.jpg) repeat-x;border:1px solid #515151;width:100%;height:100%;}
+
+.header {width:100%;background:url(../icons/main_03.gif)}
+.header td.logo {padding:0 15px;}
+.header td.help {width:40px;height:25px;background:url(/icons/main_04_3.gif); padding-top:8px; }
+.header td.logout {width:40px;height:25px;background:url(/icons/main_04_3.gif); padding-top:8px; }
+
+.sysinfo {padding:5px 0;width:100% !important padding:5px 0 0;}
+.sysinfo td.usericon {padding:0 0 0 14px;width:25px;}
+.attentioninfo {}
+.addweight {font-weight:bold;}
+
+
+/* 刷新 */
+.refresherrors {font-size:medium;font-weight:bold;}
+.refreshinfo {font-size:medium;font-weight:bold;}
+/* menubody */
+.menubody {margin:0px;height:100%;background:url(../icons/tempbg.gif) no-repeat bottom left}
+
+/* 定义目录树中的CheckBox */
+.smallcheckbox {width:11px;height:11px;}
+.menuresize {background:#e8f6ff;cursor:w-resize;width:6px;}
+/*右侧导航 */
+.workbody{ overflow-x:hidden;overflow-y:auto;}
+
+/* 关于软件 */
+.aboutwint1 {width:506px;height:329px;background:url(../icons/aboutwin.jpg) no-repeat;}
+.aboutwint1 p {font:12px Arial,宋体;line-height:22px;margin:75px 0 0 44px}
+
+/* 新测试窗口样式定义 */
+.winbg {background:#fdfefe url(../icons/wintestbg.jpg);padding:8px;}
+.wintestt1 {width:740px}
+.wintestt1title {font-weight:bold;font-size:large}
+.wintestarea {display:block;width:100%;height:100%;overflow:auto;border:0px solid #ccc;padding:6px;}
+/*报告列表 */
+.StatsTable {border:1px solid #89B6ED;width:90%;}
+.Statst1title {text-align:left;border-left:1px solid #fff;border-right:1px solid #fff;height:24px;padding:0 6px;font-weight:bold;}
+.Statst3left {width:12%;background:url(../icons/reporttitle.gif);}
+.myTextstyle{word-break:break-all}

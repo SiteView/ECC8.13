@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-menu.xsd">
+    <menu name="healthMenu" id="basic-nav" type="simple" title=""
+        default-selected-style="selected">
+        <menu-item name="Multiview" title="${uiLabelMap.healthMultiview}">
+        	<link target="none"/>
+        </menu-item>
+        <menu-item name="Manage" title="${uiLabelMap.healthManage}">
+        	<link target="listGroup?healthMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="Browse" title="${uiLabelMap.healthBrowse}">
+        	<link target="none"/>
+        </menu-item>
+        <menu-item name="RemoteUNIX" title="${uiLabelMap.healthRemoteUNIX}">
+        	<link target="machineList?healthMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="RemoteNT" title="${uiLabelMap.healthRemoteNT}">
+        	<link target="machineListNT?healthMenu_collapsed=false"/>
+        </menu-item>
+         <menu-item name="Tools" title="${uiLabelMap.healthTools}">
+        	<link target="none"/>
+        </menu-item>
+         <menu-item name="Progress" title="${uiLabelMap.healthProgress}">
+        	<link target="none"/>
+        </menu-item>
+         <menu-item name="Summary" title="${uiLabelMap.healthSummary}">
+        	<link target="none"/>
+        </menu-item>
+     </menu>
+</menus>

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubServer", "SubServer.csproj", "{2D729DB6-349E-45C3-94E3-3F97571D9525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agsXMPP2005", "..\AG-Software\agsXMPP SDK\agsxmpp\agsXMPP2005.csproj", "{DC39021C-FA24-4E34-AB4A-3260BB5314AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agsXMPP.ui.2005", "..\AG-Software\agsXMPP SDK\agsxmpp.ui\agsXMPP.ui.2005.csproj", "{93F68E40-C0FC-4B7F-8331-8EEB95A5E3DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniClient", "..\AG-Software\agsXMPP SDK\samples\VS2005\MiniClient\MiniClient.csproj", "{86AFC6BE-E45F-415D-8785-50D937A88071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsService1", "..\..\..\WindowsService1\WindowsService1.csproj", "{142FC458-8DC0-4845-BD97-2A8CD62198FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectService", "..\..\..\ProtectService\ProtectService.csproj", "{786A80BF-0965-4E36-AE14-7738B981656C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmppClient", "..\..\..\NNMTop\miniClient\XmppClient.csproj", "{BC295906-DF74-48D5-9923-4D35E62ED37C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D729DB6-349E-45C3-94E3-3F97571D9525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D729DB6-349E-45C3-94E3-3F97571D9525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D729DB6-349E-45C3-94E3-3F97571D9525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D729DB6-349E-45C3-94E3-3F97571D9525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC39021C-FA24-4E34-AB4A-3260BB5314AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC39021C-FA24-4E34-AB4A-3260BB5314AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC39021C-FA24-4E34-AB4A-3260BB5314AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC39021C-FA24-4E34-AB4A-3260BB5314AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F68E40-C0FC-4B7F-8331-8EEB95A5E3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F68E40-C0FC-4B7F-8331-8EEB95A5E3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F68E40-C0FC-4B7F-8331-8EEB95A5E3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F68E40-C0FC-4B7F-8331-8EEB95A5E3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AFC6BE-E45F-415D-8785-50D937A88071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AFC6BE-E45F-415D-8785-50D937A88071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AFC6BE-E45F-415D-8785-50D937A88071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AFC6BE-E45F-415D-8785-50D937A88071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{142FC458-8DC0-4845-BD97-2A8CD62198FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{142FC458-8DC0-4845-BD97-2A8CD62198FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{142FC458-8DC0-4845-BD97-2A8CD62198FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{142FC458-8DC0-4845-BD97-2A8CD62198FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{786A80BF-0965-4E36-AE14-7738B981656C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786A80BF-0965-4E36-AE14-7738B981656C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786A80BF-0965-4E36-AE14-7738B981656C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786A80BF-0965-4E36-AE14-7738B981656C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC295906-DF74-48D5-9923-4D35E62ED37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC295906-DF74-48D5-9923-4D35E62ED37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC295906-DF74-48D5-9923-4D35E62ED37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC295906-DF74-48D5-9923-4D35E62ED37C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

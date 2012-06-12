@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+
+    <request-map uri="monitorDetail">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="monitorDetail"/>
+    </request-map>	
+    
+    <request-map uri="deleteMonitor">
+        <security https="false" auth="true"/>
+        <event type="service" invoke="delMonitor"/>
+        <response name="success" type="view" value="listGroup"/>
+        <response name="error" type="view" value="listGroup"/>
+    </request-map>	
+
+    <request-map uri="addMonitor">
+        <security https="false" auth="true"/>
+        <event type="bsf" path="" invoke="org/siteview/svecc/monitor/addMonitor.bsh"/>
+        <response name="success" type="view" value="reflashInitForMonitor"/>
+        <response name="error" type="view" value="modifyMonitor"/>
+    </request-map>	
+    <request-map uri="updateMonitor">
+        <security https="false" auth="true"/>
+        <event type="bsf" path="" invoke="org/siteview/svecc/monitor/updateMonitor.bsh"/>
+        <response name="success" type="view" value="reflashInitForMonitor"/>
+        <response name="error" type="view" value="modifyMonitor"/>
+    </request-map>	
+
+
+    <request-map uri="createMonitor">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="modifyMonitor"/>
+    </request-map>	
+    <request-map uri="editMonitor">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="modifyMonitor"/>
+    </request-map>	
+
+    <request-map uri="listMonitorType">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="listMonitorType"/>
+    </request-map>
+    <request-map uri="keywordsearchMonitorType">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="keywordsearchMonitorType"/>
+    </request-map>
+    <request-map uri="jsondataForMonitor">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="jsondataForMonitor"/>
+    </request-map>
+    
+    
+    <request-map uri="reflashInitForMonitor">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="reflashInitForMonitor"/>
+    </request-map>
+
+     <view-map name="listMonitorType" type="screen" page="component://svecc/widget/monitor/svMonitorScreens.xml#listMonitorType"/>
+     <view-map name="monitorDetail" type="screen" page="component://svecc/widget/monitor/svMonitorScreens.xml#monitorDetail"/>
+     <view-map name="modifyMonitor" type="screen" page="component://svecc/widget/monitor/svMonitorScreens.xml#modifyMonitor"/>
+     <view-map name="keywordsearchMonitorType" type="screen" page="component://svecc/widget/monitor/svMonitorScreens.xml#keywordsearchMonitorType"/>
+     <view-map name="reflashInitForMonitor" type="screen" page="component://svecc/widget/monitor/svMonitorScreens.xml#reflashInit"/>
+     <view-map name="jsondataForMonitor" type="screen" page="component://svecc/widget/monitor/svMonitorScreens.xml#jsondata"/>
+     <view-map name="createMonitor1" type="screen" page="component://MonitorForm/x/x/x#createMonitor"/>
+</site-conf>
+

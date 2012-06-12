@@ -1,0 +1,9 @@
+a {color:#000000;text-decoration:none;}
+a:link {color:#000000;text-decoration:none;}
+a:hover {color:#0000FF;text-decoration:underline;}
+a:visited {color:#000000;text-decoration:underline;}
+
+
+.smallfont {  font-family: "ËÎÌו", "serif"; font-size: 12px}
+.midfont {  font-family: "ËÎÌו", "serif"; font-size: 14px}
+.border {  border: #333333; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+    
+    <screen name="emailPreference">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.eccEmailpreference}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+	       	                     <section>
+	                            	<actions>
+										<service service-name="getEmailPreferences"></service>
+									</actions> 
+	                                <widgets>
+				                         <platform-specific>
+				                            <html>
+				                                <html-template location="component://svecc/webapp/ecc/email/emailPreference.ftl" />
+				                            </html>
+				                        </platform-specific>
+				                      </widgets>  
+				                  </section>
+				                  <section>   
+				                  	<widgets> 	                  	
+			                        <include-form name="AdditionalEmailSettings" location="component://svecc/widget/email/EmailForm.xml"/>			                         
+			                        <include-form name="AddEmailSettings" location="component://svecc/widget/email/EmailForm.xml"/> 
+									</widgets>
+                            </section>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="AddEmailSettings">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.eccEmailseting}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                            <section>
+                                <actions>
+									<service service-name="EmailSettingsInfo"></service>
+								</actions> 
+                                <widgets>
+			                         <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/email/EmailSettings.ftl" />
+			                            </html>
+			                        </platform-specific>
+			                      </widgets>  
+			                  </section>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="mailTest">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.EmailTest}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                            <section>
+                                <actions>
+									<service service-name="getEmailPreferences"></service>
+								</actions> 
+                                <widgets>
+			                         <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/email/mailTest.ftl" />
+			                            </html>
+			                        </platform-specific>
+			                      </widgets>  
+			                  </section>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>  
+    <screen name="errorPage">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="errorPage"/>
+		                   </container>
+		                   <container style="screenlet-body">
+	                         <platform-specific>
+	                            <html>
+	                                <html-template location="component://svecc/webapp/ecc/email/errorPage.ftl" />
+	                            </html>
+	                        </platform-specific>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>        
+  
+</screens>
+

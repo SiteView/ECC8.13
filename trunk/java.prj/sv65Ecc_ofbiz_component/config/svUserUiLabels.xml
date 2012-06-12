@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="svUserDisabled">
+    	<value xml:lang="en">disabled</value>
+    	<value xml:lang="zh">禁止使用</value>
+    </property>
+     <property key="svUserRealName">
+    	<value xml:lang="en">realName</value>
+    	<value xml:lang="zh">真实姓名</value>
+    </property>
+    <property key="svUserSecurityprincipal">
+    	<value xml:lang="en">securityprincipal</value>
+    	<value xml:lang="zh">LDAP认证</value>
+    </property>
+     <property key="svUserGroup">
+    	<value xml:lang="en">group</value>
+    	<value xml:lang="zh">所在组</value>
+    </property>
+    <property key="svUserId">
+    	<value xml:lang="en">id</value>
+    	<value xml:lang="zh">个人ID</value>
+    </property>
+    
+    
+	<property key="svUserLogin">
+    	<value xml:lang="en">login</value>
+    	<value xml:lang="zh">登录名</value>
+    </property>
+    <property key="svUserPassword">
+    	<value xml:lang="en">Password</value>
+    	<value xml:lang="zh">密码</value>
+    </property>	
+    
+    <property key="svUserLdapserver">
+    	<value xml:lang="en">ldapserver</value>
+    	<value xml:lang="zh">LDAP服务器</value>
+    </property>	
+    
+	<property key="svUserEdit">
+		<value xml:lang="en">edit</value>
+		<value xml:lang="zh">编辑</value>
+	</property>	
+	<property key="svUserChangePwd">
+		<value xml:lang="en">changePwd</value>
+		<value xml:lang="zh">修改密码</value>
+	</property>
+	<property key="svUserChangePermission">
+		<value xml:lang="en">changePermission</value>
+		<value xml:lang="zh">修改权限</value>
+	</property>	
+	<property key="svUserAddUser">
+		<value xml:lang="en">addUser</value>
+		<value xml:lang="zh">添加用户</value>
+	</property>	
+
+	<property key="svUserYes">
+		<value xml:lang="en">Yes</value>
+		<value xml:lang="zh">是</value>
+	</property>
+	<property key="svUserNot">
+		<value xml:lang="en">Not</value>
+		<value xml:lang="zh">否</value>
+	</property>
+	<property key="svUserDelUser">
+		<value xml:lang="en">Delelet User</value>
+		<value xml:lang="zh">删除用户</value>
+	</property>
+	<property key="svUserOldPwd">
+		<value xml:lang="en">old Password</value>
+		<value xml:lang="zh">旧密码</value>
+	</property>		
+	<property key="svUserNewPwd">
+		<value xml:lang="en">New Password</value>
+		<value xml:lang="zh">新密码</value>
+	</property>	
+	<property key="svUserConfirmPwd">
+		<value xml:lang="en">Confirm Password</value>
+		<value xml:lang="zh">确认密码</value>
+	</property>	
+   <property key="svUserInfoList">
+	  	<value xml:lang="en">User Information List</value>
+        <value xml:lang="zh">用户信息表</value>
+    </property>
+    
+    <property key="svUserInfo">
+     	<value xml:lang="en">User Information</value>
+		<value xml:lang="zh">个人信息 </value>   
+	</property> 	
+    <property key="svUserEditInfo">
+    	<value xml:lang="en">Edit User's Information</value>
+    	<value xml:lang="zh">修改个人信息</value>
+    </property>
+	<property key="svUserSaveInfo">
+		<value xml:lang="en">Save User Information</value>
+		<value xml:lang="zh">修改后个人信息</value>
+	</property>	
+    
+	<property key="svUserChangePwd">
+		<value xml:lang="en">ChangePwd</value>
+		<value xml:lang="zh">修改密码</value>
+	</property>	
+	<property key="svUserCreate">
+		<value xml:lang="en">createUser</value>
+		<value xml:lang="zh">创建用户</value>
+	</property>
+	<property key="svUserChangepermission">
+		<value xml:lang="en">changepermission</value>
+		<value xml:lang="zh">修改权限</value>
+	</property>
+</resource>

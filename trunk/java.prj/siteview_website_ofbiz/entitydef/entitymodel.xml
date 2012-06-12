@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entitymodel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitymodel.xsd">
+    <!-- ========================================================= -->
+    <!-- ======================== Defaults ======================= -->
+    <!-- ========================================================= -->
+    <title>Entity of an Open For Business Project Component</title>
+    <description>None</description>
+    <copyright>Copyright 2001-2008 The Apache Software Foundation</copyright>
+    <author>None</author>
+    <version>1.0</version>
+
+    <!-- ========================================================= -->
+    <!-- ======================== Data Model ===================== -->
+    <!-- The modules in this file are as follows:                  -->
+    <!--  - org.ofbiz.entity.audit -->
+    <!--  - org.ofbiz.entity.crypto -->
+    <!--  - org.ofbiz.entity.sequence -->
+    <!-- ========================================================= -->
+
+    <entity entity-name="SvNoteInfo" package-name="org.ofbiz" title="NoteInfo">
+        <field name="id" type="id-ne"><description>Sequenced primary key</description></field>
+        <field name="idx" type="numeric"></field>
+        <field name="country" type="long-varchar"></field>
+        <field name="category" type="id-ne"></field>
+        <field name="name" type="long-varchar"></field>
+        <field name="coname" type="long-varchar"></field>
+        <field name="title" type="very-long"></field>
+        <field name="textData" type="very-long"></field>
+        <field name="enName" type="long-varchar"></field>
+        <field name="enConame" type="long-varchar"></field>
+        <field name="enTitle" type="very-long"></field>
+        <field name="enTextData" type="very-long"></field>
+        <field name="createDate" type="long-varchar"></field>
+        <prim-key field="id"/>
+		<relation type="one" fk-name="fkSvNoteInfoCategory"
+			rel-entity-name="SvNoteInfoCategory">
+			<key-map field-name="category" rel-field-name="id" />
+		</relation>
+    </entity>
+
+    <entity entity-name="SvNoteInfoCategory" package-name="org.ofbiz" title="NoteInfoCategory">
+        <field name="id" type="id-ne"></field>
+        <field name="country" type="long-varchar"></field>
+        <field name="parentid" type="id-ne"></field>
+        <field name="name" type="long-varchar"></field>
+        <field name="images" type="long-varchar"></field>
+        <field name="enName" type="long-varchar"></field>
+        <field name="enImages" type="long-varchar"></field>
+        <field name="link" type="long-varchar"></field>
+        <prim-key field="id"/>
+		<relation type="one" fk-name="fkSvNoteInfoCategoryParentId"
+			rel-entity-name="SvNoteInfoCategory">
+			<key-map field-name="parentid" rel-field-name="id" />
+		</relation>
+    </entity>
+    
+	<entity entity-name="createLicense" package-name="org.ofbiz" title="createLicense">
+        <field name="id" type="id-ne"></field>
+        <field name="userId" type="id-ne"></field>
+        <field name="name" type="long-varchar"></field>
+        <field name="nickName" type="long-varchar"></field>
+        <field name="createdDate" type="id-ne"></field>
+        <field name="expires" type="id-ne"></field>
+        <prim-key field="id"/>		
+    </entity>
+    
+    <view-entity entity-name="SvNoteInfoCategoryzh"
+                package-name="org.ofbiz"
+                title="SvNoteInfoCategoryzh">
+      <member-entity entity-alias="SI" entity-name="SvNoteInfoCategory"/>
+      <alias-all entity-alias="SI"/>
+      <alias name="dispName" entity-alias="SI" field="name"/>
+      <alias name="dispImages" entity-alias="SI" field="images"/>
+    </view-entity>
+    <view-entity entity-name="SvNoteInfoCategoryen"
+                package-name="org.ofbiz"
+                title="SvNoteInfoCategoryen">
+      <member-entity entity-alias="SI" entity-name="SvNoteInfoCategory"/>
+      <alias-all entity-alias="SI"/>
+      <alias name="dispName" entity-alias="SI" field="enName"/>
+      <alias name="dispImages" entity-alias="SI" field="enImages"/>
+    </view-entity>
+
+    <view-entity entity-name="SvViewNoteInfozh"
+                package-name="org.ofbiz"
+                title="SvViewNoteInfozh">
+      <member-entity entity-alias="NI" entity-name="SvNoteInfo"/>
+      <member-entity entity-alias="CA" entity-name="SvNoteInfoCategory"/>
+      <alias-all entity-alias="NI"/>
+      <alias-all entity-alias="CA"/>
+      <alias name="dispCaname" entity-alias="CA" field="name"/>
+      <alias name="dispImages" entity-alias="CA" field="images"/>
+      <alias name="dispConame" entity-alias="NI" field="coname"/>
+      <alias name="dispName" entity-alias="NI" field="name"/>
+      <alias name="dispTitle" entity-alias="NI" field="title"/>
+      <alias name="dispTextData" entity-alias="NI" field="textData"/>
+      <view-link entity-alias="NI" rel-entity-alias="CA">
+        <key-map field-name="category" rel-field-name="id"/>
+      </view-link>
+    </view-entity>
+     	
+    <view-entity entity-name="SvViewNoteInfoen"
+                package-name="org.ofbiz"
+                title="SvViewNoteInfoen">
+      <member-entity entity-alias="NI" entity-name="SvNoteInfo"/>
+      <member-entity entity-alias="CA" entity-name="SvNoteInfoCategory"/>
+      <alias-all entity-alias="NI"/>
+      <alias-all entity-alias="CA"/>
+      <alias name="dispCaname" entity-alias="CA" field="enName"/>
+      <alias name="dispImages" entity-alias="CA" field="enImages"/>
+      <alias name="dispConame" entity-alias="NI" field="enConame"/>
+      <alias name="dispName" entity-alias="NI" field="enName"/>
+      <alias name="dispTitle" entity-alias="NI" field="enTitle"/>
+      <alias name="dispTextData" entity-alias="NI" field="enTextData"/>
+      <view-link entity-alias="NI" rel-entity-alias="CA">
+        <key-map field-name="category" rel-field-name="id"/>
+      </view-link>
+    </view-entity>
+
+</entitymodel>

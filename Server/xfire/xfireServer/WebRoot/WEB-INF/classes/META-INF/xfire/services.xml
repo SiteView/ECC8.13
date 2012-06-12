@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xfire.codehaus.org/config/1.0">
+
+       <service>
+       	<name>eccapi</name>
+       	<namespace>http://siteview.com/EccService</namespace>
+       	<serviceClass>
+       		com.siteview.eccservice.InterfaceEccService
+       	</serviceClass>
+       	<implementationClass>
+       		com.siteview.eccservice.EccService
+       	</implementationClass>
+       	<serviceFactory>org.codehaus.xfire.annotations.AnnotationServiceFactory</serviceFactory>
+       </service>
+       
+       <!-- bean id="EccService"
+       	class="com.siteview.eccservice.EccService">
+       	</bean>
+       	
+       	<bean id="EccWebService"
+       	class="org.codehaus.xfire.spring.remoting.XFireExporter">
+       	<property name="serviceFactory">
+       	<ref bean="xfire.serviceFactory" />
+       	</property>
+       	<property name="xfire">
+       	<ref bean="xfire" />
+       	</property>
+       	<property name="style">
+       	<value>wrapped</value>
+       	</property>
+       	<property name="serviceBean">
+       	<ref bean="EccService" />
+       	</property>
+       	<property name="serviceClass">
+       	<value>com.siteview.eccservice.InterfaceEccService</value>
+       	</property>
+       	</bean-->
+       	
+       	</beans>

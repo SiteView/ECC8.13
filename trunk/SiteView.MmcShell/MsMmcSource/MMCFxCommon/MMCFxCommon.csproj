@@ -1,0 +1,703 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.3077</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F727E002-5F01-4F4D-A33A-BAD978767105}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>MMCFxCommon</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ExecutiveTraceEventId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActionNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActionSeparatorItemData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActionsInsertionLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActionsPaneExtendedItemData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActionsPaneItemCollectionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActionsPaneItemData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActionsPaneRootData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActionsPaneRootItemType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActionStates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActionViewRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ActivateNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ApplyPropertyPageMessageRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\BatchSelectionDataUpdatesCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\BeginInvokeCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\BeginInvokeNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\BeginModalLoopConsoleDialogCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\BeginModalLoopConsoleDialogCommandResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\BooleanList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ByteList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CancelToClosePropertySheetCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ChangeNotificationSubscriptionCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ChangeSelectionDataViewRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ClearDirtyFlagPropertySheetCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ClipboardData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ColumnCollectionChangeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ColumnData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ColumnVisibilityChangedNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\Command.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CommandResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CommonValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CompareSelectionObjectsResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CompareViewSelectionsRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ComponentAbandonedNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ConsoleDialogCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CreateCustomRequestStatusCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CreateCustomRequestStatusCommandResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CreatePropertySheetCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CreatePropertySheetCommandResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CreatePropertySheetForScopeNodeCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CreatePropertySheetForViewCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CutOrMoveNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\CutOrMoveViewSelectionRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\DataChangeNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\DataCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\DataFormatConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\DeactivateNodeNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\DeleteNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\DeleteScopeNodesCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\DeleteViewSelectionRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\DestroyPropertyPageNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\DragAndDropVerb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\EndModalLoopConsoleDialogCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ExpandFromLoadScopeNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ExpandFromLoadScopeNodeRequestResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ExpandScopeNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ExtensionPagesRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\FindPropertySheetCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\FindPropertySheetCommandResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\FindPropertySheetForScopeNodeCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\FindPropertySheetForViewCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\FormViewDescriptionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\GetListViewModeCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\GetListViewModeCommandResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\GetPopupParentWindowCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\GetPopupParentWindowCommandResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\GlobalConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\GuidList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\HideViewNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\HtmlViewDescriptionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\IClassLibraryServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\IMessageClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\InitializePropertyPageNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\InitializeViewRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\InsertScopeNodesCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\InsertScopeNodesCommandReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\InsertScopeNodesCommandWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\Int32List.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\IRequestStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ISnapInClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ISnapInMessagePumpProxy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ISnapInPlatform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\KeepAlivePurpose.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\KeepAliveViewSelectionRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\KillActivePropertyPageMessageRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ListViewColumnFormat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ListViewDescriptionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ListViewMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ListViewOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\LoadDataRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\LoadViewDataRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\LoseKeyboardFocusCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\LoseKeyboardFocusCommandResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\MessageViewDescriptionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\MessageViewIcon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\MouseActivateCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\NamespaceExtensionInitNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\NodeData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\NodeIdData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\NodeIdType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\NodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\NodeSubItemData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\NodeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\Notification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\OkPropertyPageMessageRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PagesForNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PagesForViewRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PasteNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PasteResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PasteTargetInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PasteViewSelectionRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PersistenceCompletedResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PersistenceKeyRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PersistenceKeyRetrievalCompletedResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\POINT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PrimarySnapInDataException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PrintNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PrintViewSelectionRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ProcessDialogKeyPropertySheetCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ProcessMnemonicNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ProcessViewCmdKeyCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ProcessViewCmdKeyCommandResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ProcessViewDialogKeyCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PropertyPageInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PropertyPageMessageRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PropertyPageMessageResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PropertyPageNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PropertyPagesResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PropertySheetCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\PropertySheetExtensionInitNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\QueryCancelPropertyPageMessageRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ReadDataCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ReadDataCommandResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ReadSharedDataNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ReadSharedDataResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ReadSharedDataViewRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\RefreshNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\RefreshViewSelectionRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\RegisterUIThreadCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\RenameNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\RenameViewSelectionRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\Request.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\RequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\RequestResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\RequestState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\RequestWriteDataCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ResetPropertyPageNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ResultNodeCollectionChangeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SaveDataRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SaveViewDataRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SaveViewDataResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ScopeNodeData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ScopeNodeInsert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SelectionCardinality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SelectResultNodeCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SelectScopeNodeCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SerializableImageListWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SetActivePagePropertySheetCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SetActivePropertyPageNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SetDirtyFlagPropertySheetCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SetFormViewControlCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SetNewSelectionCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SetPropertyPageControlCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SetViewSetDataCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SharedDataObjectUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ShowContextMenuCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ShowHelpTopicCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ShowInitializationWizardRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ShowInitializationWizardResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ShowViewNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ShutdownRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ShutdownViewRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SnapInData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SnapInRegistrationInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SnapInType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SortListViewCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SortListViewRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SortListViewResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\StandardVerbs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\Strings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateColumnsCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateDataChangeNodeRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateListViewModeCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateMessageViewCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateResultNodesCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateScopeNodeCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateSharedDataViewRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateSnapInCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateSnapInConfigCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateViewActionsCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateViewDescriptionBarTextCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateViewModifiedStateCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateViewPasteTargetInfoCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateViewSelectionDescriptionCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateViewSelectionDisplayNameCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateViewSelectionHelpTopicCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateViewSharedDataCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\UpdateViewStandardVerbsCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\Utility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ViewActionType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ViewCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ViewDescriptionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ViewKeyboardFocusNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ViewRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ViewSelectionRequestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ViewSetData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\WindowsMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\TraceSources.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Strings.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

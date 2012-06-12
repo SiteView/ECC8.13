@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+
+ 	<request-map uri="createGroup">
+        <security https="false" auth="true"/>
+    	<response name="success" type="view" value="createGroup"/>
+   	</request-map>
+ 	<request-map uri="modifyGroup">
+        <security https="false" auth="true"/>
+    	<response name="success" type="view" value="modifyGroup"/>
+   	</request-map>
+ 	<request-map uri="submitAddGroup">
+        <security https="false" auth="true"/>
+        <event type="bsf" path="" invoke="org/siteview/svecc/group/addGroup.bsh"/>
+    	<response name="success" type="view" value="listGroup"/>
+   	</request-map>
+ 	<request-map uri="submitUpdGroup">
+        <security https="false" auth="true"/>
+        <event type="bsf" path="" invoke="org/siteview/svecc/group/updateGroup.bsh"/>
+    	<response name="success" type="view" value="listGroup"/>
+   	</request-map>
+	<request-map uri="deleteGroup">
+        <security https="false" auth="true"/>
+		<event type="service" invoke="delGroup"/>
+		<response name="success" type="view" value="listGroup"/>
+	</request-map>
+
+    <request-map uri="listGroup">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="listGroup"/>
+    </request-map>	
+
+    <request-map uri="jsondataForGroup">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="jsondataForMonitor"/>
+    </request-map>
+    
+    
+    <request-map uri="reflashInitForGroup">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="reflashInitForMonitor"/>
+    </request-map>
+
+    <view-map name="listGroup" type="screen" page="component://svecc/widget/group/svGroupScreens.xml#listGroup"/>
+	<view-map name="createGroup" type="screen" page="component://svecc/widget/group/svGroupScreens.xml#createGroup"></view-map>
+	<view-map name="modifyGroup" type="screen" page="component://svecc/widget/group/svGroupScreens.xml#modifyGroup"></view-map>
+     <view-map name="reflashInitForGroup" type="screen" page="component://svecc/widget/group/svGroupScreens.xml#reflashInit"/>
+     <view-map name="jsondataForGroup" type="screen" page="component://svecc/widget/group/svGroupScreens.xml#jsondata"/>
+</site-conf>
+

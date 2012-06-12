@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+
+ 	<request-map uri="machineList">
+        <security https="false" auth="true"/>
+    	<response name="success" type="view" value="machineList"/>
+   	</request-map>
+   	
+	<request-map uri="updateMachine">
+        <security https="false" auth="true"/>
+    	<response name="success" type="view" value="updateMachine"/>
+   	</request-map>
+   	
+	<request-map uri="addMachine">
+    	<response name="success" type="view" value="addMachine"/>
+   	</request-map>
+   	
+	<request-map uri="testMachine">
+        <security https="false" auth="true"/>
+        <event type="service" invoke="testMachineById"/>
+    	<response name="success" type="view" value="machineList"/>
+   	</request-map>
+
+	<request-map uri="delMachine">
+        <security https="false" auth="true"/>
+        <event type="service" invoke="deleteMachineById"/>
+    	<response name="success" type="view" value="machineList"/>
+   	</request-map>
+	<request-map uri="submitAddMachine">
+        <security https="false" auth="true"/>
+        <event type="bsf" path="" invoke="org/siteview/svecc/machine/addMachine.bsh"/>
+    	<response name="success" type="view" value="machineList"/>
+    	<response name="error" type="view" value="addMachine"/>
+   	</request-map>
+	<request-map uri="submitUpdateMachine">
+        <security https="false" auth="true"/>
+        <event type="bsf" path="" invoke="org/siteview/svecc/machine/updateMachine.bsh"/>
+    	<response name="success" type="view" value="machineList"/>
+   	</request-map>
+
+
+ 	<request-map uri="machineListNT">
+        <security https="false" auth="true"/>
+    	<response name="success" type="view" value="machineListNT"/>
+   	</request-map>
+   	
+	<request-map uri="updateMachineNT">
+        <security https="false" auth="true"/>
+    	<response name="success" type="view" value="updateMachineNT"/>
+   	</request-map>
+   	
+	<request-map uri="addMachineNT">
+    	<response name="success" type="view" value="addMachineNT"/>
+   	</request-map>
+   	
+	<request-map uri="testMachineNT">
+        <security https="false" auth="true"/>
+        <event type="service" invoke="testMachineByIdNT"/>
+    	<response name="success" type="view" value="machineListNT"/>
+   	</request-map>
+
+	<request-map uri="delMachineNT">
+        <security https="false" auth="true"/>
+        <event type="service" invoke="deleteMachineByIdNT"/>
+    	<response name="success" type="view" value="machineListNT"/>
+   	</request-map>
+	<request-map uri="submitAddMachineNT">
+        <security https="false" auth="true"/>
+        <event type="bsf" path="" invoke="org/siteview/svecc/machine/addMachineNT.bsh"/>
+    	<response name="success" type="view" value="machineListNT"/>
+    	<response name="error" type="view" value="addMachineNT"/>
+   	</request-map>
+	<request-map uri="submitUpdateMachineNT">
+        <security https="false" auth="true"/>
+        <event type="bsf" path="" invoke="org/siteview/svecc/machine/updateMachineNT.bsh"/>
+    	<response name="success" type="view" value="machineListNT"/>
+   	</request-map>
+
+
+	<view-map name="machineListNT" type="screen" page="component://svecc/widget/machine/svMachineScreens.xml#machineListNT"></view-map>
+	<view-map name="updateMachineNT" type="screen" page="component://svecc/widget/machine/svMachineScreens.xml#editMachineNT"></view-map>
+	<view-map name="addMachineNT" type="screen" page="component://svecc/widget/machine/svMachineScreens.xml#addMachineNT"></view-map>
+
+	<view-map name="machineList" type="screen" page="component://svecc/widget/machine/svMachineScreens.xml#machineList"></view-map>
+	<view-map name="updateMachine" type="screen" page="component://svecc/widget/machine/svMachineScreens.xml#editMachine"></view-map>
+	<view-map name="addMachine" type="screen" page="component://svecc/widget/machine/svMachineScreens.xml#addMachine"></view-map>
+</site-conf>
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-form.xsd">
+
+    <form name="listMachineNT" list-name="list" target="" type="list"  paginate-target=""
+        odd-row-style="alternate-row" default-table-style="basic-table hover-bar">
+        <actions>
+			<service service-name="getMachineListNT" result-map-name="result" result-map-list-name="list"></service>
+        </actions>
+		<field name="_name"  title="${uiLabelMap.CommonName}"><display/></field>
+		<field name="_host"  title="${uiLabelMap.machineHeadHost}" ><display/></field>
+		<field name="_status"  title="${uiLabelMap.CommonStatus}" ><display/></field>
+		<field name="_method"  title="${uiLabelMap.machineHeadMethod}" ><display/></field>
+		<field name="e" title="${uiLabelMap.CommonEdit}" widget-style="buttontext">
+			<hyperlink description="${uiLabelMap.CommonEdit}" target="updateMachineNT?id=${_id}"/>
+		</field>
+		<field name="t" title="${uiLabelMap.CommonTest}" widget-style="buttontext">
+			<hyperlink description="${uiLabelMap.CommonTest}" target="testMachineNT?id=${_id}"/>
+		</field>
+		<field name="d" title="${uiLabelMap.CommonDelete}" widget-style="buttontext">
+			<hyperlink description="${uiLabelMap.CommonDelete}" target="delMachineNT?id=${_id}"/>		
+		</field>
+    </form>
+    
+   <form name="addMachineButtonNT" list-name="listIt" target="addMachineNT" title=""  type="single" paginate-target=""
+        odd-row-style="alternate-row" default-table-style="basic-table">
+		<field name="submitButton" title="${uiLabelMap.CommonAdd}" widget-style="buttontext"><submit button-type="button"/>		
+		</field>
+   </form>  
+    <form name="listMachineUnix" list-name="list" target="" type="list"  paginate-target=""
+        odd-row-style="alternate-row" default-table-style="basic-table hover-bar">
+        <actions>
+			<service service-name="getMachineList" result-map-name="result" result-map-list-name="list"></service>
+        </actions>
+		<field name="_name"  title="${uiLabelMap.CommonName}"><display/></field>
+		<field name="_host"  title="${uiLabelMap.machineHeadHost}" ><display/></field>
+		<field name="_status"  title="${uiLabelMap.CommonStatus}" ><display/></field>
+		<field name="_method"  title="${uiLabelMap.machineHeadMethod}" ><display/></field>
+		<field name="_os"  title="${uiLabelMap.machineHeadMethod}" ><display/></field>
+		<field name="e" title="${uiLabelMap.CommonEdit}" widget-style="buttontext">
+			<hyperlink description="${uiLabelMap.CommonEdit}" target="updateMachine?id=${_id}"/>
+		</field>
+		<field name="t1" title="${uiLabelMap.CommonTest}" widget-style="buttontext">
+			<hyperlink description="${uiLabelMap.CommonTest}" target="testMachine?id=${_id}&amp;type=short"/>
+		</field>
+		<field name="t2" title="${uiLabelMap.svTestDetail}" widget-style="buttontext">
+			<hyperlink description="${uiLabelMap.svTestDetail}" target="testMachine?id=${_id}&amp;type=detail"/>
+		</field>
+		<field name="d" title="${uiLabelMap.CommonDelete}" widget-style="buttontext">
+			<hyperlink description="${uiLabelMap.CommonDelete}" target="delMachine?id=${_id}"/>		
+		</field>
+    </form>
+    
+   <form name="addMachineButtonUnix" list-name="listIt" target="addMachine" title=""  type="single" paginate-target=""
+        odd-row-style="alternate-row" default-table-style="basic-table">
+		<field name="submitButton" title="${uiLabelMap.CommonAdd}" widget-style="buttontext"><submit button-type="button"/>		
+		</field>
+   </form>  
+</forms>

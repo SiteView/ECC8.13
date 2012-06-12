@@ -1,0 +1,3 @@
+ALTER   TABLE   sv_log   type   =   MyISAM;
+ALTER   TABLE   sv_log modify CREATE_TIME char(19);
+ALTER   TABLE   sv_log modify RECORD_STATE char(7);

@@ -1,0 +1,53 @@
+import com.siteview.ecc.service.*;
+import org.ofbiz.base.util.*;
+import java.util.*;
+
+dispatcher = request.getAttribute("dispatcher");
+class_alert = request.getParameter("class_alert");
+category_alert = request.getParameter("category_alert");
+alertid = request.getParameter("alertid");
+define_flag = request.getParameter("define_flag");
+when = "maxErrors";//request.getParameter("when");
+
+retMap = dispatcher.runSync("alertDefine", UtilMisc.toMap("class_alert",class_alert, "category_alert", category_alert, "define_flag", define_flag, "alertid", alertid));
+
+btn_comments = "E-Mail";
+switch(class_alert)
+{
+case "Page":
+	btn_comments = "Pager";
+	break;
+case "Run":	
+	btn_comments = "Script";
+	break;
+case "SNMPTrap":	
+	btn_comments= "SNMP Trap";
+	break;
+case "Sound":	
+	btn_comments= "Sound";
+	break;
+case "DatabaseAlert":	
+	btn_comments= "Database";
+	break;
+case "Disable":	
+	btn_comments= "Disable or Enable Monitor(s)";
+	break;
+case "NTLogEvent":	
+	btn_comments= "Log Event";
+	break;
+case "Post":	
+	btn_comments= "Post";
+	break;
+case "SMS":	
+	btn_comments= "SMS";
+	break;
+}
+context.put("category_alert", retMap.get("category_alert"));
+context.put("class_alert", retMap.get("class_alert"));
+context.put("define_flag", retMap.get("define_flag"));
+context.put("alertid", retMap.get("alertid"));
+context.put("Data_alert", retMap.get("Data_alert"));
+context.put("btn_comments", btn_comments);
+context.put("group_list", retMap.get("group_list"));
+context.put("monitor_list", retMap.get("monitor_list"));
+

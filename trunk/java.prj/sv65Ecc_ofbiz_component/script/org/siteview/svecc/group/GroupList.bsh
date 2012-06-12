@@ -1,0 +1,34 @@
+import com.siteview.ecc.service.*;
+import org.ofbiz.base.util.*;
+import java.util.*;
+import org.ofbiz.service.*;
+
+List errorMessages = new ArrayList();
+Map errorMaps = new HashMap();
+
+
+groupId = parameters.get("groupId");
+
+dispatcher = request.getAttribute("dispatcher");
+
+callResult = dispatcher.runSync("getGroupByParentId", UtilMisc.toMap("parentId",groupId));
+
+ServiceUtil.addErrors(errorMessages, errorMaps, callResult);
+
+titleMap = new HashMap();
+
+titleMap.put("title1",com.siteview.ecc.util.MonitorIniValueReader.getCommonValue("_name","label"));
+titleMap.put("title2",com.siteview.ecc.util.MonitorIniValueReader.getCommonValue("category","label"));
+titleMap.put("title3",com.siteview.ecc.util.MonitorIniValueReader.getCommonValue("monitorsInGroup","label"));
+
+context.put("groups", callResult.get("result"));
+context.put("titleMap", titleMap);
+
+callResult = ServiceUtil.returnSuccess();
+if (errorMessages.size() > 0 || errorMaps.size() > 0) {
+    request.setAttribute(ModelService.ERROR_MESSAGE_LIST, errorMessages);
+    request.setAttribute(ModelService.RESPONSE_MESSAGE, ModelService.RESPOND_ERROR);
+    return "error";
+}
+return "success";
+

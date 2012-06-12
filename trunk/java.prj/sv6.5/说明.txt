@@ -1,0 +1,71 @@
+
+     关于 sv6.5 的有关说明
+
+1、 解压 template.rar 到当前目录，解压后的目录大致如后面的附录1 。
+    （这么做是因为：原代码中大量地采用了遍历某目录下每一个文件的方法，导致与 svn 的冲突，svn 锁住了其相应文件。）
+
+2、 签出该 sv6.5后，可以在任何目录启动，而不需任何修改。
+3、 登录用户名：admin  密码：admin
+
+4、只能 localhost   127.0.0.1 访问 http server  ,是 mcafee 的问题, 
+	mcafee\访问保护\右键:属性\选择:禁止 IRC 通信\编辑\要排除的进程, 添加:
+	java.exe,javaw.exe, apache.exe, explorer.exe, firefox.exe, iexplore.exe, 
+
+
+
+
+
+附录1：
+
+ 驱动器 D 中的卷是 program
+ 卷的序列号是 20D2-0327
+
+ D:\ecc_java\SiteScope\sv6.5 的目录
+
+2008-05-13  16:18    <DIR>          .
+2008-05-13  16:18    <DIR>          ..
+2008-05-07  15:22    <DIR>          .metadata
+2008-05-08  11:25    <DIR>          .settings
+2008-05-08  11:26    <DIR>          bin
+2008-05-07  15:22    <DIR>          cache
+2008-05-07  15:25    <DIR>          classes
+2008-05-12  11:52    <DIR>          conf
+2008-05-07  15:25    <DIR>          cp_alt
+2008-05-13  13:33    <DIR>          groups
+2008-05-13  13:33    <DIR>          htdocs
+2008-05-07  15:22    <DIR>          images
+2008-05-07  15:22    <DIR>          lib
+2008-05-13  09:53    <DIR>          logs
+2008-05-07  15:24    <DIR>          proj
+2008-05-07  15:24    <DIR>          RemoteActionsExecuter
+2008-05-07  15:22    <DIR>          scripts
+2008-05-07  15:24    <DIR>          scripts.remote
+2008-05-07  15:25    <DIR>          scripts.remote.win
+2008-05-07  15:24    <DIR>          scripts.win
+2008-05-08  13:39    <DIR>          src
+2008-05-12  10:31    <DIR>          template
+2008-05-12  16:45    <DIR>          templates.applications
+2008-05-12  10:31    <DIR>          templates.certificates
+2008-05-12  10:31    <DIR>          templates.eventlog
+2008-05-12  10:31    <DIR>          templates.health
+2008-05-12  10:31    <DIR>          templates.history
+2008-05-12  10:31    <DIR>          templates.historyGraphics
+2008-05-12  10:31    <DIR>          templates.mail
+2008-05-12  10:31    <DIR>          templates.mib
+2008-05-12  10:31    <DIR>          templates.os
+2008-05-12  10:31    <DIR>          templates.page
+2008-05-12  10:31    <DIR>          templates.perfmon
+2008-05-12  10:31    <DIR>          templates.post
+2008-05-12  10:31    <DIR>          templates.script
+2008-05-12  10:31    <DIR>          templates.sets
+2008-05-12  10:31    <DIR>          templates.sets.topazWatchdog45
+2008-05-12  10:31    <DIR>          templates.sets.topazWatchdog50
+2008-05-12  10:31    <DIR>          templates.snmp
+2008-05-12  10:31    <DIR>          templates.solutions
+2008-05-12  10:31    <DIR>          templates.sound
+2008-05-12  10:31    <DIR>          templates.view
+2008-05-12  10:31    <DIR>          templates.wsdl
+2008-05-07  15:22    <DIR>          tools
+2008-05-07  15:24    <DIR>          toplevel
+2008-05-07  15:24    <DIR>          tss_log
+

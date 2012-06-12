@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "userright", "userright.vcproj", "{7E642250-551D-430E-9CE3-368D612992AD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = userright.vcproj
+		SccProjectName0 = \u0022$/v72_1\u0022,\u0020SEIAAAAA
+		SccLocalPath0 = ..\\..
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectFilePathRelativizedFromConnection0 = webcgi\\idcusermanger\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7E642250-551D-430E-9CE3-368D612992AD}.Debug.ActiveCfg = Debug|Win32
+		{7E642250-551D-430E-9CE3-368D612992AD}.Debug.Build.0 = Debug|Win32
+		{7E642250-551D-430E-9CE3-368D612992AD}.Release.ActiveCfg = Release|Win32
+		{7E642250-551D-430E-9CE3-368D612992AD}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

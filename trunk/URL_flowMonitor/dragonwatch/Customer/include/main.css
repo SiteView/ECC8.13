@@ -1,0 +1,10 @@
+td{font-size:9pt;}
+A:link {
+	COLOR: #0000ff; FONT-FAMILY:"ËÎÌו"; FONT-SIZE:9pt; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #ff0000; FONT-FAMILY:"ËÎÌו"; FONT-SIZE:9pt; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-FAMILY:"ËÎÌו"; FONT-SIZE:9pt; TEXT-DECORATION: underline
+}

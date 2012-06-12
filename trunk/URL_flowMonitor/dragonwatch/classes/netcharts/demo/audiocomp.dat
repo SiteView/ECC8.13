@@ -1,0 +1,36 @@
+TopAxisTitle = ("Audio Component Sales", dimgrey, Helvetica, 12);
+DataSets = ("Audio\nComponents\nSales", null, PIEHORIZONTAL);
+DataSet1 = 4,5,12,59,18;
+Grid = ;
+BarLabels = "Tuner", "CD", "Receiver", "Amp", "Cassette";
+LeftTitle = ("");
+LeftTics = ("OFF");
+LeftColor = white;
+LeftFormat = (INTEGER);
+BarHeight = 30;
+BarWidth = 95;
+
+ActiveLabels1 =
+	("$7,815\n4%","../classes/netcharts/demo/lastyear.dat","LOADPARAMS"),
+	("$8,191\n5%"),
+	("$19,762\n12%"),
+	("$97,328\n59%"),
+	("$29,417\n18%");
+NoteAxis = (PERCENT, PERCENT), (PERCENT, PERCENT),
+	   (BOTTOM,PERCENT), (BOTTOM,PERCENT);
+NoteSets = ("note1"),("note2");
+NoteBox = (white, NONE), (white, NONE);
+
+NoteSet1 = ("The Amplifier clearly led\nall components in overall\nsales.  Bob McIness and \nstaff did a great job.",82,35,68,70);
+
+NoteSet2 = ("The Tuner and CD sales were\nterrible. Just four and five\n percent of the total sales.\nWe may want to find a new\nmanufacturer.",50,35,32,72);
+
+NoteSet4 = ("",.5,45,0,55), ("",.5,45,1,55);
+
+NoteLabel = ("ON",black, Helvetica, 10),("ON",black, Helvetica, 10),("ON",black, Helvetica, 10);
+
+NoteArrow =	
+	(SOLID,2,green,FROMTO,SHARP),
+	(SOLID,2,green,FROMTO,SHARP),
+	(SOLID,1,red,NONE),
+	(SOLID,1,red,FROMTO,SHARP);

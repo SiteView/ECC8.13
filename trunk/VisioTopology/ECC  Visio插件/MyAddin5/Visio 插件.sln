@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visio 插件", "MyAddin5\Visio 插件.csproj", "{F5B50AE2-D18E-4121-80F6-ED7A32084F94}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MyAddin5Setup", "MyAddin5Setup\MyAddin5Setup.vdproj", "{522745FA-4CC7-4310-B973-506568022777}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5B50AE2-D18E-4121-80F6-ED7A32084F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B50AE2-D18E-4121-80F6-ED7A32084F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B50AE2-D18E-4121-80F6-ED7A32084F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B50AE2-D18E-4121-80F6-ED7A32084F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{522745FA-4CC7-4310-B973-506568022777}.Debug|Any CPU.ActiveCfg = Debug
+		{522745FA-4CC7-4310-B973-506568022777}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

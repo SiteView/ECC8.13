@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monitor name="cim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  emsFolderName="CIM"  xsi:noNamespaceSchemaLocation="../../../../../../../../ems/Monitor.xsd">
+	<ConfigFilePathProperty/>
+	<StringProperty isAdvanced="false" name="_pDbUrl" isEditable="true" label="db_url_label" description="db_url_description" value="jdbc:inetdae:&lt;host&gt;:&lt;port&gt;?database=&lt;db_name&gt;"/>
+	<StringProperty isAdvanced="false" name="_pDbDriverName" isEditable="true" label="driver_name_label" description="driver_name_description" value="com.inet.tds.TdsDriver"/>
+	<StringProperty isAdvanced="false" name="_pDbUserName" isEditable="true" label="db_user_name_label" description="db_user_name_description"/>
+	<PasswordProperty isAdvanced="false" name="_pDbPassword" isEditable="true" label="db_password_label" description="db_password_description"/>
+	<TimeDiffProperty/>
+	<HiddenStringProperty name="pStartTime" value="-1"/>
+	<IntProperty isAdvanced="false" name="pCollected" isEditable="false" value="0" stateOptions="1" label="title_collected_measurements"/>
+</Monitor>

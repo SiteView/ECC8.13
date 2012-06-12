@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SMSIT31", "SMSIT31\SMSIT31.vcproj", "{2881C7CB-CD0A-4069-BEC9-634D51DCFBA5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SMSIT39", "SMSIT39\SMSIT39.vcproj", "{4DFC8FB7-4A42-4C52-9577-DA49FB39586E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SMSIT39Test", "SMSIT39Test\SMSIT39Test.vcproj", "{E72E91FB-E407-4306-B723-729FA6B7A9F1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SMST39VS", "SMST39VS\SMST39VS.vcproj", "{F79C981E-1BF4-4323-89FD-9476EC154909}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2881C7CB-CD0A-4069-BEC9-634D51DCFBA5}.Debug.ActiveCfg = Debug|Win32
+		{2881C7CB-CD0A-4069-BEC9-634D51DCFBA5}.Debug.Build.0 = Debug|Win32
+		{2881C7CB-CD0A-4069-BEC9-634D51DCFBA5}.Release.ActiveCfg = Release|Win32
+		{2881C7CB-CD0A-4069-BEC9-634D51DCFBA5}.Release.Build.0 = Release|Win32
+		{4DFC8FB7-4A42-4C52-9577-DA49FB39586E}.Debug.ActiveCfg = Debug|Win32
+		{4DFC8FB7-4A42-4C52-9577-DA49FB39586E}.Debug.Build.0 = Debug|Win32
+		{4DFC8FB7-4A42-4C52-9577-DA49FB39586E}.Release.ActiveCfg = Release|Win32
+		{4DFC8FB7-4A42-4C52-9577-DA49FB39586E}.Release.Build.0 = Release|Win32
+		{E72E91FB-E407-4306-B723-729FA6B7A9F1}.Debug.ActiveCfg = Debug|Win32
+		{E72E91FB-E407-4306-B723-729FA6B7A9F1}.Debug.Build.0 = Debug|Win32
+		{E72E91FB-E407-4306-B723-729FA6B7A9F1}.Release.ActiveCfg = Release|Win32
+		{E72E91FB-E407-4306-B723-729FA6B7A9F1}.Release.Build.0 = Release|Win32
+		{F79C981E-1BF4-4323-89FD-9476EC154909}.Debug.ActiveCfg = Debug|Win32
+		{F79C981E-1BF4-4323-89FD-9476EC154909}.Debug.Build.0 = Debug|Win32
+		{F79C981E-1BF4-4323-89FD-9476EC154909}.Release.ActiveCfg = Release|Win32
+		{F79C981E-1BF4-4323-89FD-9476EC154909}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

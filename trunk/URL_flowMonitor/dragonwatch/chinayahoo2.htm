@@ -1,0 +1,773 @@
+
+<script language="JavaScript" type="text/javascript">
+var ns4 = (document.layers)? true:false;
+var ie4 = (document.all)? true:false;
+
+//------------------------------------- Cookies --------------------------------
+
+function setCookie (name, value, expires) {
+	if (!expires) expires = new Date();
+	document.cookie = name + "=" + escape (value) + "; expires=" + expires.toGMTString() +  "; path=/";
+}
+
+function setLogin(status) {
+	var expdate = new Date ();
+	expdate.setTime (expdate.getTime() + (1000 * 60 * 60 * 24 * 31));
+	setCookie ("_login", status, expdate);
+}
+
+function getCookie (name) {
+    var strCookie = document.cookie;
+    var strKey = name + "=";
+    var lenCookie = strCookie.length;
+    var beginKey = 0;
+    while (beginKey < lenCookie) {
+        var beginData = beginKey + strKey.length;
+        if (strCookie.substring(beginKey, beginData) == strKey) {
+            var endData = strCookie.indexOf (";", beginData);
+            if (endData == -1) endData = lenCookie;
+            return unescape(strCookie.substring(beginData,endData));
+        }
+        beginKey = strCookie.indexOf(" ", beginKey) + 1;
+        if (beginKey == 0) break;
+    }
+return null;
+}
+
+//------------------------------------- GRAPHICS --------------------------------
+
+var NN ="aaaa"
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+
+function CSFindElement(n,ly)
+{
+	if (CSBVers < 4)
+		return document[n];
+
+	var curDoc = ly ? ly.document : document;
+	var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+
+function CSButtonReturn ()
+{
+	var bAgent = window.navigator.userAgent;
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+
+CSAg = window.navigator.userAgent;
+CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img) {img.src = CSIm[n][i].src; self.status = CSIm[n][3];}
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(im,ar) {
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=0;i<3;i++) {
+			if (ar[i] != '') { CSIm[im][i] = new Image(); CSIm[im][i].src = ar[i]; }
+			else CSIm[im][i] = 0;
+		}
+		CSIm[im][3] = ar[3];
+	}
+}
+
+
+
+
+//------------------------------------- SCROLLING --------------------------------
+// The following functions enables scrolling on a page without changing div's positions
+// How to use:
+// The objects you want to unchange their position must be in a div tag
+// <body onload="initScroll('strDivName')" onscroll="scrolling('strDivName')">
+
+
+var buttonFixedTop=0;
+
+function scrolling(divName)
+{
+//window.status=divName
+	if (buttonFixedTop>0){
+		if (ie4) {
+			document.all( divName).style.pixelTop=document.body.scrollTop+buttonFixedTop;
+			}
+		else {
+			document.layers[ divName ].top=window.pageYOffset+buttonFixedTop;
+			}
+		}
+}
+
+
+function initScroll(divName)
+{
+	if (ie4){
+		buttonFixedTop=document.all(divName).style.pixelTop;
+		}
+	else {
+		buttonFixedTop=document.layers[ divName ].top;
+		setInterval("scrolling('" + divName + "')", 5);
+		}
+}
+
+
+// -----------------------------------------------------------------------------------------------
+
+
+function getMainFrame(){
+var win;
+var mainFrame;
+win=getTopWindow();
+if (win.main){
+	mainFrame=win.main;
+	return mainFrame;
+	}
+else{
+	return false;
+	}
+}
+
+
+function getNavBar(){
+var win;
+var navBar;
+win=getTopWindow();
+if (win.frames.title){
+	navBar=win.frames.title.frames.navBar;
+	return navBar;
+	}
+else{
+	return false
+	}
+}
+
+function getNewNavBar()
+{
+	var win;
+	var navBarwin;
+	win=getTopWindow();
+	if (win)
+		if(win.frames.view)
+			if (win.frames.view.frames.reportframe)
+				navBarwin = win.frames.view.frames.reportframe.frames.newtoolbar;
+			else
+				navBarwin = null;
+
+
+	return navBarwin;
+}
+
+function getTreeMenu(){
+var win;
+var treemenu;
+win=getTopWindow();
+treemenu=win.frames.view.frames.tree;
+return treemenu;
+}
+
+function getTopWindow(){
+var topWindow;
+topWindow=window.top;
+ while(topWindow.opener){
+	topWindow=getTopOpener (topWindow);
+	topWindow=topWindow.top;
+	};
+	return topWindow;
+}
+
+function getTopOpener(startWin){
+ while(startWin.opener){
+		startWin=startWin.opener;
+		}
+	return startWin
+}
+
+function selectMenu(name) {
+	var MenuPage;
+	MenuPage = getTreeMenu()
+	if (MenuPage) {
+		MenuPage.colorItemName(name)
+	}
+	return false;
+}
+
+function getBottomFrame(){
+var win=getTopWindow();
+var bottomFrame;
+if (win){
+	bottomFrame=win.frames.bot;
+	return bottomFrame;}
+}
+
+// the function write msg in the bottom frame.
+
+var defaultStatusMsg = "";
+function setDefaultStatusMsg(msg){
+	defaultStatusMsg=msg;
+	setStatusMsg(""); // force a display of the default msg.
+
+	}
+
+
+function setStatusMsg(msg){
+	if (msg == "" ) {
+		msg = defaultStatusMsg;
+		}
+	var bottomFrm=getBottomFrame();
+	if (bottomFrm){
+			if (ns4) {
+				var lyr = bottomFrm.document.TooltipSp.document
+				var txt= "<font color=#ffcc66>" + msg + "</font>";
+				lyr.write(txt);
+				lyr.close();
+			}
+			else if (ie4) {
+				showMsgIE( bottomFrm, msg )
+			}
+	}
+	else{
+		return false;
+		}
+}
+
+</SCRIPT>
+<script language="JScript">
+function showMsgIE( bottomFrm, msg )
+{
+	if (bottomFrm.document)
+		bottomFrm.document.all["TooltipSp"].innerHTML = msg;
+};
+
+</script>
+<script language="JavaScript" type="text/javascript">
+
+function showObject(obj) {
+		if (ns4) obj.visibility = "show"
+        else if (ie4) obj.visibility = "visible"
+}
+
+// Hides an object
+function hideObject(obj) {
+        if (ns4) obj.visibility = "hide"
+        else if (ie4) obj.visibility = "hidden"
+}
+
+function isAlpha(ch){
+	if ( (ch>='A' && ch<='Z')|| (ch>='a' && ch<='z') ){
+		return true
+	}
+	else{
+		return false
+		}
+}
+
+function isNumeric(ch){
+	if ((ch>='0' && ch<='9')){
+		return true
+		}
+	else{
+		return false
+		}
+}
+
+function isAlphaNumeric( ch ) {
+	return (isNumeric(ch) || isAlpha(ch) )
+}
+
+
+var currState;
+
+
+// the function find the top window that opens all the other windows and frames.
+
+function setCurrState(newState){
+var navBar;
+var targetURL;
+var targetDoc=getMainFrame();
+navBar=getNavBar();
+if (document.location.href != navBar.location.href){
+	navBar.setCurrState(newState);
+	return ;
+}
+currState=newState;
+switch (newState){
+	case "reports":
+		targetURL='ReportFrames.asp?method=0&dummy=0';
+		break;
+	case "alerts":
+		targetURL='alarms.asp?dummy=0'
+		break;
+	case "settings":
+		targetURL='settings.asp?dummy=0&Start=yes'
+		break;
+	case "profiles":
+		targetURL=''
+		break;
+	case "admin":
+		targetURL='admin/admin_menu.asp?'
+		break;
+	case "monitors":
+		targetURL='monitors/monitorsFS.asp'
+		break;
+		}
+	if (targetDoc){
+		//newLoc=FindAndReplaceInUrl(targetURL,"rand",getRandom());
+		newLoc=targetURL;
+		targetDoc.location.href=newLoc;
+		}
+	else{
+		return false;
+		}
+	}
+
+function getCurrState(){
+var	state;
+var navBar=getNavBar();
+
+	if (navBar){
+		state=navBar.currState;
+		}
+		if (!state){state="reports"};
+		return state;
+	}
+
+
+function refreshReports()
+{
+	var oNewNavBar;
+
+	oNewNavBar = getNewNavBar();
+	if (oNewNavBar)
+		oNewNavBar.generateReport();
+}
+
+
+function GoToReports(){
+ 	setCurrState("reports");
+	navBar=getNavBar();
+	navBar.CSIShow('btnReport',2);
+	navBar.ShowTitle(0);
+	return ;
+	}
+//--------------------------------------- ADD OR REPLACE RANDOM PARAMETER ----------------------
+
+function left(str,numOfChars) {
+	return str.substr(0,numOfChars);
+}
+
+
+function right(str,numOfChars) {
+	return str.substring(str.length-numOfChars,str.length);
+}
+
+
+function FindAndReplaceInUrl(vCurLocation,p_vKey,p_vValue) {
+	var vIndexOf;
+	var vNewLocation;
+	var vLeft;
+	var vIndexOfNoValue;
+	vIndexOf = vCurLocation.indexOf(p_vKey+'=');
+	if (vIndexOf < 0 ) {
+		vNewLocation = vCurLocation + ChooseAddUrlSign(vCurLocation) + p_vKey + "=" + p_vValue;
+		return vNewLocation;
+	// If Not found
+	}
+	else {
+	//If Found
+		vNewLocation = vCurLocation.substring(0,vIndexOf+p_vKey.length +1);
+		vLeft = vCurLocation.substring(vIndexOf+p_vKey.length+1,vCurLocation.length );
+		vIndexOfNoValue = vLeft.indexOf("&");
+		if (vIndexOfNoValue <0) {
+			vLeft= p_vValue;
+		}
+		else {
+			vLeft = p_vValue + vLeft.substring(vIndexOfNoValue,vLeft.length);
+		}
+		vNewLocation = vNewLocation +vLeft;
+	}
+	return vNewLocation ;
+}
+
+
+
+function ChooseAddUrlSign(p_vCurUrl) {
+	if (p_vCurUrl.indexOf("?")> 0 ) {
+		if(right(p_vCurUrl,1)=="?") {
+			return ""
+		}
+		else {
+			return "&";
+		}
+	}
+	else {
+		return "?";
+	}
+}
+
+
+function getRandom() {
+	return left((9999999*Math.random()).toString(),4)
+}
+
+
+function showStatus(strStatus){
+	self.status=strStatus;
+	return true;
+}
+function openChildWin(url,winName,Options) {
+
+
+	childWindow=window.open(url,winName,Options);
+	if (childWindow) {
+		childWindow.focus();
+	};
+	return false;
+}
+</script>
+
+
+
+<HTML>
+<HEAD>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+  	<STYLE TYPE="text/css">
+	<!--
+	A:link {color:"blue";}
+	A:visited {color:"blue";}
+	A:Active {color:"red";}
+	A:hover {color:"red";}
+	-->
+	</STYLE>
+
+
+	<TITLE>High-Level status report - Topaz</TITLE>
+
+
+<script language="javascript">
+function SubmitForm(FLetter) {
+	ALERT(FLetter);
+	document.FLetter.submit();
+	return true
+}
+
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+var Temp2;
+var timerID = null;
+var timerRunning = false;
+
+function showtime(GetCounter) {
+	now = new Date();
+	var CurMinute = now.getMinutes();
+	var CurSecond = now.getSeconds();
+	now = null;
+
+	MyCounter=GetCounter-1
+
+	Minuteleft = 58 - CurMinute
+	Secondleft = 59 - CurSecond
+
+	Temp2='Next Live Update in: '+MyCounter+' Sec.'
+	Temp3=Minuteleft+':'+Secondleft
+	window.status=Temp2;
+	//nextrefreshtxt.innerText = Temp2;
+	timerID = setTimeout("showtime(MyCounter)",1000);
+	timerRunning = true;
+}
+
+var timerID = null;
+var timerRunning = false;
+
+function stopclock () {
+	if(timerRunning)
+	clearTimeout(timerID);
+	timerRunning = false;
+}
+
+function startclock () {
+
+}
+</script>
+<LINK REL="stylesheet" TYPE="text/css" HREF="imgs/newmain.css">
+</HEAD>
+<BODY leftmargin=0  topmargin=0 rightmargin=0  link="blue" alink="red" vlink="blue" >
+
+<BASE TARGET="reportframe">
+<table bgcolor=#cccccc border=0 bordercolor=black bordercolordark=black
+cellpadding=0 cellspacing=0 cols=3 width="100%">
+  <tbody>
+  <tr>
+
+
+    <td bgcolor=white width=30><img src="imgs/dots.gif"></td>
+    <td align=left><font class=VerdanaDB10><b>&nbsp;业务流程响应时间&nbsp;&nbsp;&nbsp;&nbsp;</b></font></td>
+    <td align=right><font class=VerdanaDB10><b>时段: 2001年2月13日0时0分
+      - 15时51分</b></font></td>
+  </tr>
+  </tbody>
+</table>
+<span id="subtitle">
+
+	<br>
+	</b></font>
+</span>
+
+
+<span id="trimscreen">
+		<form name="TrimForm" onsubmit="return false;">
+
+			<input type="hidden" name="TrimField" value="no">
+
+		</form>
+</span>
+
+		<span id=linegraph>
+		<table width="500" bgcolor="#FFFFFF" cellspacing=0 cellpadding=0 border="0">
+	<tr><td align="right" valign="bottom">
+
+
+<!--	<A href="newframes_report.asp?breakdown=transaction_id&method=0&Bar=1&chartid=chartb" class="VerBluUnd7">柱状图</a> -->
+
+		<A href="newframes_report.asp?breakdown=transaction_id&method=0&Detail=0&chartid=chartb&starttime=2%2F13%2F2001+0%3A00%3A00&graphTimeFrame=a-Day" class="VerBluUnd7">统计图</a>
+	
+
+	</td></TR>
+	<tr>
+	<td align="center" valign="top">
+	
+
+
+	<applet name=linechart
+		 codebase="../classes"
+		code=NFLineChartApp.class
+		width=750 height=400 VIEWASTEXT align=center id=Applet1>
+
+	<param	name=NFParamScript	value = '
+
+	Background	= (White, NONE);
+
+	GraphType	= ROWS;
+	LeftTitle	= ("", black, "TimesRoman", 18);
+	LeftFormat   = ( , "%f");
+
+	Grid		= (lightGray, white, black);
+	GridLine	= (HORIZONTAL, SOLID, 1);
+
+	DwellLabel      = ("", white, "Courier", 12);
+	DwellBox        = (red, SHADOW, 4);
+
+	Legend		= ("", Black, "TimesRoman", 12);
+
+	LegendLayout	= (HORIZONTAL, BOTTOM);
+
+	Header		= ("", black, "TimesRoman", 14);
+	HeaderBox	= (white, RAISED, 0);
+
+
+	BottomScale	= (0, 60, 7);
+
+
+	BottomTics	= ("ON", darkgray, "Helvetica",12,90);
+	BottomLabels	=
+	    "2001-2-13 :0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00""2001-2-14 :0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00";
+
+    BottomScroll= (0,43);
+
+
+
+	LeftTics	= ("ON", darkgray, "TimesRoman", 12);
+
+
+	LeftTitle	= (" 时间曲线 (秒)",black,"TimesRoman",12,90 );
+	LeftTitleBox	= (white, SHADOW, 0);
+
+	RightTitle	= (" ", white, "TimesRoman", 14);
+
+	
+			   LineSet1=
+			   53.91 ,45.20 ,26.27 ,39.37 ,37.12 ,50.59 ,38.94 ,43.25 ,65.44 ,63.69 ,18.46 ,72.01 ,38.02 ,48.65 ,46.17 ,39.20 ,44.76 ,54.62 ,32.87 ,25.99 ,45.88 ,45.27 ,29.56 ,16.18 ,20.40 ,27.99 ,25.98 ,27.03 ,19.58 ,28.43 ,29.30 ,25.51 ,18.59 ,22.46 ,33.36 ,40.32 ,15.84 ,45.65 ,55.23 ,69.32
+	;   
+LineSets =
+     
+	("雅虎主页", red);
+
+LineStyle =
+
+	(SOLID, 2, );
+LeftScale =(0,80,8);
+LeftScroll   = (0, 88);
+
+		  ActiveLabels1 =
+		  
+		  ("2001-2-13,0点,53.91")
+		  ,
+		  ("2001-2-13,1点,45.20")
+		  ,
+		  ("2001-2-13,2点,26.27")
+		  ,
+		  ("2001-2-13,3点,39.37")
+		  ,
+		  ("2001-2-13,4点,37.12")
+		  ,
+		  ("2001-2-13,5点,50.59")
+		  ,
+		  ("2001-2-13,6点,38.94")
+		  ,
+		  ("2001-2-13,7点,43.25")
+		  ,
+		  ("2001-2-13,8点,65.44")
+		  ,
+		  ("2001-2-13,9点,63.69")
+		  ,
+		  ("2001-2-13,10点,18.46")
+		  ,
+		  ("2001-2-13,11点,72.01")
+		  ,
+		  ("2001-2-13,12点,38.02")
+		  ,
+		  ("2001-2-13,13点,48.65")
+		  ,
+		  ("2001-2-13,14点,46.17")
+		  ,
+		  ("2001-2-13,15点,39.20")
+		  ,
+		  ("2001-2-13,16点,44.76")
+		  ,
+		  ("2001-2-13,17点,54.62")
+		  ,
+		  ("2001-2-13,18点,32.87")
+		  ,
+		  ("2001-2-13,19点,25.99")
+		  ,
+		  ("2001-2-13,20点,45.88")
+		  ,
+		  ("2001-2-13,21点,45.27")
+		  ,
+		  ("2001-2-13,22点,29.56")
+		  ,
+		  ("2001-2-13,23点,16.18")
+		  ,
+		  ("2001-2-14,0点,20.40")
+		  ,
+		  ("2001-2-14,1点,27.99")
+		  ,
+		  ("2001-2-14,2点,25.98")
+		  ,
+		  ("2001-2-14,3点,27.03")
+		  ,
+		  ("2001-2-14,4点,19.58")
+		  ,
+		  ("2001-2-14,5点,28.43")
+		  ,
+		  ("2001-2-14,6点,29.30")
+		  ,
+		  ("2001-2-14,7点,25.51")
+		  ,
+		  ("2001-2-14,8点,18.59")
+		  ,
+		  ("2001-2-14,9点,22.46")
+		  ,
+		  ("2001-2-14,10点,33.36")
+		  ,
+		  ("2001-2-14,11点,40.32")
+		  ,
+		  ("2001-2-14,12点,15.84")
+		  ,
+		  ("2001-2-14,13点,45.65")
+		  ,
+		  ("2001-2-14,14点,55.23")
+		  ,
+		  ("2001-2-14,15点,69.32")
+		  
+		  ;
+
+'>
+
+</applet>
+
+	  
+
+	</TD>
+	<!--
+	<td valign="Top" align="Left"><nobr><font class="VerBl7"><b>
+	
+
+		<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&chartid=chartb&city_id=3&starttime=2%2F13%2F2001+0%3A00%3A00&Detail=1&graphTimeFrame=a-Day#A" title="Click here to view 广州 by location">广州</a> &nbsp;</b><br>
+	
+
+		<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&chartid=chartb&city_id=5&starttime=2%2F13%2F2001+0%3A00%3A00&Detail=1&graphTimeFrame=a-Day#A" title="Click here to view 上海 by location">上海</a> &nbsp;</b><br>
+	
+
+		<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&chartid=chartb&city_id=6&starttime=2%2F13%2F2001+0%3A00%3A00&Detail=1&graphTimeFrame=a-Day#A" title="Click here to view 北京 by location">北京</a> &nbsp;</b><br>
+	
+	</font></nobr></td>
+	-->
+
+
+	</tr>
+
+ 
+
+		</table></span>
+	<span id=description><table><tr><td valign=top width=30><a href="#" onclick=" openChildWin('/speedhelp/help.asp?WhichPage=3','help','resizable=1,scrollbars=1,width=500,height=400'); return false"><img border=0 src="	IMGS/lamp.gif"></a></td><td><font class="Verbl8">
+	这个报告显示了业务流程一段时间内的详细响应时间。
+	</font> &nbsp; <a href="#" onclick=" openChildWin('/speedhelp/help.asp?WhichPage=3','help','resizable=1,scrollbars=1,width=500,height=400'); return false"> <font class="VerBluUnd7">更多...</font></a></td></tr></table></span>
+
+<span id="legendB"><table cellpadding="1" width="100" cellspacing="2" border="0">
+
+<!--
+  
+ <td valign="bottom" align="Left"><nobr><font class="VerBl7"><b>
+
+<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&starttime=2%2F13%2F2001+0%3A00%3A00&Detail=1&chartid=chartb&transaction_id=5&graphTimeFrame=a-Day#A" title="Click here to view 雅虎主页 by location">雅虎主页</a> &nbsp;</b></font></nobr></td>
+<td valign="middle" align="right"><img src="imgs/dots/dot2.gif" width=8 height=8></td>
+
+-->
+<!--
+
+<tr>
+
+<td valign="bottom" align="right"><nobr><font class="VerBl7"><b>
+<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&transaction_id=1#A" title="Click here to view eBay_Home by location">eBay_Home</a> &nbsp;</b></font></nobr></td>
+<td valign="middle" align="right"><img src="imgs/dots/dot2.gif" width=8 height=8></td>
+</tr>
+<tr>
+<td valign="bottom" align="right"><nobr><font class="VerBl7"><b>
+<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&transaction_id=2#A" title="Click here to view eBay_Search by location">eBay_Search</a> &nbsp;</b></font></nobr></td>
+<td valign="middle" align="right"><img src="imgs/dots/dot3.gif" width=8 height=8></td>
+</tr>
+<tr>
+<td valign="bottom" align="right"><nobr><font class="VerBl7"><b>
+<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&transaction_id=3#A" title="Click here to view eBay_Browse_By_Theme by location">eBay_Browse_By_Theme</a>
+&nbsp;</b></font></nobr></td>
+<td valign="middle" align="right"><img src="imgs/dots/dot4.gif" width=8 height=8></td>
+</tr>
+-->
+
+</table>
+</span>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

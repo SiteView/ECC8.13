@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvUserPermission userId="administrator" attrName="_edit" attrValue="Y"/>
+    <SvUserPermission userId="administrator" attrName="_useGlobalPermissions" attrValue="Y"/>
+    <SvUserPermission userId="user" attrName="_alertAdhocReport" attrValue="Y"/>
+    <SvUserPermission userId="user" attrName="_alertRecentReport" attrValue="Y"/>
+    <SvUserPermission userId="user" attrName="_browse" attrValue="Y"/>
+    <SvUserPermission userId="user" attrName="_monitorRecent" attrValue="Y"/>
+    <SvUserPermission userId="user" attrName="_monitorTools" attrValue="Y"/>
+    <SvUserPermission userId="user" attrName="_preferenceTest" attrValue="Y"/>
+    <SvUserPermission userId="user" attrName="_progress" attrValue="Y"/>
+    <SvUserPermission userId="user" attrName="_reportAdhoc" attrValue="Y"/>
+    <SvUserPermission userId="user" attrName="_reportIndexToolbar" attrValue="Y"/>
+    <SvUserPermission userId="user" attrName="_tools" attrValue="Y"/>
+</entity-engine-xml>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<service-eca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/service-eca.xsd">
+    <eca service="createPerson" event="return">
+		<!--set field-name="partyId" env-name="${context.partyId}"/>
+		<set field-name="companyId" env-name="10490"/>
+		<set field-name="companyId" env-name="${parameters.companyId}"/-->
+		<!--condition field-name="companyId" operator="is-not-empty"/-->
+		<condition field-name="companyId" operator="is-not-empty"/>
+        <action service="createEmployeeRelation2" mode="sync" result-to-context="true"/>
+    </eca>
+</service-eca>

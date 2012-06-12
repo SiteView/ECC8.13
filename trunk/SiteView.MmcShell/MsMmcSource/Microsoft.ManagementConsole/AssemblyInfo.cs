@@ -1,0 +1,22 @@
+﻿// Assembly Microsoft.ManagementConsole, Version 3.0.0.0
+
+[assembly: System.Reflection.AssemblyVersion("3.0.0.0")]
+[assembly: System.Reflection.AssemblyCompany("Microsoft Corporation")]
+[assembly: System.Reflection.AssemblyConfiguration("")]
+[assembly: System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints)]
+[assembly: System.Reflection.AssemblyProduct("Microsoft (R) Windows (R) Operating System")]
+[assembly: System.Reflection.AssemblyTitle("MMCFx")]
+[assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
+[assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: System.Reflection.AssemblyDelaySign(true)]
+//[assembly: System.Reflection.AssemblyKeyFile(@"d:\nt\public\internal\strongnamekeys\fake\windows.snk")]
+[assembly: System.Reflection.AssemblyDescription("MMC Managed SnapIn Framework Assembly")]
+[assembly: System.Runtime.InteropServices.ComVisible(false)]
+[assembly: System.Resources.NeutralResourcesLanguage("en")]
+[assembly: System.CLSCompliant(true)]
+[assembly: System.Reflection.AssemblyInformationalVersion("5.2.3790.2617")]
+[assembly: System.Reflection.AssemblyCopyright("Copyright (c) Microsoft Corporation. All rights reserved.")]
+[assembly: System.Reflection.AssemblyFileVersion("5.2.3790.2617")]
+[assembly: System.Reflection.AssemblyTrademark("Microsoft (R) Windows (R) Operating System")]
+[assembly: System.Security.Permissions.SecurityPermission(System.Security.Permissions.SecurityAction.RequestMinimum, Flags=System.Security.Permissions.SecurityPermissionFlag.NoFlags)]
+

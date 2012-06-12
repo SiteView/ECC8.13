@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	
+	<!--SvCiTypeCategory-->
+	
+	<property key="eccCompanyName">
+        <value xml:lang="en">Dragonflow.com</value>
+		<value xml:lang="zh">北京游龙网网络科技公司</value>
+    </property>
+			
+	<property key="eccApplication">
+        <value xml:lang="en">Enterprise Control Console</value>
+        <value xml:lang="zh">面向系统应用的监测</value>
+    </property>
+	
+	<property key="eccMainPage">
+	  	<value xml:lang="en">Main</value>
+        <value xml:lang="zh">首页</value>
+    </property>
+	
+	<property key="eccWelcome">
+    	<value xml:lang="en">Welcome to Enterprise Control Center</value>    	
+        <value xml:lang="zh">欢迎使用面向系统应用的监测</value>
+    </property>
+	
+    <property key="eccAlerts">
+        <value xml:lang="en">Alerts</value>
+        <value xml:lang="zh">报警</value>
+    </property>	
+	
+    <property key="eccReports">
+        <value xml:lang="en">Reports</value>
+        <value xml:lang="zh">报表</value>
+    </property>	
+	
+     <property key="eccViews">
+        <value xml:lang="en">Views</value>
+        <value xml:lang="zh">视图</value>
+    </property>	
+	
+     <property key="eccPreferences">
+        <value xml:lang="en">Preferences</value>
+        <value xml:lang="zh">设置</value>
+    </property>	
+     <property key="eccHelp">
+        <value xml:lang="en">Help</value>
+        <value xml:lang="zh">帮助</value>
+    </property>	
+	<property key="groupservices.error_adding_svse">
+        <value xml:lang="zh">增加SVSE错误</value>
+    </property>
+	<property key="groupservices.error_adding_group">
+        <value xml:lang="zh">增加组错误</value>
+    </property>
+	
+	<!-- 添加监测器 -->
+	<property key="eccCreatePingPage">
+	  	<value xml:lang="en">Create Ping Monitor</value>
+        <value xml:lang="zh">创建 Ping 监测器</value>
+    </property>
+	
+	<property key="eccMonitorBaseInfo">
+	  	<value xml:lang="en">Base Information</value>
+        <value xml:lang="zh">基础信息</value>
+    </property>	
+			
+	<property key="eccAdvanceOption">
+	  	<value xml:lang="en">Advance option</value>
+        <value xml:lang="zh">高级选项</value>
+    </property>	
+	
+	<property key="eccTimeout">
+	  	<value xml:lang="en">Timeout</value>
+        <value xml:lang="zh">超时</value>
+    </property>	
+	
+	<property key="eccSendBytes">
+	  	<value xml:lang="en">SendBytes</value>
+        <value xml:lang="zh">发送字节数</value>
+    </property>	
+	
+	<property key="eccSendNums">
+	  	<value xml:lang="en">SendNums</value>
+        <value xml:lang="zh">发送次数</value>
+    </property>	
+		
+	<property key="eccCondition">
+	  	<value xml:lang="en">Condition</value>
+        <value xml:lang="zh">报警条件</value>
+    </property>	
+				
+	<property key="eccDeviceName">
+	  	<value xml:lang="en">Device Name</value>
+        <value xml:lang="zh">设备名称</value>
+    </property>	
+	
+	<property key="eccProbeFrequency">
+	  	<value xml:lang="en">Monitor probe frequency</value>
+        <value xml:lang="zh">监测频率</value>
+    </property>		
+	
+	<property key="eccFrequencyMinute">
+	  	<value xml:lang="en">Minute</value>
+        <value xml:lang="zh">分钟</value>
+    </property>
+			
+	<property key="eccFrequencyUnit">
+	  	<value xml:lang="en">Unit</value>
+        <value xml:lang="zh">单位</value>
+    </property>		
+	
+	<property key="eccFrequencySecond">
+	  	<value xml:lang="en">Second</value>
+        <value xml:lang="zh">秒</value>
+    </property>		
+				
+	<property key="eccMonitorTitle">
+	  	<value xml:lang="en">Monitor title</value>
+        <value xml:lang="zh">监测器标题</value>
+    </property>	
+	
+	<property key="eccConditionError">
+	  	<value xml:lang="en">Error</value>
+        <value xml:lang="zh">错误</value>
+    </property>	
+		
+	<property key="eccConditionWarn">
+	  	<value xml:lang="en">Warn</value>
+        <value xml:lang="zh">危险</value>
+    </property>	
+
+	<property key="eccConditionGood">
+	  	<value xml:lang="en">Good</value>
+        <value xml:lang="zh">正常</value>
+    </property>		
+	
+	<property key="eccAdd">
+	  	<value xml:lang="en">Add</value>
+        <value xml:lang="zh">添加</value>
+    </property>		
+		
+	<property key="eccCancel">
+	  	<value xml:lang="en">Cancel</value>
+        <value xml:lang="zh">取消</value>
+    </property>			
+</resource>

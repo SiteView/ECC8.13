@@ -1,0 +1,1101 @@
+
+<script language="JavaScript" type="text/javascript">
+var ns4 = (document.layers)? true:false;
+var ie4 = (document.all)? true:false;
+
+//------------------------------------- Cookies --------------------------------
+
+function setCookie (name, value, expires) {
+	if (!expires) expires = new Date();
+	document.cookie = name + "=" + escape (value) + "; expires=" + expires.toGMTString() +  "; path=/";
+}
+
+function setLogin(status) {
+	var expdate = new Date ();
+	expdate.setTime (expdate.getTime() + (1000 * 60 * 60 * 24 * 31));
+	setCookie ("_login", status, expdate);
+}
+
+function getCookie (name) {
+    var strCookie = document.cookie;
+    var strKey = name + "=";
+    var lenCookie = strCookie.length;
+    var beginKey = 0;
+    while (beginKey < lenCookie) {
+        var beginData = beginKey + strKey.length;
+        if (strCookie.substring(beginKey, beginData) == strKey) {
+            var endData = strCookie.indexOf (";", beginData);
+            if (endData == -1) endData = lenCookie;
+            return unescape(strCookie.substring(beginData,endData));
+        }
+        beginKey = strCookie.indexOf(" ", beginKey) + 1;
+        if (beginKey == 0) break;
+    }
+return null;
+}
+
+//------------------------------------- GRAPHICS --------------------------------
+
+var NN ="aaaa"
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+
+function CSFindElement(n,ly)
+{
+	if (CSBVers < 4)
+		return document[n];
+
+	var curDoc = ly ? ly.document : document;
+	var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+
+function CSButtonReturn ()
+{
+	var bAgent = window.navigator.userAgent;
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+
+CSAg = window.navigator.userAgent;
+CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img) {img.src = CSIm[n][i].src; self.status = CSIm[n][3];}
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(im,ar) {
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=0;i<3;i++) {
+			if (ar[i] != '') { CSIm[im][i] = new Image(); CSIm[im][i].src = ar[i]; }
+			else CSIm[im][i] = 0;
+		}
+		CSIm[im][3] = ar[3];
+	}
+}
+
+
+
+
+//------------------------------------- SCROLLING --------------------------------
+// The following functions enables scrolling on a page without changing div's positions
+// How to use:
+// The objects you want to unchange their position must be in a div tag
+// <body onload="initScroll('strDivName')" onscroll="scrolling('strDivName')">
+
+
+var buttonFixedTop=0;
+
+function scrolling(divName)
+{
+//window.status=divName
+	if (buttonFixedTop>0){
+		if (ie4) {
+			document.all( divName).style.pixelTop=document.body.scrollTop+buttonFixedTop;
+			}
+		else {
+			document.layers[ divName ].top=window.pageYOffset+buttonFixedTop;
+			}
+		}
+}
+
+
+function initScroll(divName)
+{
+	if (ie4){
+		buttonFixedTop=document.all(divName).style.pixelTop;
+		}
+	else {
+		buttonFixedTop=document.layers[ divName ].top;
+		setInterval("scrolling('" + divName + "')", 5);
+		}
+}
+
+
+// -----------------------------------------------------------------------------------------------
+
+
+function getMainFrame(){
+var win;
+var mainFrame;
+win=getTopWindow();
+if (win.main){
+	mainFrame=win.main;
+	return mainFrame;
+	}
+else{
+	return false;
+	}
+}
+
+
+function getNavBar(){
+var win;
+var navBar;
+win=getTopWindow();
+if (win.frames.title){
+	navBar=win.frames.title.frames.navBar;
+	return navBar;
+	}
+else{
+	return false
+	}
+}
+
+function getNewNavBar()
+{
+	var win;
+	var navBarwin;
+	win=getTopWindow();
+	if (win)
+		if(win.frames.view)
+			if (win.frames.view.frames.reportframe)
+				navBarwin = win.frames.view.frames.reportframe.frames.newtoolbar;
+			else
+				navBarwin = null;
+
+
+	return navBarwin;
+}
+
+function getTreeMenu(){
+var win;
+var treemenu;
+win=getTopWindow();
+treemenu=win.frames.view.frames.tree;
+return treemenu;
+}
+
+function getTopWindow(){
+var topWindow;
+topWindow=window.top;
+ while(topWindow.opener){
+	topWindow=getTopOpener (topWindow);
+	topWindow=topWindow.top;
+	};
+	return topWindow;
+}
+
+function getTopOpener(startWin){
+ while(startWin.opener){
+		startWin=startWin.opener;
+		}
+	return startWin
+}
+
+function selectMenu(name) {
+	var MenuPage;
+	MenuPage = getTreeMenu()
+	if (MenuPage) {
+		MenuPage.colorItemName(name)
+	}
+	return false;
+}
+
+function getBottomFrame(){
+var win=getTopWindow();
+var bottomFrame;
+if (win){
+	bottomFrame=win.frames.bot;
+	return bottomFrame;}
+}
+
+// the function write msg in the bottom frame.
+
+var defaultStatusMsg = "";
+function setDefaultStatusMsg(msg){
+	defaultStatusMsg=msg;
+	setStatusMsg(""); // force a display of the default msg.
+
+	}
+
+
+function setStatusMsg(msg){
+	if (msg == "" ) {
+		msg = defaultStatusMsg;
+		}
+	var bottomFrm=getBottomFrame();
+	if (bottomFrm){
+			if (ns4) {
+				var lyr = bottomFrm.document.TooltipSp.document
+				var txt= "<font color=#ffcc66>" + msg + "</font>";
+				lyr.write(txt);
+				lyr.close();
+			}
+			else if (ie4) {
+				showMsgIE( bottomFrm, msg )
+			}
+	}
+	else{
+		return false;
+		}
+}
+
+</SCRIPT>
+<script language="JScript">
+function showMsgIE( bottomFrm, msg )
+{
+	if (bottomFrm.document)
+		bottomFrm.document.all["TooltipSp"].innerHTML = msg;
+};
+
+</script>
+<script language="JavaScript" type="text/javascript">
+
+function showObject(obj) {
+		if (ns4) obj.visibility = "show"
+        else if (ie4) obj.visibility = "visible"
+}
+
+// Hides an object
+function hideObject(obj) {
+        if (ns4) obj.visibility = "hide"
+        else if (ie4) obj.visibility = "hidden"
+}
+
+function isAlpha(ch){
+	if ( (ch>='A' && ch<='Z')|| (ch>='a' && ch<='z') ){
+		return true
+	}
+	else{
+		return false
+		}
+}
+
+function isNumeric(ch){
+	if ((ch>='0' && ch<='9')){
+		return true
+		}
+	else{
+		return false
+		}
+}
+
+function isAlphaNumeric( ch ) {
+	return (isNumeric(ch) || isAlpha(ch) )
+}
+
+
+var currState;
+
+
+// the function find the top window that opens all the other windows and frames.
+
+function setCurrState(newState){
+var navBar;
+var targetURL;
+var targetDoc=getMainFrame();
+navBar=getNavBar();
+if (document.location.href != navBar.location.href){
+	navBar.setCurrState(newState);
+	return ;
+}
+currState=newState;
+switch (newState){
+	case "reports":
+		targetURL='ReportFrames.asp?method=0&dummy=0';
+		break;
+	case "alerts":
+		targetURL='alarms.asp?dummy=0'
+		break;
+	case "settings":
+		targetURL='settings.asp?dummy=0&Start=yes'
+		break;
+	case "profiles":
+		targetURL=''
+		break;
+	case "admin":
+		targetURL='admin/admin_menu.asp?'
+		break;
+	case "monitors":
+		targetURL='monitors/monitorsFS.asp'
+		break;
+		}
+	if (targetDoc){
+		//newLoc=FindAndReplaceInUrl(targetURL,"rand",getRandom());
+		newLoc=targetURL;
+		targetDoc.location.href=newLoc;
+		}
+	else{
+		return false;
+		}
+	}
+
+function getCurrState(){
+var	state;
+var navBar=getNavBar();
+
+	if (navBar){
+		state=navBar.currState;
+		}
+		if (!state){state="reports"};
+		return state;
+	}
+
+
+function refreshReports()
+{
+	var oNewNavBar;
+
+	oNewNavBar = getNewNavBar();
+	if (oNewNavBar)
+		oNewNavBar.generateReport();
+}
+
+
+function GoToReports(){
+ 	setCurrState("reports");
+	navBar=getNavBar();
+	navBar.CSIShow('btnReport',2);
+	navBar.ShowTitle(0);
+	return ;
+	}
+//--------------------------------------- ADD OR REPLACE RANDOM PARAMETER ----------------------
+
+function left(str,numOfChars) {
+	return str.substr(0,numOfChars);
+}
+
+
+function right(str,numOfChars) {
+	return str.substring(str.length-numOfChars,str.length);
+}
+
+
+function FindAndReplaceInUrl(vCurLocation,p_vKey,p_vValue) {
+	var vIndexOf;
+	var vNewLocation;
+	var vLeft;
+	var vIndexOfNoValue;
+	vIndexOf = vCurLocation.indexOf(p_vKey+'=');
+	if (vIndexOf < 0 ) {
+		vNewLocation = vCurLocation + ChooseAddUrlSign(vCurLocation) + p_vKey + "=" + p_vValue;
+		return vNewLocation;
+	// If Not found
+	}
+	else {
+	//If Found
+		vNewLocation = vCurLocation.substring(0,vIndexOf+p_vKey.length +1);
+		vLeft = vCurLocation.substring(vIndexOf+p_vKey.length+1,vCurLocation.length );
+		vIndexOfNoValue = vLeft.indexOf("&");
+		if (vIndexOfNoValue <0) {
+			vLeft= p_vValue;
+		}
+		else {
+			vLeft = p_vValue + vLeft.substring(vIndexOfNoValue,vLeft.length);
+		}
+		vNewLocation = vNewLocation +vLeft;
+	}
+	return vNewLocation ;
+}
+
+
+
+function ChooseAddUrlSign(p_vCurUrl) {
+	if (p_vCurUrl.indexOf("?")> 0 ) {
+		if(right(p_vCurUrl,1)=="?") {
+			return ""
+		}
+		else {
+			return "&";
+		}
+	}
+	else {
+		return "?";
+	}
+}
+
+
+function getRandom() {
+	return left((9999999*Math.random()).toString(),4)
+}
+
+
+function showStatus(strStatus){
+	self.status=strStatus;
+	return true;
+}
+function openChildWin(url,winName,Options) {
+
+
+	childWindow=window.open(url,winName,Options);
+	if (childWindow) {
+		childWindow.focus();
+	};
+	return false;
+}
+</script>
+
+
+
+<HTML>
+<HEAD>
+
+  	<STYLE TYPE="text/css">
+	<!--
+	A:link {color:"blue";}
+	A:visited {color:"blue";}
+	A:Active {color:"red";}
+	A:hover {color:"red";}
+	-->
+	</STYLE>
+
+
+	<TITLE>High-Level status report - Topaz</TITLE>
+
+
+<script language="javascript">
+function SubmitForm(FLetter) {
+	ALERT(FLetter);
+	document.FLetter.submit();
+	return true
+}
+
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+var Temp2;
+var timerID = null;
+var timerRunning = false;
+
+function showtime(GetCounter) {
+	now = new Date();
+	var CurMinute = now.getMinutes();
+	var CurSecond = now.getSeconds();
+	now = null;
+
+	MyCounter=GetCounter-1
+
+	Minuteleft = 58 - CurMinute
+	Secondleft = 59 - CurSecond
+
+	Temp2='Next Live Update in: '+MyCounter+' Sec.'
+	Temp3=Minuteleft+':'+Secondleft
+	window.status=Temp2;
+	//nextrefreshtxt.innerText = Temp2;
+	timerID = setTimeout("showtime(MyCounter)",1000);
+	timerRunning = true;
+}
+
+var timerID = null;
+var timerRunning = false;
+
+function stopclock () {
+	if(timerRunning)
+	clearTimeout(timerID);
+	timerRunning = false;
+}
+
+function startclock () {
+
+}
+</script>
+<LINK REL="stylesheet" TYPE="text/css" HREF="imgs/newmain.css">
+</HEAD>
+<BODY leftmargin=0  topmargin=0 rightmargin=0  link="blue" alink="red" vlink="blue" >
+
+<BASE TARGET="reportframe">
+<table bgcolor=#cccccc border=0 bordercolor=black bordercolordark=black
+cellpadding=0 cellspacing=0 cols=3 width="100%">
+  <tbody>
+  <tr>
+
+
+    <td bgcolor=white width=30><img src="imgs/dots.gif"></td>
+    <td align=left><font class=VerdanaDB10><b>&nbsp;业务流程响应时间&nbsp;&nbsp;&nbsp;&nbsp;</b></font></td>
+    <td align=right><font class=VerdanaDB10><b>时段: 2001年2月7日0时0分
+      - 13时24分</b></font></td>
+  </tr>
+  </tbody>
+</table>
+<span id="subtitle">
+
+	<br>
+	</b></font>
+</span>
+
+
+<span id="trimscreen">
+		<form name="TrimForm" onsubmit="return false;">
+
+			<input type="hidden" name="TrimField" value="no">
+
+		</form>
+</span>
+
+		<span id=linegraph>
+		<table width="500" bgcolor="#FFFFFF" cellspacing=0 cellpadding=0 border="0">
+	<tr><td align="right" valign="bottom">
+
+
+<!--	<A href="newframes_report.asp?breakdown=transaction_id&method=0&Bar=1&chartid=chartb" class="VerBluUnd7">柱状图</a> -->
+
+		<A href="newframes_report.asp?breakdown=transaction_id&method=0&Detail=0&chartid=chartb&starttime=2%2F7%2F2001+0%3A00%3A00&graphTimeFrame=a-Day" class="VerBluUnd7">统计图</a>
+	
+
+	</td></TR>
+	<tr>
+	<td align="center" valign="top">
+	
+
+
+	<applet name=linechart
+		 codebase="../classes"
+		code=NFLineChartApp.class
+		width=750 height=400 VIEWASTEXT align=center id=Applet1>
+
+	<param	name=NFParamScript	value = '
+
+	Background	= (White, NONE);
+
+	GraphType	= ROWS;
+	LeftTitle	= ("", black, "TimesRoman", 18);
+	LeftFormat   = ( , "%f");
+
+	Grid		= (lightGray, white, black);
+	GridLine	= (HORIZONTAL, SOLID, 1);
+
+	DwellLabel      = ("", white, "Courier", 12);
+	DwellBox        = (red, SHADOW, 4);
+
+	Legend		= ("", Black, "TimesRoman", 12);
+
+	LegendLayout	= (HORIZONTAL, BOTTOM);
+
+	Header		= ("", black, "TimesRoman", 14);
+	HeaderBox	= (white, RAISED, 0);
+
+
+	BottomScale	= (0, 60, 7);
+
+
+	BottomTics	= ("ON", darkgray, "Helvetica",12,90);
+	BottomLabels	=
+	    "2001-2-7 :0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00""2001-2-8 :0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00""2001-2-9 :0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00""2001-2-10 :0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00""2001-2-11 :0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00""2001-2-12 :0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00""2001-2-13 :0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00""2001-2-14 :0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00""2001-2-15 :0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00";
+
+    BottomScroll= (0,209);
+
+
+
+	LeftTics	= ("ON", darkgray, "TimesRoman", 12);
+
+
+	LeftTitle	= (" 时间曲线 (秒)",black,"TimesRoman",12,90 );
+	LeftTitleBox	= (white, SHADOW, 0);
+
+	RightTitle	= (" ", white, "TimesRoman", 14);
+
+	
+			   LineSet1=
+			   1.52 ,1.12 ,0.80 ,1.38 ,0.79 ,0.76 ,0.70 ,0.73 ,0.86 ,0.81 ,0.68 ,0.68 ,0.68 ,0.70 ,0.62 ,0.96 ,0.68 ,0.69 ,0.68 ,0.68 ,0.75 ,0.82 ,0.60 ,0.73 ,0.65 ,0.68 ,0.69 ,0.89 ,0.88 ,0.92,,, ,0.64 ,3.11 ,0.74 ,0.58 ,0.54 ,0.56 ,1.11 ,0.62 ,0.66 ,0.68 ,0.70 ,0.63 ,0.84 ,0.71 ,0.64 ,0.64 ,1.15 ,0.74 ,0.80,,,, ,0.65 ,1.07 ,0.59 ,0.63, ,0.64, ,1.05 ,0.56 ,2.42 ,0.68 ,0.56 ,0.69 ,0.72 ,1.26 ,0.69 ,0.60 ,0.88 ,0.72 ,0.83 ,0.72 ,0.98 ,0.83 ,0.64 ,0.66 ,1.72 ,0.83,, ,0.68 ,0.63 ,1.30 ,0.72 ,0.65 ,0.59 ,0.61 ,0.62 ,0.64 ,0.60 ,0.60 ,0.68,, ,0.76 ,0.70 ,0.76 ,0.78 ,1.08,, ,0.55, ,0.66,, ,0.86 ,0.62,, ,0.53 ,0.53,,,,, ,0.79,,, ,0.74 ,0.59 ,0.70 ,0.83,,, ,0.75,,, ,0.61, ,0.70 ,0.64,, ,0.70 ,1.01, ,0.88 ,0.71 ,0.99 ,0.83 ,0.62 ,0.60 ,0.58,,, ,0.63,,,, ,0.62 ,0.68 ,0.63 ,0.67 ,0.67 ,0.64 ,0.59 ,0.63 ,0.76 ,0.73 ,1.00 ,0.82 ,0.62 ,0.63 ,0.65 ,0.71 ,1.05 ,0.68 ,5.10 ,0.64 ,0.65 ,8.07 ,0.89 ,11.47 ,1.07 ,3.75 ,0.80 ,10.02 ,0.92 ,2.45 ,2.12 ,7.60 ,0.69 ,1.66 ,1.42 ,1.75 ,3.14 ,4.05 ,4.37 ,4.13 ,0.76 ,8.14 ,2.04 ,4.20 ,0.85
+	;   
+LineSets =
+     
+	("雅虎主页", blue);
+
+LineStyle =
+
+	(SOLID, 2, );
+LeftScale =
+
+    (0,20,2);
+LeftScroll   = (0, 22);
+
+		  ActiveLabels1 =
+		  
+		  ("2001-2-7,0点,1.52")
+		  ,
+		  ("2001-2-7,1点,1.12")
+		  ,
+		  ("2001-2-7,2点,0.80")
+		  ,
+		  ("2001-2-7,3点,1.38")
+		  ,
+		  ("2001-2-7,4点,0.79")
+		  ,
+		  ("2001-2-7,5点,0.76")
+		  ,
+		  ("2001-2-7,6点,0.70")
+		  ,
+		  ("2001-2-7,7点,0.73")
+		  ,
+		  ("2001-2-7,8点,0.86")
+		  ,
+		  ("2001-2-7,9点,0.81")
+		  ,
+		  ("2001-2-7,10点,0.68")
+		  ,
+		  ("2001-2-7,11点,0.68")
+		  ,
+		  ("2001-2-7,12点,0.68")
+		  ,
+		  ("2001-2-7,13点,0.70")
+		  ,
+		  ("2001-2-7,14点,0.62")
+		  ,
+		  ("2001-2-7,15点,0.96")
+		  ,
+		  ("2001-2-7,16点,0.68")
+		  ,
+		  ("2001-2-7,17点,0.69")
+		  ,
+		  ("2001-2-7,18点,0.68")
+		  ,
+		  ("2001-2-7,19点,0.68")
+		  ,
+		  ("2001-2-7,20点,0.75")
+		  ,
+		  ("2001-2-7,21点,0.82")
+		  ,
+		  ("2001-2-7,22点,0.60")
+		  ,
+		  ("2001-2-7,23点,0.73")
+		  ,
+		  ("2001-2-8,0点,0.65")
+		  ,
+		  ("2001-2-8,1点,0.68")
+		  ,
+		  ("2001-2-8,2点,0.69")
+		  ,
+		  ("2001-2-8,3点,0.89")
+		  ,
+		  ("2001-2-8,4点,0.88")
+		  ,
+		  ("2001-2-8,5点,0.92")
+		  ,
+		  ("2001-2-8,6点,0.64")
+		  ,
+		  ("2001-2-8,7点,3.11")
+		  ,
+		  ("2001-2-8,8点,0.74")
+		  ,
+		  ("2001-2-8,9点,0.58")
+		  ,
+		  ("2001-2-8,10点,0.54")
+		  ,
+		  ("2001-2-8,11点,0.56")
+		  ,
+		  ("2001-2-8,12点,1.11")
+		  ,
+		  ("2001-2-8,13点,0.62")
+		  ,
+		  ("2001-2-8,14点,0.66")
+		  ,
+		  ("2001-2-8,15点,0.68")
+		  ,
+		  ("2001-2-8,16点,0.70")
+		  ,
+		  ("2001-2-8,17点,0.63")
+		  ,
+		  ("2001-2-8,18点,0.84")
+		  ,
+		  ("2001-2-8,19点,0.71")
+		  ,
+		  ("2001-2-8,20点,0.64")
+		  ,
+		  ("2001-2-8,21点,0.64")
+		  ,
+		  ("2001-2-8,22点,1.15")
+		  ,
+		  ("2001-2-8,23点,0.74")
+		  ,
+		  ("2001-2-9,0点,0.80")
+		  ,
+		  ("2001-2-9,1点,0.65")
+		  ,
+		  ("2001-2-9,2点,1.07")
+		  ,
+		  ("2001-2-9,3点,0.59")
+		  ,
+		  ("2001-2-9,4点,0.63")
+		  ,
+		  ("2001-2-9,5点,0.64")
+		  ,
+		  ("2001-2-9,6点,1.05")
+		  ,
+		  ("2001-2-9,7点,0.56")
+		  ,
+		  ("2001-2-9,8点,2.42")
+		  ,
+		  ("2001-2-9,9点,0.68")
+		  ,
+		  ("2001-2-9,10点,0.56")
+		  ,
+		  ("2001-2-9,11点,0.69")
+		  ,
+		  ("2001-2-9,12点,0.72")
+		  ,
+		  ("2001-2-9,13点,1.26")
+		  ,
+		  ("2001-2-9,14点,0.69")
+		  ,
+		  ("2001-2-9,15点,0.60")
+		  ,
+		  ("2001-2-9,16点,0.88")
+		  ,
+		  ("2001-2-9,17点,0.72")
+		  ,
+		  ("2001-2-9,18点,0.83")
+		  ,
+		  ("2001-2-9,19点,0.72")
+		  ,
+		  ("2001-2-9,20点,0.98")
+		  ,
+		  ("2001-2-9,21点,0.83")
+		  ,
+		  ("2001-2-9,22点,0.64")
+		  ,
+		  ("2001-2-9,23点,0.66")
+		  ,
+		  ("2001-2-10,0点,1.72")
+		  ,
+		  ("2001-2-10,1点,0.83")
+		  ,
+		  ("2001-2-10,2点,0.68")
+		  ,
+		  ("2001-2-10,3点,0.63")
+		  ,
+		  ("2001-2-10,4点,1.30")
+		  ,
+		  ("2001-2-10,5点,0.72")
+		  ,
+		  ("2001-2-10,6点,0.65")
+		  ,
+		  ("2001-2-10,7点,0.59")
+		  ,
+		  ("2001-2-10,8点,0.61")
+		  ,
+		  ("2001-2-10,9点,0.62")
+		  ,
+		  ("2001-2-10,10点,0.64")
+		  ,
+		  ("2001-2-10,11点,0.60")
+		  ,
+		  ("2001-2-10,12点,0.60")
+		  ,
+		  ("2001-2-10,13点,0.68")
+		  ,
+		  ("2001-2-10,14点,0.76")
+		  ,
+		  ("2001-2-10,15点,0.70")
+		  ,
+		  ("2001-2-10,16点,0.76")
+		  ,
+		  ("2001-2-10,17点,0.78")
+		  ,
+		  ("2001-2-10,18点,1.08")
+		  ,
+		  ("2001-2-10,19点,0.55")
+		  ,
+		  ("2001-2-10,20点,0.66")
+		  ,
+		  ("2001-2-10,21点,0.86")
+		  ,
+		  ("2001-2-10,22点,0.62")
+		  ,
+		  ("2001-2-10,23点,0.53")
+		  ,
+		  ("2001-2-11,0点,0.53")
+		  ,
+		  ("2001-2-11,1点,0.79")
+		  ,
+		  ("2001-2-11,2点,0.74")
+		  ,
+		  ("2001-2-11,3点,0.59")
+		  ,
+		  ("2001-2-11,4点,0.70")
+		  ,
+		  ("2001-2-11,5点,0.83")
+		  ,
+		  ("2001-2-11,6点,0.75")
+		  ,
+		  ("2001-2-11,7点,0.61")
+		  ,
+		  ("2001-2-11,8点,0.70")
+		  ,
+		  ("2001-2-11,9点,0.64")
+		  ,
+		  ("2001-2-11,10点,0.70")
+		  ,
+		  ("2001-2-11,11点,1.01")
+		  ,
+		  ("2001-2-11,12点,0.88")
+		  ,
+		  ("2001-2-11,13点,0.71")
+		  ,
+		  ("2001-2-11,14点,0.99")
+		  ,
+		  ("2001-2-11,15点,0.83")
+		  ,
+		  ("2001-2-11,16点,0.62")
+		  ,
+		  ("2001-2-11,17点,0.60")
+		  ,
+		  ("2001-2-11,18点,0.58")
+		  ,
+		  ("2001-2-11,19点,0.63")
+		  ,
+		  ("2001-2-11,20点,0.62")
+		  ,
+		  ("2001-2-11,21点,0.68")
+		  ,
+		  ("2001-2-11,22点,0.63")
+		  ,
+		  ("2001-2-11,23点,0.67")
+		  ,
+		  ("2001-2-12,0点,0.67")
+		  ,
+		  ("2001-2-12,1点,0.64")
+		  ,
+		  ("2001-2-12,2点,0.59")
+		  ,
+		  ("2001-2-12,3点,0.63")
+		  ,
+		  ("2001-2-12,4点,0.76")
+		  ,
+		  ("2001-2-12,5点,0.73")
+		  ,
+		  ("2001-2-12,6点,1.00")
+		  ,
+		  ("2001-2-12,7点,0.82")
+		  ,
+		  ("2001-2-12,8点,0.62")
+		  ,
+		  ("2001-2-12,9点,0.63")
+		  ,
+		  ("2001-2-12,10点,0.65")
+		  ,
+		  ("2001-2-12,11点,0.71")
+		  ,
+		  ("2001-2-12,12点,1.05")
+		  ,
+		  ("2001-2-12,13点,0.68")
+		  ,
+		  ("2001-2-12,14点,5.10")
+		  ,
+		  ("2001-2-12,15点,0.64")
+		  ,
+		  ("2001-2-12,16点,0.65")
+		  ,
+		  ("2001-2-12,17点,8.07")
+		  ,
+		  ("2001-2-12,18点,0.89")
+		  ,
+		  ("2001-2-12,19点,11.47")
+		  ,
+		  ("2001-2-12,20点,1.07")
+		  ,
+		  ("2001-2-12,21点,3.75")
+		  ,
+		  ("2001-2-12,22点,0.80")
+		  ,
+		  ("2001-2-12,23点,10.02")
+		  ,
+		  ("2001-2-13,0点,0.92")
+		  ,
+		  ("2001-2-13,1点,2.45")
+		  ,
+		  ("2001-2-13,2点,2.12")
+		  ,
+		  ("2001-2-13,3点,7.60")
+		  ,
+		  ("2001-2-13,4点,0.69")
+		  ,
+		  ("2001-2-13,5点,1.66")
+		  ,
+		  ("2001-2-13,6点,1.42")
+		  ,
+		  ("2001-2-13,7点,1.75")
+		  ,
+		  ("2001-2-13,8点,3.14")
+		  ,
+		  ("2001-2-13,9点,4.05")
+		  ,
+		  ("2001-2-13,10点,4.37")
+		  ,
+		  ("2001-2-13,11点,4.13")
+		  ,
+		  ("2001-2-13,12点,0.76")
+		  ,
+		  ("2001-2-13,13点,8.14")
+		  ,
+		  ("2001-2-13,14点,2.04")
+		  ,
+		  ("2001-2-13,15点,4.20")
+		  ,
+		  ("2001-2-13,16点,0.85")
+		  ,
+		  ("2001-2-13,17点,")
+		  ,
+		  ("2001-2-13,18点,")
+		  ,
+		  ("2001-2-13,19点,")
+		  ,
+		  ("2001-2-13,20点,")
+		  ,
+		  ("2001-2-13,21点,")
+		  ,
+		  ("2001-2-13,22点,")
+		  ,
+		  ("2001-2-13,23点,")
+		  ,
+		  ("2001-2-14,0点,")
+		  ,
+		  ("2001-2-14,1点,")
+		  ,
+		  ("2001-2-14,2点,")
+		  ,
+		  ("2001-2-14,3点,")
+		  ,
+		  ("2001-2-14,4点,")
+		  ,
+		  ("2001-2-14,5点,")
+		  ,
+		  ("2001-2-14,6点,")
+		  ,
+		  ("2001-2-14,7点,")
+		  ,
+		  ("2001-2-14,8点,")
+		  ,
+		  ("2001-2-14,9点,")
+		  ,
+		  ("2001-2-14,10点,")
+		  ,
+		  ("2001-2-14,11点,")
+		  ,
+		  ("2001-2-14,12点,")
+		  ,
+		  ("2001-2-14,13点,")
+		  ,
+		  ("2001-2-14,14点,")
+		  ,
+		  ("2001-2-14,15点,")
+		  ,
+		  ("2001-2-14,16点,")
+		  ,
+		  ("2001-2-14,17点,")
+		  ,
+		  ("2001-2-14,18点,")
+		  ,
+		  ("2001-2-14,19点,")
+		  ,
+		  ("2001-2-14,20点,")
+		  ,
+		  ("2001-2-14,21点,")
+		  ,
+		  ("2001-2-14,22点,")
+		  ,
+		  ("2001-2-14,23点,")
+		  ,
+		  ("2001-2-15,0点,")
+		  ,
+		  ("2001-2-15,1点,")
+		  ,
+		  ("2001-2-15,2点,")
+		  ,
+		  ("2001-2-15,3点,")
+		  ,
+		  ("2001-2-15,4点,")
+		  ,
+		  ("2001-2-15,5点,")
+		  ,
+		  ("2001-2-15,6点,")
+		  ,
+		  ("2001-2-15,7点,")
+		  ,
+		  ("2001-2-15,8点,")
+		  ,
+		  ("2001-2-15,9点,")
+		  ,
+		  ("2001-2-15,10点,")
+		  ,
+		  ("2001-2-15,11点,")
+		  ,
+		  ("2001-2-15,12点,")
+		  ,
+		  ("2001-2-15,13点,")
+		  
+		  ;
+
+'>
+
+</applet>
+
+	  
+
+	</TD>
+	<!--
+	<td valign="Top" align="Left"><nobr><font class="VerBl7"><b>
+	
+
+		<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&chartid=chartb&city_id=4&starttime=2%2F7%2F2001+0%3A00%3A00&Detail=1&graphTimeFrame=a-Day#A" title="Click here to view 美国1 by location">美国1</a> &nbsp;</b><br>
+	
+	</font></nobr></td>
+	-->
+
+
+	</tr>
+
+ 
+
+		</table></span>
+	<span id=description><table><tr><td valign=top width=30><a href="#" onclick=" openChildWin('/speedhelp/help.asp?WhichPage=3','help','resizable=1,scrollbars=1,width=500,height=400'); return false"><img border=0 src="	IMGS/lamp.gif"></a></td><td><font class="Verbl8">
+	这个报告显示了业务流程一段时间内的详细响应时间。
+	</font> &nbsp; <a href="#" onclick=" openChildWin('/speedhelp/help.asp?WhichPage=3','help','resizable=1,scrollbars=1,width=500,height=400'); return false"> <font class="VerBluUnd7">更多...</font></a></td></tr></table></span>
+
+<span id="legendB"><table cellpadding="1" width="100" cellspacing="2" border="0">
+
+<!--
+  
+ <td valign="bottom" align="Left"><nobr><font class="VerBl7"><b>
+
+<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&starttime=2%2F7%2F2001+0%3A00%3A00&Detail=1&chartid=chartb&transaction_id=5&graphTimeFrame=a-Day#A" title="Click here to view 雅虎主页 by location">雅虎主页</a> &nbsp;</b></font></nobr></td>
+<td valign="middle" align="right"><img src="imgs/dots/dot2.gif" width=8 height=8></td>
+
+-->
+<!--
+
+<tr>
+
+<td valign="bottom" align="right"><nobr><font class="VerBl7"><b>
+<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&transaction_id=1#A" title="Click here to view eBay_Home by location">eBay_Home</a> &nbsp;</b></font></nobr></td>
+<td valign="middle" align="right"><img src="imgs/dots/dot2.gif" width=8 height=8></td>
+</tr>
+<tr>
+<td valign="bottom" align="right"><nobr><font class="VerBl7"><b>
+<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&transaction_id=2#A" title="Click here to view eBay_Search by location">eBay_Search</a> &nbsp;</b></font></nobr></td>
+<td valign="middle" align="right"><img src="imgs/dots/dot3.gif" width=8 height=8></td>
+</tr>
+<tr>
+<td valign="bottom" align="right"><nobr><font class="VerBl7"><b>
+<A href="newframes_report.asp?method=0&dummy=0&breakdown=location_id&transaction_id=3#A" title="Click here to view eBay_Browse_By_Theme by location">eBay_Browse_By_Theme</a>
+&nbsp;</b></font></nobr></td>
+<td valign="middle" align="right"><img src="imgs/dots/dot4.gif" width=8 height=8></td>
+</tr>
+-->
+
+</table>
+</span>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

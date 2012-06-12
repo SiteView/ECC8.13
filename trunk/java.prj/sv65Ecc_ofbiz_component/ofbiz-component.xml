@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ofbiz-component name="svecc"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/ofbiz-component.xsd">
+    <resource-loader name="main" type="component"/>
+    <classpath type="jar" location="build/lib/*"/>
+    <classpath type="dir" location="config"/>
+    <classpath type="dir" location="script"/>
+    <classpath type="jar" location="lib"/>	
+	
+    <entity-resource type="model" reader-name="main" loader="main" location="entitydef/entitymodel.xml"/>
+    <entity-resource type="group" reader-name="main" loader="main" location="entitydef/entitygroup.xml"/>
+
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/Group.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/GroupValue.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/LoggerType.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/User.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/UserPermission.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/MasterConfig.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/MonitorType.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/MonitorAttr.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/MonitorInstance.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/MonitorInstanceValue.xml"/>
+
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/MonitorCommonAttr.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/MonitorStatusHelp.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/MonitorStatus.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/UserPermissionType.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/Message.xml"/>
+
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/PreferenceType.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/PreferenceAttr.xml"/>
+
+	<service-resource type="model" loader="main" location="servicedef/services.xml"/>
+	<service-resource type="model" loader="main" location="servicedef/services_ecc.xml"/>
+	<service-resource type="model" loader="main" location="servicedef/services_alert.xml"/>
+	<service-resource type="model" loader="main" location="servicedef/services_test.xml"/>
+	<service-resource type="model" loader="main" location="servicedef/services_siteseer.xml"/>
+	<service-resource type="model" loader="main" location="servicedef/services_general.xml"/>
+	
+    <webapp name="svecc"
+        title="siteview_ecc"
+        server="default-server"
+        location="webapp/ecc"
+        mount-point="/svecc"/>
+</ofbiz-component>

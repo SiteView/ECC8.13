@@ -1,0 +1,11 @@
+.\bin\Debug\MyAddin5.dll
+.\bin\Debug\MyAddin5.pdb
+E:\工作代码及文件资料\Visio 插件开发\SDK测试程序\MyAddin5\MyAddin5\bin\Debug\MyAddin5.tlb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\MyAddin5.csproj.ResolveComReference.cache
+obj\Debug\MyAddin5.dll
+obj\Debug\MyAddin5.pdb
+.\bin\Debug\log4net.dll
+.\bin\Debug\SiteView.Ecc.Core.dll
+.\bin\Debug\SiteView.Ecc.WSClient.dll
+.\bin\Debug\ICSharpCode.SharpZipLib.dll

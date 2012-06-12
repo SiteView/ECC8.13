@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvMonitorStatusHelp id="-999">
+        <message><![CDATA[This message is returned when the match string is not found in the HTML content.
+Check the HTML content by using the View Source command from a browser.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-998">
+        <message><![CDATA[This message is returned when the server does not accept the connection.
+Check that the server and server process are running.
+Check the load on the server.
+Check the load on the network.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-997">
+        <message><![CDATA[This message is returned when DNS cannot find an IP address for a name.
+Check the network connection to the DNS server.
+Check that the DNS server for that domain is running.
+Check that DNS is properly configured on the SiteView machine.
+Check that the name exists in the configuration for that domain.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-996">
+        <message><![CDATA[This message is returned when a connection is made but not completed.
+Check the load on the network.
+Check the load on the server.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-995">
+        <message><![CDATA[This message is returned when the content of a URL changes.
+Check the URL using a browser to view the new contents.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-994">
+        <message><![CDATA[This message is returned when a Windows library has an internal problem.
+If this problem occurs repeatedly, please report it to support@dragonflow.com
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-993">
+        <message><![CDATA[This message is returned when there is not a network path that reaches the server.
+Check the network connection to the server.
+Check that firewalls and routers allow access to the server.
+Check the load on the network.
+Check that the server is running.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-991">
+        <message><![CDATA[This message is returned when the server returns an incomplete response.
+It may be caused by a busy server or network.
+It may also be caused by a problem in a CGI script.
+Check the URL using a browser for additional information.
+Check the load on the network.
+Check the load on the server.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-990">
+        <message><![CDATA[This message is returned when a link, form, or frame is not found in the HTML on a page.
+Check the HTML content for that step by using the View Source command from a browser.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-989">
+        <message><![CDATA[This message is returned when an error string is found in the HTML content.
+Check the HTML content by using the View Source command from a browser.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-988">
+        <message><![CDATA[This message is returned when the value of an item in an XML document is incorrect
+Check the XML content by using the View Source command from a browser.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-987">
+        <message><![CDATA[This message is returned when a syntax problem is found in the XML content.
+Check the XML content by using the View Source command from a browser.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="-986">
+        <message><![CDATA[This message is returned when an item is not found in the XML content.
+Check the XML content by using the View Source command from a browser.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="400">
+        <message><![CDATA[This message is returned by CGI scripts or other programs that create web pages.
+It may also be returned by a web server that is having problems.
+Check that the correct parameters are being passed.
+Check the URL using a browser for additional information.
+Check the web server error log for additional information.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="401">
+        <message><![CDATA[This message is returned when the web server requires authorization information.
+Check that the correct username and password as being sent.
+Check that your IP address is allowed access to the server.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="403">
+        <message><![CDATA[This message is returned by the web server when access to this URL is not allowed.
+Check the web server configuration.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="404">
+        <message><![CDATA[This message is returned by the web server when it cannot find the URL requested.
+Check that the URL name and spelling are correct.
+Check that the file exists on the web server.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="407">
+        <message><![CDATA[This message is returned when the proxy server requires authorization information.
+Check that the correct proxy username and password as being sent.
+Check that your IP address is allowed access to the proxy.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="500">
+        <message><![CDATA[This message is returned by CGI scripts or other programs that create web pages.
+It may also be returned by a web server that is having problems.
+Check that the correct parameters are being passed.
+Check the URL using a browser for additional information.
+Check the web server error log for additional information.
+]]></message>
+    </SvMonitorStatusHelp>
+    <SvMonitorStatusHelp id="503">
+        <message><![CDATA[This message is returned when the web server it to busy to handle your request.
+Check the CPU usage on your server.
+Check for other processes that using resources.
+]]></message>
+    </SvMonitorStatusHelp>
+</entity-engine-xml>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/services.xsd">
+	<service name="getMachineList" engine="java"
+		location="com.siteview.svecc.service.Machine"
+		invoke="getMachineList" auth="false">
+		<attribute name="list" mode="OUT" type="List"
+			optional="true">
+		</attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+	<service name="getMachineAttri" engine="java"
+		location="com.siteview.svecc.service.Machine"
+		invoke="getMachineAttri" auth="false">
+		<attribute name="data" mode="OUT" type="Map"
+			optional="true">
+		</attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+
+	<service name="getMachineById" engine="java"
+		location="com.siteview.svecc.service.Machine"
+		invoke="getMachineById" auth="false">
+		<attribute name="id" mode="IN" type="String" optional="false"></attribute>
+		<attribute name="data" mode="OUT" type="Map"
+			optional="true">
+		</attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+
+
+	<service name="addMachine" engine="java"
+		location="com.siteview.svecc.service.Machine" invoke="addMachine"
+		auth="false">
+		<attribute name="data" mode="IN" type="Map" optional="false"/>
+		<attribute name="bTest" mode="IN" type="Boolean" optional="false"></attribute>
+		<attribute name="message" mode="OUT" type="String" optional="false"/>
+	</service>
+
+	<service name="updateMachineById" engine="java"
+		location="com.siteview.svecc.service.Machine" invoke="updateMachineById"
+		auth="false">
+		<attribute name="id" mode="IN" type="String" optional="false"></attribute>
+		<attribute name="data" mode="IN" type="Map" optional="false"></attribute>
+		<attribute name="bTest" mode="IN" type="Boolean" optional="false"></attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+
+	<service name="deleteMachineById" engine="java"
+		location="com.siteview.svecc.service.Machine"
+		invoke="deleteMachineById" auth="false">
+		<attribute name="id" mode="IN" type="String" optional="false"></attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+	
+	<service name="testMachineById" engine="java"
+		location="com.siteview.svecc.service.Machine" invoke="testMachineById"
+		auth="false">
+		<attribute name="id" mode="IN" type="String" optional="false"/>
+		<attribute name="type" mode="IN" type="String" optional="false"/>
+		<attribute name="message" mode="OUT" type="String" optional="true"/>
+	</service>
+
+	<service name="getMachineListNT" engine="java"
+		location="com.siteview.svecc.service.NtMachine"
+		invoke="getMachineList" auth="false">
+		<attribute name="list" mode="OUT" type="List"
+			optional="true">
+		</attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+	<service name="getMachineAttriNT" engine="java"
+		location="com.siteview.svecc.service.NtMachine"
+		invoke="getMachineAttri" auth="false">
+		<attribute name="data" mode="OUT" type="Map"
+			optional="true">
+		</attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+
+	<service name="getMachineByIdNT" engine="java"
+		location="com.siteview.svecc.service.NtMachine"
+		invoke="getMachineById" auth="false">
+		<attribute name="id" mode="IN" type="String" optional="false"></attribute>
+		<attribute name="data" mode="OUT" type="Map"
+			optional="true">
+		</attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+
+
+	<service name="addMachineNT" engine="java"
+		location="com.siteview.svecc.service.NtMachine" invoke="addMachine"
+		auth="false">
+		<attribute name="data" mode="IN" type="Map" optional="false"/>
+		<attribute name="bTest" mode="IN" type="Boolean" optional="false"></attribute>
+		<attribute name="message" mode="OUT" type="String" optional="false"/>
+	</service>
+
+	<service name="updateMachineByIdNT" engine="java"
+		location="com.siteview.svecc.service.NtMachine" invoke="updateMachineById"
+		auth="false">
+		<attribute name="id" mode="IN" type="String" optional="false"></attribute>
+		<attribute name="data" mode="IN" type="Map" optional="false"></attribute>
+		<attribute name="bTest" mode="IN" type="Boolean" optional="false"></attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+
+	<service name="deleteMachineByIdNT" engine="java"
+		location="com.siteview.svecc.service.NtMachine"
+		invoke="deleteMachineById" auth="false">
+		<attribute name="id" mode="IN" type="String" optional="false"></attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+	
+	<service name="testMachineByIdNT" engine="java"
+		location="com.siteview.svecc.service.NtMachine" invoke="testMachineById"
+		auth="false">
+		<attribute name="id" mode="IN" type="String" optional="false"/>
+		<attribute name="message" mode="OUT" type="String" optional="true"/>
+	</service>
+	
+</services>

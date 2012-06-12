@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+
+    <screen name="leftbar">
+        <section>
+            <widgets>
+                <container style="left">
+                <screenlet id="healthMenu" title="${uiLabelMap.healthMenu}" collapsible="true" initially-collapsed="true">
+                    <include-menu name="healthMenu" location="component://svecc/widget/svHealthMenu.xml"/>
+                </screenlet>
+                <screenlet id="alertMenu" title="${uiLabelMap.alertsMenu}" collapsible="true" initially-collapsed="true">
+                    <include-menu name="alertMenu" location="component://svecc/widget/svAlertMenus.xml"/>
+                </screenlet>
+                <screenlet id="reportsMenu" title="${uiLabelMap.reportsMenu}" collapsible="true" initially-collapsed="true">
+                    <include-menu name="reportsMenu" location="component://svecc/widget/svReportsMenu.xml"/>
+                </screenlet>
+                <screenlet id="preferencesMenu" title="${uiLabelMap.preferencesMenu}" collapsible="true" initially-collapsed="true">
+                    <include-menu name="preferencesMenu" location="component://svecc/widget/svPreferencesMenu.xml"/>
+                </screenlet>
+                </container>
+            </widgets>
+        </section>
+    </screen>
+
+    <!-- Global decorator for General Screens/Pages -->
+    <screen name="GlobalDecorator">
+        <section>
+            <actions>
+                <!-- The default (global) stylesheet is added to the list of stylesheets to the first position -->
+                <set field="layoutSettings.styleSheets[+0]" value="/images/maincss.css" global="true"/>
+                <set field="layoutSettings.rtlStyleSheets[+0]" value="/images/mainrtl.css" global="true"/>
+                <!-- The default (global) java scripts -->
+                <!-- NOTE: this should be included on each screen that uses it to avoid including it in all screens: <set field="layoutSettings.javaScripts[]" value="/images/dojo/dojo.js" global="true"/> -->
+                <set field="layoutSettings.javaScripts[+0]" value="/images/prototypejs/scriptaculous.js" global="true"/>                
+                <set field="layoutSettings.javaScripts[+0]" value="/images/prototypejs/prototype.js" global="true"/>
+                <set field="layoutSettings.javaScripts[]" value="/images/selectall.js" global="true"/>
+                <set field="layoutSettings.javaScripts[]" value="/images/fieldlookup.js" global="true"/>
+                <set field="layoutSettings.javaScripts[]" value="/images/calendar_date_select.js" global="true"/>
+                <!-- The default (global) shortcut icon -->
+                <set field="layoutSettings.shortcutIcon" value="/images/ofbiz.ico" global="true"/>
+                <!-- The default (global) logo -->
+                <set field="layoutSettings.commonHeaderImageUrl" value="/images/ofbiz_logo.jpg" global="true"/>
+                <set field="layoutSettings.commonHeaderImageLinkUrl" from-field="layoutSettings.commonHeaderImageLinkUrl" default-value="main" global="true"/>
+                <set field="userPreferences" from-field="userPrefMap" global="true"/>
+            </actions>
+            <widgets>
+                <!-- render header -->
+                <platform-specific><html><html-template location="component://svecc/webapp/ecc/include/header.ftl"/></html></platform-specific>
+                <!-- render appbar -->
+                <platform-specific><html><html-template location="component://svecc/webapp/ecc/include/appbar.ftl"/></html></platform-specific>
+                
+                <!-- render appheader: both menu widget style and ftl template style menus are supported-->
+                <section>
+                    <condition>
+                        <if-empty field-name="applicationMenuName"/>
+                    </condition>
+                    <widgets>
+                        <platform-specific><html><html-template location="${appheaderTemplate}"/></html></platform-specific>
+                    </widgets>
+                    <fail-widgets>
+                        <label style="apptitle">${applicationTitle}</label>
+                        <include-menu name="${applicationMenuName}" location="${applicationMenuLocation}"/>
+                    </fail-widgets>
+                </section>
+                <platform-specific><html><html-template location="component://svecc/webapp/ecc/include/messages.ftl"/></html></platform-specific>
+                <container style="contentarea">
+                    <!-- may be used by sight disabled persons to skip diretly to content area-->
+                    <decorator-section-include name="pre-body"/>
+                    <!-- Please don't change the column-container id : it's referenced to allow skipping navigation-->
+                    <container id="column-container"> 
+                        <!-- by default will render left-bar only if leftbarScreen value not empty -->
+                        <include-screen name="${leftbarScreenName}" location="${leftbarScreenLocation}"/>
+
+                        <container id="content-main-section" style="${MainColumnStyle}">
+                            <!-- render messages -->
+                            <decorator-section-include name="body"/>
+                        </container>
+                        <container style="clear"></container>
+                    </container>
+                </container>
+                
+                <!-- render footer -->
+                <section>
+                    <condition>
+                        <if-empty field-name="applicationFooterTemplate"/>
+                    </condition>
+                    <widgets>
+                        <platform-specific><html><html-template location="component://svecc/webapp/ecc/include/footer.ftl"/></html></platform-specific>
+                    </widgets>
+                    <fail-widgets>
+                         <platform-specific><html><html-template location="${applicationFooterTemplate}"/></html></platform-specific>
+                    </fail-widgets>
+                </section>
+            </widgets>
+        </section>
+    </screen>    
+    <screen name="main-decorator">
+        <section>
+            <actions>
+                <!-- base/top/specific map first, then more common map added for shared labels -->
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="svCommonLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="svMenuLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="svUiLabel_Alert" map-name="uiLabelMap" global="true"/>
+                <property-map resource="svMachineUiLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="svUserUiLabels" map-name="uiLabelMap" global="true"/>
+
+                <set field="MainColumnStyle" value="nocolumns" global="true"/>
+
+                <set field="layoutSettings.companyName" from-field="uiLabelMap.eccProductName" global="true"/>
+                <set field="layoutSettings.companySubtitle" from-field="uiLabelMap.ProductCompanySubtitle" global="true"/>
+                <!-- layoutSettings.headerImageUrl can be used to specify an application specific logo; if not set,
+                     then the global layoutSettings.commonHeaderImageUrl (specified in GlobalDecorator) will be used. -->
+                <set field="layoutSettings.headerImageUrl" value="/svecc/images/static/siteview_logo.gif" global="true"/>
+                <!-- <set field="layoutSettings.headerMiddleBackgroundUrl" value="" global="true"/> -->
+                <!-- <set field="layoutSettings.headerRightBackgroundUrl" value="" global="true"/> -->
+                <set field="activeApp" value="" global="true"/>
+                <set field="applicationMenuName" value="EccAppBar" global="true"/>
+                <set field="applicationMenuLocation" value="component://svecc/widget/svEccMenus.xml" global="true"/>
+				<!--session config(setup) -->
+                <set field="userInformation" from-field="_userInformation_" from-scope="user" />
+
+
+
+                <set field="leftbarScreenName" value="leftbar"/>
+                <set field="leftbarScreenLocation" value="component://svecc/widget/CommonScreens.xml"/>
+                <set field="MainColumnStyle" value="leftonly"/>
+                <set field="headerItem" value="main"/>
+            </actions>
+            <widgets>
+                <include-screen name="GlobalDecorator" />
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="loginMain-decorator">
+        <section>
+            <actions>
+                <!-- base/top/specific map first, then more common map added for shared labels -->
+               <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="svCommonLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="svMenuLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="svUiLabel_Alert" map-name="uiLabelMap" global="true"/>
+                <property-map resource="svMachineUiLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="svUserUiLabels" map-name="uiLabelMap" global="true"/>
+
+                <set field="layoutSettings.companyName" from-field="uiLabelMap.eccProductName" global="true"/>
+                <set field="layoutSettings.companySubtitle" from-field="uiLabelMap.ProductCompanySubtitle" global="true"/>
+                <set field="activeApp" value="svecc" global="true"/>
+                <set field="applicationMenuName" value="EccAppBar" global="true"/>
+                <set field="applicationMenuLocation" value="component://svecc/widget/svEccMenus.xml" global="true"/>
+            </actions>
+            <widgets>
+                <include-screen name="GlobalDecorator" location="component://common/widget/CommonScreens.xml"/>
+            </widgets>
+        </section>
+    </screen>    
+    <screen name="ecc-decorator">
+        <section>
+            <widgets>
+               <decorator-screen name="main-decorator">
+                    <decorator-section name="pre-body">
+                    	<include-screen name="include"/>
+                        <decorator-section-include name="pre-body"/>
+                    </decorator-section>
+                    <decorator-section name="body">
+                        <decorator-section-include name="body"/>
+                    </decorator-section>
+            	</decorator-screen>
+             </widgets>
+        </section>
+    </screen>
+    
+    <screen name="display-only">
+        <section>
+            <widgets>
+				<platform-specific>
+				<html>
+					<html-template location="component://svecc/webapp/ecc/common/outcontext.ftl" />
+				</html>
+			    </platform-specific>
+             </widgets>
+        </section>
+    </screen>    
+    <screen name="include">
+        <section>
+            <widgets>
+				<platform-specific>
+				<html>
+					<html-template location="component://svecc/webapp/ecc/common/include.ftl" />
+				</html>
+			    </platform-specific>
+             </widgets>
+        </section>
+    </screen>    
+    <screen name="login">
+        <section>
+            <widgets>
+                <decorator-screen name="loginMain-decorator">
+                    <decorator-section name="body">
+                        <platform-specific>
+                            <html><html-template location="component://svecc/webapp/ecc/login.ftl"/></html>
+                        </platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="alerts">
+        <section>
+            <widgets>
+                <decorator-screen name="ecc-decorator">
+                    <decorator-section name="body">
+                        <include-menu name="alertMenu" location="component://svecc/widget/alert/svAlertMenus.xml"/>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="reports">
+        <section>
+            <widgets>
+                <decorator-screen name="ecc-decorator">
+                    <decorator-section name="body">
+                        <include-menu name="reportsMenu" location="component://svecc/widget/svReportsMenu.xml"/>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="health">
+        <section>
+            <widgets>
+                <decorator-screen name="ecc-decorator">
+                    <decorator-section name="body">
+                        <include-menu name="healthMenu" location="component://svecc/widget/svHealthMenu.xml"/>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="preferences">
+        <section>
+            <widgets>
+                <include-screen name="dispGeneral" location="component://svecc/widget/general/svGeneralScreens.xml"/>
+            </widgets>
+        </section>
+    </screen>
+
+ 
+    <screen name="none">
+        <section>
+            <widgets>
+				<platform-specific>
+				<html>
+					<html-template location="component://svecc/webapp/ecc/common/none.ftl" />
+				</html>
+			    </platform-specific>
+             </widgets>
+        </section>
+    </screen>    
+ 
+    
+</screens>

@@ -1,0 +1,90 @@
+BODY {
+	BACKGROUND-COLOR: white
+}
+.darkrow {
+	BACKGROUND-COLOR: #cccc99; COLOR: black; FONT-FAMILY: Verdana; FONT-SIZE: 7pt
+}
+.lightrow {
+	BACKGROUND-COLOR: #efefdf; COLOR: black; FONT-FAMILY: Verdana; FONT-SIZE: 7pt
+}
+.titlerow {
+	BACKGROUND-COLOR: #330066; COLOR: white; FONT-FAMILY: Verdana; FONT-SIZE: 8pt
+}
+.Report1 {
+	BACKGROUND-COLOR: #9999cc; BORDER-BOTTOM: lime thin ridge; BORDER-LEFT: lime thin ridge; BORDER-RIGHT: lime thin ridge; BORDER-TOP: lime thin ridge; COLOR: blue; FONT-FAMILY: Verdana; FONT-SIZE: 10pt; FONT-VARIANT: small-caps
+}
+.Verdana2 {
+	COLOR: white; FONT-FAMILY: Verdana; FONT-SIZE: 8pt
+}
+.Verdana3 {
+	COLOR: black; FONT-FAMILY: Verdana; FONT-SIZE: 10pt
+}
+.TH {
+	BACKGROUND-COLOR: #99cccc; COLOR: black; FONT-FAMILY: Verdana; FONT-SIZE: 8pt
+}
+.link {
+	COLOR: blue; FONT-FAMILY: Verdana; FONT-SIZE: 10pt
+}
+.VerBl8 {
+	COLOR: black; FONT-FAMILY: Verdana; FONT-SIZE: 8pt
+}
+.VerRE8 {
+	COLOR: red; FONT-FAMILY: Verdana; FONT-SIZE: 8pt
+}
+.VerBl7 {
+	COLOR: black; FONT-FAMILY: Verdana; FONT-SIZE: 8pt
+}
+.VerBluUnd7 {
+	COLOR: blue; FONT-FAMILY: Verdana; FONT-SIZE: 8pt; TEXT-DECORATION: underline
+}
+.VerdanaDB12 {
+	COLOR: #330066; FONT-FAMILY: 'MS Sans Serif'; FONT-SIZE: 18pt
+}
+.VerdanaDB12White {
+	COLOR: white; FONT-FAMILY: Verdana; FONT-SIZE: 11pt
+}
+.VerdanaDB10 {
+	COLOR: #330066; FONT-FAMILY: Verdana; FONT-SIZE: 9pt
+}
+#subtitle {
+	HEIGHT: 20px; LEFT: 40px; POSITION: absolute; TOP: 35px; WIDTH: 300px
+}
+#legend {
+	LEFT: 87%; POSITION: absolute
+}
+#legendA {
+	LEFT: 84%; POSITION: absolute; TOP: 80px
+}
+#legendB {
+	LEFT: 650px; POSITION: absolute; TOP: 35px
+}
+#legendC {
+	LEFT: 75%; POSITION: absolute
+}
+#piegraph {
+	LEFT: 50px; POSITION: absolute; TOP: 115px
+}
+#linegraph {
+	LEFT: 50px; POSITION: absolute; TOP: 130px
+}
+#tablegraph {
+	LEFT: 0px; POSITION: absolute; TOP: 115px
+}
+#description {
+	LEFT: 20px; POSITION: absolute; TOP: 450px
+}
+#users {
+	LEFT: 160px; POSITION: absolute; TOP: 155px
+}
+.lightrowformslabels {
+	BACKGROUND-COLOR: #efefdf; FONT-FAMILY: Verdana; FONT-SIZE: 10pt
+}
+.titlerowformstitle {
+	BACKGROUND-COLOR: #330066; COLOR: white; FONT-FAMILY: Verdana; FONT-SIZE: 10pt
+}
+DIV.stamClass {
+	POSITION: absolute
+}
+#trimscreen {
+	HEIGHT: 60px; LEFT: 40px; POSITION: absolute; TOP: 80px; WIDTH: 300px
+}

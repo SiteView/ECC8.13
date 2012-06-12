@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monitor name="NetIQ" emsFolderName="NetIQ">
+	<MeasurementConfigFilePathProperty/>
+	<StringProperty isAdvanced="false" name="_pDbUrl" isEditable="true" label="ntq_url_label" description="db_url_description"/>
+	<StringProperty isAdvanced="false" name="_pDbDriverName" isEditable="true" label="driver_name_label" description="driver_name_description"/>
+	<StringProperty isAdvanced="false" name="_pDbUserName" isEditable="true" label="db_user_name_label" description="db_user_name_description"/>
+	<PasswordProperty isAdvanced="false" name="_pDbPassword" isEditable="true" label="db_password_label" description="db_password_description"/>
+	<StringProperty isAdvanced="false" name="_pTopologyFile" isEditable="true" label="topology_file_label" description="topology_file_description"/>
+	<TimeDiffProperty/>	
+	<HiddenStringProperty name="pStartTime" value="-1"/>
+	<IntProperty isAdvanced="false" name="pCollected" isEditable="false" value="0" stateOptions="1" label="title_collected_measurements"/>
+</Monitor>

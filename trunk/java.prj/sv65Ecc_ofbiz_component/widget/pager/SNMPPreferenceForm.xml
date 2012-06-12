@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-form.xsd">
+
+    <form name="DefaultSNMPPreferences" type="single" default-map-name="result" target="SNMPSaveAndTest"
+     odd-row-style="alternate-row" default-table-style="basic-table hover-bar" >
+    	<actions>
+            <service service-name="getSNMPPreferenceInfo"  >
+            </service>
+        </actions>
+ 		<field name="_snmpHost"  title="Send to Host:" tooltip="Enter the host name or IP address of the machine running the SNMP console that will receive SNMP traps. For example, snmp.this-company.com or 206.168.191.20."><text></text></field>
+		<field name="_snmpObjectID"  title="SNMP Object ID:" tooltip="Select or enter the SNMP object that is sending the trap. For example .1.3.6.1.2.1.1 is the 'system'object from MIB-II (RFC 1213).">
+			<drop-down>
+				<option key=".1.3.6.1.4.1.11.2.17.1" description="HP Open View Event"></option>
+				<option key=".1.3.6.1.2.1.1" description="System - MIB-II"></option>
+				<option key=".1.3.6.1.4.1.311.1.1.3.1.2" description="Microsoft - Vendor MIB"></option>
+				<option key=".1.3.6.1.2.1.25.1" description="System - Host Resources MIB"></option>
+				<option key="0" description="other..."></option>
+			</drop-down>
+		</field>
+		<field name="_otherSNMPId" title="Other SNMP  ID:" ><text></text></field>
+		<field name="_snmpCommunity"  title="SNMP Community: " tooltip=" The SNMP community name used for this trap - usually this is 'public'. "><text></text></field>
+		<field name="_snmpGeneric"  title="Trap ID:Generic:" tooltip=" Generic trap type. If the generic trap type is 'enterprise specific', then fill in the specific trap type, which is a number.">
+			<drop-down>
+				<option key="0" description="cold start"></option>
+				<option key="1"  description="warm start"></option>
+				<option key="2" description="link down"></option>
+				<option key="3" description="link up"></option>
+				<option key="6" description="enterprise specific"></option>
+			</drop-down>		
+		</field>
+		<field name="_snmpSpecific" title="Specific  Trap ID:" ><text></text></field>
+		<field name="_snmpTrapVersion" title="SNMP Trap version:" tooltip="This describes what version the SNMP trap will be formatted in when sending to your SNMP host." >
+			<drop-down>
+				<option key="V1" description="V1"></option>
+				<option key="V2" description="V2c"></option>
+			</drop-down>			
+		</field>	
+        <field name="button" widget-style="smallSubmit" title="Save Changed and Test" ><submit button-type="button"/></field>
+    </form>
+    
+  
+</forms>

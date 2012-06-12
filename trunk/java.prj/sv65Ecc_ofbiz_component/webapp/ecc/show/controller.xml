@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+	
+	<request-map uri="showMonitor">
+		<security https="false" auth="true" />
+		<response name="success" type="view" value="showMonitor" />
+	</request-map>
+	
+	<view-map name="showMonitor" type="screen"
+		page="component://svecc/widget/show/svShowScreens.xml#showMonitor" />
+
+
+</site-conf>
+

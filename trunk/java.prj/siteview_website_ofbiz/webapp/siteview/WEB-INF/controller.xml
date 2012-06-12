@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+    <include location="component://common/webcommon/WEB-INF/common-controller.xml"/>
+    
+    <description>OFBiz: CMS Site Controller Configuration File</description>
+
+    <!-- Events run from here for the first hit in a visit -->
+    <firstvisit>
+        <event type="java" path="org.ofbiz.webapp.control.LoginWorker" invoke="autoLoginCheck"/>
+        <event type="java" path="org.ofbiz.marketing.tracking.TrackingCodeEvents" invoke="checkTrackingCodeCookies"/>
+    </firstvisit>
+
+    <!-- Events to run on every request before security (chains exempt) -->
+    <preprocessor>
+        <!-- This event allows affilate/distributor entry on any page -->
+        <event type="java" path="org.ofbiz.marketing.tracking.TrackingCodeEvents" invoke="checkTrackingCodeUrlParam"/>
+        <event type="java" path="org.ofbiz.marketing.tracking.TrackingCodeEvents" invoke="checkPartnerTrackingCodeUrlParam"/>
+    </preprocessor>
+
+    <!-- default request; call into CMS -->
+    <default-request request-uri="siteview"/>
+
+    <!-- Request Mappings -->
+    <request-map uri="main">
+        <security https="false" auth="false"/>
+        <response name="success" type="request-redirect-noparam" value="siteview"/>
+    </request-map>
+    <request-map uri="siteview">
+        <security https="false" auth="false"/>
+        <event type="java" path="org.ofbiz.content.cms.CmsEvents" invoke="cms"/>
+        <response name="success" type="none"/>
+        <response name="error" type="view" value="error"/>
+    </request-map>
+    
+    <request-map uri="test">
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="test"/>
+    </request-map>
+    
+    <request-map uri="createLicense">
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="createLicense"/>
+    </request-map>
+<!-- added by lijian -->    
+    <request-map uri="systemMaintenance">
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="systemMaintenance"/>
+    </request-map>
+        
+    <request-map uri="addInfo">
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="addInfo"/>
+    </request-map>
+
+    <request-map uri="editCategaryInfo">
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="editCategaryInfo"/>
+    </request-map>
+
+     <request-map uri="delCategaryInfoPrompt">
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="delCategaryInfoPrompt"/>
+    </request-map>   
+       
+     <request-map uri="delCategaryInfo">
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="delCategaryInfo"/>
+    </request-map>   
+      
+    <request-map uri="displayInfo">
+    	<description> display  titles</description>
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="displayInfo"/>
+    </request-map> 
+ 
+    <request-map uri="displayContentInfo">
+    	<description> display  content</description>
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="displayContentInfo"/>
+    </request-map>   
+    
+    <request-map uri="saveCategoryInfo">
+    	<description>save editedInfomation</description>
+    	<event type="service" invoke="savechangedInfo"/>
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="displayInfo"/>
+    </request-map> 
+    
+    <request-map uri="addRecord">
+    	<description>add record form</description>
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="addRecord"/>
+    </request-map>       
+    
+      <request-map uri="saveAddedRecord">
+    	<description>added record imformation</description>
+    	<event type="service" invoke="saveAddedRecord"/>
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="displayInfo"/>
+    </request-map>   
+      <request-map uri="addMonuPage">
+    	<description>added monu</description>
+        <security https="false" auth="false"/>
+        <event type="service" invoke="saveAddedMonu"/>
+        <response name="success" type="view" value="systemMaintenance"/>
+    </request-map>   
+      <request-map uri="updateMenuInfo">
+    	<description>edit monu</description>
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="updateMenuInfo"/>
+    </request-map>      
+      <request-map uri="saveEditmonu">
+    	<description>saveEditmonu</description>
+    	<event type="service" invoke="saveEditmonu"/>
+        <security https="false" auth="false"/>
+        <response name="success" type="view" value="systemMaintenance"/>
+    </request-map>                  
+    <!-- End of Request Mappings -->
+
+    <!-- View Mappings -->
+    <view-map name="test" type="screen" page="component://siteview/widget/SiteViewScreens.xml#myAddForm"/>
+<!-- add bu lijian -->   
+	<view-map name="systemMaintenance" type="screen" page="component://siteview/widget/SiteViewScreens.xml#systemMaintenance"/>
+	<view-map name="addInfo" type="screen" page="component://siteview/widget/SiteViewScreens.xml#addInfo"/>
+	<view-map name="editCategaryInfo" type="screen" page="component://siteview/widget/SiteViewScreens.xml#editCategaryInfo"/>
+	<view-map name="delCategaryInfo" type="screen" page="component://siteview/widget/SiteViewScreens.xml#delCategaryInfo"/>
+	<view-map name="delCategaryInfoPrompt" type="screen" page="component://siteview/widget/SiteViewScreens.xml#delCategaryInfoPrompt"/>
+	<view-map name="displayInfo" type="screen" page="component://siteview/widget/SiteViewScreens.xml#displayInfo"/>
+	<view-map name="displayContentInfo" type="screen" page="component://siteview/widget/SiteViewScreens.xml#displayContentInfo"/>
+	<view-map name="addRecord" type="screen" page="component://siteview/widget/SiteViewScreens.xml#addRecord"/>
+	<view-map name="updateMenuInfo" type="screen" page="component://siteview/widget/SiteViewScreens.xml#updateMenuInfo"/>
+	<view-map name="createLicense" type="screen" page="component://siteview/widget/SiteViewScreens.xml#createLicense"/>
+    <!-- End of View Mappings -->
+</site-conf>

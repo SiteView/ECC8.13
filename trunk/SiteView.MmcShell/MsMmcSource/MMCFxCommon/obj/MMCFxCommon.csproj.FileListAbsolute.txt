@@ -1,0 +1,6 @@
+C:\Documents and Settings\ibm\My Documents\Source\MMCFxCommon\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ibm\My Documents\Source\MMCFxCommon\obj\Debug\Strings.resources
+C:\Documents and Settings\ibm\My Documents\Source\MMCFxCommon\bin\Debug\MMCFxCommon.dll
+C:\Documents and Settings\ibm\My Documents\Source\MMCFxCommon\bin\Debug\MMCFxCommon.pdb
+C:\Documents and Settings\ibm\My Documents\Source\MMCFxCommon\obj\Debug\MMCFxCommon.dll
+C:\Documents and Settings\ibm\My Documents\Source\MMCFxCommon\obj\Debug\MMCFxCommon.pdb

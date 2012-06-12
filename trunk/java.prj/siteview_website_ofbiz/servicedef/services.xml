@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/services.xsd">
+	<description>OFBiz Service Engine Services</description>
+	<vendor>OFBiz</vendor>
+	<version>1.0</version>
+
+    <!-- Service Engine Services -->
+	<service name="getNoteInfos" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="getNoteInfos" use-transaction="false">
+            <attribute name="category" mode="IN" type="String" optional="false"></attribute>
+            <attribute name="result" mode="OUT" type="List" optional="true"></attribute>
+            <attribute name="categoryInfo" mode="OUT" type="List" optional="true"></attribute>
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service>
+	<service name="get1LevelNoteInfos" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="get1LevelNoteInfos" use-transaction="false">
+            <attribute name="category" mode="IN" type="String" optional="false"></attribute>
+            <attribute name="result" mode="OUT" type="List" optional="true"></attribute>
+            <attribute name="categoryInfo" mode="OUT" type="List" optional="true"></attribute>
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service>
+	<service name="getNoteInfo" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="getNoteInfo" use-transaction="false">
+            <attribute name="id" mode="IN" type="String" optional="false"></attribute>
+            <attribute name="result" mode="OUT" type="Map" optional="true"></attribute>
+            <attribute name="categoryInfo" mode="OUT" type="List" optional="true"></attribute>
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service>
+
+	<service name="getCategorys" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="getCategorys" use-transaction="false">
+            <attribute name="category" mode="IN" type="String" optional="false"></attribute>
+            <attribute name="categoryInfo" mode="OUT" type="Map" optional="true"></attribute>
+            <attribute name="children" mode="OUT" type="List" optional="true"></attribute>
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service>
+ 	<!-- added by lijian -->
+	<service name="getDisplayInformation" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="getDisplayInformation" >
+            <attribute name="category" mode="IN" type="String" optional="false"></attribute>
+            <attribute name="categoryInfo" mode="OUT" type="List" optional="true"></attribute>
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service> 	
+	<service name="showContentInfo" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="showContentInfo" >
+            <attribute name="Id" mode="IN" type="String" optional="false"></attribute>
+            <attribute name="contentInfo" mode="OUT" type="Map" optional="true"></attribute>
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service> 	
+	<service name="delCategaryInfo" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="delCategaryInfo" >
+            <attribute name="Id" mode="IN" type="String" optional="false"></attribute>
+            <attribute name="category" mode="IN" type="String" optional="true"></attribute>
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service> 
+	<service name="savechangedInfo" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="savechangedInfo" >
+            <attribute name="id" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="idx" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="country" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="category" mode="IN" type="String" optional="true"></attribute>     
+            <attribute name="title" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="name" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="coname" mode="IN" type="String" optional="true"></attribute>   
+            <attribute name="text_date" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="en_name" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="en_coname" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="en_text_date" mode="IN" type="String" optional="true"></attribute>                  
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service>  
+
+ 	<service name="savechangedInfo1" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="savechangedInfo" >
+            <attribute name="id" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="name" mode="IN" type="String" optional="true"></attribute>
+       		<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service>  
+
+	<service name="saveAddedRecord" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="saveAddedRecord" >
+            <attribute name="country" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="category" mode="IN" type="String" optional="false"></attribute>     
+            <attribute name="title" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="name" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="coname" mode="IN" type="String" optional="true"></attribute>   
+            <attribute name="text_date" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="en_name" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="en_coname" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="en_text_date" mode="IN" type="String" optional="true"></attribute>                  
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service>   	
+ 	<service name="saveAddedMonu" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="saveAddedMonu" >
+            <attribute name="parentId" mode="IN" type="String" optional="false"></attribute>
+            <attribute name="country" mode="IN" type="String" optional="false"></attribute>     
+            <attribute name="name" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="imagines" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="link" mode="IN" type="String" optional="true"></attribute>   
+            <attribute name="enName" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="enImagines" mode="IN" type="String" optional="true"></attribute>                 
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service>	
+	<service name="getEditMenuInfo" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="getEditMenuInfo" >
+            <attribute name="id" mode="IN" type="String" optional="false"></attribute>
+            <attribute name="monuInfo" mode="OUT" type="Map" optional="true"></attribute>
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service>  	
+  	<service name="saveEditmonu" engine="java"
+            location="com.siteview.web.service.WebSiteService" invoke="saveEditmonu" >
+            <attribute name="id" mode="IN" type="String" optional="false"></attribute>
+            <attribute name="parentId" mode="IN" type="String" optional="false"></attribute>
+            <attribute name="country" mode="IN" type="String" optional="false"></attribute>     
+            <attribute name="name" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="images" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="link" mode="IN" type="String" optional="true"></attribute>   
+            <attribute name="enName" mode="IN" type="String" optional="true"></attribute>
+            <attribute name="enImages" mode="IN" type="String" optional="true"></attribute>                 
+			<attribute name="message" type="String" mode="OUT" optional="true" />
+ 	</service>				 	
+</services>

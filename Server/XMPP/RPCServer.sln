@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPCServer", "RPCServer\RPCServer.csproj", "{991989E2-19A3-4891-B5F0-1EBCD3FC61A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPCLibrary", "RPCLibrary\RPCLibrary.csproj", "{B09DFF32-741D-4CF5-B4DF-60D5F311F305}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agsXMPP2005", "agsxmpp\agsXMPP2005.csproj", "{DC39021C-FA24-4E34-AB4A-3260BB5314AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{991989E2-19A3-4891-B5F0-1EBCD3FC61A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991989E2-19A3-4891-B5F0-1EBCD3FC61A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991989E2-19A3-4891-B5F0-1EBCD3FC61A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991989E2-19A3-4891-B5F0-1EBCD3FC61A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09DFF32-741D-4CF5-B4DF-60D5F311F305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09DFF32-741D-4CF5-B4DF-60D5F311F305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09DFF32-741D-4CF5-B4DF-60D5F311F305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09DFF32-741D-4CF5-B4DF-60D5F311F305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC39021C-FA24-4E34-AB4A-3260BB5314AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC39021C-FA24-4E34-AB4A-3260BB5314AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC39021C-FA24-4E34-AB4A-3260BB5314AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC39021C-FA24-4E34-AB4A-3260BB5314AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

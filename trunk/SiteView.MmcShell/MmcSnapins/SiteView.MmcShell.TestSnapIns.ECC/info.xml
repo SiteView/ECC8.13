@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<snapIn>
+  <name>ECC</name>
+  <displayName>Test.ECC</displayName>
+  <assemblyName>SiteView.MmcShell.TestSnapIns.ECC</assemblyName>
+  <class>SiteView.MmcShell.TestSnapIns.ECC.EccSnapIn</class>
+  <guid>{7AA15882-7009-4002-AE3F-7BCDD0085CD5}</guid>
+</snapIn>

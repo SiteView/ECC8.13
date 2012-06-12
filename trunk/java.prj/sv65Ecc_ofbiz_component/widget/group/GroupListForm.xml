@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-form.xsd">
+<!--  
+	<form name="groupList" list-name="groups" type="list" header-row-style="header-row-2"  style="screenlet-header"
+        odd-row-style="alternate-row" default-table-style="basic-table hover-bar">
+
+        <field name="c1" title="${titleMap.title1}" >
+        	<hyperlink also-hidden="false" description="${_name}"  target="listGroup?groupId=${_id}"/>
+        </field>
+		
+        <field name="c2" title="${titleMap.title2}" use-when="category.equals(&quot;good&quot;) == true">	
+        		<image value="/svecc/images/status/okay.gif"></image>
+        </field>
+        <field name="c2" title="${titleMap.title2}" use-when="category.equals(&quot;error&quot;) == true">	
+        		<image value="/svecc/images/status/error.gif"></image>
+        </field>
+        <field name="c2" title="${titleMap.title2}" use-when="category.equals(&quot;nodata&quot;) == true">	
+        		<image value="/svecc/images/status/disabled.gif"></image>
+        </field>
+		
+        <field name="monitorsInGroup" title="${titleMap.title3}"  >	
+        		<display />
+        </field>
+
+        <field name="stateString" title="${titleMap.title3}"  >	
+        		<display />
+        </field>
+		
+		<field name="p1"  title=" " widget-style="buttontext">
+			<hyperlink description="modifyGroup" target="modifyGroup?id=${_id}&amp;groupId=${parameters.groupId}"/>
+		</field>
+		<field name="p3"  title=" " widget-style="buttontext">
+			<hyperlink description="Remove" target="deleteGroup?id=${_id}&amp;groupId=${parameters.groupId}"/>
+		</field>	
+	</form>
+	-->
+	
+	 <form name="createGroupButton"  target="" title=""  type="single" paginate-target=""
+        odd-row-style="alternate-row" default-table-style="basic-table">
+		<field name="s"  title=" " widget-style="largeSubmit">
+			<hyperlink description="Add a new Group/SubGroup to this group" target="createGroup?groupId=${parameters.groupId}"/>
+		</field>
+	</form>	
+</forms>

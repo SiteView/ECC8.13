@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+-->
+
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+    <screen name="main-decorator">
+        <section>
+            <actions>
+                <!-- base/top/specific map first, then more common map added for shared labels -->
+                <property-map resource="EccUiLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+
+                <set field="layoutSettings.companyName" from-field="uiLabelMap.eccProductName" global="true"/>
+                <set field="activeApp" value="example" global="true"/>
+                <set field="applicationMenuName" value="EccAppBar" global="true"/>
+                <set field="applicationMenuLocation" value="component://ecc/widget/EccMenus.xml" global="true"/>
+                <set field="layoutSettings.headerImageUrl" value="/ecc/static/siteview_logo.gif" global="true"/>
+                <set field="layoutSettings.shortcutIcon" value="/ecc/static/siteview_logo.ico" global="true"/>
+            </actions>
+            <widgets>
+                <include-screen name="GlobalDecorator" location="component://common/widget/CommonScreens.xml"/>
+            </widgets>
+        </section>
+    </screen>
+    
+    <!-- http://...:8080/ecc/control/main 的入口 -->
+    <screen name="main">
+        <!-- This is the screen for the Main page in the Example component. A common pattern
+            in OFBiz is to have each component include a Main page as a starting point for
+            the user. -->
+		<section>
+			<actions>
+				<script location="component://ecc/webapp/ecc/WEB-INF/actions/GroupList.bsh"/>
+			</actions>        
+            <widgets>
+                <decorator-screen name="main-decorator">
+                    <decorator-section name="body">
+                        <screenlet title="${uiLabelMap.eccMainPage}">
+                            <section>
+                                <widgets>
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://ecc/webapp/ecc/group/GroupList.ftl" />
+			                            </html>
+			                        </platform-specific>
+                                </widgets>
+                            </section>
+                            </screenlet>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <!-- http://...:8080/ecc/control/CreatePingMonitor 的入口 -->
+    <screen name="CreatePingMonitor">
+		<section>
+			<actions>
+				<script location="component://ecc/webapp/ecc/WEB-INF/actions/monitor/PingMonitor.bsh"/>
+			</actions>        
+            <widgets>
+                <decorator-screen name="main-decorator">
+                    <decorator-section name="body">
+                        <screenlet title="${uiLabelMap.eccCreatePingPage}">
+                            <section>
+                                <widgets>
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://ecc/webapp/ecc/monitor/PingMonitor.ftl" />
+			                            </html>
+			                        </platform-specific>
+                                </widgets>
+                            </section>
+                            </screenlet>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+	
+	<!-- 添加监测器的 screen -->
+    <screen name="addpingmonitor">
+		<section>
+			<actions>
+				<!-- 这个脚本，获取监测器对应的设备 IP 地址，以及默认值 -->
+				<script location="component://ecc/webapp/ecc/WEB-INF/actions/monitor/PingMonitor.bsh"/>
+			</actions>        
+            <widgets>
+                <decorator-screen name="main-decorator">
+                    <decorator-section name="body">
+                        <screenlet title="${uiLabelMap.eccCreatePingPage}">
+                            <section>
+                                <widgets>
+                                    <container style="screenlet-body">
+                                        <section>
+											<widgets>
+												<include-form name="CreatePingMonitor" location="component://ecc/widget/monitors/CreateMonitorForms.xml"/>												
+											</widgets>
+                                        </section>
+									</container>	
+                                </widgets>
+                            </section>
+						</screenlet>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>	
+	
+	<!-- 添加 monitor 后的 screen -->
+    <screen name="addmonitorresult">	
+		<section>			
+			<actions>
+				<service service-name="sv_addPingMonitor"></service>
+			</actions>			
+            <widgets>
+                <decorator-screen name="main-decorator">
+                    <decorator-section name="body">
+                        <screenlet title="${uiLabelMap.eccCreatePingPage}">
+                            <section>
+                                <widgets>
+                                    <container style="screenlet-body">
+                                        <section>
+											<widgets>
+												<platform-specific>
+													<html>
+														<html-template location="component://ecc/webapp/ecc/monitor/addMonitorResult.ftl" />
+													</html>
+												</platform-specific>
+											</widgets>
+                                        </section>
+									</container>	
+                                </widgets>
+                            </section>
+						</screenlet>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>		
+    </screen>	
+</screens>

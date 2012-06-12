@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--先调用createPartyGroup，然后将partyId-->
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/services.xsd">
+    <description>SiteView Ecc Component Services</description>
+    <vendor>siteview</vendor>
+
+	<service name="sv_addpingmonitor" engine="java" 
+		location="com.siteview.ecc.MonitorService" invoke="addPingMonitor" export="true">
+		<description>Add a ping monitor.</description>
+		<attribute name="deviceName" type="String" mode="IN" optional="false"/>
+		<attribute name="monitorFrequency" type="String" mode="IN" optional="false"/>
+		<attribute name="frequencyUnit" type="String" mode="IN" optional="false"/>
+		<attribute name="monitorTitle" type="String" mode="IN" optional="false"/>
+	</service>
+	
+<!-- Group -->
+    <service name="sv_deleteSVSE" default-entity-name="SvGroup" engine="java" 
+		location="com.siteview.ecc.Group" invoke="deleteSVSE" export="true">
+		<description>delete a top group.</description>
+		<auto-attributes include="pk" mode="IN" optional="false"/>
+	</service>
+
+	<service name="sv_getSVSE" default-entity-name="SvGroup" engine="java" 
+		location="com.siteview.ecc.Group" invoke="getSVSE" export="true">
+		<description>get a top group</description>
+		<auto-attributes include="pk" mode="INOUT" optional="false"/>
+		<auto-attributes include="nonpk" mode="OUT" optional="true"/>
+	</service>
+	
+	<service name="sv_getSVSEMany" default-entity-name="SvGroup" engine="java" 
+		location="com.siteview.ecc.Group" invoke="getSVSEMany" export="true">
+		<description>get many top group</description>
+		<attribute name="idList" type="String" mode="INOUT" optional="true"/>
+		<attribute name="svseList" type="List" mode="OUT" optional="false"/>
+	</service>
+
+	<service name="sv_submitSVSE" default-entity-name="SvGroup" engine="java" 
+		location="com.siteview.ecc.Group" invoke="submitSVSE" export="true">
+		<description>submit a top group</description>
+		<auto-attributes include="pk" mode="INOUT" optional="true"/>
+		<auto-attributes include="nonpk" mode="IN" optional="true"/>
+	</service>
+	 
+    <service name="sv_deleteGroup" default-entity-name="SvGroup" engine="java" 
+		location="com.siteview.ecc.Group" invoke="deleteGroup" export="true">
+		<description>delete a group</description>
+		<auto-attributes include="pk" mode="IN" optional="false"/>
+	</service>
+
+	<service name="sv_getGroup" default-entity-name="SvGroup" engine="java" 
+		location="com.siteview.ecc.Group" invoke="getGroup" export="true">
+		<description>get a group</description>
+		<auto-attributes include="pk" mode="INOUT" optional="false"/>
+		<auto-attributes include="nonpk" mode="OUT" optional="true"/>
+	</service>
+	
+	<service name="sv_getGroupMany" default-entity-name="SvGroup" engine="java" 
+		location="com.siteview.ecc.Group" invoke="getGroupMany" export="true">
+		<description>get many group</description>
+		<attribute name="idList" type="String" mode="INOUT" optional="true"/>
+		<attribute name="groupList" type="List" mode="OUT" optional="false"/>
+	</service>
+
+	<service name="sv_submitGroup" default-entity-name="SvGroup" engine="java" 
+		location="com.siteview.ecc.Group" invoke="submitGroup" export="true">
+		 <description>submit a group</description>
+		<auto-attributes include="pk" mode="INOUT" optional="true"/>
+		<auto-attributes include="nonpk" mode="IN" optional="true"/>
+	</service>
+
+<!-- Ci -->
+    <service name="sv_deleteCi" default-entity-name="SvCi" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="deleteCi" export="true">
+		 <description>delete a Ci.</description>
+		<auto-attributes include="pk" mode="IN" optional="false"/>
+	</service>
+
+    <service name="sv_deleteChildrenCi" default-entity-name="SvCi" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="deleteCiChildren" export="true">
+		 <description>delete a parent's son Ci.</description>
+		<auto-attributes include="pk" mode="IN" optional="false"/>
+	</service>
+
+	<service name="sv_deleteCiMany" default-entity-name="SvCi" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="deleteCiMany" export="true">
+		 <description>delete many Ci.</description>
+		 <attribute name="idList" type="String" mode="INOUT" optional="true"/>
+	</service>
+	
+	
+	<service name="sv_copyCi" default-entity-name="SvCi" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="copyCi" export="true">
+		 <description>copy a Ci.</description>
+		 <auto-attributes include="pk" mode="IN" optional="false"/>
+		 <attribute name="targetParentId" type="String" mode="IN" optional="false"/>
+	</service>
+
+	<service name="sv_getCi" default-entity-name="SvCi" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="getCi" export="true">
+		 <description>get a ci</description>
+		<auto-attributes include="pk" mode="INOUT" optional="false"/>
+		<auto-attributes include="nonpk" mode="OUT" optional="true"/>
+		<attribute name="attr" type="Map" mode="OUT" optional="true"/>
+	</service>
+
+	<service name="sv_getCiMany" default-entity-name="SvCi" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="getCiMany" export="true">
+		 <description>get many ci</description>
+		<attribute name="idList" type="String" mode="INOUT" optional="true"/>
+		<attribute name="ciList" type="List" mode="OUT" optional="false"/>
+	</service>
+
+	<service name="sv_submitCi" default-entity-name="SvCi" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="submitCi" export="true">
+		 <description>submit a ci</description>
+		<auto-attributes include="pk" mode="INOUT" optional="true"/>
+		<auto-attributes include="nonpk" mode="IN" optional="true"/>
+		<attribute name="attr" type="Map" mode="IN" optional="true"/>
+	</service>
+	
+	<service name="sv_testCi" default-entity-name="SvCi" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="testCi" export="true">
+		 <description>test a Ci.</description>
+		<auto-attributes include="pk" mode="INOUT" optional="false"/>
+		<attribute name="testInfo" type="Map" mode="IN" optional="false"/>
+	</service>
+
+<!-- CiType -->
+
+	<service name="sv_getCiType" default-entity-name="SvCiType" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="getCiType" export="true">
+		 <description>get a ciType</description>
+		<auto-attributes include="pk" mode="INOUT" optional="true"/>
+		<auto-attributes include="nonpk" mode="IN" optional="true"/>
+		<attribute name="attr" type="Map" mode="IN" optional="true"/>
+	</service>
+
+	<service name="sv_getCiTypeMany" default-entity-name="SvCiType" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="getCiTypeMany" export="true">
+		 <description>get many ciType</description>
+		<attribute name="idList" type="String" mode="INOUT" optional="true"/>
+		<attribute name="ciTypeList" type="List" mode="OUT" optional="false"/>
+	</service>	
+
+<!-- CiTypeCategory -->	
+	<service name="sv_getCiTypeCategory" default-entity-name="CiTypeCategory" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="getCiTypeCategory" export="true">
+		 <description>get a ciType Category</description>
+		<auto-attributes include="pk" mode="INOUT" optional="true"/>
+		<auto-attributes include="nonpk" mode="IN" optional="true"/>
+	</service>	
+
+	<service name="sv_getCiTypeCategoryMany" default-entity-name="CiTypeCategory" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="getCiTypeCategoryMany" export="true">
+		 <description>get many ciType Category</description>
+		<attribute name="idList" type="String" mode="INOUT" optional="true"/>
+		<attribute name="ciTypeCategoryList" type="List" mode="OUT" optional="false"/>
+	</service>	
+	
+	<service name="sv_getCiTypeByCategory" default-entity-name="SvCiType" engine="java" 
+		location="com.siteview.ecc.Ci" invoke="getCiTypeByCategory" export="true">
+		 <description>get ciType by category</description>
+		<attribute name="categoryIdList" type="String" mode="INOUT" optional="true"/>
+		<attribute name="ciTypeList" type="List" mode="OUT" optional="false"/>
+	</service>	
+	
+<!-- CiMethod -->
+    <service name="sv_deleteCiMethod" default-entity-name="SvCiMethod" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="deleteCiMethod" export="true">
+		 <description>delete a CiMethod.</description>
+		<auto-attributes include="pk" mode="IN" optional="false"/>
+	</service>
+
+    <service name="sv_deleteChildrenCiMethod" default-entity-name="SvCiMethod" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="deleteCiMethodChildren" export="true">
+		 <description>delete a parent's son CiMethod.</description>
+		<auto-attributes include="pk" mode="IN" optional="false"/>
+	</service>
+
+	<service name="sv_deleteCiMethodMany" default-entity-name="SvCiMethod" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="deleteCiMethodMany" export="true">
+		 <description>delete many CiMethod.</description>
+		 <attribute name="idList" type="String" mode="INOUT" optional="true"/>
+	</service>
+
+	<service name="sv_copyCiMethod" default-entity-name="SvCiMethod" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="copyCiMethod" export="true">
+		 <description>copy a CiMethod.</description>
+		 <auto-attributes include="pk" mode="IN" optional="false"/>
+		 <attribute name="targetParentId" type="String" mode="IN" optional="false"/>
+	</service>
+
+	<service name="sv_getCiMethod" default-entity-name="SvCiMethod" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="getCiMethod" export="true">
+		 <description>get a CiMethod.</description>
+		<auto-attributes include="pk" mode="INOUT" optional="false"/>
+		<auto-attributes include="nonpk" mode="OUT" optional="true"/>
+		<attribute name="attr" type="Map" mode="OUT" optional="true"/>
+	</service>
+	
+	<service name="sv_getCiMethodMany" default-entity-name="SvCiMethod" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="getCiMethodMany" export="true">
+		 <description>get many CiMethod.</description>
+		 <attribute name="idList" type="String" mode="INOUT" optional="true"/>
+		<attribute name="ciMethodList" type="List" mode="OUT" optional="false"/>
+	</service>
+	
+	<service name="sv_submitCiMethod" default-entity-name="SvCiMethod" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="submitCiMethod" export="true">
+		 <description>submit a CiMethod.</description>
+		<auto-attributes include="pk" mode="INOUT" optional="true"/>
+		<auto-attributes include="nonpk" mode="IN" optional="true"/>
+		<attribute name="attr" type="Map" mode="IN" optional="true"/>
+	</service>	
+	
+<!-- CiMethodType -->
+	<service name="sv_getCiMethodType" default-entity-name="SvCiMethodType" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="getCiMethodType" export="true">
+		 <description>get a ciMethodType</description>
+		<auto-attributes include="pk" mode="INOUT" optional="true"/>
+		<auto-attributes include="nonpk" mode="IN" optional="true"/>
+		<attribute name="attr" type="Map" mode="IN" optional="true"/>
+	</service>
+
+	<service name="sv_getCiMethodTypeMany" default-entity-name="SvCiMethodType" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="getCiMethodTypeMany" export="true">
+		 <description>get many ciMethodType</description>
+		 <attribute name="idList" type="String" mode="INOUT" optional="true"/>
+		 <attribute name="ciMethodTypeList" type="List" mode="OUT" optional="false"/>
+	</service>
+	
+<!--Monitoe Opertaor-->	
+	<service name="sv_disableMethod" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="disableMethod" export="true">
+		<description>disable many CiMethod.</description>
+		<attribute name="targetIdList" type="String" mode="IN" optional="false"/>
+		<attribute name="sv_starttime" type="String" mode="IN" optional="true"/>
+		<attribute name="sv_endtime" type="String" mode="IN" optional="true"/>
+	</service>
+	
+	<service name="sv_disableMethodTemp" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="disableMethodTemp" export="true">
+		<description>disable many CiMethod temp.</description>
+		<attribute name="targetIdList" type="String" mode="IN" optional="false"/>
+		<attribute name="sv_starttime" type="String" mode="IN" optional="true"/>
+		<attribute name="sv_endtime" type="String" mode="IN" optional="true"/>
+	</service>
+	<service name="sv_enableMethod" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="enableMethod" export="true">
+		<description>enableMethod many CiMethod.</description>
+		<attribute name="targetIdList" type="String" mode="IN" optional="false"/>
+	</service>
+		
+<!-- CiAlert -->
+    <service name="sv_deleteAlert" default-entity-name="SvAlert" engine="java" 
+		location="com.siteview.ecc.Alert" invoke="deleteAlert" export="true">
+		 <description>delete a Alert.</description>
+		<auto-attributes include="pk" mode="IN" optional="false"/>
+	</service>
+
+	<service name="sv_getAlert" default-entity-name="SvAlert" engine="java" 
+		location="com.siteview.ecc.Alert" invoke="getAlert" export="true">
+		 <description>get a Alert.</description>
+		<auto-attributes include="pk" mode="INOUT" optional="false"/>
+		<auto-attributes include="nonpk" mode="OUT" optional="true"/>
+		<attribute name="attr" type="Map" mode="OUT" optional="true"/>
+	</service>
+
+	<service name="sv_getAlertMany" default-entity-name="SvAlert" engine="java" 
+		location="com.siteview.ecc.Alert" invoke="getAlertMany" export="true">
+		 <description>get many Alert.</description>
+		<attribute name="idList" type="String" mode="INOUT" optional="true"/>
+		<attribute name="alertList" type="List" mode="OUT" optional="false"/>
+	</service>
+	
+	<service name="sv_submitAlert" default-entity-name="SvAlert" engine="java" 
+		location="com.siteview.ecc.Alert" invoke="submitAlert" export="true">
+		 <description>submit a Alert.</description>
+		<auto-attributes include="pk" mode="INOUT" optional="true"/>
+		<auto-attributes include="nonpk" mode="IN" optional="true"/>
+		<attribute name="attr" type="Map" mode="IN" optional="true"/>
+	</service>
+	
+<!-- alertType-->
+	<service name="sv_getAlertType" default-entity-name="SvAlertType" engine="java" 
+		location="com.siteview.ecc.Alert" invoke="getAlertType" export="true">
+		 <description>get a alertType</description>
+		<auto-attributes include="pk" mode="INOUT" optional="true"/>
+		<auto-attributes include="nonpk" mode="IN" optional="true"/>
+		<attribute name="attr" type="Map" mode="IN" optional="true"/>
+	</service>
+	<service name="sv_getAlertTypeMany" default-entity-name="SvAlertType" engine="java" 
+		location="com.siteview.ecc.Alert" invoke="getAlertTypeMany" export="true">
+		 <description>get many alertType</description>
+		<attribute name="idList" type="String" mode="INOUT" optional="true"/>
+		<attribute name="alertTypeList" type="List" mode="OUT" optional="false"/>
+	</service>
+<!--alertTest-->
+	<service name="sv_smsTest" engine="java" 
+		location="com.siteview.ecc.Alert" invoke="smsTest" export="true">
+		 <description>send a task</description>
+		<attribute name="phoneNumberList" type="String" mode="IN" optional="false"/>
+		<attribute name="ByWebSms" type="Boolean" mode="IN" optional="true"/>
+	</service>
+
+	<service name="sv_emailTest" engine="java" 
+		location="com.siteview.ecc.Alert" invoke="emailTest" export="true">
+		 <description>send a email</description>
+		<attribute name="mailServer" type="String" mode="IN" optional="false"/>
+		<attribute name="mailToList" type="String" mode="IN" optional="false"/>
+		<attribute name="mailFrom" type="String" mode="IN" optional="false"/>
+		<attribute name="user" type="String" mode="IN" optional="true"/>
+		<attribute name="password" type="String" mode="IN" optional="false"/>
+		<attribute name="subject" type="String" mode="IN" optional="true"/>
+		<attribute name="content" type="String" mode="IN" optional="true"/>
+	</service>
+
+<!--alertLog-->	
+	<service name="sv_queryAlertLog" engine="java" 
+		location="com.siteview.ecc.Alert" invoke="queryAlertLog" export="true">
+		 <description>query Alert Log</description>
+		<attribute name="begin_year" type="String" mode="IN" optional="true"/>
+		<attribute name="begin_month" type="String" mode="IN" optional="true"/>
+		<attribute name="begin_day" type="String" mode="IN" optional="true"/>
+		<attribute name="begin_hour" type="String" mode="IN" optional="true"/>
+		<attribute name="begin_minute" type="String" mode="IN" optional="true"/>
+		<attribute name="begin_second" type="String" mode="IN" optional="true"/>
+		<attribute name="end_year" type="String" mode="IN" optional="true"/>
+		<attribute name="end_month" type="String" mode="IN" optional="true"/>
+		<attribute name="end_day" type="String" mode="IN" optional="true"/>
+		<attribute name="end_hour" type="String" mode="IN" optional="true"/>
+		<attribute name="end_minute" type="String" mode="IN" optional="true"/>
+		<attribute name="end_second" type="String" mode="IN" optional="true"/>
+		<attribute name="alertName" type="String" mode="IN" optional="true"/>
+		<attribute name="alertReceive" type="String" mode="IN" optional="true"/>
+		<attribute name="alertType" type="String" mode="IN" optional="true"/>
+		<attribute name="result" type="List" mode="OUT" optional="false"/>
+	</service>	
+	
+<!--DynamicData-->
+	<service name="sv_getDynamicData" engine="java" 
+		location="com.siteview.ecc.DynamicData" invoke="getDynamicData" export="true">
+		 <description>get Dynamic data</description>
+		<attribute name="ciId" type="String" mode="IN" optional="false"/>
+		<attribute name="monitorTplId" type="String" mode="IN" optional="false"/>
+		<attribute name="result" type="List" mode="OUT" optional="false"/>
+	</service>
+	
+	<service name="sv_getEntityDynamicData" engine="java" 
+		location="com.siteview.ecc.DynamicData" invoke="getEntityDynamicData" export="true">
+		 <description>get Entity Dynamic Data</description>
+		<attribute name="parentid" type="String" mode="IN" optional="false"/>
+		<attribute name="monitorTplId" type="String" mode="IN" optional="false"/>
+		<attribute name="result" type="List" mode="OUT" optional="false"/>
+	</service>
+	
+<!--RefreshMonitor-->	
+	<service name="sv_refreshCiMethods" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="refreshCiMethods" export="true">
+		 <description>refresh monitor</description>
+		<attribute name="idList" type="String" mode="IN" optional="false"/>
+		<attribute name="parentid" type="String" mode="IN" optional="true"/>
+		<attribute name="instantReturn" type="Boolean" mode="IN" optional="true"/>
+		<attribute name="result" type="List" mode="IN" optional="false"/>
+	</service>
+	
+	<service name="sv_getLatestRefresh" engine="java" 
+		location="com.siteview.ecc.CiMethod" invoke="getLatestRefresh" export="true">
+		 <description>get refresh monitor info</description>
+		<attribute name="queueName" type="String" mode="IN" optional="false"/>
+		<attribute name="isDone" type="Boolean" mode="IN" optional="false"/>
+		<attribute name="refreshData" type="List" mode="IN" optional="true"/>
+	</service>
+		
+<!--Log-->	
+	<service name="sv_queryRecordsByCount" engine="java" 
+		location="com.siteview.ecc.Log" invoke="queryRecordsByCount" export="true">
+		 <description>query Records By Count</description>
+		<attribute name="id" type="String" mode="IN" optional="false"/>
+		<attribute name="count" type="Integer" mode="IN" optional="true"/>
+		<attribute name="result" type="List" mode="OUT" optional="false"/>
+	</service>
+	
+	<service name="sv_queryReportData" engine="java" 
+		location="com.siteview.ecc.Report" invoke="queryReportData" export="true">
+		 <description>query report data</description>
+		<attribute name="id" type="String" mode="IN" optional="false"/>
+		<attribute name="compress" type="Boolean" mode="IN" optional="true"/>
+		<attribute name="dstrNeed" type="Boolean" mode="IN" optional="true"/>
+		<attribute name="begin_time" type="String" mode="IN" optional="false"/>
+		<attribute name="end_time" type="String" mode="IN" optional="false"/>
+		<attribute name="result" type="List" mode="OUT" optional="false"/>
+	</service>
+	
+	<service name="sv_getTreeData" engine="java" 
+		location="com.siteview.ecc.TreeData" invoke="getTreeData" export="true">
+		 <description>get tree data</description>
+		<attribute name="parentid" type="String" mode="IN" optional="false"/>
+		<attribute name="onlySon" type="Boolean" mode="IN" optional="true"/>
+		<attribute name="LoginName" type="String" mode="IN" optional="true"/>
+		<attribute name="result" type="List" mode="OUT" optional="false"/>
+	</service>
+<!--Task-->
+	<service name="sv_deleteTask" default-entity-name="SvAlertTask" engine="java" 
+		location="com.siteview.ecc.Task" invoke="deleteTask" export="true">
+		 <description>delete a task.</description>
+		<auto-attributes include="pk" mode="IN" optional="false"/>
+	</service>
+	
+	<service name="sv_getTask" default-entity-name="SvAlertTask" engine="java" 
+		location="com.siteview.ecc.Task" invoke="getTask" export="true">
+		 <description>query a Task</description>
+		<auto-attributes include="pk" mode="INOUT" optional="true"/>
+		<auto-attributes include="nonpk" mode="IN" optional="true"/>
+	</service>
+	
+	<service name="sv_getTaskMany" default-entity-name="SvAlertTask" engine="java" 
+		location="com.siteview.ecc.Task" invoke="getTaskMany" export="true">
+		<description>get many Task</description>
+		<attribute name="idList" type="String" mode="INOUT" optional="true"/>
+		<attribute name="taskList" type="List" mode="OUT" optional="false"/>
+	</service>	
+
+	<service name="sv_getAllTaskName" default-entity-name="SvAlertTask" engine="java" 
+		location="com.siteview.ecc.Task" invoke="getAllTaskName" export="true">
+		<description>get all Task Name</description>
+		<attribute name="idList" type="String" mode="INOUT" optional="true"/>
+		<attribute name="nameList" type="List" mode="OUT" optional="false"/>
+	</service>	
+
+	<service name="sv_createTask" default-entity-name="SvAlertTask" engine="java" 
+		location="com.siteview.ecc.Task" invoke="createTask" export="true">
+		 <description>submit a task</description>
+		<auto-attributes include="pk" mode="INOUT" optional="true"/>
+		<auto-attributes include="nonpk" mode="IN" optional="true"/>
+	</service>
+			
+	<!-- wan.luo 2008.5.22 -->
+    <service name="sv_addPingMonitor" engine="java" auth="true" transaction-timeout="3000"
+            location="com.siteview.ecc.MonitorService" invoke="addMonitor">
+        <description>add ping monitor</description>
+        <attribute name="_MachineName" type="String" mode="INOUT" optional="false"/>
+        <attribute name="_frequency" type="String" mode="IN" optional="false"/>
+        <attribute name="_frequencyUnit" type="String" mode="IN" optional="false"/>
+        <attribute name="sv_name" type="String" mode="IN" optional="false"/>
+        <attribute name="_SendBytes" type="Integer" mode="IN" optional="false"/>
+        <attribute name="_Timeout" type="Integer" mode="IN" optional="false"/>
+        <attribute name="_SendNums" type="String" mode="IN" optional="false"/>
+		
+		<attribute name="_result" type="String" mode="OUT" optional="true"/>
+    </service>	
+	
+	<!-- wan.luo 2008.5.22 -->
+    <service name="sv_LoadMonitor" engine="java" auth="true" transaction-timeout="300"	
+		location="com.siteview.ecc.MonitorService" invoke="loadMonitor">
+	</service>	
+		
+	<!-- wan.luo 2008.5.22 -->
+    <service name="sv_RunMonitor" engine="java" transaction-timeout="300"	
+		location="com.siteview.ecc.MonitorService" invoke="runMonitor">
+
+		<attribute name="_Context" type="java.util.List" mode="IN" optional="false"/>
+		
+		<attribute name="_MachineName" type="String" mode="OUT" optional="false"/>
+		<attribute name="_result" type="String" mode="OUT" optional="true"/>
+	</service>	
+
+	<!-- wan.luo 2008.5.22 -->
+    <service name="sv_deleteMonitor" engine="java" auth="true" transaction-timeout="300"	
+		location="com.siteview.ecc.MonitorService" invoke="deleteMonitor">
+		<attribute name="MonitorID" type="String" mode="IN" optional="false"/>
+		<attribute name="_result" type="String" mode="OUT" optional="true"/>
+	</service>	
+
+</services>

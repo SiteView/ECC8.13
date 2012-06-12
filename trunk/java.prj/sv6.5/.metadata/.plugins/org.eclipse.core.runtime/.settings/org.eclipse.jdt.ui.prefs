@@ -1,0 +1,11 @@
+#Fri Aug 19 17:58:19 CST 2005
+useQuickDiffPrefPage=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+org.eclipse.jface.textfont=1|Courier New|10|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=6
+Refactoring.ErrorPage.severityThreshold=2
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.javadoclocations=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<javadoclocation>\r\n<location_01 path\="D\:/jre1.5.0_01/lib/jce.jar" url\="http\://java.sun.com/j2se/1.5.0/docs/api/"/>\r\n<location_01 path\="D\:/jre1.5.0_01/lib/ext/sunpkcs11.jar" url\="http\://java.sun.com/j2se/1.5.0/docs/api/"/>\r\n<location_01 path\="D\:/jre1.5.0_01/lib/charsets.jar" url\="http\://java.sun.com/j2se/1.5.0/docs/api/"/>\r\n<location_01 path\="D\:/jre1.5.0_01/lib/jsse.jar" url\="http\://java.sun.com/j2se/1.5.0/docs/api/"/>\r\n<location_01 path\="D\:/jre1.5.0_01/lib/ext/localedata.jar" url\="http\://java.sun.com/j2se/1.5.0/docs/api/"/>\r\n<location_01 path\="D\:/jre1.5.0_01/lib/ext/dnsns.jar" url\="http\://java.sun.com/j2se/1.5.0/docs/api/"/>\r\n<location_01 path\="D\:/jre1.5.0_01/lib/rt.jar" url\="http\://java.sun.com/j2se/1.5.0/docs/api/"/>\r\n<location_01 path\="D\:/jre1.5.0_01/lib/ext/sunjce_provider.jar" url\="http\://java.sun.com/j2se/1.5.0/docs/api/"/>\r\n</javadoclocation>\r\n
+fontPropagated=true

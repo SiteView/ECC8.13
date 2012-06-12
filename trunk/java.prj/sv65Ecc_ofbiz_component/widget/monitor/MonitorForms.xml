@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	CreateMonitorForms
+	
+	创建监测器的窗体
+-->
+
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-form.xsd">
+	<form name="createMonitorButton"  target="" title=""  type="single" paginate-target=""
+        odd-row-style="alternate-row" default-table-style="basic-table">
+		<field name="s"  title=" " widget-style="largeSubmit">
+			<hyperlink description="Add a new monitor instance to this group" target="listMonitorType?groupId=${parameters.groupId}"/>
+		</field>
+	</form>	
+
+</forms>

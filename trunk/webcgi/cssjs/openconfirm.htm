@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>打开确认窗口</title>
+<script language="javascript">
+function _click()
+{
+	if(Alert(GetClientMessage('qdjqdhqx'),GetClientMessage('xxts'),GetClientMessage('qdqx'))==GetClientMessage('qd'))
+		document.all("aaa").value="您点了确定";
+	else
+		document.all("aaa").value="您点了取消";
+}
+
+function GetClientMessage(_key)
+{
+	if(_key=="qdjqdhqx")
+		return "删除 SNMP 设备将丢失其中的所有监测服务，确认删除吗？";
+	if(_key=="xxts")
+		return "消息提示框";
+	if(_key=="qdqx")
+		return "确定,取消";
+	if(_key=="qd")
+		return "确定";
+}
+
+function Alert(_content,_title,_bNames)
+{
+	//alert(_bNames);
+	//if(_title == "" || _title == undefined)
+	//	_title = GetClientMessage('systemtitle');
+	if(_bNames == "" || _bNames == undefined)
+		_bNames = GetClientMessage('qd');
+	var msg = new Object();
+	msg._Title = _title;
+	msg._Content = _content;
+	msg._BtnNum = _bNames;
+	var feature = 'dialogWidth:360px;dialogHeight:255px;scroll:no;status:no;resizeable:no;edge:raised';
+	var reValue = window.showModalDialog("confirm.htm",msg,feature);
+	return reValue;
+}
+</script>
+
+</head>
+<body>
+<p style="font-size:14px;line-height:24px;">
+<a href="javascript:_click();">打开确认窗口</a>
+<input type="text" id="aaa" /></p>
+</body>
+</html>

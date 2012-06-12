@@ -1,0 +1,1 @@
+将Script2.js放到/htdocs目录下面

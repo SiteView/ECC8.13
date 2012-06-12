@@ -1,0 +1,5 @@
+import com.siteview.ecc.service.*;
+
+id = parameters.get("Id");
+
+context.put("monitor", Monitor.getMonitor(id));

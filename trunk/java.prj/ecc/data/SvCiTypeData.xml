@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvCiType ciTypeId="Alteon" cat_id="_Networkset" hasTable="F" sv_name="Alteon&#32593;&#32476;&#35774;&#22791;" sv_label="IDS_2105" sv_description="IDS_2105"/>
+    <SvCiType ciTypeId="DNS" cat_id="_DNS" hasTable="F" sv_name="DNS" sv_label="IDS_2171" sv_description="IDS_2172"/>
+    <SvCiType ciTypeId="Dynamo Application Server" cat_id="_Middle" hasTable="F" sv_name="Dynamo Application Server" sv_label="IDS_2033" sv_description="IDS_2032"/>
+    <SvCiType ciTypeId="example" cat_id="_Networkset" hasTable="F" sv_name="example&#32593;&#32476;&#35774;&#22791;" sv_label="IDS_2120" sv_description="IDS_2119"/>
+    <SvCiType ciTypeId="IBMWebSphereMQ" cat_id="_Middle" hasTable="F" sv_name="IBM WebSphere MQ" sv_description="IDS_2078"/>
+    <SvCiType ciTypeId="Informix" cat_id="_Database" hasTable="F" sv_name="Informix" sv_label="IDS_2254" sv_description="IDS_2253"/>
+    <SvCiType ciTypeId="Netscape Server" cat_id="_WebServer" hasTable="F" sv_name="Netscape Server" sv_label="IDS_2134" sv_description="IDS_2133"/>
+    <SvCiType ciTypeId="News" cat_id="_News" hasTable="F" sv_name="News" sv_label="IDS_2178" sv_description="IDS_2177"/>
+    <SvCiType ciTypeId="SQL Server" cat_id="_Database" hasTable="F" sv_name="SQL Server" sv_label="IDS_2268" sv_description="IDS_2267"/>
+    <SvCiType ciTypeId="TOPSEC" cat_id="_Firewall" hasTable="F" sv_name="&#22825;&#34701;&#20449;&#38450;&#28779;&#22681;" sv_label="IDS_2243" sv_description="IDS_2243"/>
+    <SvCiType ciTypeId="WebSphere" cat_id="_Middle" hasTable="F" sv_name="WebSphere" sv_label="IDS_2048" sv_description="IDS_2047"/>
+    <SvCiType ciTypeId="WebSphere50" cat_id="_Middle" hasTable="F" sv_name="WebSphere" sv_description="IDS_2047"/>
+    <SvCiType ciTypeId="_Alteon" cat_id="_Networkset" hasTable="F" sv_name="Alteon" sv_label="IDS_2116" sv_description="IDS_2115"/>
+    <SvCiType ciTypeId="_apache" cat_id="_WebServer" hasTable="F" sv_name="Apache" sv_label="IDS_2124" sv_description="IDS_2123"/>
+    <SvCiType ciTypeId="_AS400" cat_id="_Server" hasTable="F" sv_name="AS400" sv_label="IDS_2195_AS400" sv_description="IDS_2194_AS400"/>
+    <SvCiType ciTypeId="_ASP" cat_id="_ASP" hasTable="F" sv_name="ASP" sv_label="IDS_2022" sv_description="IDS_2023"/>
+    <SvCiType ciTypeId="_Check Point" cat_id="_Firewall" hasTable="F" sv_name="Check Point&#38450;&#28779;&#22681;" sv_label="IDS_2236" sv_description="IDS_2236"/>
+    <SvCiType ciTypeId="_CiscoNetDev" cat_id="_Networkset" hasTable="F" sv_name="Cisco&#32593;&#32476;&#35774;&#22791;" sv_label="IDS_2108" sv_description="IDS_2107"/>
+    <SvCiType ciTypeId="_customMonitor" cat_id="_customServe" hasTable="F" sv_name="&#19994;&#21153;&#25320;&#27979;" sv_label="IDS_2184" sv_description="IDS_2183"/>
+    <SvCiType ciTypeId="_database" cat_id="_Database" hasTable="F" sv_name="&#36890;&#29992;&#25968;&#25454;&#24211;" sv_label="IDS_2248" sv_description="IDS_2247"/>
+    <SvCiType ciTypeId="_DB2" cat_id="_Database" hasTable="F" sv_name="DB2" sv_label="IDS_2271" sv_description="IDS_2270"/>
+    <SvCiType ciTypeId="_DB2_odbc" cat_id="_Database" hasTable="F" sv_name="DB2_odbc" sv_label="IDS_2281" sv_description="IDS_2280"/>
+    <SvCiType ciTypeId="_Domino" cat_id="_Middle" hasTable="F" sv_name="Domino" sv_label="IDS_2074" sv_description="IDS_2073"/>
+    <SvCiType ciTypeId="_example" cat_id="_example" hasTable="F" sv_name="&#20363;&#23376;&#35774;&#22791;" sv_label="IDS_2154" sv_description="IDS_2154"/>
+    <SvCiType ciTypeId="_exchange" cat_id="_MailServer" hasTable="F" sv_name="Exchange" sv_label="IDS_2008" sv_description="IDS_2007"/>
+    <SvCiType ciTypeId="_Exchange2003" cat_id="_MailServer" hasTable="F" sv_name="Exchange" sv_label="IDS_2008" sv_description="IDS_2007"/>
+    <SvCiType ciTypeId="_F5 Big IP" cat_id="_Load_Balancing" hasTable="F" sv_name="F5 Big IP" sv_label="IDS_2165" sv_description="IDS_2164"/>
+    <SvCiType ciTypeId="_foundry" cat_id="_Networkset" hasTable="F" sv_name="Foundry&#32593;&#32476;&#35774;&#22791;" sv_label="IDS_2111" sv_description="IDS_2111"/>
+    <SvCiType ciTypeId="_Ftp" cat_id="_WebServer" hasTable="F" sv_name="FTP" sv_label="IDS_2143" sv_description="IDS_2142"/>
+    <SvCiType ciTypeId="_HuaWeiNetDev" cat_id="_Networkset" hasTable="F" sv_name="HuaWei NetWork" sv_description="IDS_2110"/>
+    <SvCiType ciTypeId="_iis" cat_id="_WebServer" hasTable="F" sv_name="IIS" sv_label="IDS_2128" sv_description="IDS_2127"/>
+    <SvCiType ciTypeId="_JKLVPN" cat_id="_App" hasTable="F" sv_name="VPN&#36335;&#30001;&#22120;" sv_description="IDS_2285"/>
+    <SvCiType ciTypeId="_ldap" cat_id="_LDAP" hasTable="F" sv_name="LDAP" sv_label="IDS_2002" sv_description="IDS_2001"/>
+    <SvCiType ciTypeId="_Mail" cat_id="_MailServer" hasTable="F" sv_name="&#26631;&#20934;&#37038;&#20214;&#26381;&#21153;" sv_label="IDS_2016" sv_description="IDS_2015"/>
+    <SvCiType ciTypeId="_mmsc" cat_id="_openview" hasTable="F" sv_name="mmsc&#35774;&#22791;" sv_label="IDS_2156" sv_description="IDS_2155"/>
+    <SvCiType ciTypeId="_mqSeries" cat_id="_Middle" hasTable="F" sv_name="MQ Series" sv_label="IDS_2030" sv_description="IDS_2029"/>
+    <SvCiType ciTypeId="_mysql" cat_id="_Database" hasTable="F" sv_name="My SQL" sv_label="IDS_2257" sv_description="IDS_2256"/>
+    <SvCiType ciTypeId="_Netscreen" cat_id="_Firewall" hasTable="F" sv_name="Netscreen&#38450;&#28779;&#22681;" sv_label="IDS_2238" sv_description="IDS_2238"/>
+    <SvCiType ciTypeId="_Nortel" cat_id="_Networkset" hasTable="F" sv_name="Nortel" sv_label="IDS_2113" sv_description="IDS_2112"/>
+    <SvCiType ciTypeId="_oracle" cat_id="_Database" hasTable="F" sv_name="Oracle" sv_label="IDS_2262" sv_description="IDS_2261"/>
+    <SvCiType ciTypeId="_Ping" cat_id="_App" hasTable="F" sv_name="Ping" sv_label="IDS_2090" sv_description="IDS_2089"/>
+    <SvCiType ciTypeId="_Pix" cat_id="_Firewall" hasTable="F" sv_name="Pix &#38450;&#28779;&#22681;" sv_label="IDS_2241" sv_description="IDS_2240"/>
+    <SvCiType ciTypeId="_port" cat_id="_App" hasTable="F" sv_name="port" sv_label="IDS_2094" sv_description="IDS_2093"/>
+    <SvCiType ciTypeId="_Script" cat_id="_App" hasTable="F" sv_name="&#30417;&#27979;&#19987;&#29992;&#35821;&#35328;" sv_label="IDS_2092" sv_description="IDS_2091"/>
+    <SvCiType ciTypeId="_SnmpWin" cat_id="_Server" hasTable="F" sv_name="Snmp Windows" sv_description="IDS_2194"/>
+    <SvCiType ciTypeId="_Stanetdev" cat_id="_Networkset" hasTable="F" sv_name="&#36890;&#29992;&#32593;&#32476;&#35774;&#22791;" sv_label="IDS_2098" sv_description="IDS_2097"/>
+    <SvCiType ciTypeId="_stdWeb" cat_id="_WebServer" hasTable="F" sv_name="&#26631;&#20934;Web&#26381;&#21153;" sv_label="IDS_2148" sv_description="IDS_2147"/>
+    <SvCiType ciTypeId="_sybase" cat_id="_Database" hasTable="F" sv_name="SyBase" sv_label="IDS_2265" sv_description="IDS_2264"/>
+    <SvCiType ciTypeId="_Tomcat" cat_id="_WebServer" hasTable="F" sv_name="Tomcat" sv_label="IDS_2138" sv_description="IDS_2137"/>
+    <SvCiType ciTypeId="_Tuxedo" cat_id="_Middle" hasTable="F" sv_name="Tuxedo" sv_label="IDS_2069" sv_description="IDS_2068"/>
+    <SvCiType ciTypeId="_unix" cat_id="_Server" hasTable="F" sv_name="Unix" sv_label="IDS_2200" sv_description="IDS_2199"/>
+    <SvCiType ciTypeId="_unixagent" cat_id="_Server" hasTable="F" sv_name="UnixAgent" sv_label="IDS_2233" sv_description="IDS_2233"/>
+    <SvCiType ciTypeId="_URL" cat_id="_WebServer" hasTable="F" sv_name="URL" sv_label="IDS_2054" sv_description="IDS_2152"/>
+    <SvCiType ciTypeId="_weblogic" cat_id="_Middle" hasTable="F" sv_name="WebLogic" sv_label="IDS_2058" sv_description="IDS_2057"/>
+    <SvCiType ciTypeId="_WebSphere" cat_id="_Middle" hasTable="F" sv_name="WebSphere" sv_description="IDS_2047"/>
+    <SvCiType ciTypeId="_win" cat_id="_Server" hasTable="F" sv_name="Windows" sv_label="IDS_2191" sv_description="IDS_2190"/>
+</entity-engine-xml>

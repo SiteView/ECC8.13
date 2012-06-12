@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UserOperateLog", "UserOperateLog.vcproj", "{434C4064-AF92-41AE-A168-EE1050E8BBFA}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{434C4064-AF92-41AE-A168-EE1050E8BBFA}.Debug.ActiveCfg = Debug|Win32
+		{434C4064-AF92-41AE-A168-EE1050E8BBFA}.Debug.Build.0 = Debug|Win32
+		{434C4064-AF92-41AE-A168-EE1050E8BBFA}.Release.ActiveCfg = Release|Win32
+		{434C4064-AF92-41AE-A168-EE1050E8BBFA}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

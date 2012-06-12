@@ -1,0 +1,40 @@
+body {background:#FFFFFF; font-size:9pt;}
+table,tr,td,input,select,button,textarea {font-size:9pt; line-height:13pt}
+div {  font-size: 9pt}
+.main {  font-size: 9pt; line-height: 12pt}
+
+a {color:#000000;text-decoration:none;}
+a:link {color:#000000;text-decoration:none;}
+a:hover {color:#0000FF;text-decoration:underline;}
+a:visited {color:#000000;text-decoration:underline;}
+
+a.speciallink {color:#ffffff;text-decoration:none;}
+a.speciallink:link {color:#ffffff;text-decoration:none;}
+a.speciallink:hover {color:#0000FF;text-decoration:underline;}
+a.speciallink:visited {color:#ffffff;text-decoration:underline;}
+
+/* 蓝色超链接 */
+a.bluelink {color:#0000ff;text-decoration:underline}
+a.bluelink:hover {color:#0000ff;text-decoration:underline;}
+a.bluelink:visited {color:#0000ff;text-decoration:underline;}
+
+a.menulink {color:#ffffff;text-decoration:none;}
+a.menulink:hover {color:#ffcc00;text-decoration:none;}
+a.menulink:visited {color:#ffffff;text-decoration:none;}
+
+.title {  font-family: "黑体"; font-size: 20pt}
+.text {  font-size: 9pt; line-height: 13pt}
+.smalltext {font-size: 9pt;}.border {  border: 1px #CCCCCC solid}
+
+/* menu 里变色用的CSS类 */
+.white {color:#ffffff;cursor:hand;font-weight:bold}
+.highlight {color:#FFCC00;cursor:hand;font-weight:bold;}
+/*日历里的字体*/
+.headtext {  font-family: "宋体", "serif"; font-size: 15px; color: #FFFFFF}
+/*显示Active Filter 界面样式*/
+.TabsContainer {
+	BORDER-BOTTOM: ridge; BORDER-LEFT: ridge; BORDER-RIGHT: ridge; BORDER-TOP: ridge
+}
+.TabsDivs {
+	BORDER-BOTTOM: thin inset; BORDER-LEFT: thin inset; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset
+}

@@ -1,0 +1,3 @@
+ofbiz=com.mysql.jdbc.Driver,jdbc:mysql://218.249.196.87:3306/ofbiz?autoReconnect=true,root,password,false,mysql
+ofbiz_derby=org.apache.derby.jdbc.EmbeddedDriver,jdbc:derby:E:/ofbiz.workspace/ofbiz/runtime/data/derby/ofbiz;create=false,ofbiz,ofbiz,false,derby
+

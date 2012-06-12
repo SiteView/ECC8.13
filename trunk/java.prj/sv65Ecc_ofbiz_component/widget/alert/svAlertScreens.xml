@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+    
+    <screen name="alertList">
+		<section>
+			<actions>
+				<script location="component://svecc/script/org/siteview/svecc/alert/AlertList.bsh"/>
+			</actions>        
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.tbt_svAlertList}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                               <platform-specific>
+		                            <html>
+		                                <html-template location="component://svecc/webapp/ecc/alert/alertlist.ftl" />
+		                            </html>
+		                        </platform-specific>
+		                   </container>
+
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.lbl_svAlertActions}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                               <platform-specific>
+		                            <html>
+		                                <html-template location="component://svecc/webapp/ecc/alert/actionlist.ftl" />
+		                            </html>
+		                        </platform-specific>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+	
+    <screen name="alertAdd">
+		<section>			
+			<actions>
+				<!--
+				<script location="component://svecc/script/org/siteview/svecc/alert/AlertList.bsh"/>
+					-->
+			</actions>        
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.ttl_svAlertAdd}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                               <platform-specific>
+		                            <html>
+		                                <html-template location="component://svecc/webapp/ecc/alert/alertadd.ftl" />
+		                            </html>
+		                        </platform-specific>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen> 
+	
+    <screen name="alertDefine">
+		<section>
+			<actions>
+				<script location="component://svecc/script/org/siteview/svecc/alert/AlertDefine.bsh"/>
+			</actions>        
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.ttl_svAlertDefine}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                               <platform-specific>
+		                            <html>
+		                                <html-template location="component://svecc/webapp/ecc/alert/alertdefine.ftl" />
+		                            </html>
+		                        </platform-specific>
+		                   </container>
+						<!--
+						<screenlet title="test">
+							<section>
+								<widgets>
+									<include-form name="Alert" location="component://svecc/widget/alert/AlertForm.xml"/>
+								</widgets>
+							</section>
+						</screenlet>
+						-->
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen> 
+	
+    <screen name="alertHistory">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.ttl_svAlertHistory}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                               <platform-specific>
+		                            <html>
+		                                <html-template location="component://svecc/webapp/ecc/alert/alertHistory.ftl" />
+		                            </html>
+		                        </platform-specific>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen> 
+
+    <screen name="alertEdit">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.ttl_svAlertEdit}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                               <platform-specific>
+		                            <html>
+		                                <html-template location="component://svecc/webapp/ecc/alert/alertedit.ftl" />
+		                            </html>
+		                        </platform-specific>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen> 
+
+    <screen name="alertReport">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.ttl_svAlertReport}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                               <platform-specific>
+		                            <html>
+		                                <html-template location="component://svecc/webapp/ecc/alert/alertrpoert.ftl" />
+		                            </html>
+		                        </platform-specific>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen> 
+</screens>
+

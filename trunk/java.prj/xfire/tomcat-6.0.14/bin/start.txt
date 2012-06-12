@@ -1,0 +1,9 @@
+
+D:\ecc_java\tomcat-6.0.14\bin>set JAVA_HOME=D:\ecc_java\jdk1.5.0_06 
+
+D:\ecc_java\tomcat-6.0.14\bin>echo JAVA_HOME 
+JAVA_HOME
+Using CATALINA_BASE:   D:\ecc_java\tomcat-6.0.14
+Using CATALINA_HOME:   D:\ecc_java\tomcat-6.0.14
+Using CATALINA_TMPDIR: D:\ecc_java\tomcat-6.0.14\temp
+Using JRE_HOME:        D:\ecc_java\jdk1.5.0_06

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+    
+    <screen name="pagerPreference">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+	                   <container style="screenlet-header">
+	                       <label style="boxhead" text="pagerPreference"/>
+	                   </container>
+	                   <container style="screenlet-body">
+                            <section>
+                                <actions>
+									<service service-name="getPagerDefaultPrefefences"></service>
+								</actions> 
+                                 <widgets>
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/pager/pagerDefaultPreferences.ftl" />
+			                            </html>
+			                        </platform-specific>
+                                </widgets>
+                           </section>
+
+                            <section>
+                            	<actions>
+									<service service-name="getPagerPrefefencesList"></service>
+								</actions> 
+                                 <widgets>
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/pager/AdditionalPagerSettings.ftl" />
+			                            </html>
+			                        </platform-specific>
+                                </widgets>
+                           </section>                            
+	                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+   
+    <screen name="AddPagerPreferences">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="AddPagerPreferences"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                            <section>  
+                              	<actions>
+									<service service-name="PagerSettingInfo"></service>
+								</actions> 
+                                <widgets>
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/pager/AddAdditionalPagerSettings.ftl" />
+			                            </html>
+			                        </platform-specific>
+                                </widgets>
+                            </section>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+ 
+    <screen name="testPagerseting">
+		<section>    
+			<actions>
+				<service service-name="getPagerPreferenceInfo"></service>
+			</actions>  
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="PagerTest"/>
+		                   </container>
+		                   <container style="screenlet-body">
+ 			                        <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/pager/testPagerseting.ftl" />
+			                            </html>
+			                        </platform-specific>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen> 
+        
+     <screen name="errorPage">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="errorPage"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                                <platform-specific>
+	                                <html>
+		                                <html-template location="component://svecc/webapp/ecc/pager/errorPage.ftl"/>
+	                                </html>
+                                </platform-specific>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>    
+    
+    
+</screens>
+

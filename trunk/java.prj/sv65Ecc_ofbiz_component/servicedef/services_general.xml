@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/services.xsd">
+	<description>SvEcc Component Services</description>
+	<vendor>DragonFlow</vendor>
+
+	<service name="getGeneralAttr" engine="java" 
+		location="com.siteview.svecc.service.General" invoke="getGeneralAttr">
+		<attribute name="data" type="java.util.List" mode="OUT"
+			optional="true" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+	<service name="getGeneral" engine="java" 
+		location="com.siteview.svecc.service.General" invoke="getGeneral">
+		<attribute name="data" type="java.util.Map" mode="OUT"
+			optional="true" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+	<service name="putGeneral" engine="java" 
+		location="com.siteview.svecc.service.General" invoke="putGeneral">
+		<attribute name="data" type="java.util.Map" mode="IN"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+</services>

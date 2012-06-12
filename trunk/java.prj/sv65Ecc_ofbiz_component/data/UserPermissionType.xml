@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvUserPermissionType attrName="unix" label="111" description="1111"/>
+    <SvUserPermissionType attrName="_alertAdhocReport" label="Create Adhoc Alert Reports" description="create adhoc alert reports"/>
+    <SvUserPermissionType attrName="_alertDisable" label="Disable Alerts Indefinitely" description="disable or enable alerts indefinitely"/>
+    <SvUserPermissionType attrName="_alertEdit" label="Edit Alerts" description="add, edit, or delete alerts"/>
+    <SvUserPermissionType attrName="_alertList" label="View Alerts List" description="view the list of the alerts in the alert page"/>
+    <SvUserPermissionType attrName="_alertRecentReport" label="View Alert History Report" description="view the recent history report for an alert"/>
+    <SvUserPermissionType attrName="_alertTempDisable" label="Disable Alerts Temporarily" description="disable or enable alerts temporarily"/>
+    <SvUserPermissionType attrName="_alertTest" label="Test Alerts" description="test an alert"/>
+    <SvUserPermissionType attrName="_browse" label="Use Browse and Summary" description="use the Browse Monitor form and Monitor Description Report"/>
+    <SvUserPermissionType attrName="_edit" label="222" description="222"/>
+    <SvUserPermissionType attrName="_groupDisable" label="Disable Groups" description="disable or enable groups"/>
+    <SvUserPermissionType attrName="_groupEdit" label="Edit Group" description="add, rename, copy, or delete groups"/>
+    <SvUserPermissionType attrName="_groupRefresh" label="Refresh Groups" description="refresh groups"/>
+    <SvUserPermissionType attrName="_healthDisable" label="Disable/Enable Application Health Monitors" description="Disable/Enable Application Health Monitors"/>
+    <SvUserPermissionType attrName="_healthEdit" label="Edit Health Parameters" description="Edit SiteScope Health parameters"/>
+    <SvUserPermissionType attrName="_healthView" label="View Health Page" description="View the SiteScope Health (self-monitoring) page"/>
+    <SvUserPermissionType attrName="_logs" label="View Logs" description="view the raw data for monitors, alerts and other logs"/>
+    <SvUserPermissionType attrName="_monitorAcknowledge" label="Acknowledge Monitors" description="acknowledge monitors"/>
+    <SvUserPermissionType attrName="_monitorDisable" label="Disable Monitors" description="disable or enable monitors"/>
+    <SvUserPermissionType attrName="_monitorEdit" label="Edit Monitors" description="add, edit, or delete monitors"/>
+    <SvUserPermissionType attrName="_monitorRecent" label="View Monitor History Report" description="view the recent history report for a monitor"/>
+    <SvUserPermissionType attrName="_monitorRefresh" label="Refresh Monitors" description="refresh monitors"/>
+    <SvUserPermissionType attrName="_monitorTools" label="Use MonitorTools" description="use the Tools form for a monitor"/>
+    <SvUserPermissionType attrName="_multiEdit" label="Edit Multi-View" description="add, edit or delete items on the Multi-View page"/>
+    <SvUserPermissionType attrName="_preference" label="Edit Preferences" description="use any of the Preference forms"/>
+    <SvUserPermissionType attrName="_preferenceTest" label="Test Preferences" description="test a preference setting"/>
+    <SvUserPermissionType attrName="_progress" label="View Progress" description="view the Progress page showing monitors that are running"/>
+    <SvUserPermissionType attrName="_reportAdhoc" label="Create Adhoc Reports" description="create adhoc reports"/>
+    <SvUserPermissionType attrName="_reportDisable" label="Disable Reports" description="disable or enable reports"/>
+    <SvUserPermissionType attrName="_reportEdit" label="Edit Reports" description="add, edit, or delete reports"/>
+    <SvUserPermissionType attrName="_reportGenerate" label="Generate Reports" description="generate a scheduled report manually"/>
+    <SvUserPermissionType attrName="_reportToolbar" label="Show Report Toolbar" description="include links at the top on reports"/>
+    <SvUserPermissionType attrName="_support" label="Use the Support Tool" description="use the Send Support Request form"/>
+    <SvUserPermissionType attrName="_tools" label="Use Tools" description="use the generic Tools forms"/>
+    <SvUserPermissionType attrName="_useGlobalPermissions" label="333" description="333"/>
+</entity-engine-xml>

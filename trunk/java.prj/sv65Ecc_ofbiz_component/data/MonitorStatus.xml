@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvMonitorStatus id="-1002" status="unable to connect to remote monitoring server"/>
+    <SvMonitorStatus id="-1001" status="ip address does not match"/>
+    <SvMonitorStatus id="-999" status="content match error"/>
+    <SvMonitorStatus id="-998" status="unable to connect to server"/>
+    <SvMonitorStatus id="-997" status="unknown host name"/>
+    <SvMonitorStatus id="-996" status="timed out reading"/>
+    <SvMonitorStatus id="-995" status="content changed"/>
+    <SvMonitorStatus id="-994" status="internal error in WinInet library"/>
+    <SvMonitorStatus id="-993" status="unable to reach server"/>
+    <SvMonitorStatus id="-992" status="error"/>
+    <SvMonitorStatus id="-991" status="no status in reply from server"/>
+    <SvMonitorStatus id="-990" status="content element missing"/>
+    <SvMonitorStatus id="-989" status="content error found"/>
+    <SvMonitorStatus id="-988" status="XML element value mismatch"/>
+    <SvMonitorStatus id="-987" status="XML format error"/>
+    <SvMonitorStatus id="-986" status="XML element not found"/>
+    <SvMonitorStatus id="200" status="ok"/>
+    <SvMonitorStatus id="201" status="created"/>
+    <SvMonitorStatus id="202" status="accepted"/>
+    <SvMonitorStatus id="203" status="non-authoratative"/>
+    <SvMonitorStatus id="204" status="no content"/>
+    <SvMonitorStatus id="205" status="reset content"/>
+    <SvMonitorStatus id="206" status="partial content"/>
+    <SvMonitorStatus id="301" status="document moved"/>
+    <SvMonitorStatus id="302" status="document moved"/>
+    <SvMonitorStatus id="303" status="document moved"/>
+    <SvMonitorStatus id="307" status="document moved"/>
+    <SvMonitorStatus id="400" status="bad request"/>
+    <SvMonitorStatus id="401" status="unauthorized"/>
+    <SvMonitorStatus id="403" status="forbidden"/>
+    <SvMonitorStatus id="404" status="not found"/>
+    <SvMonitorStatus id="407" status="proxy authentication required"/>
+    <SvMonitorStatus id="500" status="server error"/>
+    <SvMonitorStatus id="501" status="not implemented"/>
+    <SvMonitorStatus id="502" status="proxy received invalid response"/>
+    <SvMonitorStatus id="503" status="server busy"/>
+    <SvMonitorStatus id="504" status="proxy timed out"/>
+    <SvMonitorStatus id="12037" status="secure certificate expired"/>
+    <SvMonitorStatus id="12038" status="secure certificate name does not match host name"/>
+    <SvMonitorStatus id="12044" status="requires client certificate authentification"/>
+    <SvMonitorStatus id="12045" status="certificate authority not registered in Internet Explorer"/>
+    <SvMonitorStatus id="12157" status="insufficient encryption, probably needs 128 bit Internet Explorer"/>
+</entity-engine-xml>

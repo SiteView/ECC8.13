@@ -1,0 +1,1470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Microsoft.ManagementConsole.TraceSources" Collapsed="true">
+    <Position X="174.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\TraceSources.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ActionData" Collapsed="true">
+    <Position X="15.5" Y="21.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAQAACAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ActionNodeRequestInfo" Collapsed="true">
+    <Position X="94.75" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActionNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ActionSeparatorItemData" Collapsed="true">
+    <Position X="12.75" Y="19.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActionSeparatorItemData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ActionsPaneExtendedItemData" Collapsed="true">
+    <Position X="16.75" Y="19.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAigAAAEAAACACQgAAAAAEQAAAAABQAAQAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActionsPaneExtendedItemData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ActionsPaneItemCollectionData" Collapsed="true">
+    <Position X="18" Y="21.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAABAAAiAAAAAAAAAIAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActionsPaneItemCollectionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ActionsPaneItemData" Collapsed="true">
+    <Position X="15.75" Y="18.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAACAAAAAAABAAAAAAAAAAAIgAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActionsPaneItemData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ActionViewRequestInfo" Collapsed="true">
+    <Position X="79.5" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAACAAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActionViewRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ActivateNodeRequestInfo" Collapsed="true">
+    <Position X="118.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActivateNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ApplyPropertyPageMessageRequestInfo" Collapsed="true">
+    <Position X="26.25" Y="7.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ApplyPropertyPageMessageRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.BatchSelectionDataUpdatesCommand" Collapsed="true">
+    <Position X="51.75" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\BatchSelectionDataUpdatesCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.BeginInvokeCommand" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\BeginInvokeCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.BeginInvokeNotification" Collapsed="true">
+    <Position X="5.25" Y="12.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\BeginInvokeNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.BeginModalLoopConsoleDialogCommand" Collapsed="true">
+    <Position X="34.75" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\BeginModalLoopConsoleDialogCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.BeginModalLoopConsoleDialogCommandResult" Collapsed="true">
+    <Position X="8.5" Y="16.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\BeginModalLoopConsoleDialogCommandResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.BooleanList" Collapsed="true">
+    <Position X="172.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAABAAAAAAAAEAAAAAAAAAEAAAAAQAAAAABEAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\BooleanList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ByteList" Collapsed="true">
+    <Position X="174.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAABAAAAAAAAEAAAAAAAAAEAAAAAQAAAAABEAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ByteList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CancelToClosePropertySheetCommand" Collapsed="true">
+    <Position X="144.75" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CancelToClosePropertySheetCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ChangeNotificationSubscriptionCommand" Collapsed="true">
+    <Position X="13.75" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ChangeNotificationSubscriptionCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ChangeSelectionDataViewRequestInfo" Collapsed="true">
+    <Position X="46.5" Y="7.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAABACAAAAAAAAAAAAAAAIAACAAQAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ChangeSelectionDataViewRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ClearDirtyFlagPropertySheetCommand" Collapsed="true">
+    <Position X="151.75" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ClearDirtyFlagPropertySheetCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ColumnData" Collapsed="true">
+    <Position X="176" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAiCAAAQAICAAEAAAAJAAEAAABgBAAAIAIAAAAAAAEA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ColumnData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ColumnVisibilityChangedNotification" Collapsed="true">
+    <Position X="45.25" Y="12.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAACAAAIAIAAgAAAgAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ColumnVisibilityChangedNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.Command" Collapsed="true">
+    <Position X="89.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\Command.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CommandResult" Collapsed="true">
+    <Position X="16.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CommandResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CommonValidation" Collapsed="true">
+    <Position X="177.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CommonValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CompareSelectionObjectsResponse" Collapsed="true">
+    <Position X="7.5" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CompareSelectionObjectsResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CompareViewSelectionsRequestInfo" Collapsed="true">
+    <Position X="56" Y="8.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CompareViewSelectionsRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ComponentAbandonedNotification" Collapsed="true">
+    <Position X="11" Y="12.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ComponentAbandonedNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ConsoleDialogCommand" Collapsed="true">
+    <Position X="38.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAABAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ConsoleDialogCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CreateCustomRequestStatusCommand" Collapsed="true">
+    <Position X="45.25" Y="1.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CreateCustomRequestStatusCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CreateCustomRequestStatusCommandResult" Collapsed="true">
+    <Position X="23" Y="16.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CreateCustomRequestStatusCommandResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CreatePropertySheetCommand" Collapsed="true">
+    <Position X="133" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAEAQAAAABAAAAAAAIAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CreatePropertySheetCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CreatePropertySheetCommandResult" Collapsed="true">
+    <Position X="27" Y="16.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CreatePropertySheetCommandResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CreatePropertySheetForScopeNodeCommand" Collapsed="true">
+    <Position X="130.75" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CreatePropertySheetForScopeNodeCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CreatePropertySheetForViewCommand" Collapsed="true">
+    <Position X="134.75" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CreatePropertySheetForViewCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CutOrMoveNodeRequestInfo" Collapsed="true">
+    <Position X="121.25" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CutOrMoveNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.CutOrMoveViewSelectionRequestInfo" Collapsed="true">
+    <Position X="82.25" Y="8.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\CutOrMoveViewSelectionRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.DataChangeNotification" Collapsed="true">
+    <Position X="2.5" Y="12.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAiAAAAAAAggAICAAAgAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\DataChangeNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.DataCommand" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAIAAAAAgAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\DataCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.DeactivateNodeNotification" Collapsed="true">
+    <Position X="8" Y="12.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\DeactivateNodeNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.DeleteNodeRequestInfo" Collapsed="true">
+    <Position X="103.75" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\DeleteNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.DeleteScopeNodesCommand" Collapsed="true">
+    <Position X="28.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAIAAAAAIAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\DeleteScopeNodesCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.DeleteViewSelectionRequestInfo" Collapsed="true">
+    <Position X="62.75" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\DeleteViewSelectionRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.DestroyPropertyPageNotification" Collapsed="true">
+    <Position X="23.25" Y="14.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\DestroyPropertyPageNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.EndModalLoopConsoleDialogCommand" Collapsed="true">
+    <Position X="41.75" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\EndModalLoopConsoleDialogCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ExpandFromLoadScopeNodeRequestInfo" Collapsed="true">
+    <Position X="111.75" Y="7.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ExpandFromLoadScopeNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ExpandFromLoadScopeNodeRequestResponse" Collapsed="true">
+    <Position X="29.5" Y="9.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ExpandFromLoadScopeNodeRequestResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ExpandScopeNodeRequestInfo" Collapsed="true">
+    <Position X="115.5" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ExpandScopeNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ExtensionPagesRequestInfo" Collapsed="true">
+    <Position X="126.75" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ExtensionPagesRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.FindPropertySheetCommand" Collapsed="true">
+    <Position X="163.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\FindPropertySheetCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.FindPropertySheetCommandResult" Collapsed="true">
+    <Position X="1.75" Y="16.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\FindPropertySheetCommandResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.FindPropertySheetForScopeNodeCommand" Collapsed="true">
+    <Position X="161.75" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\FindPropertySheetForScopeNodeCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.FindPropertySheetForViewCommand" Collapsed="true">
+    <Position X="165.5" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\FindPropertySheetForViewCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.FormViewDescriptionData" Collapsed="true">
+    <Position X="0.75" Y="19.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\FormViewDescriptionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.GetListViewModeCommand" Collapsed="true">
+    <Position X="81.75" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\GetListViewModeCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.GetListViewModeCommandResult" Collapsed="true">
+    <Position X="16" Y="16.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\GetListViewModeCommandResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.GetPopupParentWindowCommand" Collapsed="true">
+    <Position X="38.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\GetPopupParentWindowCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.GetPopupParentWindowCommandResult" Collapsed="true">
+    <Position X="19.25" Y="16.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\GetPopupParentWindowCommandResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.GlobalConfiguration" Collapsed="true">
+    <Position X="179.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\GlobalConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.GuidList" Collapsed="true">
+    <Position X="172.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAABAAAAAAAAEAAAAAQAAAEAAAAAQAAAAABAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\GuidList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.HideViewNotification" Collapsed="true">
+    <Position X="39.25" Y="12.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\HideViewNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.HtmlViewDescriptionData" Collapsed="true">
+    <Position X="6.5" Y="19.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgACAAAAAAAAAAAAAAAQAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\HtmlViewDescriptionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.InitializePropertyPageNotification" Collapsed="true">
+    <Position X="32.75" Y="14.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\InitializePropertyPageNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.InitializeViewRequestInfo" Collapsed="true">
+    <Position X="35.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\InitializeViewRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.InsertScopeNodesCommand" Collapsed="true">
+    <Position X="23" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>aMsOmMgo5vV8sVuUdmPCKuSJrUq4+iQv+C6I4nnE04s=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\InsertScopeNodesCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.InsertScopeNodesCommandReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="174.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAgEAARSsGAEQgCQFCBRiA0AAMEACQAAIAQAQIHIQIA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\InsertScopeNodesCommandReader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.InsertScopeNodesCommandWriter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="176" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAsEmIgAgvQ8AECQUmGAAoAB7Egw5DEKiCyA0CDM0oA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\InsertScopeNodesCommandWriter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.Int32List" Collapsed="true">
+    <Position X="177.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAABAAAAAAAAEAAAAAAAAAEAAAAAQAAAAABEAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\Int32List.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.KeepAliveViewSelectionRequestInfo" Collapsed="true">
+    <Position X="76" Y="8.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAIAQAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\KeepAliveViewSelectionRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.KillActivePropertyPageMessageRequestInfo" Collapsed="true">
+    <Position X="18.5" Y="7.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\KillActivePropertyPageMessageRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ListViewDescriptionData" Collapsed="true">
+    <Position X="9.25" Y="19.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAQCAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ListViewDescriptionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.LoadDataRequestInfo" Collapsed="true">
+    <Position X="9" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAIAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\LoadDataRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.LoadViewDataRequestInfo" Collapsed="true">
+    <Position X="41" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAIAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\LoadViewDataRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.LoseKeyboardFocusCommand" Collapsed="true">
+    <Position X="75.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\LoseKeyboardFocusCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.LoseKeyboardFocusCommandResult" Collapsed="true">
+    <Position X="12.5" Y="16.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\LoseKeyboardFocusCommandResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.MessageViewDescriptionData" Collapsed="true">
+    <Position X="3.5" Y="19.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAIKAAEgAAAAAAAAAABAAAAAAAAAAAQAAAAg=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\MessageViewDescriptionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.MouseActivateCommand" Collapsed="true">
+    <Position X="103.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAABAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\MouseActivateCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.NamespaceExtensionInitNotification" Collapsed="true">
+    <Position X="16.75" Y="12.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\NamespaceExtensionInitNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.NodeData" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAAAAAAAAIBAAAQAAAAAAAAAAAAACQACQAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\NodeData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.NodeIdData" Collapsed="true">
+    <Position X="179.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAwAQAAAAAAAAIAAAAAAAAAQAAAAQAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\NodeIdData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.NodeRequestInfo" Collapsed="true">
+    <Position X="106.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\NodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.NodeSubItemData" Collapsed="true">
+    <Position X="172.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\NodeSubItemData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.NodeType" Collapsed="true">
+    <Position X="174.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAEAIAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\NodeType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.Notification" Collapsed="true">
+    <Position X="24.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\Notification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.OkPropertyPageMessageRequestInfo" Collapsed="true">
+    <Position X="15" Y="7.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\OkPropertyPageMessageRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PagesForNodeRequestInfo" Collapsed="true">
+    <Position X="92" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PagesForNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PagesForViewRequestInfo" Collapsed="true">
+    <Position X="53.25" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PagesForViewRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PasteNodeRequestInfo" Collapsed="true">
+    <Position X="106.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAACAAgAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PasteNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PasteResponse" Collapsed="true">
+    <Position X="10.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PasteResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PasteTargetInfo" Collapsed="true">
+    <Position X="176" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIgAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PasteTargetInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PasteViewSelectionRequestInfo" Collapsed="true">
+    <Position X="66" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAACAAgAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PasteViewSelectionRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PersistenceCompletedResponse" Collapsed="true">
+    <Position X="19.5" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAIAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PersistenceCompletedResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PersistenceKeyRequestInfo" Collapsed="true">
+    <Position X="32.5" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PersistenceKeyRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PersistenceKeyRetrievalCompletedResponse" Collapsed="true">
+    <Position X="25.5" Y="9.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PersistenceKeyRetrievalCompletedResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PrimarySnapInDataException" Collapsed="true">
+    <Position X="177.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PrimarySnapInDataException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PrintNodeRequestInfo" Collapsed="true">
+    <Position X="124.25" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PrintNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PrintViewSelectionRequestInfo" Collapsed="true">
+    <Position X="85.75" Y="8.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PrintViewSelectionRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ProcessDialogKeyPropertySheetCommand" Collapsed="true">
+    <Position X="141" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ProcessDialogKeyPropertySheetCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ProcessMnemonicNotification" Collapsed="true">
+    <Position X="20.25" Y="14.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ProcessMnemonicNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ProcessViewCmdKeyCommand" Collapsed="true">
+    <Position X="63" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ProcessViewCmdKeyCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ProcessViewCmdKeyCommandResult" Collapsed="true">
+    <Position X="5" Y="16.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ProcessViewCmdKeyCommandResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ProcessViewDialogKeyCommand" Collapsed="true">
+    <Position X="84.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ProcessViewDialogKeyCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PropertyPageInfo" Collapsed="true">
+    <Position X="179.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABICAAEAAAAAAAEAAABAAAAAABAAACAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PropertyPageInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PropertyPageMessageRequestInfo" Collapsed="true">
+    <Position X="21" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PropertyPageMessageRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PropertyPageMessageResponse" Collapsed="true">
+    <Position X="16.25" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAACAIAAIAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PropertyPageMessageResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PropertyPageNotification" Collapsed="true">
+    <Position X="26.75" Y="12.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PropertyPageNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PropertyPagesResponse" Collapsed="true">
+    <Position X="22.75" Y="9.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAABAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PropertyPagesResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PropertySheetCommand" Collapsed="true">
+    <Position X="148.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PropertySheetCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.PropertySheetExtensionInitNotification" Collapsed="true">
+    <Position X="41.75" Y="12.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAQAAABAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\PropertySheetExtensionInitNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.QueryCancelPropertyPageMessageRequestInfo" Collapsed="true">
+    <Position X="22.25" Y="7.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\QueryCancelPropertyPageMessageRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ReadDataCommand" Collapsed="true">
+    <Position X="20.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAIQABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ReadDataCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ReadDataCommandResult" Collapsed="true">
+    <Position X="30.5" Y="16.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ReadDataCommandResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ReadSharedDataNodeRequestInfo" Collapsed="true">
+    <Position X="88.75" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ReadSharedDataNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ReadSharedDataResponse" Collapsed="true">
+    <Position X="2" Y="9.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ReadSharedDataResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ReadSharedDataViewRequestInfo" Collapsed="true">
+    <Position X="50" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ReadSharedDataViewRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.RefreshNodeRequestInfo" Collapsed="true">
+    <Position X="97.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\RefreshNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.RefreshViewSelectionRequestInfo" Collapsed="true">
+    <Position X="59.5" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\RefreshViewSelectionRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.RegisterUIThreadCommand" Collapsed="true">
+    <Position X="31.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAABAAAAAAABAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\RegisterUIThreadCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.RenameNodeRequestInfo" Collapsed="true">
+    <Position X="109" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAIAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\RenameNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.RenameViewSelectionRequestInfo" Collapsed="true">
+    <Position X="69.25" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAIAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\RenameViewSelectionRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.Request" Collapsed="true">
+    <Position X="172.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAQEAAAIAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\Request.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.RequestInfo" Collapsed="true">
+    <Position X="68.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\RequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.RequestResponse" Collapsed="true">
+    <Position X="17.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\RequestResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.RequestWriteDataCommand" Collapsed="true">
+    <Position X="17.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\RequestWriteDataCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ResetPropertyPageNotification" Collapsed="true">
+    <Position X="29.75" Y="14.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ResetPropertyPageNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SaveDataRequestInfo" Collapsed="true">
+    <Position X="6.5" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SaveDataRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SaveViewDataRequestInfo" Collapsed="true">
+    <Position X="38.25" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SaveViewDataRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SaveViewDataResponse" Collapsed="true">
+    <Position X="4.75" Y="9.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAIAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SaveViewDataResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ScopeNodeData" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACAAAQAAABFQBFACAAAAAAAAAEAABAEACAgAaAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ScopeNodeData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SelectResultNodeCommand" Collapsed="true">
+    <Position X="97.25" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAQABEAAAAAABAEAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SelectResultNodeCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SelectScopeNodeCommand" Collapsed="true">
+    <Position X="106" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAEAAAAAAAAgAAABBAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SelectScopeNodeCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SerializableImageListWrapper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="174.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAQAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SerializableImageListWrapper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SetActivePagePropertySheetCommand" Collapsed="true">
+    <Position X="148.25" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SetActivePagePropertySheetCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SetActivePropertyPageNotification" Collapsed="true">
+    <Position X="26.5" Y="14.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SetActivePropertyPageNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SetDirtyFlagPropertySheetCommand" Collapsed="true">
+    <Position X="155.25" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SetDirtyFlagPropertySheetCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SetFormViewControlCommand" Collapsed="true">
+    <Position X="111.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SetFormViewControlCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SetNewSelectionCommand" Collapsed="true">
+    <Position X="121" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAAAQgQABBAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SetNewSelectionCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SetPropertyPageControlCommand" Collapsed="true">
+    <Position X="169" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACGEEAAAAAAAAAAAAAAAAAAAAIAAAAAAAACAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SetPropertyPageControlCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SetViewSetDataCommand" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SetViewSetDataCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SharedDataObjectUpdate" Collapsed="true">
+    <Position X="176" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAACAAABAAAAACAEAAABAAACMAAAAAACIgAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SharedDataObjectUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ShowContextMenuCommand" Collapsed="true">
+    <Position X="66" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAEAAAAAQ=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ShowContextMenuCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ShowHelpTopicCommand" Collapsed="true">
+    <Position X="26" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAACAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ShowHelpTopicCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ShowInitializationWizardRequestInfo" Collapsed="true">
+    <Position X="11.5" Y="5.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ShowInitializationWizardRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ShowInitializationWizardResponse" Collapsed="true">
+    <Position X="13" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ShowInitializationWizardResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ShowViewNotification" Collapsed="true">
+    <Position X="14.25" Y="12.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ShowViewNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ShutdownRequestInfo" Collapsed="true">
+    <Position X="30" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ShutdownRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ShutdownViewRequestInfo" Collapsed="true">
+    <Position X="43.75" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ShutdownViewRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SnapInData" Collapsed="true">
+    <Position X="177.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAIBAAAACAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SnapInData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SnapInRegistrationInfo" Collapsed="true">
+    <Position X="179.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QwCiCCQiRQBAAAABgARIIAgQAggQAAAAAAACCCCFACg=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SnapInRegistrationInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SortListViewCommand" Collapsed="true">
+    <Position X="114.75" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAIAgAAAAAAAAAAAAAAAAAICAAAAJAgAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SortListViewCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SortListViewRequestInfo" Collapsed="true">
+    <Position X="129.75" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAAAAAAAAAAAAAAAAAAAAAAAAAAABAgAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SortListViewRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.SortListViewResponse" Collapsed="true">
+    <Position X="33.5" Y="9.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAIAAAAAIAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SortListViewResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.Strings" Collapsed="true">
+    <Position X="172.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAEAAAAAAAAAAAAIAAQAAAAIAAAAIABIAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\Strings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateColumnsCommand" Collapsed="true">
+    <Position X="69" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAABFAAAAAAAAAEgAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateColumnsCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateDataChangeNodeRequestInfo" Collapsed="true">
+    <Position X="100.25" Y="7.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateDataChangeNodeRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateListViewModeCommand" Collapsed="true">
+    <Position X="87.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateListViewModeCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateMessageViewCommand" Collapsed="true">
+    <Position X="94.25" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateMessageViewCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateResultNodesCommand" Collapsed="true">
+    <Position X="100.25" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAABFAAAAAAAAAEgAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateResultNodesCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateScopeNodeCommand" Collapsed="true">
+    <Position X="48.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABAIAAAAAAgIAAAAAAAAAACBAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateScopeNodeCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateSharedDataViewRequestInfo" Collapsed="true">
+    <Position X="72.5" Y="8.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateSharedDataViewRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateSnapInCommand" Collapsed="true">
+    <Position X="138.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateSnapInCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateSnapInConfigCommand" Collapsed="true">
+    <Position X="158.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateSnapInConfigCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateViewActionsCommand" Collapsed="true">
+    <Position X="108.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABBAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateViewActionsCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateViewDescriptionBarTextCommand" Collapsed="true">
+    <Position X="117.25" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateViewDescriptionBarTextCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateViewModifiedStateCommand" Collapsed="true">
+    <Position X="123.75" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateViewModifiedStateCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateViewPasteTargetInfoCommand" Collapsed="true">
+    <Position X="127.25" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateViewPasteTargetInfoCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateViewSelectionDescriptionCommand" Collapsed="true">
+    <Position X="55.25" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateViewSelectionDescriptionCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateViewSelectionDisplayNameCommand" Collapsed="true">
+    <Position X="59" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateViewSelectionDisplayNameCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateViewSelectionHelpTopicCommand" Collapsed="true">
+    <Position X="71.75" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAACAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateViewSelectionHelpTopicCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateViewSharedDataCommand" Collapsed="true">
+    <Position X="78.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateViewSharedDataCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.UpdateViewStandardVerbsCommand" Collapsed="true">
+    <Position X="90.75" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\UpdateViewStandardVerbsCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.Utility" Collapsed="true">
+    <Position X="176" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAQAAAIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAgA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ViewCommand" Collapsed="true">
+    <Position X="90" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ViewCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ViewDescriptionData" Collapsed="true">
+    <Position X="5.25" Y="18.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAgCEAAAAACAAAACAABCAAQgAAAAAEQAEAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ViewDescriptionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ViewKeyboardFocusNotification" Collapsed="true">
+    <Position X="36" Y="12.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ViewKeyboardFocusNotification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ViewRequestInfo" Collapsed="true">
+    <Position X="61" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ViewRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ViewSelectionRequestInfo" Collapsed="true">
+    <Position X="68" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ViewSelectionRequestInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.ManagementConsole.Internal.ViewSetData" Collapsed="true">
+    <Position X="177.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAAAAgAAAAAAAABAAAAAEAAAAAAAAAAARAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ViewSetData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Microsoft.ManagementConsole.Internal.ActionsPaneRootData" Collapsed="true">
+    <Position X="172.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIRCBEAASAwaogQlIgBCCEUwAAAAEEAgAIAAARMIAiA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActionsPaneRootData.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Microsoft.ManagementConsole.Internal.ClipboardData" Collapsed="true">
+    <Position X="174.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAIAAAEgAAgAAAAAAAAAIAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ClipboardData.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Microsoft.ManagementConsole.Internal.DataFormatConfiguration" Collapsed="true">
+    <Position X="176" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAEAAAgAAAAAAAAAIAAIAAAAAAAEAAAiA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\DataFormatConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Microsoft.ManagementConsole.Internal.POINT" Collapsed="true">
+    <Position X="177.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\POINT.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Microsoft.ManagementConsole.Internal.ScopeNodeInsert" Collapsed="true">
+    <Position X="179.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAAABAICACAAAAIAAAAAAiAABABAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ScopeNodeInsert.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Microsoft.ManagementConsole.Internal.WindowsMessage" Collapsed="true">
+    <Position X="172.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAIAAAACAAAQgAAAEAAAAAAAAMAAAAAAIAgAAiA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\WindowsMessage.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Microsoft.ManagementConsole.Internal.IClassLibraryServices" Collapsed="true">
+    <Position X="172.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\IClassLibraryServices.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Microsoft.ManagementConsole.Internal.IMessageClient" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\IMessageClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Microsoft.ManagementConsole.Internal.IRequestStatus" Collapsed="true">
+    <Position X="174.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAEABAAAAAAAAAAIAAAAAAgAAAgIAAAQ=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\IRequestStatus.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Microsoft.ManagementConsole.Internal.ISnapInClient" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ISnapInClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Microsoft.ManagementConsole.Internal.ISnapInMessagePumpProxy" Collapsed="true">
+    <Position X="176" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ISnapInMessagePumpProxy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Microsoft.ManagementConsole.Internal.ISnapInPlatform" Collapsed="true">
+    <Position X="177.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ISnapInPlatform.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Microsoft.ManagementConsole.ExecutiveTraceEventId" Collapsed="true">
+    <Position X="172.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACACAEAAAAAAAAIBAgIAAIIgQAQAAAAAAAAAACA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\ExecutiveTraceEventId.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.ActionsInsertionLocation" Collapsed="true">
+    <Position X="172.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActionsInsertionLocation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.ActionsPaneRootItemType" Collapsed="true">
+    <Position X="174.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAABAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActionsPaneRootItemType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.ActionStates" Collapsed="true">
+    <Position X="176" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAICAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ActionStates.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.ColumnCollectionChangeType" Collapsed="true">
+    <Position X="177.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAIAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ColumnCollectionChangeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.DragAndDropVerb" Collapsed="true">
+    <Position X="179.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\DragAndDropVerb.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.KeepAlivePurpose" Collapsed="true">
+    <Position X="174.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\KeepAlivePurpose.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.ListViewColumnFormat" Collapsed="true">
+    <Position X="176" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAIAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ListViewColumnFormat.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.ListViewMode" Collapsed="true">
+    <Position X="177.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAI=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ListViewMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.ListViewOptions" Collapsed="true">
+    <Position X="179.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAICIBAAAIAAAAAAAAAAAAAAAAYAACAEAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ListViewOptions.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.MessageViewIcon" Collapsed="true">
+    <Position X="172.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAQAAAAAAABAAAAAAAAAEAAAAAAEAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\MessageViewIcon.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.NodeIdType" Collapsed="true">
+    <Position X="174.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\NodeIdType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.RequestState" Collapsed="true">
+    <Position X="176" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAEAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\RequestState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.ResultNodeCollectionChangeType" Collapsed="true">
+    <Position X="177.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAIAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ResultNodeCollectionChangeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.SelectionCardinality" Collapsed="true">
+    <Position X="179.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAACAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SelectionCardinality.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.SnapInType" Collapsed="true">
+    <Position X="172.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAIAAAAABA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\SnapInType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.StandardVerbs" Collapsed="true">
+    <Position X="174.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAABAAAAAAAAAAAAAAgEAAAAAAAAAAAEGgAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\StandardVerbs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Microsoft.ManagementConsole.Internal.ViewActionType" Collapsed="true">
+    <Position X="176" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAIAAAAAAAAAAAAAAAAAAAAAAAAAAABQAA=</HashCode>
+      <FileName>Microsoft\ManagementConsole\Internal\ViewActionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

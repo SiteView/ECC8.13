@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<property key="eccMainPage">
+	  	<value xml:lang="en">Main</value>
+        <value xml:lang="zh">首页</value>
+    </property>
+	
+	<property key="eccWelcome">
+    	<value xml:lang="en">Welcome to Enterprise Control Center</value>    	
+        <value xml:lang="zh">欢迎使用面向系统应用的监测</value>
+    </property>
+	
+    <property key="eccAlerts">
+        <value xml:lang="en">Alerts</value>
+        <value xml:lang="zh">报警</value>
+    </property>	
+	
+    <property key="eccReports">
+        <value xml:lang="en">Reports</value>
+        <value xml:lang="zh">报表</value>
+    </property>	
+    <property key="eccHealth">
+        <value xml:lang="en">Health</value>
+        <value xml:lang="zh">Health</value>
+    </property>	
+	
+     <property key="eccPreferences">
+        <value xml:lang="en">Preferences</value>
+        <value xml:lang="zh">设置</value>
+    </property>	
+     <property key="eccHelp">
+        <value xml:lang="en">Help</value>
+        <value xml:lang="zh">帮助</value>
+    </property>	
+
+
+	<property key="alertsMenu">
+		<value xml:lang="en">Alerts Menu</value>
+		<value xml:lang="zh">告警菜单</value>
+	</property>
+	<property key="alertsMultiview">
+		<value xml:lang="en">Multi view</value>
+		<value xml:lang="zh">视图</value>
+	</property>
+	<property key="alertsManage">
+		<value xml:lang="en">Manage Monitors/Groups</value>
+		<value xml:lang="zh">监视器、组管理</value>
+	</property>
+	<property key="alertsBrowse">
+		<value xml:lang="en">Browse</value>
+		<value xml:lang="zh">浏览</value>
+	</property>
+	<property key="alertsAddAlert">
+		<value xml:lang="en">Add Alert</value>
+		<value xml:lang="zh">增加告警</value>
+	</property>
+	<property key="alertsDisableAlerts">
+		<value xml:lang="en">Disable Alerts</value>
+		<value xml:lang="zh">禁止告警</value>
+	</property>
+	<property key="alertsEnableAlerts">
+		<value xml:lang="en">Enable Alerts</value>
+		<value xml:lang="zh">允许告警</value>
+	</property>
+	<property key="alertsAlertReport">
+		<value xml:lang="en">Alert Report</value>
+		<value xml:lang="zh">告警报告</value>
+	</property>
+
+
+
+
+	<property key="reportsMenu">
+		<value xml:lang="en">Reports Menu</value>
+		<value xml:lang="zh">报表菜单</value>
+	</property>
+	<property key="reportsMultiview">
+		<value xml:lang="en">Multi view</value>
+		<value xml:lang="zh">视图</value>
+	</property>
+	<property key="reportsManage">
+		<value xml:lang="en">Manage Monitors/Groups</value>
+		<value xml:lang="zh">监视器、组管理</value>
+	</property>
+	<property key="reportsBrowse">
+		<value xml:lang="en">Browse</value>
+		<value xml:lang="zh">浏览</value>
+	</property>
+	<property key="reportsProgress">
+		<value xml:lang="en">Progress</value>
+		<value xml:lang="zh">进展</value>
+	</property>
+	<property key="reportsSummary">
+		<value xml:lang="en">Summary</value>
+		<value xml:lang="zh">统计</value>
+	</property>
+	<property key="reportsAddReport">
+		<value xml:lang="en">Add Report</value>
+		<value xml:lang="zh">增加报表</value>
+	</property>
+	<property key="reportsQuickReport">
+		<value xml:lang="en">Quick Report</value>
+		<value xml:lang="zh">快速报表</value>
+	</property>
+
+
+
+	<property key="healthMenu">
+		<value xml:lang="en">Reports Menu</value>
+		<value xml:lang="zh">Health 菜单</value>
+	</property>
+	<property key="healthMultiview">
+		<value xml:lang="en">Multi view</value>
+		<value xml:lang="zh">视图</value>
+	</property>
+	<property key="healthManage">
+		<value xml:lang="en">Manage Monitors/Groups</value>
+		<value xml:lang="zh">监视器、组管理</value>
+	</property>
+	<property key="healthBrowse">
+		<value xml:lang="en">Browse</value>
+		<value xml:lang="zh">浏览</value>
+	</property>
+
+	<property key="healthRemoteUNIX">
+		<value xml:lang="en">Remote UNIX</value>
+		<value xml:lang="zh">远程UNIX</value>
+	</property>
+	<property key="healthRemoteNT">
+		<value xml:lang="en">Remote NT</value>
+		<value xml:lang="zh">远程NT</value>
+	</property>
+	<property key="healthTools">
+		<value xml:lang="en">Tools</value>
+		<value xml:lang="zh">工具</value>
+	</property>
+	<property key="healthProgress">
+		<value xml:lang="en">Progress</value>
+		<value xml:lang="zh">进展</value>
+	</property>
+	<property key="healthSummary">
+		<value xml:lang="en">Summary</value>
+		<value xml:lang="zh">统计</value>
+	</property>
+
+	<property key="preferencesMenu">
+		<value xml:lang="en">Preferences Menu</value>
+		<value xml:lang="zh">设置菜单</value>
+	</property>
+	<property key="preferencesGeneral">
+		<value xml:lang="en">General</value>
+		<value xml:lang="zh">基本</value>
+	</property>
+	<property key="preferencesDynamicUpdate">
+		<value xml:lang="en">Dynamic Update</value>
+		<value xml:lang="zh">动态更新</value>
+	</property>
+	<property key="preferencesEmail">
+		<value xml:lang="en">E-mail</value>
+		<value xml:lang="zh">Email</value>
+	</property>
+	<property key="preferencesLog">
+		<value xml:lang="en">Log</value>
+		<value xml:lang="zh">日志</value>
+	</property>
+	<property key="preferencesPager">
+		<value xml:lang="en">Pager</value>
+		<value xml:lang="zh">Pager</value>
+	</property>
+	<property key="preferencesSchedule">
+		<value xml:lang="en">Schedule</value>
+		<value xml:lang="zh">日程</value>
+	</property>
+	<property key="preferencesSiteSeer">
+		<value xml:lang="en">SiteSeer</value>
+		<value xml:lang="zh">SiteSeer</value>
+	</property>
+	<property key="preferencesSiteViewAM">
+		<value xml:lang="en">SiteView AM</value>
+		<value xml:lang="zh">SiteView AM</value>
+	</property>
+	<property key="preferencesMMS">
+		<value xml:lang="en">MMS</value>
+		<value xml:lang="zh">MMS</value>
+	</property>
+	<property key="preferencesSNMP">
+		<value xml:lang="en">SNMP</value>
+		<value xml:lang="zh">SNMP</value>
+	</property>
+
+
+
+	<property key="preferencesUsers">
+		<value xml:lang="en">Users</value>
+		<value xml:lang="zh">用户信息</value>
+	</property>
+
+	<property key="preferencesRemoteUNIX">
+		<value xml:lang="en">Remote UNIX</value>
+		<value xml:lang="zh">远程UNIX</value>
+	</property>
+	<property key="preferencesRemoteNT">
+		<value xml:lang="en">Remote NT</value>
+		<value xml:lang="zh">远程NT</value>
+	</property>
+
+
+</resource>

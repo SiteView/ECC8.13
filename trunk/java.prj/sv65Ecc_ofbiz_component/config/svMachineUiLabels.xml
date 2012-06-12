@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="machineListNT">
+    	<value xml:lang="en">Remote NT List</value>
+    	<value xml:lang="zh">NT 机器清</value>
+    </property>	
+    <property key="machineListUNIX">
+    	<value xml:lang="en">Remote UNIX List</value>
+    	<value xml:lang="zh">UNIX 机器清单</value>
+    </property>	
+    <property key="svTestDetail">
+    	<value xml:lang="en">Detail test</value>
+    	<value xml:lang="zh">详细测试</value>
+    </property>	
+		
+</resource>

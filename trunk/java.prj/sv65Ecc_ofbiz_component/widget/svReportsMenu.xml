@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-menu.xsd">
+    <menu name="reportsMenu" id="basic-nav" type="simple" title=""
+        default-selected-style="selected" menu-container-style="button-bar tab-bar">
+        <menu-item name="Multiview" title="${uiLabelMap.reportsMultiview}">
+        	<link target="none"/>
+        </menu-item>
+        <menu-item name="Manage" title="${uiLabelMap.reportsManage}">
+        	<link target="none"/>
+        </menu-item>
+        <menu-item name="Browse" title="${uiLabelMap.reportsBrowse}">
+        	<link target="none"/>
+        </menu-item>
+         <menu-item name="Progress" title="${uiLabelMap.reportsProgress}">
+        	<link target="none"/>
+        </menu-item>
+         <menu-item name="Summary" title="${uiLabelMap.reportsSummary}">
+        	<link target="none"/>
+        </menu-item>
+         <menu-item name="AddReport" title="${uiLabelMap.reportsAddReport}">
+        	<link target="none"/>
+        </menu-item>
+         <menu-item name="QuickReport" title="${uiLabelMap.reportsQuickReport}">
+        	<link target="none"/>
+        </menu-item>
+     </menu>
+</menus>
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+		
+
+
+	

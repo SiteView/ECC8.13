@@ -1,0 +1,8 @@
+D:\SiteView.MmcShell\MmcSnapins\SiteView.MmcShell.TestSnapIns.ECC\bin\Debug\SiteView.MmcShell.TestSnapIns.ECC.dll
+D:\SiteView.MmcShell\MmcSnapins\SiteView.MmcShell.TestSnapIns.ECC\bin\Debug\SiteView.MmcShell.TestSnapIns.ECC.pdb
+D:\SiteView.MmcShell\MmcSnapins\SiteView.MmcShell.TestSnapIns.ECC\obj\Debug\ResolveAssemblyReference.cache
+D:\SiteView.MmcShell\MmcSnapins\SiteView.MmcShell.TestSnapIns.ECC\obj\Debug\SiteView.MmcShell.TestSnapIns.ECC.dll
+D:\SiteView.MmcShell\MmcSnapins\SiteView.MmcShell.TestSnapIns.ECC\obj\Debug\SiteView.MmcShell.TestSnapIns.ECC.pdb
+C:\Inetpub\wwwroot\MmcPlayer\SnapIns\Ecc\SiteView.MmcShell.TestSnapIns.ECC.dll
+C:\Inetpub\wwwroot\MmcPlayer\SnapIns\Ecc\SiteView.MmcShell.TestSnapIns.ECC.pdb
+C:\Inetpub\wwwroot\MmcPlayer\SnapIns\Ecc\info.xml

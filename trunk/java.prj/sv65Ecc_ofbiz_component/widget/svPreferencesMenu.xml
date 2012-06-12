@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-menu.xsd">
+    <menu name="preferencesMenu" id="basic-nav" type="simple" title=""
+        default-selected-style="selected" menu-container-style="button-bar tab-bar">
+        <menu-item name="General" title="${uiLabelMap.preferencesGeneral}">
+        	<link target="dispGeneral?preferencesMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="DynamicUpdate" title="${uiLabelMap.preferencesDynamicUpdate}">
+        	<link target="dynamicUpdatePreference?preferencesMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="Email" title="${uiLabelMap.preferencesEmail}">
+        	<link target="emailPreference?preferencesMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="Log" title="${uiLabelMap.preferencesLog}">
+        	<link target="logPreference?preferencesMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="Pager" title="${uiLabelMap.preferencesPager}">
+        	<link target="pagerPreferen?preferencesMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="Schedule" title="${uiLabelMap.preferencesSchedule}">
+        	<link target="schedulePreferences?preferencesMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="SiteSeer" title="${uiLabelMap.preferencesSiteSeer}">
+        	<link target="dispSiteSeer?preferencesMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="SNMP" title="${uiLabelMap.preferencesSNMP}">
+        	<link target="SNMPPreference?preferencesMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="RemoteUNIX" title="${uiLabelMap.preferencesRemoteUNIX}">
+        	<link target="machineList?preferencesMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="RemoteNT" title="${uiLabelMap.preferencesRemoteNT}">
+        	<link target="machineListNT?preferencesMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="Users" title="${uiLabelMap.preferencesUsers}">
+        	<link target="userinfo?preferencesMenu_collapsed=false"/>
+        </menu-item>
+       
+     </menu>
+</menus>

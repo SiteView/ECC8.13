@@ -1,0 +1,714 @@
+/*
+ * 
+ * Created on 2005-3-9 22:12:36
+ *
+ * .java
+ *
+ * History:
+ *
+ */
+package com.dragonflow.Page;
+
+import jgl.Array;
+import jgl.HashMap;
+import com.dragonflow.HTTP.HTTPRequestException;
+
+// Referenced classes of package com.dragonflow.Page:
+// prefsPage, serverPage, CGI
+
+public abstract class remoteBase extends com.dragonflow.Page.prefsPage {
+
+    private static final java.lang.String DEFAULT_PASSWORD = "*********";
+
+    private static final java.lang.String SSH_AUTH_METHOD_FORM_VARIABLE = "sshAuthMethod";
+
+    private static final java.lang.String PASSWORD_FORM_VARIABLE = "password";
+
+    private static final java.lang.String SSH_CLIENT_METHOD_VARIABLE = "sshClient";
+
+    private static final java.lang.String KEYFILE_FORM_VARIABLE = "keyFile";
+
+    private static final java.lang.String FORCE_VERSION2_FORM_VARIABLE = "version2";
+
+    private static final java.lang.String DISABLE_CACHE_FORM_VARIABLE = "disableCache";
+
+    private static final java.lang.String CONNECTIONS_LIMIT = "sshConnectionsLimit";
+
+    private static final java.lang.String COMMAND_LINE_FORM_VARIABLE = "sshCommandLine";
+
+    private static final java.lang.String PORT_FORM_VARIABLE = "sshPort";
+
+    public remoteBase() {
+    }
+
+    abstract jgl.Array getListTableHeaders(java.lang.String s);
+
+    abstract jgl.Array getListTableRow(jgl.HashMap hashmap, java.lang.String s);
+
+    abstract void doTest(com.dragonflow.SiteView.Machine machine);
+
+    abstract java.lang.String getTestMachineID();
+
+    abstract java.lang.String getTestMachineName();
+
+    abstract java.lang.String getTestDescription();
+
+    abstract com.dragonflow.SiteView.Machine getTestMachine();
+
+    abstract java.lang.String getTestCentra();
+
+    abstract java.lang.String getHelpPage();
+
+    abstract java.lang.String getPage();
+
+    abstract java.lang.String getIDName();
+
+    abstract java.lang.String getNextMachineName();
+
+    abstract java.lang.String getRemoteName();
+
+    abstract java.lang.String getListTitle();
+
+    abstract java.lang.String getListSubtitle();
+
+    abstract java.lang.String getPrefTitle();
+
+    abstract java.lang.String getPrintFormSubmit();
+
+    abstract boolean displayFormTable(jgl.HashMap hashmap, java.lang.String s);
+
+    void saveAddProperties(java.lang.String s, jgl.HashMap hashmap,
+            java.lang.String s1) {
+        hashmap.put(com.dragonflow.SiteView.Machine.pSshAuthMethod.getName(),
+                request.getValue("sshAuthMethod"));
+        hashmap.put(com.dragonflow.SiteView.Machine.pSshKeyFile.getName(),
+                request.getValue("keyFile"));
+        hashmap.put(com.dragonflow.SiteView.Machine.pSSHClient.getName(),
+                request.getValue("sshClient"));
+        hashmap.put(
+                com.dragonflow.SiteView.Machine.pSSHForceVersion2.getName(),
+                request.getValue("version2"));
+        hashmap.put(com.dragonflow.SiteView.Machine.pSSHConnectionCaching
+                .getName(), request.getValue("disableCache"));
+        hashmap.put(com.dragonflow.SiteView.Machine.pSSHConnectionsLimit
+                .getName(), request.getValue("sshConnectionsLimit"));
+        hashmap.put(com.dragonflow.SiteView.Machine.pSSHCommandLine.getName(),
+                request.getValue("sshCommandLine"));
+        hashmap.put(com.dragonflow.SiteView.Machine.pSSHPort.getName(), request
+                .getValue("sshPort"));
+        java.lang.String s2 = request.getValue("password");
+        if (!s2.equals("*********")) {
+            hashmap
+                    .put(com.dragonflow.SiteView.Machine.pPassword.getName(),
+                            s2);
+        }
+    }
+
+    java.lang.String getMachineID() {
+        java.lang.String s = request.getValue(getIDName());
+        return s;
+    }
+
+    jgl.HashMap getTestMachineFrame() {
+        return findMachine(getFrames(), getMachineID());
+    }
+
+    jgl.Array getFrames() {
+        jgl.Array array = new Array();
+        try {
+            array = readMachines(getRemoteName());
+        } catch (java.lang.Exception exception) {
+        }
+        return array;
+    }
+
+    java.lang.String getNextMachineID(jgl.HashMap hashmap) {
+        java.lang.String s = null;
+        if (hashmap != null) {
+            s = com.dragonflow.Utils.TextUtils.getValue(hashmap,
+                    getNextMachineName());
+        } else {
+            s = request.getValue(getNextMachineName());
+        }
+        return s;
+    }
+
+    java.lang.String getReturnLink(boolean flag, java.lang.String s) {
+        if (s.length() > 0) {
+            if (flag) {
+                return "<input type=hidden name=storeID value=" + s + ">\n";
+            } else {
+                return "&storeID=" + s;
+            }
+        } else {
+            return "";
+        }
+    }
+
+    void printBackLink() {
+        java.lang.String s = request.getValue("backURL");
+        java.lang.String s1 = request.getValue("backLabel");
+        java.lang.String s2 = request.getValue("backDescription");
+        java.lang.String s3 = request.getValue("backOperation");
+        java.lang.String s4 = request.getValue("storeID");
+        java.lang.String s5;
+        if (s.length() == 0) {
+            s5 = getPagePOST(getPage(), s3) + getReturnLink(true, s4);
+        } else {
+            s5 = "<FORM ACTION=" + s + ">\n";
+        }
+        if (s1.length() == 0) {
+            s1 = "Back to Remote Machines";
+        }
+        if (s3.length() == 0) {
+            s3 = "List";
+        }
+        outputStream.println(s5 + "<input type=submit value=\"" + s1 + "\">"
+                + s2 + "</input>\n</form>");
+    }
+
+    void formLogin(jgl.HashMap hashmap) {
+        java.lang.String s = getPage();
+        java.lang.String s1 = "";
+        if (s.indexOf("ntmachine") != -1) {
+            s1 = "Enter the login for the remote server. <br>For a domain login, include the domain name before the user login (example: <i>domainname\\user</i>). <br>For a local or standalone login, include the machine name before the user login  (example: <i>machinename\\user</i>).";
+        } else if (s.indexOf("machine") != -1) {
+            s1 = "Enter the login to use for connecting to the remote server";
+        } else {
+            s1 = "Enter the login for the remote server";
+        }
+        outputStream.println(field("Login",
+                "<input type=text name=login size=50 value=\""
+                        + com.dragonflow.Utils.TextUtils.getValue(hashmap,
+                                "_login") + "\">", s1));
+        java.lang.String s2 = "";
+        if (com.dragonflow.Utils.TextUtils.getValue(hashmap,
+                com.dragonflow.SiteView.Machine.pPassword.getName()) != "") {
+            s2 = "*********";
+        }
+        outputStream
+                .println(field("Password",
+                        "<input type=password name=password size=50 value=\""
+                                + s2 + "\">",
+                        "The password for the remote server or the passphrase for the SSH key file."));
+        outputStream
+                .println(field(
+                        "Title",
+                        "<input type=text name=title size=50 value=\""
+                                + com.dragonflow.Page.remoteBase.getValue(
+                                        hashmap, "_name") + "\">",
+                        "Optional title describing the remote server. The default title is the server address"));
+    }
+
+    boolean dependentCheck() {
+        if (request.getValue("method").equals("ssh")) {
+            com.dragonflow.SSH.SSHManager.getInstance().deleteRemote(
+                    getRemoteUniqueId());
+            java.lang.String s = com.dragonflow.SSH.SSHManager
+                    .getInstance()
+                    .checkClient(
+                            request
+                                    .getValue(com.dragonflow.SiteView.Machine.pSSHClient
+                                            .getName()));
+            if (s.length() != 0) {
+                java.lang.String s1 = "SSH client not found";
+                printBodyHeader(s1);
+                printButtonBar("Remote.htm", "");
+                outputStream.println("<H2>" + s1 + "</H2>\n");
+                outputStream
+                        .println("<p>To monitor using SSH, SiteView requires that the ssh client is installed at <blockquote>"
+                                + s + "</blockquote>");
+                printFooter(outputStream);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    java.lang.String field(java.lang.String s, java.lang.String s1,
+            java.lang.String s2) {
+        return "<TR><TD ALIGN=\"RIGHT\" VALIGN=\"TOP\">" + s + "</TD>"
+                + "<TD><TABLE><TR><TD ALIGN=LEFT>" + s1 + "</TD></TR>"
+                + "<TR><TD><FONT SIZE=-1>" + s2 + "</FONT></TD></TR>"
+                + "</TABLE></TD><TD><I></I></TD></TR>";
+    }
+
+    public void printBody() throws java.lang.Exception {
+        java.lang.String s = request.getValue("storeID");
+        java.lang.String s1 = request.getValue("operation");
+        if (s1.length() == 0) {
+            s1 = "List";
+        }
+        if (s1.equals("Test")) {
+            if (!request.actionAllowed("_preferenceTest") && s.length() == 0) {
+                throw new HTTPRequestException(557);
+            }
+            printTestForm(s1);
+        } else {
+            if (!request.actionAllowed("_preference") && s.length() == 0) {
+                throw new HTTPRequestException(557);
+            }
+            if (s1.equals("List")) {
+                printListForm(s1);
+            } else if (s1.equals("Add")) {
+                printAddForm(s1);
+            } else if (s1.equals("Delete")) {
+                printDeleteForm(s1);
+            } else if (s1.equals("Edit")) {
+                printAddForm(s1);
+            } else {
+                printError("The link was incorrect", "unknown operation",
+                        "/SiteView/" + request.getAccountDirectory()
+                                + "/SiteView.html");
+            }
+        }
+    }
+
+    void printListForm(java.lang.String s) throws java.io.IOException {
+        java.lang.String s1 = request.getValue("backURL");
+        java.lang.String s3 = request.getValue("storeURL");
+        java.lang.String s4 = request.getValue("storeID");
+        if (s1.length() > 0) {
+            com.dragonflow.Page.serverPage.clientID++;
+            com.dragonflow.Page.serverPage.setReturnURL(
+                    com.dragonflow.Page.serverPage.storeReturnURL, s3);
+            com.dragonflow.Page.serverPage.setReturnURL(
+                    com.dragonflow.Page.serverPage.thisURL, s1);
+            s4 = java.lang.String
+                    .valueOf(com.dragonflow.Page.serverPage.clientID);
+        }
+        java.lang.String s5 = getListTitle();
+        java.lang.String s6 = getListSubtitle();
+        printBodyHeader(s5);
+        printButtonBar(getHelpPage(), "", getSecondNavItems(request));
+        if (s4.length() == 0) {
+            printPrefsBar(getPrefTitle());
+        }
+        jgl.Array array = getListTableHeaders(s4);
+        outputStream
+                .println("<H2>"
+                        + s5
+                        + "</H2> "
+                        + "<p>"
+                        + s6
+                        + "</p>"
+                        + "<TABLE WIDTH=100% BORDER=2 cellspacing=0><TR CLASS=\"tabhead\">");
+        for (int i = 0; i < array.size(); i++) {
+            outputStream.println("<TH align=left>" + array.at(i) + "</TH>");
+        }
+
+        outputStream.println("</TR>");
+        jgl.Array array1 = readMachines(getRemoteName());
+        if (array1.size() == 0) {
+            outputStream
+                    .println("<TR><TD> </TD><TD align=center>no remote servers defined</TD><TD> </TD></TR>\n");
+        } else {
+            for (java.util.Enumeration enumeration = array1.elements(); enumeration
+                    .hasMoreElements(); outputStream.println("</TR>")) {
+                jgl.HashMap hashmap = (jgl.HashMap) enumeration.nextElement();
+                jgl.Array array2 = getListTableRow(hashmap, s4);
+                outputStream.println("<TR>");
+                for (int j = 0; j < array2.size(); j++) {
+                    outputStream.println("<TD align=left>" + array2.at(j)
+                            + "</TD>");
+                }
+
+            }
+
+        }
+        outputStream.println("</TABLE><BR>");
+        if (request.actionAllowed("_preference") || s4.length() > 0) {
+            outputStream.println("<A HREF=" + getPageLink(getPage(), "Add")
+                    + getReturnLink(false, s4) + ">Add</A> a Remote Machine\n"
+                    + "<br><br>\n");
+        }
+        if (s4.length() > 0) {
+            java.lang.String s2 = new String(com.dragonflow.Page.serverPage
+                    .getReturnURL(com.dragonflow.Page.serverPage.thisURL, s4));
+            outputStream.println("<a href=\"" + s2 + "&pop=true&storeID=" + s4
+                    + "\">Return to Choose Server</a>");
+        }
+        printFooter(outputStream);
+    }
+
+    void printForm(java.lang.String s, jgl.Array array, jgl.HashMap hashmap)
+            throws java.lang.Exception {
+        java.lang.String s1 = "";
+        java.lang.String s2 = getMachineID();
+        java.lang.String s3 = com.dragonflow.Page.remoteBase.getSubmitName(s);
+        java.lang.String s4 = request.getValue("storeID");
+        jgl.HashMap hashmap1;
+        if (s.equals("Edit")) {
+            hashmap1 = findMachine(array, s2);
+            s1 = s3 + " Remote Server : " + hashmap1.get("_name");
+        } else {
+            hashmap1 = new HashMap();
+            java.lang.String s5 = request.getValue("host");
+            hashmap1.put("_host", s5);
+            s1 = s3 + " Remote Server";
+        }
+        printBodyHeader(s1);
+        printButtonBar(getHelpPage(), "");
+        outputStream.println("<p><H2>" + s1 + "</H2>\n");
+        outputStream.println(getPagePOST(getPage(), s));
+        outputStream.println("<input type=hidden name=backURL value=\""
+                + request.getValue("backURL") + "\">\n"
+                + "<input type=hidden name=backLabel value=\""
+                + request.getValue("backLabel") + "\">");
+        if (s.equals("Edit")) {
+            outputStream.println("<input type=hidden name=" + getIDName()
+                    + " value=" + s2 + ">");
+        }
+        outputStream.println(getReturnLink(true, s4));
+        outputStream.println("<TABLE>");
+        boolean flag = displayFormTable(hashmap1, s);
+        outputStream.println("</TABLE>");
+        if (flag) {
+            outputStream.println("<TABLE WIDTH=100%><TR><TD>"
+                    + getReturnLink(true, s4) + "<input type=submit value=\""
+                    + s3 + "\"> " + getPrintFormSubmit() + "\n"
+                    + "</TD></TR></TABLE>");
+        } else {
+            printBackLink();
+        }
+        printFooter(outputStream);
+    }
+
+    private jgl.Array parseHosts(java.lang.String s) {
+        jgl.Array array = new Array();
+        if (s.indexOf(",") != -1) {
+            array = com.dragonflow.Utils.TextUtils.splitArray(s, ",");
+        } else {
+            array.add(s.trim());
+        }
+        return array;
+    }
+
+    private int getIndex(jgl.Array array, jgl.HashMap hashmap) {
+        if (com.dragonflow.Utils.TextUtils.getValue(hashmap, "_id").length() == 0) {
+            return -1;
+        }
+        for (int i = 0; i < array.size(); i++) {
+            jgl.HashMap hashmap1 = (jgl.HashMap) array.at(i);
+            if (com.dragonflow.Utils.TextUtils.getValue(hashmap, "_id").equals(
+                    com.dragonflow.Utils.TextUtils.getValue(hashmap1, "_id"))) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    void printAddForm(java.lang.String s) throws java.lang.Exception {
+        jgl.Array array = getFrames();
+        if (request.isPost()) {
+            if (dependentCheck()) {
+                return;
+            }
+            java.lang.String s1 = null;
+            Object obj = null;
+            jgl.HashMap hashmap1 = null;
+            int i = -1;
+            jgl.Array array1 = parseHosts(request.getValue("host"));
+            boolean flag = array1.size() > 1;
+            for (int j = 0; j < array1.size(); j++) {
+                jgl.HashMap hashmap;
+                if (s.equals("Add")) {
+                    if (hashmap1 == null) {
+                        hashmap1 = getMasterConfig();
+                    }
+                    s1 = getNextMachineID(hashmap1);
+                    hashmap = new HashMap();
+                    if (s1.length() == 0) {
+                        s1 = "10";
+                    }
+                    hashmap1.put(getNextMachineName(),
+                            com.dragonflow.Utils.TextUtils.increment(s1));
+                } else {
+                    s1 = getMachineID();
+                    hashmap = findMachine(array, s1);
+                    i = getIndex(array, hashmap);
+                    array.remove(hashmap);
+                }
+                hashmap.put("_host", array1.at(j).toString().trim());
+                if (request.getValue("title").length() == 0) {
+                    hashmap.put("_name", hashmap.get("_host"));
+                } else if (flag) {
+                    hashmap.put("_name", request.getValue("title") + " - "
+                            + hashmap.get("_host"));
+                } else {
+                    hashmap.put("_name", request.getValue("title"));
+                }
+                saveAddProperties(s, hashmap, s1);
+                if (s.equals("Add")) {
+                    array.add(hashmap);
+                } else {
+                    array.insert(i, hashmap);
+                }
+            }
+
+            saveMachines(array, getRemoteName());
+            java.lang.String s2 = "";
+            if (request.getValue("addtest").indexOf("add") != -1
+                    || array1.size() > 1) {
+                s2 = getPageLink(getPage(), "List")
+                        + "&"
+                        + getIDName()
+                        + "="
+                        + s1
+                        + "&backURL="
+                        + request.getValue("backURL")
+                        + "&backLabel="
+                        + java.net.URLEncoder.encode(request
+                                .getValue("backLabel"))
+                        + "&backDescription="
+                        + java.net.URLEncoder.encode(request
+                                .getValue("backDescription"))
+                        + getReturnLink(false, request.getValue("storeID"));
+            } else {
+                s2 = getPageLink(getPage(), "Test")
+                        + "&"
+                        + getIDName()
+                        + "="
+                        + s1
+                        + "&backURL="
+                        + request.getValue("backURL")
+                        + "&backLabel="
+                        + java.net.URLEncoder.encode(request
+                                .getValue("backLabel"))
+                        + "&backDescription="
+                        + java.net.URLEncoder.encode(request
+                                .getValue("backDescription"))
+                        + getReturnLink(false, request.getValue("storeID"));
+            }
+            autoFollowPortalRefresh = false;
+            printRefreshPage(s2, 0);
+        } else {
+            printForm(s, array, new HashMap());
+        }
+    }
+
+    void printDeleteForm(java.lang.String s) throws java.lang.Exception {
+        java.lang.String s1 = getMachineID();
+        java.lang.String s2 = "ID " + s1;
+        jgl.Array array = readMachines(getRemoteName());
+        jgl.HashMap hashmap = findMachine(array, s1);
+        if (hashmap != null) {
+            s2 = com.dragonflow.Utils.TextUtils.getValue(hashmap, "_name");
+            if (s2.length() == 0) {
+                s2 = com.dragonflow.Utils.TextUtils.getValue(hashmap, "_host");
+            }
+        }
+        if (request.isPost()) {
+            try {
+                com.dragonflow.SSH.SSHManager.getInstance().deleteRemote(
+                        getRemoteUniqueId());
+                array.remove(hashmap);
+                saveMachines(array, getRemoteName());
+                autoFollowPortalRefresh = false;
+                printRefreshPage(getPageLink(getPage(), "List")
+                        + getReturnLink(false, request.getValue("storeID")), 0);
+            } catch (java.lang.Exception exception) {
+                printError("There was a problem deleting the remote server.",
+                        exception.toString(), "/SiteView/"
+                                + request.getAccountDirectory()
+                                + "/SiteView.html");
+            }
+        } else {
+            printBodyHeader("Delete Confirmation");
+            outputStream
+                    .println("<FONT SIZE=+1>Are you sure you want to delete the remote server <B>"
+                            + s2
+                            + "</B>?</FONT>"
+                            + "<p>"
+                            + getPagePOST(getPage(), s)
+                            + "<input type=hidden name="
+                            + getIDName()
+                            + " value=\""
+                            + s1
+                            + "\">"
+                            + getReturnLink(true, request.getValue("storeID"))
+                            + "<TABLE WIDTH=100% BORDER=0><TR>"
+                            + "<TD WIDTH=6%></TD><TD WIDTH=41%><input type=submit value=\""
+                            + s
+                            + "\"></TD>"
+                            + "<TD WIDTH=6%></TD><TD ALIGN=RIGHT WIDTH=41%><A HREF="
+                            + getPageLink(getPage(), "List")
+                            + ">Return to Detail</A></TD><TD WIDTH=6%></TD>"
+                            + "</TR></TABLE></FORM>");
+            printFooter(outputStream);
+        }
+    }
+
+    public void printTestForm(java.lang.String s) {
+        printBodyHeader("checking the remote connection");
+        printButtonBar(getHelpPage(), "");
+        outputStream.println("<h2>Remote Machine Connection Test</h2>");
+        outputStream
+                .println("<p>This will test to see if the remote monitoring connection to:<b> "
+                        + getTestMachineName()
+                        + "</b> is\n"
+                        + "working properly.\n");
+        outputStream.println(getTestDescription());
+        outputStream
+                .println("<table border=\"0\" width=\"99%\"><tr><td width=\"50%\">&nbsp;</td><td align=\"right\">");
+        printBackLink();
+        outputStream.println("</td></tr></table>");
+        if (!isPortalServerRequest()) {
+            printContentStartComment();
+            doTest(getTestMachine());
+            printContentEndComment();
+        } else {
+            com.dragonflow.SiteView.PortalSiteView portalsiteview = (com.dragonflow.SiteView.PortalSiteView) getSiteView();
+            if (portalsiteview != null) {
+                java.lang.String s1 = portalsiteview
+                        .getURLContentsFromRemoteSiteView(request,
+                                getTestCentra());
+                outputStream.println(s1);
+            }
+        }
+        printBackLink();
+        outputStream.flush();
+    }
+
+    private static java.lang.String _stripDoubleSlash(java.lang.String s) {
+        if (s.length() >= 2 && s.substring(0, 2).equals("\\\\")) {
+            s = s.substring(2);
+        }
+        return s;
+    }
+
+    protected java.lang.String getSshAuthMethodHtml(jgl.HashMap hashmap) {
+        java.lang.String s = com.dragonflow.Utils.TextUtils.getValue(hashmap,
+                com.dragonflow.SiteView.Machine.pSshAuthMethod.getName());
+        if (s.length() == 0) {
+            s = "password";
+        }
+        return field("SSH Authentication Method",
+                "<select name=sshAuthMethod size=1>"
+                        + com.dragonflow.Page.remoteBase.getOptionsHTML(
+                                com.dragonflow.SiteView.Machine
+                                        .getAllowedSshAuthMethods(), s),
+                "Select the method to use to authenticate to the remote server.");
+    }
+
+    protected java.lang.String getSshClientHtml(jgl.HashMap hashmap) {
+        java.lang.String s = com.dragonflow.Utils.TextUtils.getValue(hashmap,
+                com.dragonflow.SiteView.Machine.pSSHClient.getName());
+        if (request.getValue("operation").equals("Add")) {
+            s = "java";
+        } else if (s.length() == 0) {
+            s = "plink";
+        }
+        jgl.Array array = com.dragonflow.SiteView.Machine
+                .getAllowedSshConnectionMethods();
+        boolean flag = false;
+        for (int i = 0; i < array.size(); i ++) {
+            if (array.at(i).equals(s)) {
+                flag = true;
+                break;
+            }
+        } 
+        
+        if (!flag) {
+            s = "";
+        }
+        return field("SSH Client", "<select name=sshClient size=1>"
+                + com.dragonflow.Page.remoteBase.getOptionsHTML(array, s),
+                "Select the client to use to connect to the remote server.");
+    }
+
+    protected java.lang.String getSSHKeyFileHtml(jgl.HashMap hashmap) {
+        java.lang.String s = com.dragonflow.Utils.TextUtils.getValue(hashmap,
+                com.dragonflow.SiteView.Machine.pSshKeyFile.getName());
+        if (s.length() == 0) {
+            s = com.dragonflow.SiteView.Machine.pSshKeyFile.getDefault();
+        }
+        return field(
+                "Key File for SSH connections",
+                "<input type=text name=keyFile size=50 value=\"" + s + "\">",
+                "Enter the path to the file containing the private key for this SSH connection. <b> Only valid if authentication method is \"Key File\".");
+    }
+
+    protected java.lang.String getSSHCommandLine(jgl.HashMap hashmap) {
+        java.lang.String s = com.dragonflow.Utils.TextUtils.getValue(hashmap,
+                com.dragonflow.SiteView.Machine.pSSHCommandLine.getName());
+        if (s.length() == 0) {
+            s = com.dragonflow.SiteView.Machine.pSSHCommandLine.getDefault();
+        }
+        return field(
+                "Custom Commandline",
+                "<input type=text name=sshCommandLine size=50 value=\"" + s
+                        + "\">",
+                "Enter the command for execution of external ssh client.  For substituion with above options use $host$, $user$ and $password$ respectivly. <b> This setting is for only for connections using an external process.</b>");
+    }
+
+    protected java.lang.String getNumConnectionseHtml(jgl.HashMap hashmap) {
+        java.lang.String s = com.dragonflow.Utils.TextUtils.getValue(hashmap,
+                com.dragonflow.SiteView.Machine.pSSHConnectionsLimit.getName());
+        if (s.length() == 0) {
+            s = com.dragonflow.SiteView.Machine.pSSHConnectionsLimit
+                    .getDefault();
+        }
+        return field("Connection Limit",
+                "<input type=text name=sshConnectionsLimit size=2 value=\"" + s
+                        + "\">",
+                "Enter the maximum number of open connections allowed for this remote.");
+    }
+
+    protected java.lang.String getPortNumberHtml(jgl.HashMap hashmap) {
+        java.lang.String s = com.dragonflow.Utils.TextUtils.getValue(hashmap,
+                com.dragonflow.SiteView.Machine.pSSHPort.getName());
+        if (s.length() == 0) {
+            s = com.dragonflow.SiteView.Machine.pSSHPort.getDefault();
+        }
+        return field(
+                "Port Number",
+                "<input type=text name=sshPort size=2 value=\"" + s + "\">",
+                "Enter the port number that the ssh server is running on. <b> Default is 22. </b>");
+    }
+
+    protected java.lang.String getSSHForceVersion2Html(jgl.HashMap hashmap) {
+        java.lang.String s = com.dragonflow.Utils.TextUtils.getValue(hashmap,
+                com.dragonflow.SiteView.Machine.pSSHForceVersion2.getName());
+        if (s.length() > 0) {
+            s = " CHECKED";
+        }
+        return field(
+                "SSH Version 2 Only",
+                "<input type=checkbox name=version2" + s + ">",
+                "Check this box to force SSH to only use SSH protocol version 2. <b> ( This SSH option is only supported using the internal java libraries connection method) </b>");
+    }
+
+    protected java.lang.String getDisableCacheHtml(jgl.HashMap hashmap) {
+        java.lang.String s = com.dragonflow.Utils.TextUtils
+                .getValue(hashmap,
+                        com.dragonflow.SiteView.Machine.pSSHConnectionCaching
+                                .getName());
+        if (s.length() > 0) {
+            s = " CHECKED";
+        }
+        return field("Disable Connection Caching",
+                "<input type=checkbox name=disableCache" + s + ">",
+                "Check this box to disable caching of SSH connections. ");
+    }
+
+    public java.lang.String getRemoteUniqueId() {
+        return request.getValue("ntMachineID");
+    }
+
+    protected java.lang.StringBuffer getAdnvacedSSHOptions(jgl.HashMap hashmap) {
+        java.lang.StringBuffer stringbuffer = new StringBuffer();
+        stringbuffer
+                .append("<TR><TD ALIGN=\"CENTER\" VALIGN=\"CENTER\" colspan=3><HR><H3>SSH Advanced Options</H3></TD></TR>");
+        stringbuffer.append(getSshClientHtml(hashmap));
+        stringbuffer.append(getPortNumberHtml(hashmap));
+        stringbuffer.append(getDisableCacheHtml(hashmap));
+        stringbuffer.append(getNumConnectionseHtml(hashmap));
+        stringbuffer.append(getSshAuthMethodHtml(hashmap));
+        stringbuffer.append(getSSHKeyFileHtml(hashmap));
+        stringbuffer.append(getSSHForceVersion2Html(hashmap));
+        stringbuffer.append(getSSHCommandLine(hashmap));
+        return stringbuffer;
+    }
+}

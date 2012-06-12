@@ -1,0 +1,10 @@
+
+import java.util.*;
+import java.lang.*;
+
+context.put("DeviceName", "192.168.0.249");
+context.put("frequency", "5");
+context.put("monitorTitle", "Ping");
+context.put("conditionError", "包成功率(％)==0");
+context.put("conditionWarn", "包成功率(％)<=75");
+context.put("conditionGood", "包成功率(％)>75");

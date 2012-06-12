@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+	
+	<screen name="showMonitor">
+		<section>
+			<widgets>
+				<container style="screenlet">
+					<container style="screenlet-header">
+						<label style="boxhead"
+							text="${uiLabelMap.sveccMonitor}" />
+					</container>
+					<container style="screenlet-body">
+						<platform-specific>
+							<html>
+								<html-template
+									location="component://svecc/webapp/ecc/show/showMonitor.ftl" />
+							</html>
+						</platform-specific>
+					</container>
+				</container>
+			</widgets>
+		</section>
+	</screen>
+
+	<screen name="list">
+		<section>
+			<widgets>
+				<decorator-screen name="ecc-decorator"
+					location="${parameters.mainDecoratorLocation}">
+					<decorator-section name="body">
+						<include-screen name="showMonitor" />
+						<include-screen name="Monitors"
+							location="component://svecc/widget/monitor/svMonitorScreens.xml" />
+					</decorator-section>
+				</decorator-screen>
+			</widgets>
+		</section>
+	</screen>
+	
+</screens>

@@ -1,0 +1,36 @@
+lastSaved=1213341360503
+id=-1
+last=1213341467743
+#
+measurement=1
+sample=100
+monitorDoneTime=1213341045515
+category=good
+percentFailed=0
+gethostname=127.0.0.1
+status=ok
+percentGood=100
+goodTimeSinceFirst=1167300808312
+id=1
+roundTripTime=10.0
+stateString=0.01 sec
+packetsReceived=1
+last=1213341045515
+lastCategory=good
+goodCount=100
+#
+measurement=0
+sample=2868
+monitorDoneTime=1213341467743
+category=good
+gethostname=192.168.0.249
+snmpValue=Cisco Internetwork Operating System Software   IOS (tm) C2600 Software (C2600-IK8O3S-M), Version 12.2(8)T5,  RELEASE SOFTWARE (fc1)  TAC Support: http://www.cisco.com/tac  Copyright (c) 1986-2002 by cisco Systems, Inc.  Compiled Fri 21-Jun-02 20:14 by cca
+status=ok
+goodTimeSinceFirst=1213258645630
+id=2
+snmpMeasurement=Cisco Internetwork Operating System Software   IOS (tm) C2600 Software (C2600-IK8O3S-M), Version 12.2(8)T5,  RELEASE SOFTWARE (fc1)  TAC Support: http://www.cisco.com/tac  Copyright (c) 1986-2002 by cisco Systems, Inc.  Compiled Fri 21-Jun-02 20:14 by cca
+stateString== Cisco Internetwork Operating System Software   IOS (tm) C2600 Software (C2600-IK8O3S-M), Version 12.2(8)T5,  RELEASE SOFTWARE (fc1)  TAC Support: http://www.cisco.com/tac  Copyright (c) 1986-2002 by cisco Systems, Inc.  Compiled Fri 21-Jun-02 20:14 by cca
+snmpTime=1213341467733
+last=1213341467743
+lastCategory=good
+goodCount=1049

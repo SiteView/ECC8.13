@@ -1,0 +1,14 @@
+TopAxisTitle = ("Audio Division Sales", dimgrey, Helvetica, 12);
+DataSets  = ("Audio Division Sales",null, CYLINDER);
+DataSet1  = 47460,162513;
+Grid = (gainsboro, white,dimgray),(null,null,dimgray);
+GridLine = (HORIZONTAL,BAR),(VERTICAL);
+BarWidth  = 60;
+BarLabels = "Portable\nAudio", "Audio\nComponents";
+FooterActiveLabel =
+	("OUTLINE", "../classes/netcharts/demo/division.dat", "LOADPARAMS");
+ActiveLabels1 =
+	("$47,460",  "../classes/netcharts/demo/portaudio.dat", "LOADPARAMS"),
+	("$162,513", "../classes/netcharts/demo/audiocomp.dat", "LOADPARAMS");
+Legend = (OFF);
+

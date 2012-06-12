@@ -1,0 +1,9 @@
+DataSets = ("TV Sales");
+TopAxisTitle = ("Television Sales", dimgrey, Helvetica, 12);
+DataSet1 = 127343, 2241,9136;
+
+BarLabels = "Color TV", "B&W TV", "Portable TV";
+
+ActiveLabels1 = ("$127,343"), ("$2,241"), ("$9,136");
+
+LeftTitle = ("");

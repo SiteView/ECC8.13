@@ -1,0 +1,33 @@
+
+Background = (white,NONE);
+DwellLabel = ("ON", black, Helvetica, 10);
+DwellBox = (white, SHADOW, 3);
+Header = ("NE Region Sales Charts\n  ", black, Helvetica, 14);
+TopAxisTitle = ("Regional Sales", dimgrey, Helvetica, 12);
+BottomTics  = ("ON", black, "Helvetica", 10);
+LeftTics    = ("ON", black, "Helvetica", 10);
+LeftTitle	= ("Sales, $K",black,"Helvetica",11,270);
+LeftFormat	= (INTEGER,"$%,6.0f",,);
+Bar3DDepth = 3;
+BarWidth = 60;
+LineSets = ("Performance", palevioletred, SQUARE, 10, FILLED, SOLID, 1, palevioletred);
+LineSet1 = (0.5,282092),(1.5,386311),(2.5,351900),(3.5,398822),(4.5,414855),
+	   (5.5,599382),(6.5,718401);
+DataSets = ("NE Regional Sales", x82AFDD);
+DataSet1 = 282092,386311,351900,398822,414855,599382,718401;
+ColorTable	= x82AFDD, xFBDE7D, x6C5D94, x5E8109, xF189AF, xF7BB83, x00AB9C;
+ActiveClicks = 1;
+ActiveLabels1 =
+	("$282,092","../classes/netcharts/demo/division.dat", "LOADPARAMS"),
+	("$386,311","../classes/netcharts/demo/division.dat", "LOADPARAMS"),
+	("$351,900","../classes/netcharts/demo/division.dat", "LOADPARAMS"),
+	("$398,822","../classes/netcharts/demo/division.dat", "LOADPARAMS"),
+	("$414,855","../classes/netcharts/demo/division.dat", "LOADPARAMS"),
+	("$599,382","../classes/netcharts/demo/division.dat", "LOADPARAMS"),
+	("$718,401","../classes/netcharts/demo/division.dat", "LOADPARAMS");
+BarLabels = "1994", "1995", "1996", "1997", "1998", "1999","2000";
+Legend =  ("", black, "Helvetica", 10);
+Grid = (gainsboro, white,dimgray),(null,null,dimgray);
+GridLine = (HORIZONTAL,BAR),(VERTICAL);
+NoteSets = ;
+

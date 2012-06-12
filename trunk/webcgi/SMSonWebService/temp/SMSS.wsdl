@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Test">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="str" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getIp">
+        <s:complexType />
+      </s:element>
+      <s:element name="getIpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getIpResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="yhm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mma" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zz" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getTestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getTestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JWSend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Appid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="JsNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="yhm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mma" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zz" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JWSendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JWSendResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JWSend1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Appid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="JsNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="yhm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mma" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zz" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fsyy" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JWSend1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JWSend1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JWSendLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Guid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JWSendLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="JWSendLogResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JWReceieve">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="yhm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mma" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zz" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Guid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Appid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JWReceieveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JWReceieveResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JWReceieveCommit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="yhm" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mma" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="zz" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deliver_guid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JWReceieveCommitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="JWReceieveCommitResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TestSoapIn">
+    <wsdl:part name="parameters" element="tns:Test" />
+  </wsdl:message>
+  <wsdl:message name="TestSoapOut">
+    <wsdl:part name="parameters" element="tns:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="getIpSoapIn">
+    <wsdl:part name="parameters" element="tns:getIp" />
+  </wsdl:message>
+  <wsdl:message name="getIpSoapOut">
+    <wsdl:part name="parameters" element="tns:getIpResponse" />
+  </wsdl:message>
+  <wsdl:message name="getTestSoapIn">
+    <wsdl:part name="parameters" element="tns:getTest" />
+  </wsdl:message>
+  <wsdl:message name="getTestSoapOut">
+    <wsdl:part name="parameters" element="tns:getTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="JWSendSoapIn">
+    <wsdl:part name="parameters" element="tns:JWSend" />
+  </wsdl:message>
+  <wsdl:message name="JWSendSoapOut">
+    <wsdl:part name="parameters" element="tns:JWSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="JWSend1SoapIn">
+    <wsdl:part name="parameters" element="tns:JWSend1" />
+  </wsdl:message>
+  <wsdl:message name="JWSend1SoapOut">
+    <wsdl:part name="parameters" element="tns:JWSend1Response" />
+  </wsdl:message>
+  <wsdl:message name="JWSendLogSoapIn">
+    <wsdl:part name="parameters" element="tns:JWSendLog" />
+  </wsdl:message>
+  <wsdl:message name="JWSendLogSoapOut">
+    <wsdl:part name="parameters" element="tns:JWSendLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="JWReceieveSoapIn">
+    <wsdl:part name="parameters" element="tns:JWReceieve" />
+  </wsdl:message>
+  <wsdl:message name="JWReceieveSoapOut">
+    <wsdl:part name="parameters" element="tns:JWReceieveResponse" />
+  </wsdl:message>
+  <wsdl:message name="JWReceieveCommitSoapIn">
+    <wsdl:part name="parameters" element="tns:JWReceieveCommit" />
+  </wsdl:message>
+  <wsdl:message name="JWReceieveCommitSoapOut">
+    <wsdl:part name="parameters" element="tns:JWReceieveCommitResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SMSSSoap">
+    <wsdl:operation name="Test">
+      <wsdl:input message="tns:TestSoapIn" />
+      <wsdl:output message="tns:TestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getIp">
+      <wsdl:input message="tns:getIpSoapIn" />
+      <wsdl:output message="tns:getIpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getTest">
+      <wsdl:input message="tns:getTestSoapIn" />
+      <wsdl:output message="tns:getTestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JWSend">
+      <wsdl:input message="tns:JWSendSoapIn" />
+      <wsdl:output message="tns:JWSendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JWSend1">
+      <wsdl:input message="tns:JWSend1SoapIn" />
+      <wsdl:output message="tns:JWSend1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JWSendLog">
+      <wsdl:input message="tns:JWSendLogSoapIn" />
+      <wsdl:output message="tns:JWSendLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JWReceieve">
+      <wsdl:input message="tns:JWReceieveSoapIn" />
+      <wsdl:output message="tns:JWReceieveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JWReceieveCommit">
+      <wsdl:input message="tns:JWReceieveCommitSoapIn" />
+      <wsdl:output message="tns:JWReceieveCommitSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SMSSSoap" type="tns:SMSSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="Test">
+      <soap:operation soapAction="http://tempuri.org/Test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIp">
+      <soap:operation soapAction="http://tempuri.org/getIp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTest">
+      <soap:operation soapAction="http://tempuri.org/getTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JWSend">
+      <soap:operation soapAction="http://tempuri.org/JWSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JWSend1">
+      <soap:operation soapAction="http://tempuri.org/JWSend1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JWSendLog">
+      <soap:operation soapAction="http://tempuri.org/JWSendLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JWReceieve">
+      <soap:operation soapAction="http://tempuri.org/JWReceieve" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JWReceieveCommit">
+      <soap:operation soapAction="http://tempuri.org/JWReceieveCommit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SMSS">
+    <wsdl:port name="SMSSSoap" binding="tns:SMSSSoap">
+      <soap:address location="http://60.190.2.30/NBDCSMS/SMSS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

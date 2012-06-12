@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+
+    <screen name="NoteInfoPager">
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+                <set field="viewIndex" from-field="parameters.VIEW_INDEX" type="Integer"/>
+                <set field="viewSize" from-field="parameters.VIEW_SIZE" type="Integer" default-value="8"/>
+                <set field="category" from-field="parameters.category" />
+        		<service service-name="getNoteInfos">
+        			<field-map field-name="category" env-name="category"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/pager.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="NoteInfo1LevelPager">
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+                <set field="viewIndex" from-field="parameters.VIEW_INDEX" type="Integer"/>
+                <set field="viewSize" from-field="parameters.VIEW_SIZE" type="Integer" default-value="8"/>
+                <set field="category" from-field="parameters.category" />
+        		<service service-name="get1LevelNoteInfos">
+        			<field-map field-name="category" env-name="category"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/1level.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+    <screen name="NoteInfo1">
+    <!--产品 -->
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+        		<service service-name="getNoteInfos">
+        			<field-map field-name="category" value="0"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/title.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+    <screen name="NoteInfo2">
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+        		<service service-name="getNoteInfos">
+        			<field-map field-name="category" value="1"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/title.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="NoteInfo3">
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+        		<service service-name="getNoteInfos">
+        			<field-map field-name="category" value="2"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/title.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="NoteInfo4">
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+        		<service service-name="getNoteInfos">
+        			<field-map field-name="category" value="515"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/title.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="NoteInfoDetail">
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+                <set field="id" from-field="parameters.id"/>
+        		<service service-name="getNoteInfo">
+        			<field-map field-name="id"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/detail.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="CategoryInfoList">
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+                
+        		<service service-name="getCategorys">
+        			<field-map field-name="category" env-name="parameters.mcategory"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/select.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="sitemap">
+        <section>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/sitemap.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+
+    
+  <!-- added by lijian -->
+
+      <screen name="governmentIndustry">
+     <!-- 政府行业 -->
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+        		<service service-name="getNoteInfos">
+        			<field-map field-name="category" value="515"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                     	 <html-template location="component://siteview/webapp/siteview/noteinfo/governmentIndustry.ftl"/>                        
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>   
+    <screen name="newTitleNews">
+     <!-- 新闻动态 -->
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+        		<service service-name="getNoteInfos">
+        			<field-map field-name="category" value="515"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                     	 <html-template location="component://siteview/webapp/siteview/noteinfo/newTitleNews.ftl"/>                        
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>   
+     <screen name="governmentSample">
+     <!-- 政府案例 -->
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+        		<service service-name="getNoteInfos">
+        			<field-map field-name="category" value="213"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>
+                          <html-template location="component://siteview/webapp/siteview/noteinfo/governmentSample.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+     <screen name="mediaSound">
+     <!-- 媒体声音 -->
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+        		<service service-name="getNoteInfos">
+        			<field-map field-name="category" value="517"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>                         
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/mediaSound.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+     <screen name="resolveSchedule">
+     <!--解决方案 -->
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+                
+        		<service service-name="getCategorys">
+        			<field-map field-name="category" value="11"/>
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>                         
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/resolveSchedule.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+    </screen> 
+     <screen name="aboutSiteview">
+     <!--关于游龙 -->        
+          <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+        		<service service-name="getNoteInfos">        			
+        			<field-map field-name="category" value="51"/>        			
+         		</service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>                         
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/aboutSiteview.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>
+
+    </screen>     
+  
+   <screen name="myModeTree">
+	        <section>
+	            <widgets>
+	                 <platform-specific>
+	                     <html>
+	                         <html-template location="component://siteview/webapp/siteview/noteinfo/myTree.ftl"/>
+	                     </html>
+	                 </platform-specific>
+	            </widgets>
+	        </section>
+	</screen>
+
+  	<screen name="myTemDisplay">
+	<!-- 右边临时显示 -->
+        <section>
+            <widgets>
+                 <platform-specific>
+                     <html>                  
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/temDisplay.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>		
+    </screen>
+
+   <!-- 右边部分 -->	
+   	<screen name="myAddForm">
+        <section>
+        <actions>
+        		<service service-name="getEditMenuInfo"></service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>                  
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/addPage.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>		
+   	</screen>
+   	
+   	<screen name="showContentInfo">
+   	<!-- 具体内容 -->
+        <section>
+            <actions>
+        		<service service-name="showContentInfo"></service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>                  
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/showContentInfo.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>		
+   	</screen>   
+   		 
+   <screen name="delCategaryPrompt">
+   <!-- 删除提示 -->
+        <section>
+            <widgets>
+                 <platform-specific>
+                     <html>                  
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/delCategaryInfoPrompt.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>		
+   	</screen> 
+   	 	  
+   <screen name="recordInformation">
+   <!--记录编辑窗口 -->
+        <section>
+        	<actions>
+        		<service service-name="showContentInfo"></service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>                  
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/recordInformation.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>		
+   	</screen>  
+   	
+   <screen name="addRecordForm">   	  	
+    <!--添加记录的form -->
+    	<section>
+            <widgets>
+                 <platform-specific>
+                     <html>                  
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/addRecordForm.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>		
+   	</screen>  
+   	    	
+   <screen name="editMenuInfo">   	  	
+    <!--编辑目录的form -->
+    	<section>
+        	<actions>
+        		<service service-name="getEditMenuInfo"></service>
+        	</actions>    	
+    	
+            <widgets>
+                 <platform-specific>
+                     <html>                  
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/editMenuInfo.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>		
+   	</screen>      	   	
+   	<screen name="displayInformation">
+   	<!-- 三级目录下的具体内容标题 -->
+        <section>
+        	<actions>
+        		<service service-name="getDisplayInformation"></service>
+        	</actions>
+            <widgets>
+                 <platform-specific>
+                     <html>                  
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/displayInformation.ftl"/>
+                     </html>
+                 </platform-specific>
+            </widgets>
+        </section>		
+   	</screen>     
+ 
+   	<screen name="myDecoratorTemplate">
+   	 <!--  表型装饰模板 -->
+   		<section>
+   		<widgets>
+   		   <platform-specific>
+	   		   <html>
+	   		  	 <html-template location="component://siteview/webapp/siteview/noteinfo/myDecoratorTable1.ftl"/>
+	   		   </html>
+   		   </platform-specific>
+   		   
+   		   <decorator-section-include name="left"/>
+   		   
+   		   <platform-specific>
+	   		   <html>
+	   		  	 <html-template location="component://siteview/webapp/siteview/noteinfo/myDecoratorTable2.ftl"/>
+	   		   </html>
+   		   </platform-specific>
+   		   
+   		   <decorator-section-include name="body"/>    
+   		   
+   		   <platform-specific>
+	   		   <html>
+	   		  	 <html-template location="component://siteview/webapp/siteview/noteinfo/myDecoratorTable3.ftl"/>
+	   		   </html>
+   		   </platform-specific>
+   		   
+   		</widgets>
+   		</section>
+   	</screen>
+   	
+    <screen name="systemMaintenance">
+   <!-- 多次重复利用的页面 -->
+	    <section>
+		    <widgets>
+		    	<decorator-screen name="myDecoratorTemplate">
+		    		<decorator-section name="left">
+		    		
+				    	<include-screen name="myModeTree"  />
+				    	
+			    	</decorator-section>
+		    		<decorator-section name="body">
+		    		
+				    	<include-screen name="myTemDisplay"  />
+				    	
+			    	</decorator-section>
+		    	</decorator-screen>
+		    </widgets>
+	    </section>
+	    
+    </screen>
+      	 
+    <screen name="addInfo">
+     <!-- 左边显示目录树，右边显示添加form -->
+	    <section>
+		    <widgets>
+		    	<decorator-screen name="myDecoratorTemplate">
+		    		<decorator-section name="left">
+		    		
+				    	<include-screen name="myModeTree"  />
+				    	
+			    	</decorator-section>
+		    		<decorator-section name="body">
+		    		
+				    	<include-screen name="myAddForm"  />
+				    	
+			    	</decorator-section>
+		    	</decorator-screen>
+		    </widgets>
+	    </section>	    
+    </screen>
+  
+    <screen name="displayInfo">
+   <!-- 左边显示目录树，右边显示三级标题 --> 
+	    <section>
+		    <widgets>
+		    
+		    	<decorator-screen name="myDecoratorTemplate">
+		    		<decorator-section name="left">
+		    		
+				    	<include-screen name="myModeTree"  />
+				    	
+			    	</decorator-section>
+		    		<decorator-section name="body">
+		    		
+				    	<include-screen name="displayInformation"  />
+				    	
+			    	</decorator-section>
+		    	</decorator-screen>
+		    </widgets>
+	    </section>	    
+    </screen>    
+
+    <screen name="displayContentInfo">
+   <!-- 左边显示目录树，右边显示三级标题的具体内容 --> 
+	    <section>
+		    <widgets>
+		    	<decorator-screen name="myDecoratorTemplate">
+		    		<decorator-section name="left">
+		    		
+				    	<include-screen name="myModeTree"  />
+				    	
+			    	</decorator-section>
+		    		<decorator-section name="body">
+		    		
+				    	<include-screen name="showContentInfo"  />
+				    	
+			    	</decorator-section>
+		    	</decorator-screen>
+		    </widgets>
+	    </section>	    
+    </screen>   
+
+     <screen name="delCategaryInfoPrompt">
+   <!-- 删除提示 --> 
+	    <section>
+
+
+		    <widgets>
+		    	<decorator-screen name="myDecoratorTemplate">
+		    		<decorator-section name="left">
+		    		
+				    	<include-screen name="myModeTree"  />
+				    	
+			    	</decorator-section>
+		    		<decorator-section name="body">
+		    		
+				    	<include-screen name="delCategaryPrompt"  />
+				    	
+			    	</decorator-section>
+		    	</decorator-screen>
+		    </widgets>
+	    </section>	    
+    </screen> 
+    
+     <screen name="delCategaryInfo">
+   <!-- 删除后，左边显示目录树，右边显示三级标题 --> 
+	    <section>
+	    	<actions>
+		    	<service service-name="delCategaryInfo"></service>	
+		    </actions>
+		    <widgets>
+		    	<decorator-screen name="myDecoratorTemplate">
+		    		<decorator-section name="left">
+		    		
+				    	<include-screen name="myModeTree"  />
+				    	
+			    	</decorator-section>
+		    		<decorator-section name="body">
+		    		
+				    	<include-screen name="displayInformation"  />
+				    	
+			    	</decorator-section>
+		    	</decorator-screen>
+		    </widgets>
+	    </section>	    
+    </screen>   
+    
+    <screen name="editCategaryInfo">
+   <!--编辑数据库记录，左边显示目录树，右边显示记录信息 --> 
+	    <section>
+		    <widgets>
+		    	<decorator-screen name="myDecoratorTemplate">
+		    		<decorator-section name="left">
+		    		
+				    	<include-screen name="myModeTree"  />
+				    	
+			    	</decorator-section>
+		    		<decorator-section name="body">
+		    		
+				    	<include-screen name="recordInformation"  />
+				    	
+			    	</decorator-section>
+		    	</decorator-screen>
+		    </widgets>
+	    </section>	    
+
+     </screen>      
+
+
+       
+    <screen name="addRecord">
+   <!--，左边显示目录树，右边显示增加记录form --> 
+	    <section>
+		    <widgets>
+		    	<decorator-screen name="myDecoratorTemplate">
+		    		<decorator-section name="left">
+		    		
+				    	<include-screen name="myModeTree"  />
+				    	
+			    	</decorator-section>
+		    		<decorator-section name="body">
+		    		
+				    	<include-screen name="addRecordForm"  />
+				    	
+			    	</decorator-section>
+		    	</decorator-screen>
+		    </widgets>
+	    </section>	    
+    </screen>        
+
+    <screen name="updateMenuInfo">
+   <!--，左边显示目录树，右边显示编辑目录信息 --> 
+	    <section>
+		    <widgets>
+		    	<decorator-screen name="myDecoratorTemplate">
+		    		<decorator-section name="left">
+		    		
+				    	<include-screen name="myModeTree"  />
+				    	
+			    	</decorator-section>
+		    		<decorator-section name="body">
+		    		
+				    	<include-screen name="editMenuInfo"  />
+				    	
+			    	</decorator-section>
+		    	</decorator-screen>
+		    </widgets>
+	    </section>	    
+    </screen>     
+   	
+   	<screen name="createLicense">
+    <!--激活码 -->
+        <section>
+        	<actions>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+                <set field="viewIndex" from-field="parameters.VIEW_INDEX" type="Integer" default-value="0"/>
+                <set field="viewSize" from-field="parameters.VIEW_SIZE" type="Integer" default-value="8"/>
+                <set field="category" from-field="parameters.category" default-value="11" />
+        		<service service-name="getNoteInfos">
+        			<field-map field-name="category" env-name="category"/>
+         		</service>
+        	</actions>
+            <widgets>
+            
+                 <platform-specific>
+                     <html>
+                         <html-template location="component://siteview/webapp/siteview/noteinfo/createLicense.ftl"/>
+                     </html>
+                 </platform-specific>
+                 
+            </widgets>
+            
+        </section>
+    </screen> 
+</screens>

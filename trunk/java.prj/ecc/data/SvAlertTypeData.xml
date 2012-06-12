@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvAlertType alertType="EmailAlert" hasTable="F" lastUpdatedStamp="2008-04-08 11:33:42.0" lastUpdatedTxStamp="2008-04-08 11:33:42.0" createdStamp="2008-04-08 11:33:42.0" createdTxStamp="2008-04-08 11:33:42.0"/>
+    <SvAlertType alertType="ScriptAlert" hasTable="F" lastUpdatedStamp="2008-04-08 11:33:42.0" lastUpdatedTxStamp="2008-04-08 11:33:42.0" createdStamp="2008-04-08 11:33:42.0" createdTxStamp="2008-04-08 11:33:42.0"/>
+    <SvAlertType alertType="SmsAlert" hasTable="F" lastUpdatedStamp="2008-04-08 11:33:42.0" lastUpdatedTxStamp="2008-04-08 11:33:42.0" createdStamp="2008-04-08 11:33:42.0" createdTxStamp="2008-04-08 11:33:42.0"/>
+    <SvAlertType alertType="SoundAlert" hasTable="F" lastUpdatedStamp="2008-04-08 11:33:42.0" lastUpdatedTxStamp="2008-04-08 11:33:42.0" createdStamp="2008-04-08 11:33:42.0" createdTxStamp="2008-04-08 11:33:42.0"/>
+</entity-engine-xml>

@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="../css.css" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td height="152">
+      <table width="100%" border="0" cellspacing="1" cellpadding="2">
+        <tr>
+          <td align="center"><b><font color="330066" size="3"><img src="../img/error_bit3.gif" width="24" height="24">业务流程分析</font></b></td>
+        </tr>
+        <tr>
+          <td> 
+            <p>业务流程分析显示了在指定时间段内，业务流程的平均反应时间，把反应时间细分为五个部分，分别是域名解析时间〔DNS〕、连接时间〔connection〕、第一字节包时间〔first 
+              buffer〕、重定向时间、数据下载时间。同时显示了业务流程包含的所有页面的大小〔单位千字节〕。用户可以按业务流程、城市或者组来分组查看，而且既可以查看图表，也可以查看数据表。</p>
+            <p>下表对反应时间的划分作了描述：<br>
+            <table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="#000000">
+              <tr bgcolor="#CCCCCC" align="center"> 
+                <td width="19%">名称</td>
+                <td width="81%">描述</td>
+              </tr>
+              <tr bgcolor="#FFFFFF"> 
+                <td width="19%">域名解析时间</td>
+                <td width="81%">域名解析（DNS）时间是将主机名解析成IP地址的时间，Agent可以通过标准的域名服务器（DNS）完成这一转换。每一个网页下载过程都以域名解析（DNS）开始的。Agent软件首先判断目标服务器的地址是主机名，还是IP地址，如果是IP地址，则使用该IP地址，不进行域名解析（DNS），否则将调用GetHostbyName函数将主机名转换为IP地址。GetHostbyName函数将向ISP或Keynote提供的DNS服务器查询IP地址。</td>
+              </tr>
+              <tr bgcolor="#FFFFFF"> 
+                <td width="19%">连接时间</td>
+                <td width="81%">通过域名解析（DNS）得到IP地址后，Agent建立与地址为IP设备的TCP连接。TCP连接是以Agent发送&quot;SYN&quot;报文到服务器并收到从服务器返回&quot;SYN&quot; 
+                  报文开始。从向服务器发送&quot;SYN&quot; 报文到收到服务器的&quot;SYN&quot;响应之间的时间为初始连接。在正常负载下，这一时间会很短（如果服务器TCP的缓冲区被负载充满，或者初始的&quot;SYN&quot;数据包丢失并重发，这一时间就会很长）。在大多数环境下，初始连接时间会比Ping的时间更准确，这是因为Agent是用真正的TCP交换代替了Ping的ICMP交换。</td>
+              </tr>
+              <tr bgcolor="#FFFFFF"> 
+                <td width="19%">第一字节包时间</td>
+                <td width="81%">第一字节包时间是指从TCP链接建立后到Agent收到第一个HTML数据包之间的时间，对于过载的服务器，第一字节时间会比较长。</td>
+              </tr>
+              <tr bgcolor="#FFFFFF"> 
+                <td width="19%">重定向时间</td>
+                <td width="81%">在初始连接建立后，服务器可能会通知Agent重新转向另外的连接目标。游龙网的Agent遵循通用的重定向命令：HTTP协议的Redirect和Refresh命令。重定向时间是指从Agent收到第一条重定向命令到Agent收到最终目标的&quot;SYN&quot; 
+                  报文之间的时间。如果不存在重定向，则重定向时间为零。</td>
+              </tr>
+              <tr bgcolor="#FFFFFF"> 
+                <td width="19%">数据下载时间</td>
+                <td width="81%">数据下载时间是指从Agent收到第一个HTML数据包到下载所有插图和其它页面组件以及执行代码，如Java小程序等。</td>
+              </tr>
+            </table>
+            <p><b><font color="#330099">分析业务流程报告</font></b></p>
+            <p> 业务流程报告帮助用户确定引起业务流程反应时间迟缓的原因，是网络原因还是服务器端原因，或者是客户端的延迟。<br>
+            </p>
+            <p>业务流程报告由三个部分组成，报告图表和图例，在图表的上方，显示了当前的预定义文件和在用户指定的时间段内报告显示的成功的业务流程数目。</p>
+            <p><i>提示：用户会发现业务流程分析的业务流程总数比整体性能中发生的业务流程数少，这是由于业务流程分析报告只显示了成功的业务流程，也就是说失败的业务流程将无法对其进行业务流程分析。</i><br>
+            </p>
+            <p>业务流程图表用不同的颜色标识每个时间片断，这些颜色与图例中的颜色块一一对应，使用户对每个时间片断的大小一目了然。<br>
+            </p>
+            <p>业务流程报告与网页组件分析报告十分相像，不同的是后者是对页面元素进行的分析，通过它用户可以很直观地了解是哪些页面元素造成反应时间的迟缓〔例如某个图片太大〕。<br>
+            </p>
+            <p>业务流程分析报告图表还显示了所有业务流程的大小，利用页面大小和反应时间，用户可以进一步计算出页面的下载速率，这将帮助用户了解业务流程是否太大或者下载速率是否太慢。<br>
+            </p>
+            <p><b><font color="#330099">利用工具提示</font></b><br>
+            </p>
+            <p>把鼠标指针停留在业务流程分析报告的每个颜色区域，将会弹出工具提示文本，显示当前时间片断的名称和大小，如&quot;数据下载时间：3.25秒&quot;。</p>
+            <p><i>提示：如果某个时间片断大小为零，则不显示相应的颜色区域，也就是并不是一定出现五个颜色区域。</i></p>
+            <p><b><font color="#330099">在表格状态下查看业务流程分析报告</font></b></p>
+            <p>
+              单击图表右上角的&quot;数据表&quot;链接，可以在数据表状态下查看业务流程报告。数据表包括总的业务流程时间、业务流程大小、业务流程数目以及业务流程性能颜色标识。由于业务流程分析报告中没有显示失败的业务流程，所以共有三种颜色标识，分别为绿色、黄色、红色，绿色性能最好，红色性能最差，性能的临界值是用户在业务流程标准设置中设定的。</p>
+            <p><i>提示：一般意义上讲，应该是反应时间越长，性能越差，但颜色标识的显示取决于用户对业务流程标准的设定。</i><br>
+            </p>
+            <p>&nbsp; </p>
+			</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+    <description>Logistics Hub Module Site Configuration File</description>
+    <owner>siteview</owner>
+
+	<request-map uri="alerts">
+    	<response name="success" type="view" value="alerts"/>
+   	</request-map>
+	<request-map uri="reports">
+    	<response name="success" type="view" value="reports"/>
+   	</request-map>
+	<request-map uri="health">
+    	<response name="success" type="view" value="health"/>
+   	</request-map>
+	<request-map uri="preferences">
+    	<response name="success" type="view" value="preferences"/>
+   	</request-map>
+
+
+	<view-map name="alerts" type="screen" page="component://svecc/widget/CommonScreens.xml#alerts"></view-map>
+	<view-map name="reports" type="screen" page="component://svecc/widget/CommonScreens.xml#reports"></view-map>
+	<view-map name="health" type="screen" page="component://svecc/widget/CommonScreens.xml#health"></view-map>
+	<view-map name="preferences" type="screen" page="component://svecc/widget/CommonScreens.xml#preferences"></view-map>
+</site-conf>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+    <description>Logistics Hub Module Site Configuration File</description>
+    <owner>siteview</owner>
+	
+    <request-map uri="alertList">
+        <response name="success" type="view" value="alertList"/>
+    </request-map>
+    <request-map uri="alertAdd">
+        <response name="success" type="view" value="alertAdd"/>
+    </request-map>
+    <request-map uri="alertHistory">
+        <response name="success" type="view" value="alertHistory"/>
+    </request-map>
+    <request-map uri="alertEdit">
+        <response name="success" type="view" value="alertDefine"/>
+    </request-map>
+    <request-map uri="alertDefine">
+        <response name="success" type="view" value="alertDefine"/>
+    </request-map>
+    <request-map uri="alertTest">
+        <response name="success" type="view" value="alertTest"/>
+    </request-map>
+    <request-map uri="alertSave">
+        <response name="success" type="view" value="alertList"/>
+        <response name="fail" type="view" value="alertSave"/>
+    </request-map>
+
+	<view-map name="alertList" type="screen" page="component://svecc/widget/alert/svAlertScreens.xml#alertList"/>
+    <view-map name="alertAdd" type="screen" page="component://svecc/widget/alert/svAlertScreens.xml#alertAdd"/>
+    <view-map name="alertHistory" type="screen" page="component://svecc/widget/alert/svAlertScreens.xml#alertHistory"/>
+    <view-map name="alertEdit" type="screen" page="component://svecc/widget/alert/svAlertScreens.xml#alertEdit"/>
+    <view-map name="alertDefine" type="screen" page="component://svecc/widget/alert/svAlertScreens.xml#alertDefine"/>
+    <view-map name="alertTest" type="screen" page="component://svecc/widget/alert/svAlertScreens.xml#alertTest"/>
+    <view-map name="alertSave" type="screen" page="component://svecc/widget/alert/svAlertScreens.xml#alertDefine"/>
+    
+</site-conf>
+

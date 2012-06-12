@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+ 
+    <screen name="listMonitor">
+		<section>
+			<actions>
+				<script location="component://svecc/script/org/siteview/svecc/monitor/MonitorList.bsh"/>
+			</actions>        
+            <widgets>
+                <decorator-screen name="ecc-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		               <container style="screenlet">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.sveccMonitorList}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+								<platform-specific>
+								<html>
+									<html-template location="component://svecc/webapp/ecc/monitor/MonitorList.ftl" />
+								</html>
+							    </platform-specific>
+							    
+		                   </container>
+		               </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="Monitors">
+    	<section>
+			<condition>
+			<not><if-empty field-name="parameters.groupId"/></not>
+			</condition>
+    		<actions>
+    			<script location="component://svecc/script/org/siteview/svecc/monitor/MonitorList.bsh" />
+    		</actions>
+    		<widgets>
+               <container style="screenlet">
+                   <container style="screenlet-header">
+                       <label style="boxhead" text="${uiLabelMap.sveccMonitorList}"/>
+                   </container>
+                   <container style="screenlet-body">
+						<platform-specific>
+						<html>
+							<html-template location="component://svecc/webapp/ecc/monitor/MonitorList.ftl" />
+						</html>
+					    </platform-specific>
+           	 			<include-form name="createMonitorButton" location="component://svecc/widget/monitor/MonitorForms.xml"/>
+                   </container>
+               </container>
+               <include-screen name="reflash"/> 
+    		</widgets>
+    	</section>
+    </screen>
+
+    <screen name="monitorDetail">
+		<section>
+			<actions>
+				<script location="component://svecc/script/org/siteview/svecc/monitor/MonitorDetail.bsh"/>
+			</actions>        
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		              <container style="screenlet">
+		                  <container style="screenlet-header">
+		                      <label style="boxhead" text="${uiLabelMap.sveccMonitorList}"/>
+		                  </container>
+		                  <container style="screenlet-body">
+							<platform-specific>
+							<html>
+								<html-template location="component://svecc/webapp/ecc/monitor/MonitorDetail.ftl" />
+							</html>
+						    </platform-specific>
+		                  </container>
+		              </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    
+    
+ 
+    <screen name="listMonitorType">
+		<section>
+			<actions>
+				<script location="component://svecc/script/org/siteview/svecc/monitor/MonitorTypeList.bsh"/>
+			</actions>        
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		              <container style="screenlet">
+		              	  <include-screen name="keywordsearchbox"/>
+		                  <container style="screenlet-header">
+		                      <label style="boxhead" text="${uiLabelMap.sveccMonitorTypeList}"/>
+		                  </container>
+		                  <container style="screenlet-body">
+							<platform-specific>
+							<html>
+								<html-template location="component://svecc/webapp/ecc/monitor/MonitorTypeList.ftl" />
+							</html>
+						    </platform-specific>
+		                  </container>
+		              </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    
+    
+    <screen name="modifyMonitor">
+		<section>
+			<actions>
+			<!-- 
+				<script location="component://svecc/script/org/siteview/svecc/monitor/createMonitor.bsh"/>
+			 -->
+			 <set field="className" value="${parameters.className}"/>
+			 <set field="groupId" value="${parameters.groupId}"/>
+			 <set field="id" value="${parameters.id}"/>
+			</actions>        
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		              <container style="screenlet">
+		                  <container style="screenlet-header">
+		                      <label style="boxhead" text="${uiLabelMap.sveccCreateMonitor}"/>
+		                  </container>
+		                  <container style="screenlet-body">
+  							<include-form name="Monitor" location="component://database/formForMonitor/svecc/MonitorForms"/>												
+		                  </container>
+		              </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+
+    <screen name="keywordsearchbox">
+        <section>
+            <widgets>
+	              <container style="screenlet">
+	                  <container style="screenlet-header">
+	                      <label style="boxhead" text="${uiLabelMap.SearchMonitorType}"/>
+	                  </container>
+	                  <container style="screenlet-body">
+	                      <platform-specific><html><html-template location="component://svecc/webapp/ecc/monitor/keywordsearchbox.ftl"/></html></platform-specific>
+	                  </container>
+	              </container>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="reflash">
+        <section>
+            <widgets>
+	              <container style="screenlet">
+	                  <container style="screenlet-header">
+	                      <label style="boxhead" text="${uiLabelMap.sveccTestMonitor}"/>
+	                  </container>
+	                  <container style="screenlet-body">
+	                      <platform-specific><html><html-template location="component://svecc/webapp/ecc/monitor/reflash.ftl"/></html></platform-specific>
+	                  </container>
+	              </container>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="reflashInit">
+        <section>
+            <widgets>
+                <decorator-screen name="ecc-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+	              <container style="screenlet">
+	                  <container style="screenlet-header">
+	                      <label style="boxhead" text="${uiLabelMap.sveccTestMonitor}"/>
+	                  </container>
+	                  <container style="screenlet-body">
+	                      <platform-specific><html><html-template location="component://svecc/webapp/ecc/monitor/reflash.ftl"/></html></platform-specific>
+	                      <platform-specific><html><html-template location="component://svecc/webapp/ecc/monitor/reflashInit.ftl"/></html></platform-specific>
+	                  </container>
+	              </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    
+    <screen name="jsondata">
+        <section>
+        	<actions>
+        		<script location="component://svecc/script/org/siteview/svecc/monitor/reflash.bsh"/>
+        	</actions>
+            <widgets>
+                 <platform-specific><html><html-template location="component://svecc/webapp/ecc/monitor/jSonData.ftl"/></html></platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    
+    
+</screens>

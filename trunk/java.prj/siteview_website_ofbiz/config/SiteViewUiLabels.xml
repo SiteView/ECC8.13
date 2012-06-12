@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 
+    <property key="svMainPage">
+        <value xml:lang="en">Home</value>
+        <value xml:lang="zh">主页</value>
+    </property>
+    <property key="svProduct">
+        <value xml:lang="en">Our Products</value>
+        <value xml:lang="zh">产品</value>
+    </property>
+    <property key="svSolution">
+        <value xml:lang="en">Solutions</value>
+        <value xml:lang="zh">解决方案</value>
+    </property>
+    <property key="svSucceedItem">
+        <value xml:lang="en"></value>
+        <value xml:lang="zh">成功案例</value>
+    </property>
+    <property key="svSupport">
+        <value xml:lang="en">Supports</value>
+        <value xml:lang="zh">支持与下载</value>
+    </property>
+    <property key="svAgent">
+        <value xml:lang="en">Partners</value>
+        <value xml:lang="zh">渠道代理</value>
+    </property>
+    <property key="svNews">
+        <value xml:lang="en">Newsroom</value>
+        <value xml:lang="zh">新闻动态</value>
+    </property>
+    <property key="svAbout">
+        <value xml:lang="en">Contact</value>
+        <value xml:lang="zh">联系我们</value>
+    </property>
+
+</resource>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+        
+<!-- developed by lijian -->     
+<!-- pager -->
+	<request-map uri="pagerPreferen">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="pagerPreference"/>
+	</request-map>
+	<request-map uri="savePagerSetting">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="savePagerChange"/>
+		<response name="success" type="view" value="testPagerseting"/>
+	</request-map>	
+	
+	<request-map uri="AddPagerPreferences">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="AddPagerPreferences"/>
+	</request-map>	
+	
+	<request-map uri="saveAddPagerSetting">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="saveAddPagerSetting"/>
+		<response name="success" type="view" value="pagerPreference"/>
+	</request-map>	
+	
+	<request-map uri="editPagerseting">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="AddPagerPreferences"/>
+	</request-map>	
+	
+	<request-map uri="delPagerseting">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="delPagerseting"/>
+		<response name="success" type="view" value="pagerPreference"/>
+	</request-map>		
+
+	<request-map uri="testPagerseting">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="testPagerseting"/>
+	</request-map>	
+
+	<request-map uri="sendTest">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="sendTest"/>
+		<response name="success" type="view" value="pagerPreference"/>
+		<response name="fail" type="view" value="errorPage"/>
+		<response name="error" type="view" value="errorPage"/>
+	</request-map>	
+
+
+    <view-map name="pagerPreference" type="screen" page="component://svecc/widget/pager/svEccPagerScreens.xml#pagerPreference"></view-map>
+    <view-map name="AddPagerPreferences" type="screen" page="component://svecc/widget/pager/svEccPagerScreens.xml#AddPagerPreferences"></view-map>
+	 <view-map name="testPagerseting" type="screen" page="component://svecc/widget/pager/svEccPagerScreens.xml#testPagerseting"></view-map>	
+	 <view-map name="errorPage" type="screen" page="component://svecc/widget/pager/svEccPagerScreens.xml#errorPage"></view-map>			
+</site-conf>
+

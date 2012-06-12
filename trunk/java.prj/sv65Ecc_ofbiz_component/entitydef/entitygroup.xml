@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entitygroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitygroup.xsd">
+
+ <!-- ========================================================= -->
+  <!-- com.siteview.ecc.monitor -->
+  <!-- ========================================================= -->
+
+	<!-- add by hailong.yi 2008/6/11 -->
+	<entity-group group="com.siteview.ecc.monitor" entity="SvMonitorType" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvMonitorCommonAttr" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvMonitorAttr" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvMonitorInstance" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvMonitorInstanceValue" />
+	
+	<entity-group group="com.siteview.ecc.monitor" entity="SvGroupAttr" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvGroup" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvGroupValue" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvMasterConfig" />
+	
+	<!-- add by wan.luo 2008/6/25 -->
+	<entity-group group="com.siteview.ecc.monitor" entity="SvUser" />	
+	<entity-group group="com.siteview.ecc.monitor" entity="SvUserPermission" />	
+	<entity-group group="com.siteview.ecc.monitor" entity="SvUserPermissionType" />	
+	
+	<entity-group group="com.siteview.ecc.monitor" entity="SvLoggerType" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvLog" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvLogLinks" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvMonitorStatusHelp" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvMonitorStatus" />
+	
+	<entity-group group="com.siteview.ecc.monitor" entity="SvMessage" />
+
+	<entity-group group="com.siteview.ecc.monitor" entity="SvPreferenceType" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvPreferenceAttr" />
+	
+
+</entitygroup>

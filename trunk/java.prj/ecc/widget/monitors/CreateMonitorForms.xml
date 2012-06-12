@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	CreateMonitorForms
+	
+	创建监测器的窗体
+-->
+
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-form.xsd">
+
+	<!-- base information -->
+    <form name="CreatePingMonitor" type="single" target="submitpingmonitor" 
+        header-row-style="header-row" default-table-style="basic-table">
+		<!-- base information -->
+		<field name="_MachineName" title="${uiLabelMap.eccDeviceName}" >
+			<text size="70" default-value="${DeviceName}"/>
+		</field>
+		<field name="_frequency" title="${uiLabelMap.eccProbeFrequency}" >
+			<text size="10" default-value="${frequency}"/>
+		</field>
+        <field name="_frequencyUnit" title="${uiLabelMap.eccFrequencyUnit}">
+            <drop-down allow-empty="false" no-current-selected-key="M">
+                <option key="M" description="${uiLabelMap.eccFrequencyMinute}"/>
+                <option key="S" description="${uiLabelMap.eccFrequencySecond}"/>
+            </drop-down>
+        </field>		
+		<field name="sv_name" title="${uiLabelMap.eccMonitorTitle}">
+			<text size="70" default-value="${monitorTitle}: ${DeviceName}"/>	
+		</field>
+
+		<!-- advance option-->
+		<field name="_SendBytes" title="${uiLabelMap.eccSendBytes}" >
+			<text size="10" default-value="32"/>
+		</field>
+		<field name="_Timeout" title="${uiLabelMap.eccTimeout}" >
+			<text size="10" default-value="20000"/>
+		</field>
+        <field name="_SendNums" title="${uiLabelMap.eccSendNums}">
+			<text size="10" default-value="6"/>
+        </field>		
+		
+	<!-- condition -->		
+		<field name="conditionError" title="${uiLabelMap.eccConditionError}">
+			<textarea cols="70" rows="4" default-value="${conditionError}"/>
+		</field>
+		<field name="conditionWarn" title="${uiLabelMap.eccConditionWarn}">
+			<textarea cols="70" rows="4" default-value="${conditionWarn}"/>
+		</field>	
+		<field name="conditionGood" title="${uiLabelMap.eccConditionGood}">
+			<textarea cols="70" rows="4" default-value="${conditionGood}"/>
+		</field>				
+	
+	<!-- buttons -->
+        <field  name ="submitButton" title="${uiLabelMap.eccAdd}"  widget-style="smallSubmit"><submit button-type="button"/></field>
+        <field name="cancelButton" title="" widget-style="smallSubmit">
+            <hyperlink target="#"
+                description="${uiLabelMap.eccCancel}" also-hidden="false"/>
+        </field>
+    </form>		
+	
+</forms>

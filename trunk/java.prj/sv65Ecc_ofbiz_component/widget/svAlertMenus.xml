@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-menu.xsd">
+    <menu name="alertMenu" id="basic-nav" type="simple" title=""
+        default-selected-style="selected" menu-container-style="button-bar tab-bar">
+        <menu-item name="Multiview" title="${uiLabelMap.alertsMultiview}">
+        	<link target="none"/>
+        </menu-item>
+        <menu-item name="ManageAlert" title="${uiLabelMap.btn_svAlertManage}">
+        	<link target="none"/>
+        </menu-item>
+        <menu-item name="BrowseAlert" title="${uiLabelMap.btn_svAlertList}">
+        	<link target="alertList?alertMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="AddAlert" title="${uiLabelMap.btn_svAlertAdd}">
+        	<link target="alertAdd?alertMenu_collapsed=false"/>
+        </menu-item>
+        <menu-item name="DisableAlert" title="${uiLabelMap.btn_svAlertDisable}">
+        	<link target="none"/>
+        </menu-item>
+        <menu-item name="EnableAlert" title="${uiLabelMap.btn_svAlertEnable}">
+        	<link target="none"/>
+        </menu-item>
+        <menu-item name="AlertReport" title="${uiLabelMap.btn_svAlertReport}">
+        	<link target="none"/>
+        </menu-item>
+     </menu>
+</menus>
+
+
+	
+
+
+		
+	
+
+
+		
+
+
+		
+
+
+		
+
+
+	

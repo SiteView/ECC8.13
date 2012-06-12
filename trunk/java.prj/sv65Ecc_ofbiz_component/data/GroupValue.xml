@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvGroupValue groupId="__Health__" stype="MG" attrName="_dependsCondition" idx="3" attrValue="good"/>
+    <SvGroupValue groupId="__Health__" stype="MG" attrName="_encoding" idx="1" attrValue="GBK"/>
+    <SvGroupValue groupId="__Health__" stype="MG" attrName="_fileEncoding" idx="5" attrValue="GBK"/>
+    <SvGroupValue groupId="__Health__" stype="MG" attrName="_health" idx="2" attrValue="true"/>
+    <SvGroupValue groupId="__Health__" stype="MG" attrName="_name" idx="6" attrValue="Health"/>
+    <SvGroupValue groupId="__Health__" stype="MG" attrName="_nextID" idx="4" attrValue="1"/>
+    <SvGroupValue groupId="tree" stype="DYN" attrName="Group0" idx="1" attrValue="open"/>
+    <SvGroupValue groupId="tree" stype="DYN" attrName="_fileEncoding" idx="1" attrValue="UTF-8"/>
+    <SvGroupValue groupId="tree" stype="DYN" attrName="_user" idx="1" attrValue="administrator"/>
+</entity-engine-xml>

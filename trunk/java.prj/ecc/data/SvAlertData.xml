@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvAlert alertId="17666" alertName="ddd" alertType="EmailAlert" alertCond="3" alertCategory="&#38169;&#35823;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="17849" alertName="ggg" alertType="SoundAlert" alertCond="3" alertCategory="&#38169;&#35823;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="18029" alertName="456" alertType="SmsAlert" alertCond="3" alertCategory="&#38169;&#35823;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="18478" alertName="sound alert1" alertType="SoundAlert" alertCond="3" alertCategory="&#38169;&#35823;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="55" selTimes2="66"/>
+    <SvAlert alertId="20105" alertName="565" alertType="ScriptAlert" alertCond="3" alertCategory="&#38169;&#35823;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="20408" alertName="test13" alertType="ScriptAlert" alertCond="3" alertCategory="&#21361;&#38505;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="21162" alertName="email alert1" alertType="EmailAlert" alertCond="1" alertCategory="&#21361;&#38505;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="22400" alertName="test2" alertType="SoundAlert" alertCond="3" alertCategory="&#38169;&#35823;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="23003" alertName="js" alertType="ScriptAlert" alertCond="3" alertCategory="&#38169;&#35823;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="24000" alertName="0000" alertType="SmsAlert" alertCond="3" alertCategory="&#38169;&#35823;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="24567" alertName="vv" alertType="SoundAlert" alertCond="3" alertCategory="&#38169;&#35823;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="25691" alertName="e1" alertType="EmailAlert" alertCond="3" alertCategory="&#38169;&#35823;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="55" selTimes2="66"/>
+    <SvAlert alertId="27694" alertName="&#33050;&#26412;" alertType="ScriptAlert" alertCond="2" alertCategory="&#21361;&#38505;" alertState="F" alwaysTimes="1" onlyTimes="10" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="29995" alertName="es" alertType="SmsAlert" alertCond="3" alertCategory="&#27491;&#24120;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="30751" alertName="sms alert" alertType="SmsAlert" alertCond="1" alertCategory="&#21361;&#38505;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+    <SvAlert alertId="30822" alertName="test4" alertType="EmailAlert" alertCond="3" alertCategory="&#38169;&#35823;" alertState="F" alwaysTimes="1" onlyTimes="1" selTimes1="2" selTimes2="3"/>
+</entity-engine-xml>

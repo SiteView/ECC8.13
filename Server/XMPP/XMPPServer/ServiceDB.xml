@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <Service type="ContactSearch">
+    <Name>Contact Search Service</Name>
+    <JID>Search.SiteView.com</JID>
+  </Service>
+  <Service type="GroupChat">
+    <Name>Multi User Chat Service</Name>
+    <JID>Muc.SiteView.com</JID>
+  </Service>
+  <Service type="FileTransfer">
+    <Name>File Transfer Service</Name>
+    <JID>Proxy65</JID>
+  </Service>
+</Services>

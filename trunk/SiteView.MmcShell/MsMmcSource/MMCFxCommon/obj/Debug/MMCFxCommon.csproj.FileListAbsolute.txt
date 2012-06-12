@@ -1,0 +1,10 @@
+D:\SiteViewShell\MMC\Source\MMCFxCommon\bin\Debug\MMCFxCommon.dll
+D:\SiteViewShell\MMC\Source\MMCFxCommon\bin\Debug\MMCFxCommon.pdb
+D:\SiteViewShell\MMC\Source\MMCFxCommon\obj\Debug\ResolveAssemblyReference.cache
+D:\SiteViewShell\MMC\Source\MMCFxCommon\obj\Debug\MMCFxCommon.dll
+D:\SiteViewShell\MMC\Source\MMCFxCommon\obj\Debug\MMCFxCommon.pdb
+D:\SiteView.MmcShell\MsMmcSource\MMCFxCommon\bin\Debug\MMCFxCommon.dll
+D:\SiteView.MmcShell\MsMmcSource\MMCFxCommon\bin\Debug\MMCFxCommon.pdb
+D:\SiteView.MmcShell\MsMmcSource\MMCFxCommon\obj\Debug\ResolveAssemblyReference.cache
+D:\SiteView.MmcShell\MsMmcSource\MMCFxCommon\obj\Debug\MMCFxCommon.dll
+D:\SiteView.MmcShell\MsMmcSource\MMCFxCommon\obj\Debug\MMCFxCommon.pdb

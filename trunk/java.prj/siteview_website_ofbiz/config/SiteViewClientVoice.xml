@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 
+    <property key="svClient">
+        <value xml:lang="en">Customer stories</value>
+        <value xml:lang="zh">客户引言</value>
+    </property>
+    <property key="svLine1">
+        <value xml:lang="en">\"As a typical state-owned enterprise , the information system of Shanghai Jinshan Petrochemical corporation is complex but decentralized. However,SiteView has satisfied the need for the automatic and intellectualized running and maintenance of our network management, and has been a network management software that is suitable to the China's actual conditions\"</value>
+        <value xml:lang="zh">\“作为典型的国营企业，上海金山石化总公司的信息系统庞杂而分散，SiteView很好地满足了我们网络管理自动化、智能化运维的需求，是一款适合中国国情的网络管理软件。\"</value>
+    </property>
+    <property key="svLine2">
+        <value xml:lang="en">\"Since full implementation of SiteView network management system, Web service quality of 21CN has been significantly upgraded, IT efficiency has obviously improved, and work intensity of running maintenance staff has decreased a lot. Thus, introducing SiteView network management software has gained the whole company's high degree of recognition\"</value>
+        <value xml:lang="zh">\"全面实施SiteView网管系统以来，21CN的Web服务质量得到大幅度提升，IT效率明显提高，运维人员的工作强度也降低了许多，SiteView网管软件的引进得到公司上下的高度认可。\"</value>
+    </property>
+  <property key="svLine3">
+        <value xml:lang="en">\"We have provided service for 2 million Legend of Mir 3 players through nearly 3000 servers all over the country. SiteView's implementation, has fully guaranteed the normal running of large server cluster7 X24 and has made players comfortably 24-hour enjoy ...... brought about by Legend of Mir 3\"</value>
+        <value xml:lang="zh">\"我们通过遍布全国的近3000台服务器为200万传奇3游戏玩家提供服务，SiteView的实施，为庞大的服务器集群的7X24正常运行提供了有利的保障，使玩家能畅快的全天候享受传奇3游戏带来...\"</value>
+    </property>
+    <property key="svLine4">
+        <value xml:lang="en">\" SiteView-IDC version by DragonFlow Network Technology, Inc. has very well met our clients' need for 7X24 monitoring management to managed server and its system application. Two years' implementation has significantly upgraded the current clients' satisfaction and meanwhile attracted a lot of new ......\"</value>
+        <value xml:lang="zh">\"游龙科技SiteView—IDC版很好地满足了我们的用户对托管服务器及其系统应用进行7X24监测管理的需求。实施两年以来，大幅度地提升了现有用户的满意度，同时为我们吸引来不少新的......\"</value>
+    </property>
+    <property key="svLine5">
+        <value xml:lang="en">\"SiteView is full applicable to the need of the bank system management, and has provided the forceful guarantee for the regularity of our banking business system 7X24. Having had it , we have been full of confidence to high-quality bank service provided for consumers\"</value>
+        <value xml:lang="zh">\"SiteView完全适用于银行系统管理的需求，为我们银行业务系统7X24的正常运营提供了有力的保障。有了它，我们对为用户提供高质量的银行服务更加充满了信心。\"</value>
+    </property>
+    <property key="svLine6">
+        <value xml:lang="en">\"SiteView ECC's B/S frame and characteristic of hierarchy monitoring have resolved the management demand for distributed, long-distance co-operation and maintenance , and rich function of statistics statements, to a great extent, has lightened the burden of staff's weekly and monthly statistics\"</value>
+        <value xml:lang="zh">\"SiteView ECC的B/S架构和\"层级监测\"特性解决了中国网通分布式网络远程协同运维的管理需求，丰富的报表统计功能在很大程度上为运维人员减轻周报和月报统计的负担。\"</value>
+    </property>
+    <property key="svLine7">
+        <value xml:lang="en">\"As a nationwide network, Monternet, through SiteView ECC unique \"hierarchy monitoring and data synchronization\", has realized Shenzhen headquarters' network management and co-operation to nationwide 27 provincial-level system in different regions and at different levels.\"</value>
+        <value xml:lang="zh">\"作为全国性网络，移动梦网通过SiteView ECC独有的\"层级监测和数据同步\"方式，实现了深圳总部对全国27个省级系统不同区域、不同级别的网络集中管理和协同运维。\"</value>
+    </property>
+    <property key="svLine8">
+        <value xml:lang="en">\"SiteView ECC has reached China Railcom's performance requests in product's security, stability, efficiency etc. and can have real-time monitoring and management to its server cluster, data base cluster, switch, video conference system, etc.\"</value>
+        <value xml:lang="zh">\"SiteView ECC完全达到了中国铁通在产品安全性、稳定性、高效性等方面的性能要求，可以对其服务器集群、数据库集群、交换机、视频会议系统等进行实时监测和管理。\"</value>
+    </property>
+    <property key="svWord1">
+        <value xml:lang="en">---shanghai jinshan Petrochemical Corporation </value>
+        <value xml:lang="zh">---上海金山石化</value>
+    </property>
+    <property key="svWord2">
+        <value xml:lang="en">--- game operator of Legend of Mir 3</value>
+        <value xml:lang="zh">---传奇3游戏运营商</value>
+    </property>
+    <property key="svWord3">
+        <value xml:lang="en">---China Construction Bank</value>
+        <value xml:lang="zh">---中国建设银行</value>
+    </property>
+    <property key="svWord4">
+        <value xml:lang="en">---China Netcom</value>
+        <value xml:lang="zh">---中国网通</value>
+    </property>
+    <property key="svWord5">
+        <value xml:lang="en">---Monternet </value>
+        <value xml:lang="zh">---移动梦网</value>
+    </property>
+    <property key="svWord6">
+        <value xml:lang="en">---China Railcom</value>
+        <value xml:lang="zh">---中国铁通</value>
+    </property>
+</resource>

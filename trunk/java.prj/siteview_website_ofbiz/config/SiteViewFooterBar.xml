@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 
+    <property key="svMediaReport">
+        <value xml:lang="en">Media Coverage</value>
+        <value xml:lang="zh">媒体报道</value>
+    </property>
+    <property key="svNews">
+        <value xml:lang="en">Newsroom</value>
+        <value xml:lang="zh">新闻动态</value>
+    </property>
+    <property key="svCall">
+        <value xml:lang="en">Toll-free Telephone Call</value>
+        <value xml:lang="zh">免费咨询电话</value>
+    </property>
+
+</resource>

@@ -1,0 +1,12 @@
+import com.dragonflow.SiteView.*;
+import com.dragonflow.Api.*;
+import java.util.*;
+import java.lang.*;
+
+APIGroup api = new APIGroup(); 
+Collection groups = api.getAllGroupInstances();
+context.put("num_of_groups", groups.size());
+
+ArrayList list= ApiForOfbiz.getMonitorsData();
+context.put("num_of_monitor", list.size());
+context.put("monitors",list);

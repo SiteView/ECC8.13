@@ -1,0 +1,11 @@
+IDS_License_MainTitle
+IDS_License_Title
+IDS_Buy_Point_Count
+IDS_Enable_Point_Count
+IDS_Buy_Entity_Count
+IDS_Enable_Entity_Count
+IDS_Disable_Date
+IDS_NO_Limit
+IDS_Year
+IDS_Month
+IDS_Day

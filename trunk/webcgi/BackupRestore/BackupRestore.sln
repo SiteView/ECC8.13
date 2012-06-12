@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BackupRestore", "BackupRestore.vcproj", "{CDEA7ED0-824F-4B59-B6D6-75AC00340865}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{CDEA7ED0-824F-4B59-B6D6-75AC00340865}.Debug.ActiveCfg = Debug|Win32
+		{CDEA7ED0-824F-4B59-B6D6-75AC00340865}.Debug.Build.0 = Debug|Win32
+		{CDEA7ED0-824F-4B59-B6D6-75AC00340865}.Release.ActiveCfg = Release|Win32
+		{CDEA7ED0-824F-4B59-B6D6-75AC00340865}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

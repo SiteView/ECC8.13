@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="svHotLine">
+        <value xml:lang="en">Consulting Hotline</value>
+        <value xml:lang="zh">咨询热线</value>
+    </property>
+    <property key="svCall">
+        <value xml:lang="en">Free Consultation Submit</value>
+        <value xml:lang="zh">免费咨询</value>
+    </property>
+    <property key="svRequired">
+        <value xml:lang="en">Contact Us</value>
+        <value xml:lang="zh">提交需求意向</value>
+    </property>
+</resource>

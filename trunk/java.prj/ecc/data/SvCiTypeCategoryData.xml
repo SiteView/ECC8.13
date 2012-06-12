@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvCiTypeCategory sv_id="_App" sv_name="&#31995;&#32479;&#24212;&#29992;" sv_label="IDS_2088" sv_description="IDS_2087" sv_index="8" sv_hidden="N" file_name="999"/>
+    <SvCiTypeCategory sv_id="_ASP" sv_name="ASP" sv_label="IDS_2022" sv_description="IDS_2021" sv_index="12" sv_hidden="Y"/>
+    <SvCiTypeCategory sv_id="_customServe" sv_name="&#25320;&#27979;" sv_label="IDS_2182" sv_description="IDS_2182" sv_index="13" sv_hidden="Y"/>
+    <SvCiTypeCategory sv_id="_Database" sv_name="&#25968;&#25454;&#24211;" sv_label="IDS_2246" sv_description="IDS_2245" sv_index="2" sv_hidden="N"/>
+    <SvCiTypeCategory sv_id="_DNS" sv_name="DNS" sv_label="IDS_2171" sv_description="IDS_2170" sv_index="9" sv_hidden="N"/>
+    <SvCiTypeCategory sv_id="_example" sv_name="&#20363;&#23376;&#35774;&#22791;" sv_label="IDS_2154" sv_description="IDS_2153" sv_index="15" sv_hidden="Y"/>
+    <SvCiTypeCategory sv_id="_Firewall" sv_name="&#38450;&#28779;&#22681;" sv_label="IDS_2235" sv_description="IDS_2234" sv_index="4" sv_hidden="N"/>
+    <SvCiTypeCategory sv_id="_LDAP" sv_name="LDAP" sv_label="IDS_2002" sv_description="IDS_2001" sv_index="11" sv_hidden="Y"/>
+    <SvCiTypeCategory sv_id="_Load_Balancing" sv_name="&#36127;&#36733;&#22343;&#34913;" sv_label="IDS_2163" sv_description="IDS_2162" sv_index="7" sv_hidden="N"/>
+    <SvCiTypeCategory sv_id="_MailServer" sv_name="&#37038;&#20214;&#26381;&#21153;" sv_label="IDS_2006" sv_description="IDS_2006" sv_index="6" sv_hidden="N"/>
+    <SvCiTypeCategory sv_id="_Middle" sv_name="&#20013;&#38388;&#20214;" sv_label="IDS_2028" sv_description="IDS_2027" sv_index="5" sv_hidden="N"/>
+    <SvCiTypeCategory sv_id="_Networkset" sv_name="&#32593;&#32476;&#35774;&#22791;" sv_label="IDS_2096" sv_description="IDS_2095" sv_index="1" sv_hidden="N"/>
+    <SvCiTypeCategory sv_id="_News" sv_name="News" sv_label="IDS_2178" sv_description="IDS_2177" sv_index="10" sv_hidden="N"/>
+    <SvCiTypeCategory sv_id="_openview" sv_name="openview&#35774;&#22791;" sv_label="IDS_2181" sv_description="IDS_2180" sv_index="14" sv_hidden="Y"/>
+    <SvCiTypeCategory sv_id="_Server" sv_name="&#26381;&#21153;&#22120;" sv_label="IDS_2189" sv_description="IDS_2188" sv_index="0" sv_hidden="N" sv_func="GetAllCPURate"/>
+    <SvCiTypeCategory sv_id="_WebServer" sv_name="Web &#26381;&#21153;" sv_label="IDS_2122" sv_description="IDS_2121" sv_index="3" sv_hidden="N"/>
+</entity-engine-xml>

@@ -1,0 +1,40 @@
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : PC设备 : :192.168.0.153:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=0.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:15:47 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : 二层交换机 : :192.168.0.251:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=4.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:15:57 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : PC设备 : :192.168.0.153:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=0.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:18:47 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : 二层交换机 : :192.168.0.251:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=3.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:18:57 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : PC设备 : :192.168.0.153:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=0.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:21:47 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : 二层交换机 : :192.168.0.251:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=3.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:21:57 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : PC设备 : :192.168.0.153:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=0.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:24:47 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : 二层交换机 : :192.168.0.251:Ping 状态: 包成功率(%)=83.33, 数据往返时间(ms)=1.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:24:57 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : PC设备 : :192.168.0.153:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=0.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:27:47 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : 二层交换机 : :192.168.0.251:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=2.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:27:57 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : PC设备 : :192.168.0.153:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=0.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:30:47 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : 二层交换机 : :192.168.0.251:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=3.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:30:57 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : PC设备 : :192.168.0.153:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=0.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:33:47 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : 二层交换机 : :192.168.0.251:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=3.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:33:57 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : PC设备 : :192.168.0.153:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=0.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:36:47 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : 二层交换机 : :192.168.0.251:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=2.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:36:57 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : PC设备 : :192.168.0.153:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=0.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:39:47 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : 二层交换机 : :192.168.0.251:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=2.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:39:57 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : PC设备 : :192.168.0.153:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=0.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:42:47 
+/<Value2>
+<Command>SMS</Command><Value1>12345677654</Value1><Value2>警报来自SiteView。监测器:SiteView ECC 8.1 : 二层交换机 : :192.168.0.251:Ping 状态: 包成功率(%)=100.00, 数据往返时间(ms)=2.00, 状态值(200表示成功 300表示出错)=200.00,   时间: 2008-11-21 14:42:57 
+/<Value2>

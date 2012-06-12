@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvCiTypeAttr ciTypeId="Alteon" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536660979"/>
+    <SvCiTypeAttr ciTypeId="Alteon" attrName="_Community" sv_value="public" sv_type="password" metaid="208536661010"/>
+    <SvCiTypeAttr ciTypeId="Alteon" attrName="_MachineName" sv_type="textbox" metaid="208536661041"/>
+    <SvCiTypeAttr ciTypeId="Alteon" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536661072"/>
+    <SvCiTypeAttr ciTypeId="DNS" attrName="_MachineName" sv_type="textbox" metaid="208536655901"/>
+    <SvCiTypeAttr ciTypeId="DNS" attrName="_Port" sv_value="53" sv_type="textbox" metaid="208536655869"/>
+    <SvCiTypeAttr ciTypeId="Dynamo Application Server" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536650354"/>
+    <SvCiTypeAttr ciTypeId="Dynamo Application Server" attrName="_Community" sv_value="public" sv_type="password" metaid="208536650447"/>
+    <SvCiTypeAttr ciTypeId="Dynamo Application Server" attrName="_MachineName" sv_type="textbox" metaid="208536650541"/>
+    <SvCiTypeAttr ciTypeId="Dynamo Application Server" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536650463"/>
+    <SvCiTypeAttr ciTypeId="example" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536664557"/>
+    <SvCiTypeAttr ciTypeId="example" attrName="_Community" sv_value="public" sv_type="password" metaid="208536664619"/>
+    <SvCiTypeAttr ciTypeId="example" attrName="_MachineName" sv_type="textbox" metaid="208536664744"/>
+    <SvCiTypeAttr ciTypeId="example" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536664651"/>
+    <SvCiTypeAttr ciTypeId="IBMWebSphereMQ" attrName="_MachineName" sv_type="textbox" metaid="208536654041"/>
+    <SvCiTypeAttr ciTypeId="IBMWebSphereMQ" attrName="_ManageQueue" sv_type="textbox" metaid="208536652401"/>
+    <SvCiTypeAttr ciTypeId="IBMWebSphereMQ" attrName="_PortNum" sv_type="textbox" metaid="208536652338"/>
+    <SvCiTypeAttr ciTypeId="Informix" attrName="_DSN" sv_type="combobox" metaid="208536639979"/>
+    <SvCiTypeAttr ciTypeId="Informix" attrName="_PassWord" sv_type="password" metaid="208536639901"/>
+    <SvCiTypeAttr ciTypeId="Informix" attrName="_UID" sv_value="" sv_type="textbox" metaid="208536639932"/>
+    <SvCiTypeAttr ciTypeId="Netscape Server" attrName="_MachineName" sv_type="textbox" metaid="208536645354"/>
+    <SvCiTypeAttr ciTypeId="News" attrName="_MachineName" sv_type="textbox" metaid="208536666651"/>
+    <SvCiTypeAttr ciTypeId="SQL Server" attrName="_DsnName" sv_type="combobox" metaid="208536643276"/>
+    <SvCiTypeAttr ciTypeId="SQL Server" attrName="_PassWord" sv_type="password" metaid="208536641869"/>
+    <SvCiTypeAttr ciTypeId="SQL Server" attrName="_UserAccount" sv_type="textbox" metaid="208536641885"/>
+    <SvCiTypeAttr ciTypeId="TOPSEC" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536648901"/>
+    <SvCiTypeAttr ciTypeId="TOPSEC" attrName="_Community" sv_value="public" sv_type="password" metaid="208536648947"/>
+    <SvCiTypeAttr ciTypeId="TOPSEC" attrName="_MachineName" sv_type="textbox" metaid="208536649026"/>
+    <SvCiTypeAttr ciTypeId="TOPSEC" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536648979"/>
+    <SvCiTypeAttr ciTypeId="WebSphere" attrName="_MachineName" sv_type="textbox" metaid="208536650572"/>
+    <SvCiTypeAttr ciTypeId="WebSphere50" attrName="_Server" sv_type="textbox" metaid="208536650619"/>
+    <SvCiTypeAttr ciTypeId="WebSphere50" attrName="_Url" sv_type="textbox" metaid="208536650604"/>
+    <SvCiTypeAttr ciTypeId="_Alteon" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536663088"/>
+    <SvCiTypeAttr ciTypeId="_Alteon" attrName="_Community" sv_value="public" sv_type="password" metaid="208536663135"/>
+    <SvCiTypeAttr ciTypeId="_Alteon" attrName="_MachineName" sv_type="textbox" metaid="208536664526"/>
+    <SvCiTypeAttr ciTypeId="_Alteon" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536664494"/>
+    <SvCiTypeAttr ciTypeId="_apache" attrName="Version" sv_value="1" sv_type="textbox" metaid="208536645166"/>
+    <SvCiTypeAttr ciTypeId="_apache" attrName="_MachineName" sv_type="textbox" metaid="208536645260"/>
+    <SvCiTypeAttr ciTypeId="_AS400" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536659307"/>
+    <SvCiTypeAttr ciTypeId="_AS400" attrName="_Community" sv_value="public" sv_type="password" metaid="208536659369"/>
+    <SvCiTypeAttr ciTypeId="_AS400" attrName="_MachineName" sv_type="textbox" metaid="208536659494"/>
+    <SvCiTypeAttr ciTypeId="_AS400" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536659401"/>
+    <SvCiTypeAttr ciTypeId="_ASP" attrName="_MachineName" sv_type="textbox" metaid="208536655807"/>
+    <SvCiTypeAttr ciTypeId="_Check Point" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536646963"/>
+    <SvCiTypeAttr ciTypeId="_Check Point" attrName="_Community" sv_value="public" sv_type="password" metaid="208536647104"/>
+    <SvCiTypeAttr ciTypeId="_Check Point" attrName="_MachineName" sv_type="textbox" metaid="208536647182"/>
+    <SvCiTypeAttr ciTypeId="_Check Point" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536647151"/>
+    <SvCiTypeAttr ciTypeId="_CiscoNetDev" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536661104"/>
+    <SvCiTypeAttr ciTypeId="_CiscoNetDev" attrName="_Community" sv_value="public" sv_type="password" metaid="208536661213"/>
+    <SvCiTypeAttr ciTypeId="_CiscoNetDev" attrName="_MachineName" sv_type="textbox" metaid="208536661276"/>
+    <SvCiTypeAttr ciTypeId="_CiscoNetDev" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536661244"/>
+    <SvCiTypeAttr ciTypeId="_customMonitor" attrName="Lable" sv_type="textbox" metaid="208536654338"/>
+    <SvCiTypeAttr ciTypeId="_database" attrName="_DsnName" sv_type="combobox" metaid="208536640072"/>
+    <SvCiTypeAttr ciTypeId="_database" attrName="_PassWord" sv_type="password" metaid="208536640026"/>
+    <SvCiTypeAttr ciTypeId="_database" attrName="_UserAccount" sv_value="" sv_type="textbox" metaid="208536640057"/>
+    <SvCiTypeAttr ciTypeId="_DB2" attrName="DatabaseDir" sv_type="textbox" metaid="208536643354"/>
+    <SvCiTypeAttr ciTypeId="_DB2" attrName="_MachineName" sv_type="textbox" metaid="208536643385"/>
+    <SvCiTypeAttr ciTypeId="_DB2" attrName="_PassWord" sv_type="password" metaid="208536643307"/>
+    <SvCiTypeAttr ciTypeId="_DB2" attrName="_UserAccount" sv_value="" sv_type="textbox" metaid="208536643322"/>
+    <SvCiTypeAttr ciTypeId="_DB2_odbc" attrName="_DSN" sv_value="" sv_type="combobox" metaid="208536643541"/>
+    <SvCiTypeAttr ciTypeId="_DB2_odbc" attrName="_PassWord" sv_type="password" metaid="208536643432"/>
+    <SvCiTypeAttr ciTypeId="_DB2_odbc" attrName="_UserAccount" sv_value="" sv_type="textbox" metaid="208536643463"/>
+    <SvCiTypeAttr ciTypeId="_Domino" attrName="_PassWord" sv_type="password" metaid="208536652260"/>
+    <SvCiTypeAttr ciTypeId="_Domino" attrName="_ServerName" sv_type="textbox" metaid="208536652307"/>
+    <SvCiTypeAttr ciTypeId="_Domino" attrName="_UserAccount" sv_value="" sv_type="textbox" metaid="208536652291"/>
+    <SvCiTypeAttr ciTypeId="_example" attrName="_MachineName" sv_type="textbox" metaid="208536655791"/>
+    <SvCiTypeAttr ciTypeId="_example" attrName="_PassWord" sv_type="password" metaid="208536654354"/>
+    <SvCiTypeAttr ciTypeId="_example" attrName="_UserAccount" sv_value="administrator" sv_type="textbox" metaid="208536655760"/>
+    <SvCiTypeAttr ciTypeId="_exchange" attrName="_MachineName" sv_type="textbox" metaid="208536638869"/>
+    <SvCiTypeAttr ciTypeId="_exchange" attrName="_PassWord" sv_type="password" metaid="208536638776"/>
+    <SvCiTypeAttr ciTypeId="_exchange" attrName="_UserAccount" sv_value="Administrator" sv_type="textbox" metaid="208536638854"/>
+    <SvCiTypeAttr ciTypeId="_Exchange2003" attrName="_MachineName" sv_type="textbox" metaid="208536639854"/>
+    <SvCiTypeAttr ciTypeId="_Exchange2003" attrName="_PassWord" sv_type="password" metaid="208536639760"/>
+    <SvCiTypeAttr ciTypeId="_Exchange2003" attrName="_UserAccount" sv_value="Administrator" sv_type="textbox" metaid="208536639822"/>
+    <SvCiTypeAttr ciTypeId="_F5 Big IP" attrName="Port" sv_value="161" sv_type="textbox" metaid="208536645104"/>
+    <SvCiTypeAttr ciTypeId="_F5 Big IP" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536645026"/>
+    <SvCiTypeAttr ciTypeId="_F5 Big IP" attrName="_Community" sv_value="public" sv_type="password" metaid="208536645072"/>
+    <SvCiTypeAttr ciTypeId="_F5 Big IP" attrName="_MachineName" sv_type="textbox" metaid="208536645135"/>
+    <SvCiTypeAttr ciTypeId="_foundry" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536662776"/>
+    <SvCiTypeAttr ciTypeId="_foundry" attrName="_Community" sv_value="public" sv_type="password" metaid="208536662901"/>
+    <SvCiTypeAttr ciTypeId="_foundry" attrName="_MachineName" sv_type="textbox" metaid="208536662947"/>
+    <SvCiTypeAttr ciTypeId="_foundry" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536662916"/>
+    <SvCiTypeAttr ciTypeId="_Ftp" attrName="_MachineName" sv_type="textbox" metaid="208536646791"/>
+    <SvCiTypeAttr ciTypeId="_Ftp" attrName="_Port" sv_value="21" sv_type="textbox" metaid="208536646729"/>
+    <SvCiTypeAttr ciTypeId="_HuaWeiNetDev" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536661291"/>
+    <SvCiTypeAttr ciTypeId="_HuaWeiNetDev" attrName="_Community" sv_value="public" sv_type="password" metaid="208536661322"/>
+    <SvCiTypeAttr ciTypeId="_HuaWeiNetDev" attrName="_MachineName" sv_type="textbox" metaid="208536662744"/>
+    <SvCiTypeAttr ciTypeId="_HuaWeiNetDev" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536662682"/>
+    <SvCiTypeAttr ciTypeId="_iis" attrName="_MachineName" sv_type="textbox" metaid="208536645338"/>
+    <SvCiTypeAttr ciTypeId="_iis" attrName="_PassWord" sv_type="password" metaid="208536645291"/>
+    <SvCiTypeAttr ciTypeId="_iis" attrName="_UserAccount" sv_value="Administrator" sv_type="textbox" metaid="208536645307"/>
+    <SvCiTypeAttr ciTypeId="_JKLVPN" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536666213"/>
+    <SvCiTypeAttr ciTypeId="_JKLVPN" attrName="_Community" sv_value="public" sv_type="password" metaid="208536666557"/>
+    <SvCiTypeAttr ciTypeId="_JKLVPN" attrName="_MachineName" sv_type="textbox" metaid="208536666619"/>
+    <SvCiTypeAttr ciTypeId="_JKLVPN" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536666572"/>
+    <SvCiTypeAttr ciTypeId="_ldap" attrName="_MachineName" sv_type="textbox" metaid="208536655838"/>
+    <SvCiTypeAttr ciTypeId="_Mail" attrName="Version" sv_value="1" sv_type="textbox" metaid="208536638916"/>
+    <SvCiTypeAttr ciTypeId="_Mail" attrName="_MachineName" sv_type="textbox" metaid="208536639744"/>
+    <SvCiTypeAttr ciTypeId="_mmsc" attrName="Port" sv_value="161" sv_type="textbox" metaid="208536643619"/>
+    <SvCiTypeAttr ciTypeId="_mmsc" attrName="_Community" sv_value="public" sv_type="password" metaid="208536643572"/>
+    <SvCiTypeAttr ciTypeId="_mmsc" attrName="_MachineName" sv_type="textbox" metaid="208536643635"/>
+    <SvCiTypeAttr ciTypeId="_mqSeries" attrName="_login" sv_type="textbox" metaid="208536650307"/>
+    <SvCiTypeAttr ciTypeId="_mqSeries" attrName="_MachineName" sv_type="textbox" metaid="208536650322"/>
+    <SvCiTypeAttr ciTypeId="_mqSeries" attrName="_password" sv_type="password" metaid="208536650276"/>
+    <SvCiTypeAttr ciTypeId="_mysql" attrName="_MachineName" sv_type="textbox" metaid="208536641619"/>
+    <SvCiTypeAttr ciTypeId="_mysql" attrName="_MySQLPort" sv_value="3306" sv_type="textbox" metaid="208536641572"/>
+    <SvCiTypeAttr ciTypeId="_mysql" attrName="_PassWord" sv_type="password" metaid="208536640104"/>
+    <SvCiTypeAttr ciTypeId="_mysql" attrName="_UserAccount" sv_value="" sv_type="textbox" metaid="208536641541"/>
+    <SvCiTypeAttr ciTypeId="_Netscreen" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536648541"/>
+    <SvCiTypeAttr ciTypeId="_Netscreen" attrName="_Community" sv_value="public" sv_type="password" metaid="208536648604"/>
+    <SvCiTypeAttr ciTypeId="_Netscreen" attrName="_MachineName" sv_type="textbox" metaid="208536648651"/>
+    <SvCiTypeAttr ciTypeId="_Netscreen" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536648619"/>
+    <SvCiTypeAttr ciTypeId="_Nortel" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536662963"/>
+    <SvCiTypeAttr ciTypeId="_Nortel" attrName="_Community" sv_value="public" sv_type="password" metaid="208536662994"/>
+    <SvCiTypeAttr ciTypeId="_Nortel" attrName="_MachineName" sv_type="textbox" metaid="208536663057"/>
+    <SvCiTypeAttr ciTypeId="_Nortel" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536663010"/>
+    <SvCiTypeAttr ciTypeId="_oracle" attrName="_MachineName" sv_type="textbox" metaid="208536641729"/>
+    <SvCiTypeAttr ciTypeId="_oracle" attrName="_PassWord" sv_type="password" metaid="208536641635"/>
+    <SvCiTypeAttr ciTypeId="_oracle" attrName="_ServiceName" sv_type="combobox" metaid="208536641697"/>
+    <SvCiTypeAttr ciTypeId="_oracle" attrName="_UserAccount" sv_value="" sv_type="textbox" metaid="208536641682"/>
+    <SvCiTypeAttr ciTypeId="_Ping" attrName="Version" sv_value="1" sv_type="textbox" metaid="208536664776"/>
+    <SvCiTypeAttr ciTypeId="_Pix" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536648697"/>
+    <SvCiTypeAttr ciTypeId="_Pix" attrName="_Community" sv_value="public" sv_type="password" metaid="208536648807"/>
+    <SvCiTypeAttr ciTypeId="_Pix" attrName="_MachineName" sv_type="textbox" metaid="208536648869"/>
+    <SvCiTypeAttr ciTypeId="_Pix" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536648854"/>
+    <SvCiTypeAttr ciTypeId="_port" attrName="Version" sv_value="1" sv_type="textbox" metaid="208536664822"/>
+    <SvCiTypeAttr ciTypeId="_Script" attrName="Version" sv_value="1" sv_type="textbox" metaid="208536664807"/>
+    <SvCiTypeAttr ciTypeId="_SnmpWin" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536656072"/>
+    <SvCiTypeAttr ciTypeId="_SnmpWin" attrName="_Community" sv_value="public" sv_type="password" metaid="208536656119"/>
+    <SvCiTypeAttr ciTypeId="_SnmpWin" attrName="_MachineName" sv_type="textbox" metaid="208536657494"/>
+    <SvCiTypeAttr ciTypeId="_SnmpWin" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536657463"/>
+    <SvCiTypeAttr ciTypeId="_Stanetdev" attrName="Version" sv_value="1" sv_type="combobox" metaid="208536659526"/>
+    <SvCiTypeAttr ciTypeId="_Stanetdev" attrName="_Community" sv_value="public" sv_type="password" metaid="208536659572"/>
+    <SvCiTypeAttr ciTypeId="_Stanetdev" attrName="_MachineName" sv_type="textbox" metaid="208536659635"/>
+    <SvCiTypeAttr ciTypeId="_Stanetdev" attrName="_Port" sv_value="161" sv_type="textbox" metaid="208536659604"/>
+    <SvCiTypeAttr ciTypeId="_stdWeb" attrName="Port" sv_value="80" sv_type="textbox" metaid="208536646869"/>
+    <SvCiTypeAttr ciTypeId="_stdWeb" attrName="_MachineName" sv_type="textbox" metaid="208536646901"/>
+    <SvCiTypeAttr ciTypeId="_sybase" attrName="_DsnName" sv_type="combobox" metaid="208536641838"/>
+    <SvCiTypeAttr ciTypeId="_sybase" attrName="_PassWord" sv_type="password" metaid="208536641791"/>
+    <SvCiTypeAttr ciTypeId="_sybase" attrName="_UserAccount" sv_value="" sv_type="textbox" metaid="208536641822"/>
+    <SvCiTypeAttr ciTypeId="_Tomcat" attrName="_MachineName" sv_type="textbox" metaid="208536645369"/>
+    <SvCiTypeAttr ciTypeId="_Tuxedo" attrName="_ServerIp" sv_type="textbox" metaid="208536652244"/>
+    <SvCiTypeAttr ciTypeId="_Tuxedo" attrName="_ServerPort" sv_value="3306" sv_type="textbox" metaid="208536652213"/>
+    <SvCiTypeAttr ciTypeId="_unix" attrName="_KeyType" sv_value="false" sv_type="combobox" metaid="208536657510"/>
+    <SvCiTypeAttr ciTypeId="_unix" attrName="_LoginPrompt" sv_value="ogin:" sv_type="textbox" metaid="208536657885"/>
+    <SvCiTypeAttr ciTypeId="_unix" attrName="_MachineName" sv_type="textbox" metaid="208536657651"/>
+    <SvCiTypeAttr ciTypeId="_unix" attrName="_OsType" sv_type="combobox" metaid="208536657604"/>
+    <SvCiTypeAttr ciTypeId="_unix" attrName="_PassWord" sv_type="password" metaid="208536657682"/>
+    <SvCiTypeAttr ciTypeId="_unix" attrName="_Port" sv_value="23" sv_type="textbox" metaid="208536657729"/>
+    <SvCiTypeAttr ciTypeId="_unix" attrName="_PriKeyPath" sv_value="" sv_type="textbox" metaid="208536657760"/>
+    <SvCiTypeAttr ciTypeId="_unix" attrName="_Prompt" sv_value="# $ &gt;" sv_type="textbox" metaid="208536657807"/>
+    <SvCiTypeAttr ciTypeId="_unix" attrName="_ProtocolType" sv_value="Telnet" sv_type="combobox" metaid="208536657541"/>
+    <SvCiTypeAttr ciTypeId="_unix" attrName="_PWPrompt" sv_value="assword:" sv_type="textbox" metaid="208536657838"/>
+    <SvCiTypeAttr ciTypeId="_unix" attrName="_UserAccount" sv_value="root" sv_type="textbox" metaid="208536657713"/>
+    <SvCiTypeAttr ciTypeId="_unixagent" attrName="_agentport" sv_value="10001" sv_type="textbox" metaid="208536659213"/>
+    <SvCiTypeAttr ciTypeId="_unixagent" attrName="_MachineName" sv_type="textbox" metaid="208536659260"/>
+    <SvCiTypeAttr ciTypeId="_URL" attrName="Version" sv_value="1" sv_type="textbox" metaid="208536646932"/>
+    <SvCiTypeAttr ciTypeId="_weblogic" attrName="_PassWord" sv_type="password" metaid="208536650635"/>
+    <SvCiTypeAttr ciTypeId="_weblogic" attrName="_ServerIp" sv_type="textbox" metaid="208536652104"/>
+    <SvCiTypeAttr ciTypeId="_weblogic" attrName="_ServerPort" sv_value="7001" sv_type="textbox" metaid="208536652041"/>
+    <SvCiTypeAttr ciTypeId="_weblogic" attrName="_UserName" sv_value="" sv_type="textbox" metaid="208536650651"/>
+    <SvCiTypeAttr ciTypeId="_WebSphere" attrName="_LoginPrompt" sv_value="ogin:" sv_type="textbox" metaid="208536654276"/>
+    <SvCiTypeAttr ciTypeId="_WebSphere" attrName="_MachineName" sv_type="textbox" metaid="208536654151"/>
+    <SvCiTypeAttr ciTypeId="_WebSphere" attrName="_PassWord" sv_type="password" metaid="208536654307"/>
+    <SvCiTypeAttr ciTypeId="_WebSphere" attrName="_Port" sv_value="23" sv_type="textbox" metaid="208536654088"/>
+    <SvCiTypeAttr ciTypeId="_WebSphere" attrName="_Prompt" sv_value="# $ &gt;" sv_type="textbox" metaid="208536654291"/>
+    <SvCiTypeAttr ciTypeId="_WebSphere" attrName="_ProtocolType" sv_value="Telnet" sv_type="combobox" metaid="208536654119"/>
+    <SvCiTypeAttr ciTypeId="_WebSphere" attrName="_PWPrompt" sv_value="assword:" sv_type="textbox" metaid="208536654197"/>
+    <SvCiTypeAttr ciTypeId="_WebSphere" attrName="_UserAccount" sv_value="root" sv_type="textbox" metaid="208536654072"/>
+    <SvCiTypeAttr ciTypeId="_win" attrName="_MachineName" sv_type="textbox" metaid="208536656041"/>
+    <SvCiTypeAttr ciTypeId="_win" attrName="_PassWord" sv_type="password" metaid="208536655994"/>
+    <SvCiTypeAttr ciTypeId="_win" attrName="_UserAccount" sv_value="administrator" sv_type="textbox" metaid="208536656010"/>
+</entity-engine-xml>

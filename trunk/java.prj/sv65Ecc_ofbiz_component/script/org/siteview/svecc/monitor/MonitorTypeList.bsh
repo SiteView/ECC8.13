@@ -1,0 +1,11 @@
+import com.siteview.ecc.service.*;
+import org.ofbiz.base.util.*;
+
+contains = request.getParameter("SEARCH_CONTAINS");
+keyword = request.getParameter("SEARCH_STRING");
+dispatcher = request.getAttribute("dispatcher");
+
+monitorTypes = dispatcher.runSync("getMonitorType", UtilMisc.toMap("keyword",keyword,"bContains",!"N".equals(contains)));
+
+context.put("groupId",parameters.get("groupId"));
+context.put("types", monitorTypes.get("result"));

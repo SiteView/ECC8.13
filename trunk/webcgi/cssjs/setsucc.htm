@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>IDS_InformationPrompt!</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<link rel="stylesheet" type="text/css" href="/css.css">
+	</head>
+	<body class="confirmbody">
+		<table cellspacing="0" cellpadding="0" class="t1confirm" ID="Table1">
+			<tr>
+				<td class="t1confirmtitle"><span id="msg_title"></span></td>
+			</tr>
+			<tr>
+				<td valign="top"><div class="popcontent"><table class="t2confirm" cellspacing="0" cellpadding="0" ID="Table2">
+							<tr>
+								<td class="alerticon"><img src="icons/t1confirmalert.gif" width="34" height="34"></td>
+								<td><p class="alerttext"><span id="Content"></span></p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="confirmtoolbar" ID="Table3">
+			<tr>
+				<td id="btnPanel"><INPUT class="commonbutton" onClick="window.returnValue='IDS_Affirm!';self.close()" type="button"
+						value="IDS_Affirm!" ID="Button1" NAME="Button1"></td>
+			</tr>
+		</table>
+		<script>
+			var args = window.dialogArguments; 
+			if(args != null)
+			{	
+				if(args._Title!=null)
+					document.all('msg_title').innerHTML = args._Title;
+				if(args._Content!=null)
+					document.all('Content').innerHTML = args._Content;
+				if(args._BtnNum != null)
+				{
+					document.all('btnPanel').innerHTML = "";
+					var nName = args._BtnNum.split(',');
+					for(i=0;i<nName.length;i++)
+					{
+						var str = "<INPUT class='commonbutton' style='width:80px' onclick=\"window.returnValue='"+nName[i]+"';self.close()\" type='button' value="+nName[i]+">&nbsp;";
+						document.all('btnPanel').innerHTML 	+= str;
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

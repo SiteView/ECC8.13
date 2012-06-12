@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[checkboxtreeview.vcproj]
+SCC_Aux_Path = "\\nas2\techgroup\v71\VSS"
+SCC_Project_Name = "$/v70/webcgi/checkboxtreeview", MTBAAAAA
+
+[checkboxtreeview_new.vcproj]
+SCC_Aux_Path = "\\nas2\techgroup\v72\VSS"
+SCC_Project_Name = "$/v72_1/webcgi/checkboxtreeview", TGIAAAAA

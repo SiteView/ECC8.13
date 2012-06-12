@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monitor name="db" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../ems/Monitor.xsd">
+	<ConfigFilePathProperty/>
+	<StringProperty isAdvanced="false" name="_database" isEditable="true" label="db_url_label" description="db_url_description" />
+	<StringProperty isAdvanced="false" name="_driver" isEditable="true" label="driver_name_label" description="driver_name_description" />
+	<StringProperty isAdvanced="false" name="_user" isEditable="true" label="db_user_name_label" description="db_user_name_description"/>
+	<PasswordProperty isAdvanced="false" name="_password" isEditable="true" label="db_password_label" description="db_password_description"/>
+	<StringProperty isAdvanced="false" name="_select" isEditable="true" label="db_select_label" description="db_select_description"/>
+	<StringProperty isAdvanced="false" name="_from" isEditable="true" label="db_from_label" description="db_from_description"/>
+	<StringProperty isAdvanced="false" name="_where" isEditable="true" label="db_where_label" description="db_where_description"/>
+	<StringProperty isAdvanced="false" name="_orderby" isEditable="true" label="db_orderby_label" description="db_orderby_description"/>
+	<StringProperty isAdvanced="false" name="_emsTablePrimaryKeys" isEditable="true" label="db_enum_field_label" description="db_enum_field_description"/>
+	<StringProperty isAdvanced="false" name="_resetEmum" isEditable="true" label="db_enum_value_label" description="db_enum_value_description"/>
+	
+	<!--	
+	public static final String OLD_DB_ENUM_FIELD_TYPE="_fieldType";-->
+	<TimeDiffProperty/>
+	<HiddenStringProperty name="lastEmum" value="-1"/>
+	<IntProperty isAdvanced="false" name="pCollected" isEditable="false" value="0" stateOptions="1" label="title_collected_measurements" description="title_collected_measurements"/>
+</Monitor>

@@ -1,0 +1,14 @@
+import com.siteview.ecc.service.*;
+import org.ofbiz.base.util.*;
+import java.util.*;
+
+groupId = parameters.get("groupId");
+
+
+dispatcher = request.getAttribute("dispatcher");
+
+retMap = dispatcher.runSync("getAlert", new HashMap());
+
+titleMap = new HashMap();
+
+context.put("alertslist", retMap.get("result"));

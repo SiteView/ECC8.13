@@ -1,0 +1,20 @@
+目的：
+
+   1. 适应ofbiz开发的要求
+   2. 对代码容易管理，开发的时候，最小化代码冲突
+   3. 容易理解
+
+ 表述：现阶段的开发过程中，发现了一些问题。需要做出一个规定，来管理程序的结构。（以下都是对user进行描述）
+规定：
+
+   1. 所有程序的request  map不能都定义到同一个controller.xml文件中，需要分开来定义。定义方法如下：
+          * 将要定义的request map 定义到一个单独的controller.xml文件中。该文件放置在其各自的功能ftl目录中。例如：user的request map都放到了ofbiz\hot-deploy\svecc\webapp\ecc\user\controller.xml中
+          * 将定义的controller.xml文件包含到主controller.xml中。方法：在文件ofbiz\hot-deploy\svecc \webapp\ecc\WEB-INF\controller.xml的开始处添加<include location="component://svecc/webapp/ecc/user/controller.xml"/>
+   2. bsh 文件放到需要分类存放，不能一股脑的都放到WEB-INF\action下。规定如下：都放到ofbiz\hot-deploy\svecc \script目录下，并且参照已经定义的bsh的放置位置来放置，例如：ofbiz\hot-deploy\svecc\script\org \siteview\svecc\user下
+   3. 各功能模块的ftl文件，都放置到ofbiz\hot-deploy\svecc\webapp\ecc目录下的相应功能目录下
+   4. 各功能模块的screen/form/menu/tree文件，都放置到ofbiz\hot-deploy\svecc\widget目录下的相应功能目录下
+   5. package com.siteview.svecc.service下的内容为系统的基本定义服务，有增加的话，需要尽量利用现成的服务。在此目录下，不允许存在对界面解释性质的服务。
+   6. package com.siteview.ecc.service下的内容为对界面解释性质的服务。对界面解释性质的服务，不允许调用除package com.siteview.svecc.service下的内容之外的任何svecc系统的服务和程序。可以调用jdk/jar/ofbiz的服务和程序
+   7. bsh文件中，不允许调用除package com.siteview.svecc.service下的内容之外的任何svecc系统的服务和程序。可以调用jdk/jar/ofbiz的服务和程序
+   8. 根下（包括widget/src/control等）只能是系统的文件，不允许是涉及到某个具体功能的文件
+   9. 系统的基本定义服务，最好是定义一个服务的同时，也定义一个同样的api，都放在同一个class中。使用的规则如下：系统的基本定义服务调用系统的基本定义服务的时候，可以直接调用，其它的任何场合，都使用runSync来调用

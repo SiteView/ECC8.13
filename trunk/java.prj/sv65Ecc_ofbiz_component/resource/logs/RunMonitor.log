@@ -1,0 +1,2443 @@
+15:58:36 06/12/2008	Updating master.config file from "750" to "750"
+15:58:36 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+15:58:36 06/12/2008	SiteView process started, 
+15:58:36 06/12/2008	 Windows XP 5.1
+15:58:36 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+15:58:36 06/12/2008	 Time zone offset is -8.0 hours
+15:58:36 06/12/2008	 Maximum monitor threads: 100
+15:58:36 06/12/2008	Using java SSL libraries
+15:58:36 06/12/2008	
+15:58:36 06/12/2008	Starting HTTP Server listener on 8888
+15:58:36 06/12/2008	  
+15:58:36 06/12/2008	Open your web browser to:
+15:58:36 06/12/2008	  http://111.111.111.1:8888/SiteView
+15:58:41 06/12/2008	Process name tss_dispatcher was not running
+15:58:43 06/12/2008	Process name tss_monitor was not running
+15:58:43 06/12/2008	Loading master.config
+15:58:43 06/12/2008	Loading users.config
+15:58:43 06/12/2008	Loading multi.config
+15:58:43 06/12/2008	Loading group: __Health__
+15:58:43 06/12/2008	Loading group: Group0.1
+15:58:43 06/12/2008	Loading group: Group0.2
+15:58:43 06/12/2008	Loading group: Group0
+15:58:43 06/12/2008	Loading group: SiteView
+15:58:43 06/12/2008	Loading dynamic.config
+15:58:43 06/12/2008	Loading history.config
+15:58:44 06/12/2008	  
+15:58:44 06/12/2008	SiteView is active...
+15:58:44 06/12/2008	SiteView Startup Completed
+15:58:47 06/12/2008	  (will auto restart in 24 hours)
+15:59:12 06/12/2008	  waiting 148 seconds: will update monitor Group0:2  snmp 192.168.0.249
+16:07:38 06/12/2008	Updating master.config file from "750" to "750"
+16:07:38 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+16:07:38 06/12/2008	SiteView process started, 
+16:07:38 06/12/2008	 Windows XP 5.1
+16:07:38 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+16:07:38 06/12/2008	 Time zone offset is -8.0 hours
+16:07:38 06/12/2008	 Maximum monitor threads: 100
+16:07:38 06/12/2008	Using java SSL libraries
+16:07:38 06/12/2008	
+16:07:38 06/12/2008	Starting HTTP Server listener on 8888
+16:07:38 06/12/2008	  
+16:07:38 06/12/2008	Open your web browser to:
+16:07:38 06/12/2008	  http://111.111.111.1:8888/SiteView
+16:07:43 06/12/2008	Process name tss_dispatcher was not running
+16:07:45 06/12/2008	Process name tss_monitor was not running
+16:07:45 06/12/2008	Loading master.config
+16:07:45 06/12/2008	Loading users.config
+16:07:45 06/12/2008	Loading multi.config
+16:07:45 06/12/2008	Loading group: __Health__
+16:07:45 06/12/2008	Loading group: Group0.1
+16:07:45 06/12/2008	Loading group: Group0.2
+16:07:45 06/12/2008	Loading group: Group0
+16:07:45 06/12/2008	Loading group: SiteView
+16:07:45 06/12/2008	Loading dynamic.config
+16:07:45 06/12/2008	Loading history.config
+16:07:45 06/12/2008	  
+16:07:45 06/12/2008	SiteView is active...
+16:07:45 06/12/2008	SiteView Startup Completed
+16:07:50 06/12/2008	  (will auto restart in 24 hours)
+16:09:13 06/12/2008	  waiting 159 seconds: will update monitor Group0:2  snmp 192.168.0.249
+16:12:12 06/12/2008	Updating master.config file from "750" to "750"
+16:12:12 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+16:12:12 06/12/2008	SiteView process started, 
+16:12:12 06/12/2008	 Windows XP 5.1
+16:12:12 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+16:12:12 06/12/2008	 Time zone offset is -8.0 hours
+16:12:12 06/12/2008	 Maximum monitor threads: 100
+16:12:12 06/12/2008	Using java SSL libraries
+16:12:12 06/12/2008	
+16:12:12 06/12/2008	Starting HTTP Server listener on 8888
+16:12:12 06/12/2008	  
+16:12:12 06/12/2008	Open your web browser to:
+16:12:12 06/12/2008	  http://111.111.111.1:8888/SiteView
+16:12:17 06/12/2008	Process name tss_dispatcher was not running
+16:12:19 06/12/2008	Process name tss_monitor was not running
+16:12:19 06/12/2008	Loading master.config
+16:12:19 06/12/2008	Loading users.config
+16:12:19 06/12/2008	Loading multi.config
+16:12:19 06/12/2008	Loading group: __Health__
+16:12:19 06/12/2008	Loading group: Group0.1
+16:12:19 06/12/2008	Loading group: Group0.2
+16:12:19 06/12/2008	Loading group: Group0
+16:12:19 06/12/2008	Loading group: SiteView
+16:12:19 06/12/2008	Loading dynamic.config
+16:12:19 06/12/2008	Loading history.config
+16:12:19 06/12/2008	  
+16:12:19 06/12/2008	SiteView is active...
+16:12:19 06/12/2008	SiteView Startup Completed
+16:12:20 06/12/2008	  (will auto restart in 24 hours)
+16:14:43 06/12/2008	Updating master.config file from "750" to "750"
+16:14:43 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+16:14:43 06/12/2008	SiteView process started, 
+16:14:43 06/12/2008	 Windows XP 5.1
+16:14:43 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+16:14:43 06/12/2008	 Time zone offset is -8.0 hours
+16:14:43 06/12/2008	 Maximum monitor threads: 100
+16:14:43 06/12/2008	Using java SSL libraries
+16:14:43 06/12/2008	
+16:14:43 06/12/2008	Starting HTTP Server listener on 8888
+16:14:43 06/12/2008	  
+16:14:43 06/12/2008	Open your web browser to:
+16:14:43 06/12/2008	  http://111.111.111.1:8888/SiteView
+16:14:47 06/12/2008	Process name tss_dispatcher was not running
+16:14:49 06/12/2008	Process name tss_monitor was not running
+16:14:49 06/12/2008	Loading master.config
+16:14:49 06/12/2008	Loading users.config
+16:14:49 06/12/2008	Loading multi.config
+16:14:49 06/12/2008	Loading group: __Health__
+16:14:49 06/12/2008	Loading group: Group0.1
+16:14:49 06/12/2008	Loading group: Group0.2
+16:14:50 06/12/2008	Loading group: Group0
+16:14:50 06/12/2008	Loading group: SiteView
+16:14:50 06/12/2008	Loading dynamic.config
+16:14:50 06/12/2008	Loading history.config
+16:14:50 06/12/2008	  
+16:14:50 06/12/2008	SiteView is active...
+16:14:50 06/12/2008	SiteView Startup Completed
+16:14:50 06/12/2008	  (will auto restart in 24 hours)
+16:32:19 06/12/2008	Updating master.config file from "750" to "750"
+16:32:19 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+16:32:19 06/12/2008	SiteView process started, 
+16:32:19 06/12/2008	 Windows XP 5.1
+16:32:19 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+16:32:19 06/12/2008	 Time zone offset is -8.0 hours
+16:32:19 06/12/2008	 Maximum monitor threads: 100
+16:32:19 06/12/2008	Using java SSL libraries
+16:32:19 06/12/2008	
+16:32:19 06/12/2008	Starting HTTP Server listener on 8888
+16:32:19 06/12/2008	  
+16:32:19 06/12/2008	Open your web browser to:
+16:32:19 06/12/2008	  http://111.111.111.1:8888/SiteView
+16:32:24 06/12/2008	Process name tss_dispatcher was not running
+16:32:26 06/12/2008	Process name tss_monitor was not running
+16:32:26 06/12/2008	Loading master.config
+16:32:26 06/12/2008	Loading users.config
+16:32:26 06/12/2008	Loading multi.config
+16:32:26 06/12/2008	Loading group: __Health__
+16:32:26 06/12/2008	Loading group: Group0.1
+16:32:26 06/12/2008	Loading group: Group0.2
+16:32:26 06/12/2008	Loading group: Group0
+16:32:26 06/12/2008	Loading group: SiteView
+16:32:26 06/12/2008	Loading dynamic.config
+16:32:26 06/12/2008	Loading history.config
+16:32:26 06/12/2008	  
+16:32:26 06/12/2008	SiteView is active...
+16:32:26 06/12/2008	SiteView Startup Completed
+16:32:27 06/12/2008	  (will auto restart in 24 hours)
+16:33:13 06/12/2008	  waiting 235 seconds: will update monitor Group0:1  Ping: 127.0.0.1
+16:37:09 06/12/2008	  waiting 16 seconds: will update monitor Group0:2  snmp 192.168.0.249
+16:45:30 06/12/2008	Updating master.config file from "750" to "750"
+16:45:30 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+16:45:31 06/12/2008	SiteView process started, 
+16:45:31 06/12/2008	 Windows XP 5.1
+16:45:31 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+16:45:31 06/12/2008	 Time zone offset is -8.0 hours
+16:45:31 06/12/2008	 Maximum monitor threads: 100
+16:45:31 06/12/2008	Using java SSL libraries
+16:45:31 06/12/2008	
+16:45:31 06/12/2008	Starting HTTP Server listener on 8888
+16:45:31 06/12/2008	  
+16:45:31 06/12/2008	Open your web browser to:
+16:45:31 06/12/2008	  http://111.111.111.1:8888/SiteView
+16:45:35 06/12/2008	Process name tss_dispatcher was not running
+16:45:37 06/12/2008	Process name tss_monitor was not running
+16:45:37 06/12/2008	Loading master.config
+16:45:37 06/12/2008	Loading users.config
+16:45:37 06/12/2008	Loading multi.config
+16:45:37 06/12/2008	Loading group: __Health__
+16:45:37 06/12/2008	Loading group: Group0.1
+16:45:37 06/12/2008	Loading group: Group0.2
+16:45:37 06/12/2008	Loading group: Group0
+16:45:37 06/12/2008	Loading group: SiteView
+16:45:37 06/12/2008	Loading dynamic.config
+16:45:37 06/12/2008	Loading history.config
+16:45:37 06/12/2008	  
+16:45:38 06/12/2008	SiteView is active...
+16:45:38 06/12/2008	SiteView Startup Completed
+16:45:38 06/12/2008	  (will auto restart in 24 hours)
+16:53:36 06/12/2008	Updating master.config file from "750" to "750"
+16:53:37 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+16:53:37 06/12/2008	SiteView process started, 
+16:53:37 06/12/2008	 Windows XP 5.1
+16:53:37 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+16:53:37 06/12/2008	 Time zone offset is -8.0 hours
+16:53:37 06/12/2008	 Maximum monitor threads: 100
+16:53:37 06/12/2008	Using java SSL libraries
+16:53:37 06/12/2008	
+16:53:37 06/12/2008	Starting HTTP Server listener on 8888
+16:53:37 06/12/2008	  
+16:53:37 06/12/2008	Open your web browser to:
+16:53:37 06/12/2008	  http://111.111.111.1:8888/SiteView
+16:53:41 06/12/2008	Process name tss_dispatcher was not running
+16:53:43 06/12/2008	Process name tss_monitor was not running
+16:53:43 06/12/2008	Loading master.config
+16:53:43 06/12/2008	Loading users.config
+16:53:43 06/12/2008	Loading multi.config
+16:53:43 06/12/2008	Loading group: __Health__
+16:53:43 06/12/2008	Loading group: Group0.1
+16:53:43 06/12/2008	Loading group: Group0.2
+16:53:43 06/12/2008	Loading group: Group0
+16:53:43 06/12/2008	Loading group: SiteView
+16:53:43 06/12/2008	Loading dynamic.config
+16:53:43 06/12/2008	Loading history.config
+16:53:44 06/12/2008	  
+16:53:44 06/12/2008	SiteView is active...
+16:53:44 06/12/2008	SiteView Startup Completed
+16:53:44 06/12/2008	  (will auto restart in 24 hours)
+16:54:10 06/12/2008	  waiting 117 seconds: will update monitor Group0:2  snmp 192.168.0.249
+17:02:27 06/12/2008	Updating master.config file from "750" to "750"
+17:02:27 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+17:02:27 06/12/2008	SiteView process started, 
+17:02:27 06/12/2008	 Windows XP 5.1
+17:02:27 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+17:02:27 06/12/2008	 Time zone offset is -8.0 hours
+17:02:27 06/12/2008	 Maximum monitor threads: 100
+17:02:27 06/12/2008	Using java SSL libraries
+17:02:27 06/12/2008	
+17:02:27 06/12/2008	Starting HTTP Server listener on 8888
+17:02:27 06/12/2008	  
+17:02:27 06/12/2008	Open your web browser to:
+17:02:27 06/12/2008	  http://111.111.111.1:8888/SiteView
+17:02:31 06/12/2008	Process name tss_dispatcher was not running
+17:02:33 06/12/2008	Process name tss_monitor was not running
+17:02:33 06/12/2008	Loading master.config
+17:02:33 06/12/2008	Loading users.config
+17:02:33 06/12/2008	Loading multi.config
+17:02:33 06/12/2008	Loading group: __Health__
+17:02:33 06/12/2008	Loading group: Group0.1
+17:02:33 06/12/2008	Loading group: Group0.2
+17:02:33 06/12/2008	Loading group: Group0
+17:02:33 06/12/2008	Loading group: SiteView
+17:02:33 06/12/2008	Loading dynamic.config
+17:02:33 06/12/2008	Loading history.config
+17:02:34 06/12/2008	  
+17:02:34 06/12/2008	SiteView is active...
+17:02:34 06/12/2008	SiteView Startup Completed
+17:02:34 06/12/2008	  (will auto restart in 24 hours)
+17:08:23 06/12/2008	Updating master.config file from "750" to "750"
+17:08:23 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+17:08:23 06/12/2008	SiteView process started, 
+17:08:23 06/12/2008	 Windows XP 5.1
+17:08:23 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+17:08:23 06/12/2008	 Time zone offset is -8.0 hours
+17:08:23 06/12/2008	 Maximum monitor threads: 100
+17:08:23 06/12/2008	Using java SSL libraries
+17:08:23 06/12/2008	
+17:08:23 06/12/2008	Starting HTTP Server listener on 8888
+17:08:23 06/12/2008	  
+17:08:23 06/12/2008	Open your web browser to:
+17:08:23 06/12/2008	  http://111.111.111.1:8888/SiteView
+17:08:29 06/12/2008	Process name tss_dispatcher was not running
+17:08:32 06/12/2008	Process name tss_monitor was not running
+17:08:32 06/12/2008	Loading master.config
+17:08:32 06/12/2008	Loading users.config
+17:08:32 06/12/2008	Loading multi.config
+17:08:32 06/12/2008	Loading group: __Health__
+17:08:32 06/12/2008	Loading group: Group0.1
+17:08:32 06/12/2008	Loading group: Group0.2
+17:08:32 06/12/2008	Loading group: Group0
+17:08:32 06/12/2008	Loading group: SiteView
+17:08:32 06/12/2008	Loading dynamic.config
+17:08:32 06/12/2008	Loading history.config
+17:08:32 06/12/2008	  
+17:08:32 06/12/2008	SiteView is active...
+17:08:32 06/12/2008	SiteView Startup Completed
+17:08:32 06/12/2008	  (will auto restart in 24 hours)
+17:10:11 06/12/2008	  waiting 15 seconds: will update monitor Group0.2:1  Ping: www.sina.com
+17:10:28 06/12/2008	  waiting 148 seconds: will update monitor Group0:2  snmp 192.168.0.249
+17:37:32 06/12/2008	Updating master.config file from "750" to "750"
+17:37:32 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+17:37:32 06/12/2008	SiteView process started, 
+17:37:32 06/12/2008	 Windows XP 5.1
+17:37:32 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+17:37:32 06/12/2008	 Time zone offset is -8.0 hours
+17:37:32 06/12/2008	 Maximum monitor threads: 100
+17:37:33 06/12/2008	Using java SSL libraries
+17:37:33 06/12/2008	
+17:37:33 06/12/2008	Starting HTTP Server listener on 8888
+17:37:33 06/12/2008	  
+17:37:33 06/12/2008	Open your web browser to:
+17:37:33 06/12/2008	  http://111.111.111.1:8888/SiteView
+17:37:38 06/12/2008	Process name tss_dispatcher was not running
+17:37:40 06/12/2008	Process name tss_monitor was not running
+17:37:40 06/12/2008	Loading master.config
+17:37:40 06/12/2008	Loading users.config
+17:37:40 06/12/2008	Loading multi.config
+17:37:40 06/12/2008	Loading group: __Health__
+17:37:40 06/12/2008	Loading group: Group0.1
+17:37:41 06/12/2008	Loading group: Group0.2
+17:37:41 06/12/2008	Loading group: Group0
+17:37:41 06/12/2008	Loading group: SiteView
+17:37:41 06/12/2008	Loading dynamic.config
+17:37:41 06/12/2008	Loading history.config
+17:37:43 06/12/2008	  
+17:37:43 06/12/2008	SiteView is active...
+17:37:43 06/12/2008	SiteView Startup Completed
+17:37:44 06/12/2008	  (will auto restart in 24 hours)
+17:40:13 06/12/2008	  waiting 15 seconds: will update monitor Group0.2:1  Ping: www.sina.com
+17:46:44 06/12/2008	Updating master.config file from "750" to "750"
+17:46:44 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+17:46:44 06/12/2008	SiteView process started, 
+17:46:44 06/12/2008	 Windows XP 5.1
+17:46:44 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+17:46:44 06/12/2008	 Time zone offset is -8.0 hours
+17:46:44 06/12/2008	 Maximum monitor threads: 100
+17:46:44 06/12/2008	Using java SSL libraries
+17:46:44 06/12/2008	
+17:46:44 06/12/2008	Starting HTTP Server listener on 8888
+17:46:44 06/12/2008	  
+17:46:44 06/12/2008	Open your web browser to:
+17:46:44 06/12/2008	  http://111.111.111.1:8888/SiteView
+17:46:49 06/12/2008	Process name tss_dispatcher was not running
+17:46:51 06/12/2008	Process name tss_monitor was not running
+17:46:51 06/12/2008	Loading master.config
+17:46:51 06/12/2008	Loading users.config
+17:46:51 06/12/2008	Loading multi.config
+17:46:51 06/12/2008	Loading group: __Health__
+17:46:51 06/12/2008	Loading group: Group0.1
+17:46:51 06/12/2008	Loading group: Group0.2
+17:46:51 06/12/2008	Loading group: Group0
+17:46:51 06/12/2008	Loading group: SiteView
+17:46:51 06/12/2008	Loading dynamic.config
+17:46:51 06/12/2008	Loading history.config
+17:46:51 06/12/2008	  
+17:46:51 06/12/2008	SiteView is active...
+17:46:51 06/12/2008	SiteView Startup Completed
+17:46:51 06/12/2008	  (will auto restart in 24 hours)
+17:50:14 06/12/2008	  waiting 15 seconds: will update monitor Group0.2:1  Ping: www.sina.com
+17:50:31 06/12/2008	  waiting 47 seconds: will update monitor Group0:2  snmp 192.168.0.249
+17:57:27 06/12/2008	Updating master.config file from "750" to "750"
+17:57:27 06/12/2008	SiteView shutting down, LICENSE EXPIRED
+17:57:27 06/12/2008	SiteView process started, 
+17:57:27 06/12/2008	 Windows XP 5.1
+17:57:27 06/12/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+17:57:27 06/12/2008	 Time zone offset is -8.0 hours
+17:57:27 06/12/2008	 Maximum monitor threads: 100
+17:57:27 06/12/2008	Using java SSL libraries
+17:57:27 06/12/2008	
+17:57:27 06/12/2008	Starting HTTP Server listener on 8888
+17:57:27 06/12/2008	  
+17:57:27 06/12/2008	Open your web browser to:
+17:57:27 06/12/2008	  http://111.111.111.1:8888/SiteView
+17:57:31 06/12/2008	Process name tss_dispatcher was not running
+17:57:33 06/12/2008	Process name tss_monitor was not running
+17:57:33 06/12/2008	Loading master.config
+17:57:33 06/12/2008	Loading users.config
+17:57:33 06/12/2008	Loading multi.config
+17:57:33 06/12/2008	Loading group: __Health__
+17:57:33 06/12/2008	Loading group: Group0.1
+17:57:33 06/12/2008	Loading group: Group0.2
+17:57:33 06/12/2008	Loading group: Group0
+17:57:33 06/12/2008	Loading group: SiteView
+17:57:33 06/12/2008	Loading dynamic.config
+17:57:33 06/12/2008	Loading history.config
+17:57:35 06/12/2008	  
+17:57:35 06/12/2008	SiteView is active...
+17:57:35 06/12/2008	SiteView Startup Completed
+17:57:37 06/12/2008	  (will auto restart in 24 hours)
+09:25:00 06/13/2008	Updating master.config file from "750" to "750"
+09:25:00 06/13/2008	SiteView shutting down, LICENSE EXPIRED
+09:25:00 06/13/2008	SiteView process started, 
+09:25:00 06/13/2008	 Windows XP 5.1
+09:25:00 06/13/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+09:25:00 06/13/2008	 Time zone offset is -8.0 hours
+09:25:01 06/13/2008	 Maximum monitor threads: 100
+09:25:01 06/13/2008	Using java SSL libraries
+09:25:01 06/13/2008	
+09:25:01 06/13/2008	Starting HTTP Server listener on 8888
+09:25:01 06/13/2008	  
+09:25:01 06/13/2008	Open your web browser to:
+09:25:01 06/13/2008	  http://111.111.111.1:8888/SiteView
+09:25:06 06/13/2008	Process name tss_dispatcher was not running
+09:25:08 06/13/2008	Process name tss_monitor was not running
+09:25:08 06/13/2008	Loading master.config
+09:25:08 06/13/2008	Loading users.config
+09:25:09 06/13/2008	Loading multi.config
+09:25:09 06/13/2008	Loading group: __Health__
+09:25:09 06/13/2008	Loading group: Group0.1
+09:25:09 06/13/2008	Loading group: Group0.2
+09:25:09 06/13/2008	Loading group: Group0
+09:25:09 06/13/2008	Loading group: SiteView
+09:25:09 06/13/2008	Loading dynamic.config
+09:25:09 06/13/2008	Loading history.config
+09:25:14 06/13/2008	  
+09:25:14 06/13/2008	SiteView is active...
+09:25:14 06/13/2008	SiteView Startup Completed
+09:25:14 06/13/2008	  (will auto restart in 24 hours)
+09:25:58 06/13/2008	  waiting 92 seconds: will update monitor Group0:2  snmp 192.168.0.249
+10:18:39 06/13/2008	Updating master.config file from "750" to "750"
+10:18:40 06/13/2008	SiteView shutting down, LICENSE EXPIRED
+10:18:40 06/13/2008	SiteView process started, 
+10:18:40 06/13/2008	 Windows XP 5.1
+10:18:40 06/13/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+10:18:40 06/13/2008	 Time zone offset is -8.0 hours
+10:18:40 06/13/2008	 Maximum monitor threads: 100
+10:18:40 06/13/2008	Using java SSL libraries
+10:18:40 06/13/2008	
+10:18:40 06/13/2008	Starting HTTP Server listener on 8888
+10:18:40 06/13/2008	  
+10:18:40 06/13/2008	Open your web browser to:
+10:18:40 06/13/2008	  http://111.111.111.1:8888/SiteView
+10:18:45 06/13/2008	Process name tss_dispatcher was not running
+10:18:47 06/13/2008	Process name tss_monitor was not running
+10:18:47 06/13/2008	Loading master.config
+10:18:47 06/13/2008	Loading users.config
+10:18:47 06/13/2008	Loading multi.config
+10:18:47 06/13/2008	Loading group: __Health__
+10:18:47 06/13/2008	Loading group: Group0.1
+10:18:47 06/13/2008	Loading group: Group0.2
+10:18:47 06/13/2008	Loading group: Group0
+10:18:47 06/13/2008	Loading group: SiteView
+10:18:47 06/13/2008	Loading dynamic.config
+10:18:47 06/13/2008	Loading history.config
+10:18:49 06/13/2008	  
+10:18:49 06/13/2008	SiteView is active...
+10:18:49 06/13/2008	SiteView Startup Completed
+10:18:49 06/13/2008	  (will auto restart in 24 hours)
+10:34:34 06/13/2008	Updating master.config file from "750" to "750"
+10:34:34 06/13/2008	SiteView shutting down, LICENSE EXPIRED
+10:34:34 06/13/2008	SiteView process started, 
+10:34:34 06/13/2008	 Windows XP 5.1
+10:34:34 06/13/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+10:34:34 06/13/2008	 Time zone offset is -8.0 hours
+10:34:34 06/13/2008	 Maximum monitor threads: 100
+10:34:34 06/13/2008	Using java SSL libraries
+10:34:34 06/13/2008	
+10:34:34 06/13/2008	Starting HTTP Server listener on 8888
+10:34:34 06/13/2008	  
+10:34:34 06/13/2008	Open your web browser to:
+10:34:34 06/13/2008	  http://111.111.111.1:8888/SiteView
+10:34:38 06/13/2008	Process name tss_dispatcher was not running
+10:34:40 06/13/2008	Process name tss_monitor was not running
+10:34:40 06/13/2008	Loading master.config
+10:34:40 06/13/2008	Loading users.config
+10:34:40 06/13/2008	Loading multi.config
+10:34:40 06/13/2008	Loading group: __Health__
+10:34:40 06/13/2008	Loading group: Group0.1
+10:34:40 06/13/2008	Loading group: Group0.2
+10:34:40 06/13/2008	Loading group: Group0
+10:34:40 06/13/2008	Loading group: SiteView
+10:34:40 06/13/2008	Loading dynamic.config
+10:34:40 06/13/2008	Loading history.config
+10:34:41 06/13/2008	  
+10:34:41 06/13/2008	SiteView is active...
+10:34:41 06/13/2008	SiteView Startup Completed
+10:34:41 06/13/2008	  (will auto restart in 24 hours)
+11:15:52 06/13/2008	Updating master.config file from "750" to "750"
+11:15:58 06/13/2008	SiteView shutting down, LICENSE EXPIRED
+11:15:58 06/13/2008	SiteView process started, 
+11:15:58 06/13/2008	 Windows XP 5.1
+11:15:58 06/13/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+11:15:58 06/13/2008	 Time zone offset is -8.0 hours
+11:15:58 06/13/2008	 Maximum monitor threads: 100
+11:15:58 06/13/2008	Using java SSL libraries
+11:15:58 06/13/2008	
+11:15:58 06/13/2008	Starting HTTP Server listener on 8888
+11:15:59 06/13/2008	  
+11:15:59 06/13/2008	Open your web browser to:
+11:15:59 06/13/2008	  http://111.111.111.1:8888/SiteView
+11:16:05 06/13/2008	Process name tss_dispatcher was not running
+11:16:07 06/13/2008	Process name tss_monitor was not running
+11:16:07 06/13/2008	Loading master.config
+11:16:07 06/13/2008	Loading users.config
+11:16:07 06/13/2008	Loading multi.config
+11:16:07 06/13/2008	Loading group: __Health__
+11:16:07 06/13/2008	Loading group: Group0.1
+11:16:07 06/13/2008	Loading group: Group0.2
+11:16:07 06/13/2008	Loading group: Group0
+11:16:07 06/13/2008	Loading group: SiteView
+11:16:07 06/13/2008	Loading dynamic.config
+11:16:07 06/13/2008	Loading history.config
+11:16:12 06/13/2008	  
+11:16:12 06/13/2008	SiteView is active...
+11:16:12 06/13/2008	SiteView Startup Completed
+11:16:12 06/13/2008	  (will auto restart in 24 hours)
+11:17:35 06/13/2008	  waiting 44 seconds: will update monitor Group0.2:1  Ping: www.sina.com
+11:18:21 06/13/2008	  waiting 132 seconds: will update monitor Group0:2  snmp 192.168.0.249
+12:54:08 06/13/2008	Updating master.config file from "750" to "750"
+12:54:09 06/13/2008	SiteView shutting down, LICENSE EXPIRED
+12:54:09 06/13/2008	SiteView process started, 
+12:54:09 06/13/2008	 Windows XP 5.1
+12:54:09 06/13/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+12:54:09 06/13/2008	 Time zone offset is -8.0 hours
+12:54:09 06/13/2008	 Maximum monitor threads: 100
+12:54:09 06/13/2008	Using java SSL libraries
+12:54:09 06/13/2008	
+12:54:09 06/13/2008	Starting HTTP Server listener on 8888
+12:54:09 06/13/2008	  
+12:54:09 06/13/2008	Open your web browser to:
+12:54:09 06/13/2008	  http://111.111.111.1:8888/SiteView
+12:54:15 06/13/2008	Process name tss_dispatcher was not running
+12:54:17 06/13/2008	Process name tss_monitor was not running
+12:54:17 06/13/2008	Loading master.config
+12:54:17 06/13/2008	Loading users.config
+12:54:18 06/13/2008	Loading multi.config
+12:54:18 06/13/2008	Loading group: __Health__
+12:54:18 06/13/2008	Loading group: Group0.1
+12:54:18 06/13/2008	Loading group: Group0.2
+12:54:18 06/13/2008	Loading group: Group0
+12:54:18 06/13/2008	Loading group: SiteView
+12:54:18 06/13/2008	Loading dynamic.config
+12:54:18 06/13/2008	Loading history.config
+12:54:22 06/13/2008	  
+12:54:22 06/13/2008	SiteView is active...
+12:54:22 06/13/2008	SiteView Startup Completed
+12:54:22 06/13/2008	  (will auto restart in 24 hours)
+13:05:19 06/13/2008	Updating master.config file from "750" to "750"
+13:05:19 06/13/2008	SiteView shutting down, LICENSE EXPIRED
+13:05:19 06/13/2008	SiteView process started, 
+13:05:19 06/13/2008	 Windows XP 5.1
+13:05:19 06/13/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+13:05:19 06/13/2008	 Time zone offset is -8.0 hours
+13:05:19 06/13/2008	 Maximum monitor threads: 100
+13:05:19 06/13/2008	Using java SSL libraries
+13:05:19 06/13/2008	
+13:05:19 06/13/2008	Starting HTTP Server listener on 8888
+13:05:19 06/13/2008	  
+13:05:19 06/13/2008	Open your web browser to:
+13:05:19 06/13/2008	  http://111.111.111.1:8888/SiteView
+13:05:24 06/13/2008	Process name tss_dispatcher was not running
+13:05:27 06/13/2008	Process name tss_monitor was not running
+13:05:27 06/13/2008	Loading master.config
+13:05:27 06/13/2008	Loading users.config
+13:05:27 06/13/2008	Loading multi.config
+13:05:27 06/13/2008	Loading group: __Health__
+13:05:27 06/13/2008	Loading group: Group0.1
+13:05:27 06/13/2008	Loading group: Group0.2
+13:05:27 06/13/2008	Loading group: Group0
+13:05:27 06/13/2008	Loading group: SiteView
+13:05:27 06/13/2008	Loading dynamic.config
+13:05:27 06/13/2008	Loading history.config
+13:05:27 06/13/2008	  
+13:05:27 06/13/2008	SiteView is active...
+13:05:27 06/13/2008	SiteView Startup Completed
+13:05:27 06/13/2008	  (will auto restart in 24 hours)
+13:05:36 06/13/2008	  waiting 54 seconds: will update monitor Group0.2:1  Ping: www.sina.com
+13:06:32 06/13/2008	  waiting 234 seconds: will update monitor Group0:2  snmp 192.168.0.249
+13:40:10 06/13/2008	Updating master.config file from "750" to "750"
+13:40:10 06/13/2008	SiteView shutting down, LICENSE EXPIRED
+13:40:10 06/13/2008	SiteView process started, 
+13:40:10 06/13/2008	 Windows XP 5.1
+13:40:10 06/13/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+13:40:10 06/13/2008	 Time zone offset is -8.0 hours
+13:40:11 06/13/2008	 Maximum monitor threads: 100
+13:40:11 06/13/2008	Using java SSL libraries
+13:40:11 06/13/2008	
+13:40:11 06/13/2008	Starting HTTP Server listener on 8888
+13:40:11 06/13/2008	  
+13:40:11 06/13/2008	Open your web browser to:
+13:40:11 06/13/2008	  http://111.111.111.1:8888/SiteView
+13:40:16 06/13/2008	Process name tss_dispatcher was not running
+13:40:18 06/13/2008	Process name tss_monitor was not running
+13:40:18 06/13/2008	Loading master.config
+13:40:18 06/13/2008	Loading users.config
+13:40:18 06/13/2008	Loading multi.config
+13:40:18 06/13/2008	Loading group: __Health__
+13:40:18 06/13/2008	Loading group: Group0.1
+13:40:18 06/13/2008	Loading group: Group0.2
+13:40:18 06/13/2008	Loading group: Group0
+13:40:18 06/13/2008	Loading group: SiteView
+13:40:18 06/13/2008	Loading dynamic.config
+13:40:18 06/13/2008	Loading history.config
+13:40:19 06/13/2008	  
+13:40:19 06/13/2008	SiteView is active...
+13:40:19 06/13/2008	SiteView Startup Completed
+13:40:19 06/13/2008	  (will auto restart in 24 hours)
+14:39:59 06/13/2008	Updating master.config file from "750" to "750"
+14:39:59 06/13/2008	SiteView shutting down, LICENSE EXPIRED
+14:39:59 06/13/2008	SiteView process started, 
+14:39:59 06/13/2008	 Windows XP 5.1
+14:39:59 06/13/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+14:39:59 06/13/2008	 Time zone offset is -8.0 hours
+14:39:59 06/13/2008	 Maximum monitor threads: 100
+14:40:00 06/13/2008	Using java SSL libraries
+14:40:00 06/13/2008	
+14:40:00 06/13/2008	Starting HTTP Server listener on 8888
+14:40:00 06/13/2008	  
+14:40:00 06/13/2008	Open your web browser to:
+14:40:00 06/13/2008	  http://111.111.111.1:8888/SiteView
+14:40:05 06/13/2008	Process name tss_dispatcher was not running
+14:40:08 06/13/2008	Process name tss_monitor was not running
+14:40:08 06/13/2008	Loading master.config
+14:40:08 06/13/2008	Loading users.config
+14:40:08 06/13/2008	Loading multi.config
+14:40:08 06/13/2008	Loading group: __Health__
+14:40:08 06/13/2008	Loading group: Group0.1
+14:40:08 06/13/2008	Loading group: Group0.2
+14:40:08 06/13/2008	Loading group: Group0
+14:40:08 06/13/2008	Loading group: SiteView
+14:40:08 06/13/2008	Loading dynamic.config
+14:40:08 06/13/2008	Loading history.config
+14:40:13 06/13/2008	  
+14:40:13 06/13/2008	SiteView is active...
+14:40:13 06/13/2008	SiteView Startup Completed
+14:40:13 06/13/2008	  (will auto restart in 24 hours)
+14:41:08 06/13/2008	  waiting 22 seconds: will update monitor Group0.2:1  Ping: www.sina.com
+14:41:31 06/13/2008	  waiting 102 seconds: will update monitor Group0:2  snmp 192.168.0.249
+15:05:53 06/13/2008	Updating master.config file from "750" to "750"
+15:05:53 06/13/2008	SiteView shutting down, LICENSE EXPIRED
+15:05:53 06/13/2008	SiteView process started, 
+15:05:53 06/13/2008	 Windows XP 5.1
+15:05:53 06/13/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+15:05:53 06/13/2008	 Time zone offset is -8.0 hours
+15:05:53 06/13/2008	 Maximum monitor threads: 100
+15:05:53 06/13/2008	Using java SSL libraries
+15:05:53 06/13/2008	
+15:05:53 06/13/2008	Starting HTTP Server listener on 8888
+15:05:53 06/13/2008	  
+15:05:53 06/13/2008	Open your web browser to:
+15:05:53 06/13/2008	  http://111.111.111.1:8888/SiteView
+15:05:57 06/13/2008	Process name tss_dispatcher was not running
+15:06:00 06/13/2008	Process name tss_monitor was not running
+15:06:00 06/13/2008	Loading master.config
+15:06:00 06/13/2008	Loading users.config
+15:06:00 06/13/2008	Loading multi.config
+15:06:00 06/13/2008	Loading group: __Health__
+15:06:00 06/13/2008	Loading group: Group0.1
+15:06:00 06/13/2008	Loading group: Group0.2
+15:06:00 06/13/2008	Loading group: Group0
+15:06:00 06/13/2008	Loading group: SiteView
+15:06:00 06/13/2008	Loading dynamic.config
+15:06:00 06/13/2008	Loading history.config
+15:06:00 06/13/2008	  
+15:06:00 06/13/2008	SiteView is active...
+15:06:00 06/13/2008	SiteView Startup Completed
+15:06:00 06/13/2008	  (will auto restart in 24 hours)
+09:31:55 06/16/2008	Updating master.config file from "750" to "750"
+09:31:56 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+09:31:56 06/16/2008	SiteView process started, 
+09:31:56 06/16/2008	 Windows XP 5.1
+09:31:56 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+09:31:56 06/16/2008	 Time zone offset is -8.0 hours
+09:31:56 06/16/2008	 Maximum monitor threads: 100
+09:31:56 06/16/2008	Using java SSL libraries
+09:31:56 06/16/2008	
+09:31:56 06/16/2008	Starting HTTP Server listener on 8888
+09:31:57 06/16/2008	  
+09:31:57 06/16/2008	Open your web browser to:
+09:31:57 06/16/2008	  http://111.111.111.1:8888/SiteView
+09:32:02 06/16/2008	Process name tss_dispatcher was not running
+09:32:04 06/16/2008	Process name tss_monitor was not running
+09:32:04 06/16/2008	Loading master.config
+09:32:04 06/16/2008	Loading users.config
+09:32:04 06/16/2008	Loading multi.config
+09:32:04 06/16/2008	Loading group: __Health__
+09:32:04 06/16/2008	Loading group: Group0.1
+09:32:04 06/16/2008	Loading group: Group0.2
+09:32:04 06/16/2008	Loading group: Group0
+09:32:05 06/16/2008	Loading group: SiteView
+09:32:05 06/16/2008	Loading dynamic.config
+09:32:05 06/16/2008	Loading history.config
+09:32:53 06/16/2008	  
+09:32:53 06/16/2008	SiteView is active...
+09:32:53 06/16/2008	SiteView Startup Completed
+09:32:53 06/16/2008	  (will auto restart in 24 hours)
+09:33:11 06/16/2008	  waiting 55 seconds: will update monitor Group0.2:1  Ping: www.sina.com
+09:34:08 06/16/2008	  waiting 93 seconds: will update monitor Group0:2  snmp 192.168.0.249
+09:46:07 06/16/2008	Updating master.config file from "750" to "750"
+09:46:07 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+09:46:07 06/16/2008	SiteView process started, 
+09:46:07 06/16/2008	 Windows XP 5.1
+09:46:07 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+09:46:07 06/16/2008	 Time zone offset is -8.0 hours
+09:46:07 06/16/2008	 Maximum monitor threads: 100
+09:46:07 06/16/2008	Using java SSL libraries
+09:46:07 06/16/2008	
+09:46:07 06/16/2008	Starting HTTP Server listener on 6666
+09:46:07 06/16/2008	  
+09:46:07 06/16/2008	Open your web browser to:
+09:46:07 06/16/2008	  http://111.111.111.1:6666/SiteView
+09:46:12 06/16/2008	Process name tss_dispatcher was not running
+09:46:14 06/16/2008	Process name tss_monitor was not running
+09:46:14 06/16/2008	Loading master.config
+09:46:14 06/16/2008	Loading users.config
+09:46:14 06/16/2008	Loading multi.config
+09:46:14 06/16/2008	Loading group: __Health__
+09:46:14 06/16/2008	Loading group: Group0.1
+09:46:14 06/16/2008	Loading group: Group0.2
+09:46:14 06/16/2008	Loading group: Group0
+09:46:14 06/16/2008	Loading group: SiteView
+09:46:14 06/16/2008	Loading dynamic.config
+09:46:14 06/16/2008	Loading history.config
+09:46:14 06/16/2008	  
+09:46:14 06/16/2008	SiteView is active...
+09:46:15 06/16/2008	SiteView Startup Completed
+09:46:15 06/16/2008	  (will auto restart in 24 hours)
+09:46:21 06/16/2008	  waiting 593 seconds: will update monitor Group0.2:1  Ping: www.sina.com
+09:46:21 06/16/2008	  waiting 593 seconds: will update monitor Group0.2:1  Ping: www.sina.com
+09:50:13 06/16/2008	Updating master.config file from "750" to "750"
+09:50:13 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+09:50:13 06/16/2008	SiteView process started, 
+09:50:13 06/16/2008	 Windows XP 5.1
+09:50:13 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+09:50:13 06/16/2008	 Time zone offset is -8.0 hours
+09:50:13 06/16/2008	 Maximum monitor threads: 100
+09:50:13 06/16/2008	Using java SSL libraries
+09:50:13 06/16/2008	
+09:50:13 06/16/2008	Starting HTTP Server listener on 6666
+09:50:13 06/16/2008	  
+09:50:13 06/16/2008	Open your web browser to:
+09:50:13 06/16/2008	  http://111.111.111.1:6666/SiteView
+09:50:18 06/16/2008	Process name tss_dispatcher was not running
+09:50:20 06/16/2008	Process name tss_monitor was not running
+09:50:20 06/16/2008	Loading master.config
+09:50:20 06/16/2008	Loading users.config
+09:50:20 06/16/2008	Loading multi.config
+09:50:20 06/16/2008	Loading group: __Health__
+09:50:20 06/16/2008	Loading group: SiteView
+09:50:20 06/16/2008	Loading group: Group0.1
+09:50:20 06/16/2008	Loading group: Group0
+09:50:20 06/16/2008	Loading dynamic.config
+09:50:20 06/16/2008	Loading history.config
+09:50:20 06/16/2008	  
+09:50:20 06/16/2008	SiteView is active...
+09:50:20 06/16/2008	SiteView Startup Completed
+09:50:21 06/16/2008	  (will auto restart in 24 hours)
+10:21:10 06/16/2008	Updating master.config file from "750" to "750"
+10:21:10 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+10:21:10 06/16/2008	SiteView process started, 
+10:21:10 06/16/2008	 Windows XP 5.1
+10:21:10 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+10:21:10 06/16/2008	 Time zone offset is -8.0 hours
+10:21:10 06/16/2008	 Maximum monitor threads: 100
+10:21:10 06/16/2008	Using java SSL libraries
+10:21:10 06/16/2008	
+10:21:10 06/16/2008	Starting HTTP Server listener on 6666
+10:21:10 06/16/2008	  
+10:21:10 06/16/2008	Open your web browser to:
+10:21:10 06/16/2008	  http://111.111.111.1:6666/SiteView
+10:21:15 06/16/2008	Process name tss_dispatcher was not running
+10:21:17 06/16/2008	Process name tss_monitor was not running
+10:21:17 06/16/2008	Loading master.config
+10:21:17 06/16/2008	Loading users.config
+10:21:17 06/16/2008	Loading multi.config
+10:21:17 06/16/2008	Loading group: __Health__
+10:21:17 06/16/2008	Loading group: SiteView
+10:21:17 06/16/2008	Loading group: Group0.1
+10:21:17 06/16/2008	Loading group: Group0
+10:21:18 06/16/2008	Loading dynamic.config
+10:21:18 06/16/2008	Loading history.config
+10:21:21 06/16/2008	  
+10:21:21 06/16/2008	SiteView is active...
+10:21:21 06/16/2008	SiteView Startup Completed
+10:21:21 06/16/2008	  (will auto restart in 24 hours)
+10:25:16 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+10:30:47 06/16/2008	Updating master.config file from "750" to "750"
+10:30:47 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+10:30:47 06/16/2008	SiteView process started, 
+10:30:47 06/16/2008	 Windows XP 5.1
+10:30:47 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+10:30:47 06/16/2008	 Time zone offset is -8.0 hours
+10:30:47 06/16/2008	 Maximum monitor threads: 100
+10:30:47 06/16/2008	Using java SSL libraries
+10:30:47 06/16/2008	
+10:30:47 06/16/2008	Starting HTTP Server listener on 6666
+10:30:47 06/16/2008	  
+10:30:47 06/16/2008	Open your web browser to:
+10:30:47 06/16/2008	  http://111.111.111.1:6666/SiteView
+10:30:52 06/16/2008	Process name tss_dispatcher was not running
+10:30:54 06/16/2008	Process name tss_monitor was not running
+10:30:54 06/16/2008	Loading master.config
+10:30:54 06/16/2008	Loading users.config
+10:30:54 06/16/2008	Loading multi.config
+10:30:54 06/16/2008	Loading group: __Health__
+10:30:54 06/16/2008	Loading group: SiteView
+10:30:54 06/16/2008	Loading group: Group0.1
+10:30:54 06/16/2008	Loading group: Group0
+10:30:54 06/16/2008	Loading dynamic.config
+10:30:54 06/16/2008	Loading history.config
+10:30:55 06/16/2008	  
+10:30:55 06/16/2008	SiteView is active...
+10:30:55 06/16/2008	SiteView Startup Completed
+10:30:55 06/16/2008	  (will auto restart in 24 hours)
+10:35:29 06/16/2008	Updating master.config file from "750" to "750"
+10:35:29 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+10:35:29 06/16/2008	SiteView process started, 
+10:35:29 06/16/2008	 Windows XP 5.1
+10:35:29 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+10:35:29 06/16/2008	 Time zone offset is -8.0 hours
+10:35:29 06/16/2008	 Maximum monitor threads: 100
+10:35:29 06/16/2008	Using java SSL libraries
+10:35:29 06/16/2008	
+10:35:29 06/16/2008	Starting HTTP Server listener on 6666
+10:35:29 06/16/2008	  
+10:35:29 06/16/2008	Open your web browser to:
+10:35:29 06/16/2008	  http://111.111.111.1:6666/SiteView
+10:35:33 06/16/2008	Process name tss_dispatcher was not running
+10:35:36 06/16/2008	Process name tss_monitor was not running
+10:35:36 06/16/2008	Loading master.config
+10:35:36 06/16/2008	Loading users.config
+10:35:36 06/16/2008	Loading multi.config
+10:35:36 06/16/2008	Loading group: __Health__
+10:35:36 06/16/2008	Loading group: SiteView
+10:35:36 06/16/2008	Loading group: Group0.1
+10:35:36 06/16/2008	Loading group: Group0
+10:35:36 06/16/2008	Loading dynamic.config
+10:35:36 06/16/2008	Loading history.config
+10:35:36 06/16/2008	  
+10:35:36 06/16/2008	SiteView is active...
+10:35:36 06/16/2008	SiteView Startup Completed
+10:35:36 06/16/2008	  (will auto restart in 24 hours)
+10:42:11 06/16/2008	Updating master.config file from "750" to "750"
+10:42:11 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+10:42:11 06/16/2008	SiteView process started, 
+10:42:11 06/16/2008	 Windows XP 5.1
+10:42:11 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+10:42:11 06/16/2008	 Time zone offset is -8.0 hours
+10:42:11 06/16/2008	 Maximum monitor threads: 100
+10:42:11 06/16/2008	Using java SSL libraries
+10:42:11 06/16/2008	
+10:42:11 06/16/2008	Starting HTTP Server listener on 6666
+10:42:11 06/16/2008	  
+10:42:11 06/16/2008	Open your web browser to:
+10:42:11 06/16/2008	  http://111.111.111.1:6666/SiteView
+10:42:16 06/16/2008	Process name tss_dispatcher was not running
+10:42:18 06/16/2008	Process name tss_monitor was not running
+10:42:18 06/16/2008	Loading master.config
+10:42:18 06/16/2008	Loading users.config
+10:42:18 06/16/2008	Loading multi.config
+10:42:18 06/16/2008	Loading group: __Health__
+10:42:18 06/16/2008	Loading group: SiteView
+10:42:18 06/16/2008	Loading group: Group0.1
+10:42:18 06/16/2008	Loading group: Group0
+10:42:18 06/16/2008	Loading dynamic.config
+10:42:18 06/16/2008	Loading history.config
+10:42:18 06/16/2008	  
+10:42:18 06/16/2008	SiteView is active...
+10:42:18 06/16/2008	SiteView Startup Completed
+10:42:19 06/16/2008	  (will auto restart in 24 hours)
+10:44:37 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+10:54:37 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+11:03:21 06/16/2008	Updating master.config file from "750" to "750"
+11:03:21 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+11:03:21 06/16/2008	SiteView process started, 
+11:03:21 06/16/2008	 Windows XP 5.1
+11:03:21 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+11:03:21 06/16/2008	 Time zone offset is -8.0 hours
+11:03:21 06/16/2008	 Maximum monitor threads: 100
+11:03:21 06/16/2008	Using java SSL libraries
+11:03:21 06/16/2008	
+11:03:21 06/16/2008	Starting HTTP Server listener on 6666
+11:03:21 06/16/2008	  
+11:03:21 06/16/2008	Open your web browser to:
+11:03:21 06/16/2008	  http://111.111.111.1:6666/SiteView
+11:03:25 06/16/2008	Process name tss_dispatcher was not running
+11:03:28 06/16/2008	Process name tss_monitor was not running
+11:03:28 06/16/2008	Loading master.config
+11:03:28 06/16/2008	Loading users.config
+11:03:28 06/16/2008	Loading multi.config
+11:03:28 06/16/2008	Loading group: __Health__
+11:03:28 06/16/2008	Loading group: SiteView
+11:03:28 06/16/2008	Loading group: Group0.1
+11:03:28 06/16/2008	Loading group: Group0
+11:03:28 06/16/2008	Loading dynamic.config
+11:03:28 06/16/2008	Loading history.config
+11:03:28 06/16/2008	  
+11:03:28 06/16/2008	SiteView is active...
+11:03:28 06/16/2008	SiteView Startup Completed
+11:03:28 06/16/2008	  (will auto restart in 24 hours)
+11:04:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+11:14:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+11:24:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+11:34:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+11:44:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+11:54:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+12:04:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+12:14:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+12:24:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+12:34:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+12:44:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+12:54:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+13:04:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+13:14:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+13:24:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+13:34:38 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+13:39:31 06/16/2008	Updating master.config file from "750" to "750"
+13:39:31 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+13:39:31 06/16/2008	SiteView process started, 
+13:39:31 06/16/2008	 Windows XP 5.1
+13:39:31 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+13:39:31 06/16/2008	 Time zone offset is -8.0 hours
+13:39:31 06/16/2008	 Maximum monitor threads: 100
+13:39:31 06/16/2008	Using java SSL libraries
+13:39:31 06/16/2008	
+13:39:31 06/16/2008	Starting HTTP Server listener on 6666
+13:39:32 06/16/2008	  
+13:39:32 06/16/2008	Open your web browser to:
+13:39:32 06/16/2008	  http://111.111.111.1:6666/SiteView
+13:39:37 06/16/2008	Process name tss_dispatcher was not running
+13:39:39 06/16/2008	Process name tss_monitor was not running
+13:39:39 06/16/2008	Loading master.config
+13:39:39 06/16/2008	Loading users.config
+13:39:39 06/16/2008	Loading multi.config
+13:39:39 06/16/2008	Loading group: __Health__
+13:39:40 06/16/2008	Loading group: SiteView
+13:39:40 06/16/2008	Loading group: Group0.1
+13:39:40 06/16/2008	Loading group: Group0
+13:39:40 06/16/2008	Loading dynamic.config
+13:39:40 06/16/2008	Loading history.config
+13:39:41 06/16/2008	  
+13:39:41 06/16/2008	SiteView is active...
+13:39:41 06/16/2008	SiteView Startup Completed
+13:39:41 06/16/2008	  (will auto restart in 24 hours)
+13:43:28 06/16/2008	Updating master.config file from "750" to "750"
+13:43:28 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+13:43:28 06/16/2008	SiteView process started, 
+13:43:28 06/16/2008	 Windows XP 5.1
+13:43:28 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+13:43:28 06/16/2008	 Time zone offset is -8.0 hours
+13:43:28 06/16/2008	 Maximum monitor threads: 100
+13:43:28 06/16/2008	Using java SSL libraries
+13:43:28 06/16/2008	
+13:43:28 06/16/2008	Starting HTTP Server listener on 6666
+13:43:28 06/16/2008	  
+13:43:28 06/16/2008	Open your web browser to:
+13:43:28 06/16/2008	  http://111.111.111.1:6666/SiteView
+13:43:33 06/16/2008	Process name tss_dispatcher was not running
+13:43:35 06/16/2008	Process name tss_monitor was not running
+13:43:35 06/16/2008	Loading master.config
+13:43:35 06/16/2008	Loading users.config
+13:43:35 06/16/2008	Loading multi.config
+13:43:35 06/16/2008	Loading group: __Health__
+13:43:35 06/16/2008	Loading group: SiteView
+13:43:35 06/16/2008	Loading group: Group0.1
+13:43:35 06/16/2008	Loading group: Group0
+13:43:35 06/16/2008	Loading dynamic.config
+13:43:35 06/16/2008	Loading history.config
+13:43:35 06/16/2008	  
+13:43:35 06/16/2008	SiteView is active...
+13:43:35 06/16/2008	SiteView Startup Completed
+13:43:39 06/16/2008	  (will auto restart in 24 hours)
+13:44:40 06/16/2008	  waiting 598 seconds: will update monitor Group0:2  aaaa
+13:47:26 06/16/2008	Updating master.config file from "750" to "750"
+13:47:26 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+13:47:26 06/16/2008	SiteView process started, 
+13:47:26 06/16/2008	 Windows XP 5.1
+13:47:26 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+13:47:26 06/16/2008	 Time zone offset is -8.0 hours
+13:47:26 06/16/2008	 Maximum monitor threads: 100
+13:47:26 06/16/2008	Using java SSL libraries
+13:47:26 06/16/2008	
+13:47:26 06/16/2008	Starting HTTP Server listener on 6666
+13:47:26 06/16/2008	  
+13:47:26 06/16/2008	Open your web browser to:
+13:47:26 06/16/2008	  http://111.111.111.1:6666/SiteView
+13:47:31 06/16/2008	Process name tss_dispatcher was not running
+13:47:33 06/16/2008	Process name tss_monitor was not running
+13:47:33 06/16/2008	Loading master.config
+13:47:33 06/16/2008	Loading users.config
+13:47:33 06/16/2008	Loading multi.config
+13:47:33 06/16/2008	Loading group: __Health__
+13:47:33 06/16/2008	Loading group: SiteView
+13:47:33 06/16/2008	Loading group: Group0.1
+13:47:33 06/16/2008	Loading group: Group0
+13:47:33 06/16/2008	Loading dynamic.config
+13:47:33 06/16/2008	Loading history.config
+13:47:34 06/16/2008	  
+13:47:34 06/16/2008	SiteView is active...
+13:47:34 06/16/2008	SiteView Startup Completed
+13:47:34 06/16/2008	  (will auto restart in 24 hours)
+14:08:13 06/16/2008	Updating master.config file from "750" to "750"
+14:08:13 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+14:08:13 06/16/2008	SiteView process started, 
+14:08:13 06/16/2008	 Windows XP 5.1
+14:08:13 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+14:08:13 06/16/2008	 Time zone offset is -8.0 hours
+14:08:13 06/16/2008	 Maximum monitor threads: 100
+14:08:13 06/16/2008	Using java SSL libraries
+14:08:13 06/16/2008	
+14:08:13 06/16/2008	Starting HTTP Server listener on 6666
+14:08:13 06/16/2008	  
+14:08:13 06/16/2008	Open your web browser to:
+14:08:13 06/16/2008	  http://111.111.111.1:6666/SiteView
+14:08:17 06/16/2008	Process name tss_dispatcher was not running
+14:08:20 06/16/2008	Process name tss_monitor was not running
+14:08:20 06/16/2008	Loading master.config
+14:08:20 06/16/2008	Loading users.config
+14:08:20 06/16/2008	Loading multi.config
+14:08:20 06/16/2008	Loading group: __Health__
+14:08:20 06/16/2008	Loading group: SiteView
+14:08:20 06/16/2008	Loading group: Group0.1
+14:08:20 06/16/2008	Loading group: Group0
+14:08:20 06/16/2008	Loading dynamic.config
+14:08:20 06/16/2008	Loading history.config
+14:08:20 06/16/2008	  
+14:08:20 06/16/2008	SiteView is active...
+14:08:20 06/16/2008	SiteView Startup Completed
+14:08:20 06/16/2008	  (will auto restart in 24 hours)
+14:09:45 06/16/2008	Loading group: Group0
+14:09:46 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:09:46 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:10:01 06/16/2008	Loading group: Group0
+14:10:22 06/16/2008	Loading group: Group0
+14:11:31 06/16/2008	Loading group: Group0
+14:12:22 06/16/2008	Loading group: Group0
+14:16:42 06/16/2008	Updating master.config file from "750" to "750"
+14:16:42 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+14:16:42 06/16/2008	SiteView process started, 
+14:16:42 06/16/2008	 Windows XP 5.1
+14:16:42 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+14:16:42 06/16/2008	 Time zone offset is -8.0 hours
+14:16:42 06/16/2008	 Maximum monitor threads: 100
+14:16:42 06/16/2008	Using java SSL libraries
+14:16:42 06/16/2008	
+14:16:42 06/16/2008	Starting HTTP Server listener on 6666
+14:16:42 06/16/2008	  
+14:16:42 06/16/2008	Open your web browser to:
+14:16:42 06/16/2008	  http://111.111.111.1:6666/SiteView
+14:16:47 06/16/2008	Process name tss_dispatcher was not running
+14:16:49 06/16/2008	Process name tss_monitor was not running
+14:16:49 06/16/2008	Loading master.config
+14:16:49 06/16/2008	Loading users.config
+14:16:49 06/16/2008	Loading multi.config
+14:16:49 06/16/2008	Loading group: __Health__
+14:16:49 06/16/2008	Loading group: SiteView
+14:16:49 06/16/2008	Loading group: Group0.1
+14:16:49 06/16/2008	Loading group: Group0
+14:16:49 06/16/2008	Loading dynamic.config
+14:16:49 06/16/2008	Loading history.config
+14:16:50 06/16/2008	  
+14:16:50 06/16/2008	SiteView is active...
+14:16:50 06/16/2008	SiteView Startup Completed
+14:16:56 06/16/2008	  (will auto restart in 24 hours)
+14:17:00 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+14:17:20 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+14:20:52 06/16/2008	Updating master.config file from "750" to "750"
+14:20:52 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+14:20:52 06/16/2008	SiteView process started, 
+14:20:52 06/16/2008	 Windows XP 5.1
+14:20:52 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+14:20:52 06/16/2008	 Time zone offset is -8.0 hours
+14:20:52 06/16/2008	 Maximum monitor threads: 100
+14:20:52 06/16/2008	Using java SSL libraries
+14:20:52 06/16/2008	
+14:20:52 06/16/2008	Starting HTTP Server listener on 6666
+14:20:52 06/16/2008	  
+14:20:52 06/16/2008	Open your web browser to:
+14:20:52 06/16/2008	  http://111.111.111.1:6666/SiteView
+14:20:57 06/16/2008	Process name tss_dispatcher was not running
+14:20:59 06/16/2008	Process name tss_monitor was not running
+14:20:59 06/16/2008	Loading master.config
+14:20:59 06/16/2008	Loading users.config
+14:20:59 06/16/2008	Loading multi.config
+14:20:59 06/16/2008	Loading group: __Health__
+14:20:59 06/16/2008	Loading group: SiteView
+14:20:59 06/16/2008	Loading group: Group0.1
+14:20:59 06/16/2008	Loading group: Group0
+14:20:59 06/16/2008	Loading dynamic.config
+14:20:59 06/16/2008	Loading history.config
+14:21:00 06/16/2008	  
+14:21:00 06/16/2008	SiteView is active...
+14:21:00 06/16/2008	SiteView Startup Completed
+14:21:00 06/16/2008	  (will auto restart in 24 hours)
+14:22:10 06/16/2008	  waiting 20 seconds: will update monitor Group0:5  local
+14:22:32 06/16/2008	  waiting 25 seconds: will update monitor Group0:3  mytest
+14:23:39 06/16/2008	Updating master.config file from "750" to "750"
+14:23:39 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+14:23:39 06/16/2008	SiteView process started, 
+14:23:39 06/16/2008	 Windows XP 5.1
+14:23:39 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+14:23:39 06/16/2008	 Time zone offset is -8.0 hours
+14:23:39 06/16/2008	 Maximum monitor threads: 100
+14:23:39 06/16/2008	Using java SSL libraries
+14:23:39 06/16/2008	
+14:23:39 06/16/2008	Starting HTTP Server listener on 6666
+14:23:39 06/16/2008	  
+14:23:39 06/16/2008	Open your web browser to:
+14:23:39 06/16/2008	  http://111.111.111.1:6666/SiteView
+14:23:45 06/16/2008	Process name tss_dispatcher was not running
+14:23:48 06/16/2008	Process name tss_monitor was not running
+14:23:48 06/16/2008	Loading master.config
+14:23:48 06/16/2008	Loading users.config
+14:23:48 06/16/2008	Loading multi.config
+14:23:48 06/16/2008	Loading group: __Health__
+14:23:48 06/16/2008	Loading group: SiteView
+14:23:48 06/16/2008	Loading group: Group0.1
+14:23:48 06/16/2008	Loading group: Group0
+14:23:48 06/16/2008	Loading dynamic.config
+14:23:48 06/16/2008	Loading history.config
+14:23:48 06/16/2008	  
+14:23:48 06/16/2008	SiteView is active...
+14:23:48 06/16/2008	SiteView Startup Completed
+14:23:48 06/16/2008	  (will auto restart in 24 hours)
+14:24:10 06/16/2008	  waiting 31 seconds: will update monitor Group0:5  local
+14:24:43 06/16/2008	  waiting 31 seconds: will update monitor Group0:5  local
+14:25:16 06/16/2008	  waiting 31 seconds: will update monitor Group0:5  local
+14:25:48 06/16/2008	Loading group: SiteView
+14:25:49 06/16/2008	  waiting 25 seconds: will update monitor Group0:3  mytest
+14:28:31 06/16/2008	Updating master.config file from "750" to "750"
+14:28:32 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+14:28:32 06/16/2008	SiteView process started, 
+14:28:32 06/16/2008	 Windows XP 5.1
+14:28:32 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+14:28:32 06/16/2008	 Time zone offset is -8.0 hours
+14:28:32 06/16/2008	 Maximum monitor threads: 100
+14:28:32 06/16/2008	Using java SSL libraries
+14:28:32 06/16/2008	
+14:28:32 06/16/2008	Starting HTTP Server listener on 6666
+14:28:32 06/16/2008	  
+14:28:32 06/16/2008	Open your web browser to:
+14:28:32 06/16/2008	  http://111.111.111.1:6666/SiteView
+14:28:36 06/16/2008	Process name tss_dispatcher was not running
+14:28:38 06/16/2008	Process name tss_monitor was not running
+14:28:38 06/16/2008	Loading master.config
+14:28:38 06/16/2008	Loading users.config
+14:28:38 06/16/2008	Loading multi.config
+14:28:38 06/16/2008	Loading group: __Health__
+14:28:38 06/16/2008	Loading group: SiteView
+14:28:38 06/16/2008	Loading group: Group0.1
+14:28:38 06/16/2008	Loading group: Group0
+14:28:38 06/16/2008	Loading dynamic.config
+14:28:38 06/16/2008	Loading history.config
+14:28:38 06/16/2008	  
+14:28:38 06/16/2008	SiteView is active...
+14:28:39 06/16/2008	SiteView Startup Completed
+14:28:39 06/16/2008	  (will auto restart in 24 hours)
+14:30:39 06/16/2008	Loading group: SiteView
+14:33:27 06/16/2008	Updating master.config file from "750" to "750"
+14:33:27 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+14:33:27 06/16/2008	SiteView process started, 
+14:33:27 06/16/2008	 Windows XP 5.1
+14:33:27 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+14:33:27 06/16/2008	 Time zone offset is -8.0 hours
+14:33:27 06/16/2008	 Maximum monitor threads: 100
+14:33:27 06/16/2008	Using java SSL libraries
+14:33:27 06/16/2008	
+14:33:28 06/16/2008	Starting HTTP Server listener on 6666
+14:33:28 06/16/2008	  
+14:33:28 06/16/2008	Open your web browser to:
+14:33:28 06/16/2008	  http://111.111.111.1:6666/SiteView
+14:33:32 06/16/2008	Process name tss_dispatcher was not running
+14:33:34 06/16/2008	Process name tss_monitor was not running
+14:33:34 06/16/2008	Loading master.config
+14:33:34 06/16/2008	Loading users.config
+14:33:34 06/16/2008	Loading multi.config
+14:33:34 06/16/2008	Loading group: __Health__
+14:33:34 06/16/2008	Loading group: SiteView
+14:33:34 06/16/2008	Loading group: Group0.1
+14:33:34 06/16/2008	Loading group: Group0
+14:33:34 06/16/2008	Loading dynamic.config
+14:33:34 06/16/2008	Loading history.config
+14:33:35 06/16/2008	  
+14:33:35 06/16/2008	SiteView is active...
+14:33:35 06/16/2008	SiteView Startup Completed
+14:33:35 06/16/2008	  (will auto restart in 24 hours)
+14:34:51 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:35:11 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:35:31 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:35:51 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:36:11 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:36:31 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:37:31 06/16/2008	Updating master.config file from "750" to "750"
+14:37:31 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+14:37:31 06/16/2008	SiteView process started, 
+14:37:31 06/16/2008	 Windows XP 5.1
+14:37:31 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+14:37:31 06/16/2008	 Time zone offset is -8.0 hours
+14:37:31 06/16/2008	 Maximum monitor threads: 100
+14:37:31 06/16/2008	Using java SSL libraries
+14:37:31 06/16/2008	
+14:37:31 06/16/2008	Starting HTTP Server listener on 6666
+14:37:31 06/16/2008	  
+14:37:31 06/16/2008	Open your web browser to:
+14:37:31 06/16/2008	  http://111.111.111.1:6666/SiteView
+14:37:36 06/16/2008	Process name tss_dispatcher was not running
+14:37:38 06/16/2008	Process name tss_monitor was not running
+14:37:38 06/16/2008	Loading master.config
+14:37:38 06/16/2008	Loading users.config
+14:37:38 06/16/2008	Loading multi.config
+14:37:38 06/16/2008	Loading group: __Health__
+14:37:38 06/16/2008	Loading group: SiteView
+14:37:38 06/16/2008	Loading group: Group0.1
+14:37:38 06/16/2008	Loading group: Group0
+14:37:38 06/16/2008	Loading dynamic.config
+14:37:38 06/16/2008	Loading history.config
+14:37:38 06/16/2008	  
+14:37:38 06/16/2008	SiteView is active...
+14:37:38 06/16/2008	SiteView Startup Completed
+14:37:39 06/16/2008	  (will auto restart in 24 hours)
+14:37:47 06/16/2008	  waiting 117 seconds: will update monitor Group0:5  local
+14:39:52 06/16/2008	Updating master.config file from "750" to "750"
+14:39:52 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+14:39:52 06/16/2008	SiteView process started, 
+14:39:52 06/16/2008	 Windows XP 5.1
+14:39:52 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+14:39:52 06/16/2008	 Time zone offset is -8.0 hours
+14:39:52 06/16/2008	 Maximum monitor threads: 100
+14:39:52 06/16/2008	Using java SSL libraries
+14:39:52 06/16/2008	
+14:39:52 06/16/2008	Starting HTTP Server listener on 6666
+14:39:52 06/16/2008	  
+14:39:52 06/16/2008	Open your web browser to:
+14:39:52 06/16/2008	  http://111.111.111.1:6666/SiteView
+14:39:57 06/16/2008	Process name tss_dispatcher was not running
+14:39:59 06/16/2008	Process name tss_monitor was not running
+14:39:59 06/16/2008	Loading master.config
+14:39:59 06/16/2008	Loading users.config
+14:39:59 06/16/2008	Loading multi.config
+14:39:59 06/16/2008	Loading group: __Health__
+14:39:59 06/16/2008	Loading group: SiteView
+14:39:59 06/16/2008	Loading group: Group0.1
+14:39:59 06/16/2008	Loading group: Group0
+14:39:59 06/16/2008	Loading dynamic.config
+14:39:59 06/16/2008	Loading history.config
+14:39:59 06/16/2008	  
+14:39:59 06/16/2008	SiteView is active...
+14:39:59 06/16/2008	SiteView Startup Completed
+14:39:59 06/16/2008	  (will auto restart in 24 hours)
+14:41:26 06/16/2008	Loading group: Group0
+14:41:27 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:41:27 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:41:27 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:41:27 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:41:27 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:41:38 06/16/2008	Loading group: Group0
+14:41:59 06/16/2008	Loading group: Group0
+14:43:08 06/16/2008	  waiting 19 seconds: will update monitor Group0:4  mytest
+14:43:09 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+14:43:09 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+14:43:52 06/16/2008	  waiting 15 seconds: will update monitor Group0:4  mytest
+14:44:49 06/16/2008	  waiting 18 seconds: will update monitor Group0:6  wwwwwwwwwwww
+14:44:49 06/16/2008	  waiting 18 seconds: will update monitor Group0:6  wwwwwwwwwwww
+14:45:29 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+14:45:29 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+14:47:32 06/16/2008	  waiting 15 seconds: will update monitor Group0:4  mytest
+14:49:09 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:49:09 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:49:10 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:49:49 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+14:49:49 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+14:50:28 06/16/2008	  waiting 19 seconds: will update monitor Group0:5  local
+14:50:29 06/16/2008	  waiting 18 seconds: will update monitor Group0:5  local
+14:50:29 06/16/2008	  waiting 18 seconds: will update monitor Group0:5  local
+14:52:09 06/16/2008	  waiting 17 seconds: will update monitor Group0:5  local
+14:52:09 06/16/2008	  waiting 17 seconds: will update monitor Group0:5  local
+14:54:09 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:54:09 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:54:52 06/16/2008	  waiting 16 seconds: will update monitor Group0:3  mytest
+14:55:49 06/16/2008	  waiting 17 seconds: will update monitor Group0:6  wwwwwwwwwwww
+14:55:49 06/16/2008	  waiting 17 seconds: will update monitor Group0:6  wwwwwwwwwwww
+14:56:29 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:56:29 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+14:58:33 06/16/2008	  waiting 16 seconds: will update monitor Group0:4  mytest
+15:00:10 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:00:10 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:00:10 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:00:50 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+15:00:50 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+15:01:30 06/16/2008	  waiting 18 seconds: will update monitor Group0:5  local
+15:01:30 06/16/2008	  waiting 18 seconds: will update monitor Group0:5  local
+15:03:10 06/16/2008	  waiting 17 seconds: will update monitor Group0:5  local
+15:03:10 06/16/2008	  waiting 17 seconds: will update monitor Group0:5  local
+15:05:10 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+15:05:10 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+15:05:53 06/16/2008	  waiting 16 seconds: will update monitor Group0:3  mytest
+15:06:50 06/16/2008	  waiting 17 seconds: will update monitor Group0:6  wwwwwwwwwwww
+15:06:50 06/16/2008	  waiting 17 seconds: will update monitor Group0:6  wwwwwwwwwwww
+15:07:30 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+15:07:30 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+15:15:53 06/16/2008	Updating master.config file from "750" to "750"
+15:15:53 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+15:15:53 06/16/2008	SiteView process started, 
+15:15:53 06/16/2008	 Windows XP 5.1
+15:15:53 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+15:15:53 06/16/2008	 Time zone offset is -8.0 hours
+15:15:53 06/16/2008	 Maximum monitor threads: 100
+15:15:53 06/16/2008	Using java SSL libraries
+15:15:53 06/16/2008	
+15:15:53 06/16/2008	Starting HTTP Server listener on 6666
+15:15:53 06/16/2008	  
+15:15:53 06/16/2008	Open your web browser to:
+15:15:53 06/16/2008	  http://111.111.111.1:6666/SiteView
+15:15:58 06/16/2008	Process name tss_dispatcher was not running
+15:16:00 06/16/2008	Process name tss_monitor was not running
+15:16:00 06/16/2008	Loading master.config
+15:16:00 06/16/2008	Loading users.config
+15:16:00 06/16/2008	Loading multi.config
+15:16:00 06/16/2008	Loading group: __Health__
+15:16:00 06/16/2008	Loading group: SiteView
+15:16:00 06/16/2008	Loading group: Group0.1
+15:16:00 06/16/2008	Loading group: Group0
+15:16:01 06/16/2008	Loading dynamic.config
+15:16:01 06/16/2008	Loading history.config
+15:16:02 06/16/2008	  
+15:16:02 06/16/2008	SiteView is active...
+15:16:02 06/16/2008	SiteView Startup Completed
+15:16:03 06/16/2008	  (will auto restart in 24 hours)
+15:16:18 06/16/2008	  waiting 18 seconds: will update monitor Group0:3  mytest
+15:17:02 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:17:22 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:17:42 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:18:02 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:18:22 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:18:42 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:19:04 06/16/2008	  waiting 17 seconds: will update monitor Group0:4  mytest
+15:19:22 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:19:42 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:20:02 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:20:22 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:20:44 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:21:04 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:21:24 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:21:44 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:22:04 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:22:24 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:22:44 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:24:26 06/16/2008	Updating master.config file from "750" to "750"
+15:24:26 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+15:24:26 06/16/2008	SiteView process started, 
+15:24:26 06/16/2008	 Windows XP 5.1
+15:24:26 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+15:24:26 06/16/2008	 Time zone offset is -8.0 hours
+15:24:26 06/16/2008	 Maximum monitor threads: 100
+15:24:26 06/16/2008	Using java SSL libraries
+15:24:26 06/16/2008	
+15:24:26 06/16/2008	Starting HTTP Server listener on 6666
+15:24:26 06/16/2008	  
+15:24:26 06/16/2008	Open your web browser to:
+15:24:26 06/16/2008	  http://111.111.111.1:6666/SiteView
+15:24:31 06/16/2008	Process name tss_dispatcher was not running
+15:24:33 06/16/2008	Process name tss_monitor was not running
+15:24:33 06/16/2008	Loading master.config
+15:24:33 06/16/2008	Loading users.config
+15:24:33 06/16/2008	Loading multi.config
+15:24:33 06/16/2008	Loading group: __Health__
+15:24:33 06/16/2008	Loading group: SiteView
+15:24:33 06/16/2008	Loading group: Group0.1
+15:24:33 06/16/2008	Loading group: Group0
+15:24:33 06/16/2008	Loading dynamic.config
+15:24:33 06/16/2008	Loading history.config
+15:24:33 06/16/2008	  
+15:24:33 06/16/2008	SiteView is active...
+15:24:33 06/16/2008	SiteView Startup Completed
+15:24:33 06/16/2008	  (will auto restart in 24 hours)
+15:26:57 06/16/2008	Updating master.config file from "750" to "750"
+15:26:57 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+15:26:57 06/16/2008	SiteView process started, 
+15:26:57 06/16/2008	 Windows XP 5.1
+15:26:57 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+15:26:57 06/16/2008	 Time zone offset is -8.0 hours
+15:26:57 06/16/2008	 Maximum monitor threads: 100
+15:26:57 06/16/2008	Using java SSL libraries
+15:26:57 06/16/2008	
+15:26:57 06/16/2008	Starting HTTP Server listener on 6666
+15:26:57 06/16/2008	  
+15:26:57 06/16/2008	Open your web browser to:
+15:26:57 06/16/2008	  http://111.111.111.1:6666/SiteView
+15:27:02 06/16/2008	Process name tss_dispatcher was not running
+15:27:04 06/16/2008	Process name tss_monitor was not running
+15:27:04 06/16/2008	Loading master.config
+15:27:04 06/16/2008	Loading users.config
+15:27:04 06/16/2008	Loading multi.config
+15:27:04 06/16/2008	Loading group: __Health__
+15:27:04 06/16/2008	Loading group: SiteView
+15:27:04 06/16/2008	Loading group: Group0.1
+15:27:04 06/16/2008	Loading group: Group0
+15:27:04 06/16/2008	Loading dynamic.config
+15:27:04 06/16/2008	Loading history.config
+15:27:04 06/16/2008	  
+15:27:04 06/16/2008	SiteView is active...
+15:27:04 06/16/2008	SiteView Startup Completed
+15:27:09 06/16/2008	  (will auto restart in 24 hours)
+15:27:28 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:27:47 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:28:07 06/16/2008	  waiting 18 seconds: will update monitor Group0:4  mytest
+15:30:34 06/16/2008	Updating master.config file from "750" to "750"
+15:30:34 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+15:30:34 06/16/2008	SiteView process started, 
+15:30:34 06/16/2008	 Windows XP 5.1
+15:30:34 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+15:30:34 06/16/2008	 Time zone offset is -8.0 hours
+15:30:34 06/16/2008	 Maximum monitor threads: 100
+15:30:34 06/16/2008	Using java SSL libraries
+15:30:34 06/16/2008	
+15:30:34 06/16/2008	Starting HTTP Server listener on 6666
+15:30:34 06/16/2008	  
+15:30:34 06/16/2008	Open your web browser to:
+15:30:34 06/16/2008	  http://111.111.111.1:6666/SiteView
+15:30:38 06/16/2008	Process name tss_dispatcher was not running
+15:30:40 06/16/2008	Process name tss_monitor was not running
+15:30:41 06/16/2008	Loading master.config
+15:30:41 06/16/2008	Loading users.config
+15:30:41 06/16/2008	Loading multi.config
+15:30:41 06/16/2008	Loading group: __Health__
+15:30:41 06/16/2008	Loading group: SiteView
+15:30:41 06/16/2008	Loading group: Group0.1
+15:30:41 06/16/2008	Loading group: Group0
+15:30:41 06/16/2008	Loading dynamic.config
+15:30:41 06/16/2008	Loading history.config
+15:30:41 06/16/2008	  
+15:30:41 06/16/2008	SiteView is active...
+15:30:41 06/16/2008	SiteView Startup Completed
+15:30:41 06/16/2008	  (will auto restart in 24 hours)
+15:31:34 06/16/2008	Loading group: Group0
+15:31:35 06/16/2008	  waiting 31 seconds: will update monitor Group0:8  qweqweqweqw
+15:32:21 06/16/2008	Loading group: Group0
+15:32:23 06/16/2008	  waiting 53 seconds: will update monitor Group0:9  dasdasdasas
+15:32:41 06/16/2008	Loading group: Group0
+15:33:19 06/16/2008	  waiting 53 seconds: will update monitor Group0:9  dasdasdasas
+15:34:14 06/16/2008	  waiting 53 seconds: will update monitor Group0:9  dasdasdasas
+15:34:41 06/16/2008	Loading group: Group0
+15:36:39 06/16/2008	Loading group: Group0.1
+15:36:41 06/16/2008	Loading group: Group0.1
+15:38:46 06/16/2008	Loading group: Group0
+15:42:52 06/16/2008	Updating master.config file from "750" to "750"
+15:42:52 06/16/2008	SiteView shutting down, LICENSE EXPIRED
+15:42:52 06/16/2008	SiteView process started, 
+15:42:52 06/16/2008	 Windows XP 5.1
+15:42:52 06/16/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+15:42:52 06/16/2008	 Time zone offset is -8.0 hours
+15:42:53 06/16/2008	 Maximum monitor threads: 100
+15:42:53 06/16/2008	Using java SSL libraries
+15:42:53 06/16/2008	
+15:42:53 06/16/2008	Starting HTTP Server listener on 6666
+15:42:53 06/16/2008	  
+15:42:53 06/16/2008	Open your web browser to:
+15:42:53 06/16/2008	  http://111.111.111.1:6666/SiteView
+15:42:58 06/16/2008	Process name tss_dispatcher was not running
+15:43:00 06/16/2008	Process name tss_monitor was not running
+15:43:00 06/16/2008	Loading master.config
+15:43:00 06/16/2008	Loading users.config
+15:43:00 06/16/2008	Loading multi.config
+15:43:00 06/16/2008	Loading group: __Health__
+15:43:00 06/16/2008	Loading group: SiteView
+15:43:00 06/16/2008	Loading group: Group0.1
+15:43:01 06/16/2008	Loading group: Group0
+15:43:01 06/16/2008	Loading dynamic.config
+15:43:01 06/16/2008	Loading history.config
+15:43:03 06/16/2008	  
+15:43:03 06/16/2008	SiteView is active...
+15:43:03 06/16/2008	SiteView Startup Completed
+15:43:03 06/16/2008	  (will auto restart in 24 hours)
+15:45:03 06/16/2008	Loading group: Group0.1
+10:44:30 06/17/2008	Updating master.config file from "750" to "750"
+10:44:30 06/17/2008	SiteView shutting down, LICENSE EXPIRED
+10:44:30 06/17/2008	SiteView process started, 
+10:44:30 06/17/2008	 Windows XP 5.1
+10:44:30 06/17/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+10:44:30 06/17/2008	 Time zone offset is -8.0 hours
+10:44:30 06/17/2008	 Maximum monitor threads: 100
+10:44:31 06/17/2008	Using java SSL libraries
+10:44:31 06/17/2008	
+10:44:31 06/17/2008	Starting HTTP Server listener on 6666
+10:44:31 06/17/2008	  
+10:44:31 06/17/2008	Open your web browser to:
+10:44:31 06/17/2008	  http://111.111.111.1:6666/SiteView
+10:44:37 06/17/2008	Process name tss_dispatcher was not running
+10:44:39 06/17/2008	Process name tss_monitor was not running
+10:44:39 06/17/2008	Loading master.config
+10:44:39 06/17/2008	Loading users.config
+10:44:39 06/17/2008	Loading multi.config
+10:44:39 06/17/2008	Loading group: __Health__
+10:44:39 06/17/2008	Loading group: SiteView
+10:44:39 06/17/2008	Loading group: Group0.1
+10:44:39 06/17/2008	Loading group: Group0
+10:44:39 06/17/2008	Loading dynamic.config
+10:44:39 06/17/2008	Loading history.config
+10:44:41 06/17/2008	  
+10:44:41 06/17/2008	SiteView is active...
+10:44:41 06/17/2008	SiteView Startup Completed
+10:44:41 06/17/2008	  (will auto restart in 24 hours)
+10:46:28 06/17/2008	Loading group: Group0
+10:46:41 06/17/2008	Loading group: Group0
+10:48:33 06/17/2008	Loading group: Group0
+10:48:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:48:41 06/17/2008	Loading group: Group0
+10:48:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:49:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:49:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:50:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:50:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:50:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:51:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:51:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:51:53 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:52:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:52:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:53:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:53:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:53:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:54:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:54:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:54:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:55:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:55:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:55:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:56:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:56:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:57:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:57:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:57:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:58:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:58:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:58:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:59:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:59:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:59:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:00:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:00:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:01:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:01:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:01:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:02:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:02:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:02:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:03:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:03:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:04:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:04:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:04:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:05:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:05:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:05:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:06:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:06:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:06:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:07:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:07:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:08:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:08:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:08:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:09:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:09:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:09:52 06/17/2008	  waiting 21 seconds: will update monitor Group0:12  22
+11:10:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:10:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:10:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:11:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:12:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:12:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:12:49 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:13:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:13:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:13:55 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:14:17 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:14:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:15:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:15:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:15:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:16:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:16:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:16:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:17:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:17:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:17:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:18:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:18:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:19:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:19:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:19:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:20:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:20:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:20:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:21:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:21:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:22:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:22:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:22:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:23:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:23:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:23:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:24:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:24:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:24:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:25:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:25:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:26:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:26:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:26:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:27:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:27:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:27:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:27:55 06/17/2008	Loading group: Group0
+11:27:56 06/17/2008	  waiting 17 seconds: will update monitor Group0:12  22
+11:28:41 06/17/2008	Loading group: Group0
+11:29:08 06/17/2008	  waiting 17 seconds: will update monitor Group0:12  22
+11:29:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:29:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:30:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:30:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:30:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:31:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:31:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:32:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:32:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:32:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:33:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:33:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:33:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:34:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:34:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:34:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:35:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:35:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:36:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:36:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:36:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:37:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:37:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:37:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:38:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:38:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:38:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:39:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:39:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:40:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:40:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:40:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:41:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:41:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:41:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:42:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:42:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:43:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:43:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:43:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:44:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:44:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:44:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:45:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:45:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:45:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:46:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:46:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:47:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:47:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:47:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:48:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:48:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:48:53 06/17/2008	  waiting 21 seconds: will update monitor Group0:12  22
+11:49:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:49:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:49:59 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:50:21 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:50:43 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:51:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:51:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:51:49 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:52:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:52:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:52:55 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:53:17 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:53:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:54:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:54:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:54:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:55:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:55:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:55:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:56:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:56:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:56:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:57:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:57:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:58:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:58:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:58:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:59:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:59:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:59:53 06/17/2008	  waiting 21 seconds: will update monitor Group0:12  22
+12:00:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:00:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:00:59 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:01:21 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:01:43 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:02:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:02:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:02:49 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:03:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:03:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:03:55 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:04:17 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:04:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:05:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:05:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:05:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:06:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:06:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:06:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:07:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:07:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:07:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:08:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:08:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:09:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:09:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:09:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:10:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:10:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:10:53 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:11:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:11:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:11:59 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:12:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:12:43 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:13:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:13:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:13:49 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:14:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:14:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:14:55 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:15:17 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:15:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:16:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:16:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:16:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:17:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:17:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:17:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:18:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:18:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:18:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:19:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:19:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:20:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:20:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:20:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:21:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:21:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:21:53 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:22:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:22:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:22:59 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:23:21 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:23:43 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:24:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:24:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:24:49 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:25:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:25:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:25:55 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:26:17 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:26:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:27:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:27:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:27:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:28:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:28:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:28:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:29:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:29:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:29:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:30:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:30:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:31:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:31:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:31:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:32:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:32:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:32:53 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:33:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:33:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:33:59 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:34:21 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:34:43 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:35:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:35:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:35:49 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:36:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:36:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:36:55 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:37:17 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:37:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:38:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:38:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:38:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:39:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:39:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:39:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:40:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:40:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:40:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:41:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:41:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:42:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:42:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:42:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:43:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:43:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:43:53 06/17/2008	  waiting 21 seconds: will update monitor Group0:12  22
+12:44:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:44:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:44:59 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:45:21 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:45:43 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:46:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:46:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:46:49 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:47:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:47:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:47:55 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:48:17 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:48:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:49:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:49:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:49:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:50:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:50:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:50:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:51:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:51:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:51:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:52:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:52:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:53:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:53:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:53:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:54:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:54:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:54:53 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:55:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:55:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:55:59 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:56:21 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:56:43 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:57:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:57:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:57:49 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:58:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:58:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:58:55 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:59:17 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+12:59:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:00:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:00:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:00:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:01:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:01:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:01:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:02:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:02:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:02:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:03:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:03:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:04:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:04:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:04:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:05:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:05:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:05:53 06/17/2008	  waiting 21 seconds: will update monitor Group0:12  22
+13:06:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:06:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:06:59 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:07:21 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:07:43 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:08:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:08:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:08:49 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:09:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:09:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:09:55 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:10:17 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:10:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:11:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:11:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:11:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:12:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:12:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:12:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:13:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:13:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:13:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:14:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:14:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:15:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:15:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:15:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:16:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:16:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:16:53 06/17/2008	  waiting 21 seconds: will update monitor Group0:12  22
+13:17:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:17:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:17:59 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:18:21 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:18:43 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:19:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:19:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:19:49 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:20:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:20:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:20:55 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:21:17 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:21:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:22:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:22:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:22:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:23:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:23:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:23:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:24:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:24:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:24:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:25:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:25:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:26:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:26:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:26:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:27:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:27:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:27:54 06/17/2008	  waiting 21 seconds: will update monitor Group0:12  22
+13:28:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:28:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:29:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:29:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:29:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:30:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:30:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:30:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:31:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:31:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:31:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:32:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:32:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:33:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:33:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:33:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:34:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:34:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:34:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:35:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:35:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:35:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:36:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:36:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:37:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:37:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:37:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:38:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:38:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:38:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:39:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:39:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:40:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:40:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:40:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:41:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:41:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:41:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:42:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:43:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:43:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:44:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:44:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:44:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:45:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:45:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:45:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:46:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:46:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:46:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:47:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:47:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:48:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:48:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:48:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:49:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:49:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:49:54 06/17/2008	  waiting 21 seconds: will update monitor Group0:12  22
+13:50:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:50:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:51:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:51:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:51:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:52:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:52:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:52:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:53:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:53:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:53:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:54:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:54:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:55:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:55:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:55:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:56:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:56:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:56:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:57:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:57:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:57:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:58:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:58:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:59:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:59:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+13:59:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:00:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:00:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:00:54 06/17/2008	  waiting 21 seconds: will update monitor Group0:12  22
+14:01:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:01:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:02:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:02:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:02:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:03:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:03:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:03:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:04:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:04:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:04:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:05:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:05:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:06:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:06:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:06:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:07:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:07:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:07:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:08:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:08:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:08:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:09:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:09:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:10:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:10:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:10:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:11:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:11:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:11:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:12:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:12:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:13:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:13:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:13:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:14:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:14:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:14:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:15:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:15:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:15:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:16:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:16:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:17:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:17:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:17:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:18:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:18:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:18:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:19:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:19:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:19:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:20:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:20:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:21:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:21:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:21:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:22:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:22:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:22:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:23:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:23:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:24:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:24:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:24:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:25:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:25:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:25:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:26:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:26:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:26:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:27:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:27:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:28:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:28:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:28:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:29:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:29:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:29:53 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:30:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:30:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:30:59 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:31:21 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:31:43 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:32:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:32:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:33:16 06/17/2008	  waiting 16 seconds: will update monitor Group0:12  22
+14:37:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:37:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:37:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:38:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:38:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:39:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:39:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:39:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:40:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:40:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:40:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:41:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:41:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:42:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:42:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:42:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:43:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:43:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:43:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:45:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:45:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:46:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:46:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:46:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:47:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:47:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:47:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:48:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:48:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:48:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:49:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:49:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:50:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:50:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:50:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:51:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:51:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:51:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:52:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:52:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:53:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:53:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:53:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:54:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:54:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:54:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:55:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:55:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:55:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:56:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:57:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:57:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:58:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:58:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:58:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:59:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:59:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+14:59:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:00:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:00:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:01:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:01:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:01:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:02:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:02:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:02:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:03:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:03:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:04:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:04:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:04:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:05:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:05:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:06:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:06:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:06:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:07:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:07:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:08:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:08:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:09:11 06/17/2008	  waiting 17 seconds: will update monitor Group0:12  22
+15:09:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:09:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:10:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:10:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:10:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:11:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:11:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:12:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:12:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:12:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:13:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:13:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:13:54 06/17/2008	  waiting 21 seconds: will update monitor Group0:12  22
+15:14:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:14:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:15:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:15:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:16:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:16:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:17:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:17:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:17:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:18:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:18:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:19:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:19:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:19:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:20:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:20:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:21:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:21:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:21:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:22:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:22:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:23:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:23:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:23:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:24:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:24:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:24:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:25:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:25:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:26:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:26:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:26:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:27:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:27:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:27:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:28:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:28:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:28:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:29:19 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:29:41 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:30:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:30:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:31:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:31:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:31:53 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:32:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:32:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:34:10 06/17/2008	  waiting 15 seconds: will update monitor Group0:12  22
+15:34:27 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:34:49 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:35:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:35:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:35:55 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:36:17 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:36:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:37:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:37:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:37:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:38:07 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:38:29 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:38:51 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:39:13 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:39:35 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:39:57 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:41:03 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:41:25 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:41:47 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:42:09 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:42:31 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:42:53 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:43:15 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:43:37 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:43:59 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:44:21 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:44:43 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:45:05 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:46:11 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:46:33 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:46:55 06/17/2008	  waiting 21 seconds: will update monitor Group0:12  22
+15:47:39 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:48:01 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:48:23 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+15:48:45 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:19:38 06/17/2008	Updating master.config file from "750" to "750"
+17:19:38 06/17/2008	SiteView shutting down, LICENSE EXPIRED
+17:19:38 06/17/2008	SiteView process started, 
+17:19:38 06/17/2008	 Windows XP 5.1
+17:19:38 06/17/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+17:19:38 06/17/2008	 Time zone offset is -8.0 hours
+17:19:38 06/17/2008	 Maximum monitor threads: 100
+17:19:38 06/17/2008	Using java SSL libraries
+17:19:38 06/17/2008	
+17:19:39 06/17/2008	Starting HTTP Server listener on 6666
+17:19:39 06/17/2008	  
+17:19:39 06/17/2008	Open your web browser to:
+17:19:39 06/17/2008	  http://111.111.111.1:6666/SiteView
+17:19:44 06/17/2008	Process name tss_dispatcher was not running
+17:19:46 06/17/2008	Process name tss_monitor was not running
+17:19:46 06/17/2008	Loading master.config
+17:19:46 06/17/2008	Loading users.config
+17:19:46 06/17/2008	Loading multi.config
+17:19:46 06/17/2008	Loading group: __Health__
+17:19:46 06/17/2008	Loading group: SiteView
+17:19:46 06/17/2008	Loading group: Group0.1
+17:19:46 06/17/2008	Loading group: Group0
+17:19:47 06/17/2008	Loading dynamic.config
+17:19:47 06/17/2008	Loading history.config
+17:19:49 06/17/2008	  
+17:19:49 06/17/2008	SiteView is active...
+17:19:49 06/17/2008	SiteView Startup Completed
+17:19:49 06/17/2008	  (will auto restart in 24 hours)
+17:20:42 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:21:04 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:21:26 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:21:48 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:22:10 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:22:32 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:22:54 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:23:16 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:23:38 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:24:00 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:24:22 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:24:44 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:25:06 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:25:28 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:25:50 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:26:12 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:26:34 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:26:56 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:27:18 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:27:40 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:28:02 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:28:24 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:28:46 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:29:08 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:29:30 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:29:52 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:30:14 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:30:36 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:30:58 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:31:20 06/17/2008	  waiting 20 seconds: will update monitor Group0:12  22
+17:39:58 06/17/2008	Updating master.config file from "750" to "750"
+17:39:58 06/17/2008	SiteView shutting down, LICENSE EXPIRED
+17:39:58 06/17/2008	SiteView process started, 
+17:39:58 06/17/2008	 Windows XP 5.1
+17:39:58 06/17/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+17:39:58 06/17/2008	 Time zone offset is -8.0 hours
+17:39:58 06/17/2008	 Maximum monitor threads: 100
+17:39:58 06/17/2008	Using java SSL libraries
+17:39:58 06/17/2008	
+17:39:58 06/17/2008	Starting HTTP Server listener on 6666
+17:39:58 06/17/2008	  
+17:39:58 06/17/2008	Open your web browser to:
+17:39:58 06/17/2008	  http://111.111.111.1:6666/SiteView
+17:40:02 06/17/2008	Process name tss_dispatcher was not running
+17:40:05 06/17/2008	Process name tss_monitor was not running
+17:40:05 06/17/2008	Loading master.config
+17:40:05 06/17/2008	Loading users.config
+17:40:05 06/17/2008	Loading multi.config
+17:40:05 06/17/2008	Loading group: __Health__
+17:40:05 06/17/2008	Loading group: SiteView
+17:40:05 06/17/2008	Loading group: Group0.1
+17:40:05 06/17/2008	Loading group: Group0
+17:40:05 06/17/2008	Loading dynamic.config
+17:40:05 06/17/2008	Loading history.config
+17:40:06 06/17/2008	  
+17:40:06 06/17/2008	SiteView is active...
+17:40:06 06/17/2008	SiteView Startup Completed
+17:40:10 06/17/2008	  (will auto restart in 24 hours)
+10:34:02 06/18/2008	Updating master.config file from "750" to "750"
+10:34:03 06/18/2008	SiteView shutting down, LICENSE EXPIRED
+10:34:03 06/18/2008	SiteView process started, 
+10:34:03 06/18/2008	 Windows XP 5.1
+10:34:03 06/18/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+10:34:03 06/18/2008	 Time zone offset is -8.0 hours
+10:34:03 06/18/2008	 Maximum monitor threads: 100
+10:34:03 06/18/2008	Using java SSL libraries
+10:34:03 06/18/2008	
+10:34:03 06/18/2008	Starting HTTP Server listener on 6666
+10:34:03 06/18/2008	  
+10:34:03 06/18/2008	Open your web browser to:
+10:34:03 06/18/2008	  http://111.111.111.1:6666/SiteView
+10:34:08 06/18/2008	Process name tss_dispatcher was not running
+10:34:11 06/18/2008	Process name tss_monitor was not running
+10:34:11 06/18/2008	Loading master.config
+10:34:11 06/18/2008	Loading users.config
+10:34:11 06/18/2008	Loading multi.config
+10:34:11 06/18/2008	Loading group: __Health__
+10:34:11 06/18/2008	Loading group: SiteView
+10:34:11 06/18/2008	Loading group: Group0.1
+10:34:11 06/18/2008	Loading group: Group0
+10:34:12 06/18/2008	Loading dynamic.config
+10:34:12 06/18/2008	Loading history.config
+10:34:14 06/18/2008	  
+10:34:14 06/18/2008	SiteView is active...
+10:34:15 06/18/2008	SiteView Startup Completed
+10:34:15 06/18/2008	  (will auto restart in 24 hours)
+10:35:40 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:36:01 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+10:50:58 06/18/2008	Updating master.config file from "750" to "750"
+10:50:59 06/18/2008	SiteView shutting down, LICENSE EXPIRED
+10:50:59 06/18/2008	SiteView process started, 
+10:50:59 06/18/2008	 Windows XP 5.1
+10:50:59 06/18/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+10:50:59 06/18/2008	 Time zone offset is -8.0 hours
+10:50:59 06/18/2008	 Maximum monitor threads: 100
+10:50:59 06/18/2008	Using java SSL libraries
+10:50:59 06/18/2008	
+10:50:59 06/18/2008	Starting HTTP Server listener on 6666
+10:50:59 06/18/2008	  
+10:50:59 06/18/2008	Open your web browser to:
+10:50:59 06/18/2008	  http://111.111.111.1:6666/SiteView
+10:51:04 06/18/2008	Process name tss_dispatcher was not running
+10:51:06 06/18/2008	Process name tss_monitor was not running
+10:51:06 06/18/2008	Loading master.config
+10:51:06 06/18/2008	Loading users.config
+10:51:06 06/18/2008	Loading multi.config
+10:51:06 06/18/2008	Loading group: __Health__
+10:51:06 06/18/2008	Loading group: SiteView
+10:51:06 06/18/2008	Loading group: Group0.1
+10:51:06 06/18/2008	Loading group: Group0
+10:51:07 06/18/2008	Loading dynamic.config
+10:51:07 06/18/2008	Loading history.config
+10:51:09 06/18/2008	  
+10:51:09 06/18/2008	SiteView is active...
+10:51:09 06/18/2008	SiteView Startup Completed
+10:51:09 06/18/2008	  (will auto restart in 24 hours)
+10:53:39 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:00:03 06/18/2008	Updating master.config file from "750" to "750"
+11:00:03 06/18/2008	SiteView shutting down, LICENSE EXPIRED
+11:00:03 06/18/2008	SiteView process started, 
+11:00:03 06/18/2008	 Windows XP 5.1
+11:00:03 06/18/2008	 Java HotSpot(TM) Client VM, 1.6.0_01-b06
+11:00:03 06/18/2008	 Time zone offset is -8.0 hours
+11:00:03 06/18/2008	 Maximum monitor threads: 100
+11:00:03 06/18/2008	Using java SSL libraries
+11:00:03 06/18/2008	
+11:00:03 06/18/2008	Starting HTTP Server listener on 6666
+11:00:03 06/18/2008	  
+11:00:03 06/18/2008	Open your web browser to:
+11:00:03 06/18/2008	  http://111.111.111.1:6666/SiteView
+11:00:08 06/18/2008	Process name tss_dispatcher was not running
+11:00:10 06/18/2008	Process name tss_monitor was not running
+11:00:10 06/18/2008	Loading master.config
+11:00:10 06/18/2008	Loading users.config
+11:00:10 06/18/2008	Loading multi.config
+11:00:10 06/18/2008	Loading group: __Health__
+11:00:10 06/18/2008	Loading group: SiteView
+11:00:10 06/18/2008	Loading group: Group0.1
+11:00:10 06/18/2008	Loading group: Group0
+11:00:10 06/18/2008	Loading dynamic.config
+11:00:10 06/18/2008	Loading history.config
+11:00:12 06/18/2008	  
+11:00:12 06/18/2008	SiteView is active...
+11:00:12 06/18/2008	SiteView Startup Completed
+11:00:16 06/18/2008	  (will auto restart in 24 hours)
+11:02:45 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:03:07 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:03:29 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:03:51 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:04:13 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:04:35 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:04:57 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:05:19 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:05:41 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:06:03 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:06:25 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:06:47 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:07:09 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:07:31 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:07:53 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:08:15 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:08:37 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22
+11:08:59 06/18/2008	  waiting 20 seconds: will update monitor Group0:12  22

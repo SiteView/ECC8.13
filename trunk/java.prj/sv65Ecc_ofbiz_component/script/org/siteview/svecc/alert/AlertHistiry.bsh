@@ -1,0 +1,12 @@
+import com.siteview.ecc.service.*;
+import org.ofbiz.base.util.*;
+import java.util.*;
+
+dispatcher = request.getAttribute("dispatcher");
+alertid = request.getParameter("alertid");
+
+retMap = dispatcher.runSync("alertHistory", UtilMisc.toMap("alertid", alertid));
+Map data_history = new Map();
+data_history.put("alertid",alertid);
+data_history.put("data",retMap.get("data_history"));
+context.put("data_history", data_history);

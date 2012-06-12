@@ -1,0 +1,27 @@
+_encoding=GBK
+_dependsCondition=good
+_nextID=15
+_fileEncoding=UTF-8
+_name=SiteViewGroup
+#
+_methodId=1.27.11.1
+_baselineStdDev=0
+_class=PingMonitor
+_id=14
+_encoding=GBK
+_numPercent=0
+_operationalErrorCode=0
+_maxrun=600
+_packetSize=32
+_frequency=15
+_baselineMean=0
+_errorTextLimit=0
+_goodTextLimit=0
+_nextID=0
+_availabilityErrorCode=0
+_timeout=5000
+_internalId=10014
+_baselineDate=0
+_name=Ping: 192.168.6.2
+_numStdDev=0
+_hostname=192.168.6.2

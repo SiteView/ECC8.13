@@ -1,0 +1,47 @@
+import com.siteview.ecc.service.*;
+import org.ofbiz.base.util.*;
+import java.util.*;
+
+dispatcher = request.getAttribute("dispatcher");
+class_alert = request.getParameter("class_alert");
+category_alert = request.getParameter("category_alert");
+define_flag = request.getParameter("define_flag");
+alertid = request.getParameter("alertid");
+
+retMap = dispatcher.runSync("alertSave", UtilMisc.toMap("class_alert",class_alert, "category_alert", category_alert, "alertid", alertid, "define_flag", define_flag));
+
+btn_comments = "E-Mail Alert";
+switch(class_alert)
+{
+case "Page":
+	btn_comments = "Pager Alert";
+	break;
+case "Run":	
+	btn_comments = "Script Alert";
+	break;
+case "SNMPTrap":	
+	btn_comments= "SNMP Trap Alert";
+	break;
+case "Sound":	
+	btn_comments= "Sound Alert";
+	break;
+case "DatabaseAlert":	
+	btn_comments= "Database Alert";
+	break;
+case "Disable":	
+	btn_comments= "Disable or Enable Monitor(s) Alert";
+	break;
+case "NTLogEvent":	
+	btn_comments= "Log Event Alert";
+	break;
+case "Post":	
+	btn_comments= "Post Alert";
+	break;
+case "SMS":	
+	btn_comments= "SMS Alert";
+	break;
+}
+context.put("category_alert", retMap.get("category_alert"));
+context.put("class_alert", retMap.get("class_alert"));
+context.put("define_flag", retMap.get("define_flag"));
+context.put("btn_comments", btn_comments);

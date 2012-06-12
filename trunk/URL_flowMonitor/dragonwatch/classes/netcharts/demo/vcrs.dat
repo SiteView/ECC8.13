@@ -1,0 +1,9 @@
+DataSets = ("VCR Sales");
+TopAxisTitle = ("VCR Sales", dimgrey, Helvetica, 12);
+DataSet1 = 62394, 3768;
+
+BarLabels = "Standard VCR", "Stereo VCR";
+
+ActiveLabels1 = ("$62,394"), ("$3,768");
+
+LeftTitle = ("");

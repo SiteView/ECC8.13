@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.AbsoluteScheduleInstancePreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.DDCDefaultPreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.DynamicUpdateInstancePreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.GeneralDefaultPreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.HighAvailabilityDefaultPreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.LogDefaultPreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.MailDefaultPreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.MailInstancePreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.MasterDefaultPreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.PagerDefaultPreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.PagerInstancePreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.RangeScheduleInstancePreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.RemoteNTInstancePreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.RemoteUnixInstancePreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.ScheduleInstancePreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.SNMPDefaultPreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.SNMPInstancePreferences"/>
+    <SvPreferenceType className="com.dragonflow.StandardPreference.UserInstancePreferences"/>
+</entity-engine-xml>

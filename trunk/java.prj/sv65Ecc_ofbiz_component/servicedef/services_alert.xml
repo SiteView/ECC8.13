@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/services.xsd">
+	
+	<service name="getAlert" engine="java"
+		location="com.siteview.svecc.service.SvAlert"
+		invoke="getAlert" auth="false">
+		<attribute name="result" mode="OUT" type="List"
+			optional="false">
+		</attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+
+	<service name="alertAdd" engine="java"
+		location="com.siteview.svecc.service.SvAlert"
+		invoke="alertAdd" auth="false">
+		<attribute name="data" mode="OUT" type="Map"
+			optional="true">
+		</attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+
+	<service name="alertDefine" engine="java"
+		location="com.siteview.svecc.service.SvAlert"
+		invoke="alertDefine" auth="false">
+		<attribute name="alertid" mode="INOUT" type="String" optional="false"/>
+		<attribute name="class_alert" mode="INOUT" type="String" optional="false"/>
+		<attribute name="category_alert" mode="INOUT" type="String" optional="false"/>
+		<attribute name="define_flag" mode="INOUT" type="String" optional="false"/>
+		<attribute name="Data_alert" mode="OUT" type="jgl.HashMap"	optional="false"/>
+		<attribute name="group_list" mode="OUT" type="List"	optional="false"/>
+		<attribute name="monitor_list" mode="OUT" type="List" optional="false"/>
+		<attribute name="message" mode="OUT" type="String" optional="true"/>
+	</service>
+
+	<service name="alertSave" engine="java"
+		location="com.siteview.svecc.service.SvAlert"
+		invoke="alertSave" auth="false">
+		<attribute name="class_alert" mode="INOUT" type="String" optional="false"/>
+		<attribute name="category_alert" mode="INOUT" type="String" optional="false"/>
+		<attribute name="define_flag" mode="INOUT" type="String" optional="false"/>
+		<attribute name="alertid" mode="INOUT" type="String" optional="false"/>
+		<attribute name="target_alert" mode="IN" type="String" optional="false"/>
+		<attribute name="when" mode="INOUT" type="String" optional="false"/>
+		<attribute name="alertDisable" mode="IN" type="String" optional="true"/>
+		<attribute name="alwaysErrorCount" mode="IN" type="String" optional="true"/>
+		<attribute name="category" mode="IN" type="String" optional="true"/>
+		<attribute name="classMatchString" mode="IN" type="String" optional="true"/>
+		<attribute name="disableAlertTime" mode="IN" type="String" optional="true"/>
+		<attribute name="disableAlertUnits" mode="IN" type="String" optional="true"/>
+		<attribute name="endTimeDate" mode="IN" type="String" optional="true"/>
+		<attribute name="endTimeTime" mode="IN" type="String" optional="true"/>
+		<attribute name="errorCount" mode="IN" type="String" optional="true"/>
+		<attribute name="maxErrorCount" mode="IN" type="String" optional="true"/>
+		<attribute name="multipleErrorCount" mode="IN" type="String" optional="true"/>
+		<attribute name="multipleStartCount" mode="IN" type="String" optional="true"/>
+		<attribute name="nameMatchString " mode="IN" type="String" optional="true"/>
+		<attribute name="previousErrorCount" mode="IN" type="String" optional="true"/>
+		<attribute name="startTimeDate" mode="IN" type="String" optional="true"/>
+		<attribute name="startTimeTime" mode="IN" type="String" optional="true"/>
+		<attribute name="statusMatchString" mode="IN" type="String" optional="true"/>
+		<attribute name="usePreviousErrorCount" mode="IN" type="String" optional="true"/>
+
+		<attribute name="Data_alert" mode="OUT" type="Map"	optional="true"/>
+		<attribute name="bResult" mode="OUT" type="String" optional="true"/>
+		<attribute name="message" mode="OUT" type="String" optional="true"/>
+	</service>
+
+	<service name="alertEdit" engine="java"
+		location="com.siteview.svecc.service.SvAlert"
+		invoke="alertEdit" auth="false">
+		<attribute name="alertid" mode="INOUT" type="String" optional="false"/>
+		<attribute name="alertdata" mode="OUT" type="jgl.HashMap" optional="false"/>
+		<attribute name="message" mode="OUT" type="String" optional="true"/>
+	</service>
+
+	<service name="alertDelete" engine="java"
+		location="com.siteview.svecc.service.SvAlert" invoke="alertDelete"
+		auth="false">
+		<attribute name="alertid" mode="INOUT" type="String" optional="false"/>
+		<attribute name="message" mode="OUT" type="String" optional="true"/>
+	</service>
+	
+	<service name="alertTest" engine="java"
+		location="com.siteview.svecc.service.SvAlert" invoke="alertTest"
+		auth="false">
+		<attribute name="id" mode="IN" type="String" optional="false"/>
+		<attribute name="type" mode="IN" type="String" optional="false"/>
+		<attribute name="message" mode="OUT" type="String" optional="true"/>
+	</service>
+	
+</services>

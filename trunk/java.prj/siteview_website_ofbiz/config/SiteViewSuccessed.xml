@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <property key="svMore">
+        <value xml:lang="en">More</value>
+        <value xml:lang="zh">查看更多</value>
+    </property>
+</resource>

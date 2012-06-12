@@ -1,0 +1,94 @@
+import com.siteview.ecc.service.*;
+import org.ofbiz.base.util.*;
+
+group = parameters.get("groupId");
+id = parameters.get("id");
+
+monitorid = group + com.dragonflow.SiteView.SiteViewGroup.ID_SEPARATOR + id;
+
+siteviewgroup = com.dragonflow.SiteView.SiteViewGroup.currentSiteView();
+
+atomicmonitor = siteviewgroup.getElement(monitorid);
+
+if(atomicmonitor != null){
+	atomicmonitor.setProperty(com.dragonflow.SiteView.Monitor.pLastUpdate, "-1");
+	atomicmonitor.setProperty(com.dragonflow.SiteView.Monitor.pForceRefresh, "");
+}
+       
+com.dragonflow.SiteView.SiteViewGroup.updateStaticPages(group);
+
+com.dragonflow.SiteView.AtomicMonitor atomicmonitor1 = (com.dragonflow.SiteView.AtomicMonitor)siteviewgroup.getElement(monitorid);
+
+StringBuffer bf = new StringBuffer();
+
+if(atomicmonitor1 != null)
+{
+    if(atomicmonitor1.progressString.equals("Depends On Monitor Disabled\n"))
+    {
+        com.dragonflow.SiteView.AtomicMonitor _tmp = atomicmonitor1;
+        bf.append("Monitor Disabled by Depends On: " + atomicmonitor1.getProperty(com.dragonflow.SiteView.AtomicMonitor.pName) + "<P>&nbsp;&nbsp;&nbsp;");
+        bf.append("<HR>");
+        context.put("message",bf.toString().replaceAll("\n",""));
+		context.put("bEnd","true");
+        return;
+    }
+    if(atomicmonitor1.progressString.startsWith("disabled"))
+    {
+        com.dragonflow.SiteView.AtomicMonitor _tmp1 = atomicmonitor1;
+        bf.append("Monitor Disabled by Schedule: " + atomicmonitor1.getProperty(com.dragonflow.SiteView.AtomicMonitor.pName) + "<P>&nbsp;&nbsp;&nbsp;");
+        bf.append("<HR>");
+        context.put("message",bf.toString().replaceAll("\n",""));
+		context.put("bEnd","true");
+        return;
+    }
+    com.dragonflow.SiteView.AtomicMonitor _tmp2 = atomicmonitor1;
+    bf.append("Asked SiteView to run monitor: " + atomicmonitor1.getProperty(com.dragonflow.SiteView.AtomicMonitor.pName) + "<P>&nbsp;&nbsp;&nbsp;");
+    
+    long l = 1000L;
+    long l1 = com.dragonflow.SiteView.Platform.timeMillis();
+    long l2 = l1 + (long)(siteviewgroup.getSettingAsLong("_monitorProgressTimeout", 20) * 1000);
+    flag = true;
+    int i = 0;
+    for(; atomicmonitor1.progressString.length() == 0 && com.dragonflow.SiteView.Platform.timeMillis() <= l2; com.dragonflow.SiteView.Platform.sleep(l))
+    {
+        if(i % 5 == 0)
+        {
+            bf.append("Waiting for monitor to run<br>&nbsp;&nbsp;&nbsp;");
+            
+        }
+        i++;
+    }
+
+    String s5 = "";
+    i = 0;
+    for(; atomicmonitor1.progressString.indexOf("\n\n") == -1 && com.dragonflow.SiteView.Platform.timeMillis() <= l2; com.dragonflow.SiteView.Platform.sleep(l))
+    {
+        i++;
+        if(s5.length() < atomicmonitor1.progressString.length())
+        {
+            bf.append(com.dragonflow.Utils.TextUtils.replaceChar(atomicmonitor1.progressString.substring(s5.length()), '\n', "<br>&nbsp;&nbsp;&nbsp;\n"));
+            
+        } else
+        if(i > 2 && s5.length() > 0)
+        {
+            i = 0;
+            bf.append("Monitor running...<br>&nbsp;&nbsp;&nbsp;");
+            
+        }
+        s5 = atomicmonitor1.progressString;
+    }
+
+    if(s5.length() < atomicmonitor1.progressString.length())
+    {
+        bf.append(com.dragonflow.Utils.TextUtils.replaceChar(atomicmonitor1.progressString.substring(s5.length()), '\n', "<br>&nbsp;&nbsp;&nbsp;\n"));
+        
+    }
+    if(com.dragonflow.SiteView.Platform.timeMillis() > l2)
+    {
+        bf.append("Monitor still running.<br>&nbsp;&nbsp;&nbsp;");
+    }
+    atomicmonitor1.progressString = "";
+}
+context.put("message",bf.toString().replaceAll("\n",""));
+context.put("bEnd","true");
+

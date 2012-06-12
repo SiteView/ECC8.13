@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvUser id="administrator" disabled="N" login="admin" password="admin" realName="SiteView Administrator" />
+    <SvUser id="user" disabled="Y" realName="SiteView User" />
+</entity-engine-xml>

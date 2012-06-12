@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-menu.xsd">
+    <menu name="EccAppBar" default-menu-item-name="main" id="app-navigation" type="simple" title="${uiLabelMap.eccApplication}"
+        default-selected-style="selected" menu-container-style="button-bar tab-bar">
+       
+        <menu-item name="Main" title="${uiLabelMap.eccMainPage}">
+            <link target="main?healthMenu_collapsed=false"/>
+        </menu-item>
+<!-- 
+        <menu-item name="Alerts" title="${uiLabelMap.eccAlerts}">
+            <link target="alerts"/>
+        </menu-item>
+        
+        <menu-item name="Reports" title="${uiLabelMap.eccReports}">
+            <link target="reports"/>
+        </menu-item>
+
+        <menu-item name="Health" title="${uiLabelMap.eccHealth}">
+            <link target="health"/>
+        </menu-item>
+        
+        <menu-item name="Preferences" title="${uiLabelMap.eccPreferences}">
+            <link target="preferences"/>
+        </menu-item>
+ -->
+        
+        <menu-item name="Help" title="${uiLabelMap.eccHelp}">
+            <link target="none"/>
+        </menu-item>
+        
+        <menu-item name="Logout" title="${uiLabelMap.CommonLogout}" align-style="col-right" selected-style="selected">
+            <condition>
+                <not><if-empty  field-name="userInformation"  /></not>
+            </condition>
+            <link target="logout"/>
+        </menu-item>
+       
+        <menu-item name="Login" title="${uiLabelMap.CommonLogin}" align-style="col-right" selected-style="selected">
+            <condition>
+                <if-empty field-name="userInformation"/>
+            </condition>
+            <link target="login"/>
+        </menu-item>
+
+    </menu>
+</menus>

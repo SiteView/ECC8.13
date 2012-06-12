@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SMSIT39", "SMSIT39\SMSIT39.vcproj", "{F4876C63-C93D-45CA-B0E9-7EB6F25F45C0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SMSIT39Test", "SMSIT39Test\SMSIT39Test.vcproj", "{20D849A3-642E-43B2-ADF5-B83F564C2840}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SMST39VS", "SMST39VS\SMST39VS.vcproj", "{3D2DA959-BC72-4C55-8ABC-4081483F1668}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F4876C63-C93D-45CA-B0E9-7EB6F25F45C0}.Debug.ActiveCfg = Debug|Win32
+		{F4876C63-C93D-45CA-B0E9-7EB6F25F45C0}.Debug.Build.0 = Debug|Win32
+		{F4876C63-C93D-45CA-B0E9-7EB6F25F45C0}.Release.ActiveCfg = Release|Win32
+		{F4876C63-C93D-45CA-B0E9-7EB6F25F45C0}.Release.Build.0 = Release|Win32
+		{20D849A3-642E-43B2-ADF5-B83F564C2840}.Debug.ActiveCfg = Debug|Win32
+		{20D849A3-642E-43B2-ADF5-B83F564C2840}.Debug.Build.0 = Debug|Win32
+		{20D849A3-642E-43B2-ADF5-B83F564C2840}.Release.ActiveCfg = Release|Win32
+		{20D849A3-642E-43B2-ADF5-B83F564C2840}.Release.Build.0 = Release|Win32
+		{3D2DA959-BC72-4C55-8ABC-4081483F1668}.Debug.ActiveCfg = Debug|Win32
+		{3D2DA959-BC72-4C55-8ABC-4081483F1668}.Debug.Build.0 = Debug|Win32
+		{3D2DA959-BC72-4C55-8ABC-4081483F1668}.Release.ActiveCfg = Release|Win32
+		{3D2DA959-BC72-4C55-8ABC-4081483F1668}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+
+    <request-map uri="saveSiteSeer">
+        <security https="false" auth="true"/>
+        <event type="bsf" path="" invoke="org/siteview/svecc/siteseer/updateSiteSeer.bsh"/>
+        <response name="success" type="view" value="preferences"/>
+        <response name="error" type="view" value="preferences"/>
+    </request-map>	
+
+    <request-map uri="dispSiteSeer">
+        <security https="false" auth="true"/>
+        <response name="success" type="view" value="dispSiteSeer"/>
+    </request-map>	
+
+     <view-map name="dispSiteSeer" type="screen" page="component://svecc/widget/siteseer/svSiteSeerScreens.xml#dispSiteSeer"/>
+</site-conf>
+

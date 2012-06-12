@@ -1,0 +1,319 @@
+<HTML>
+<HEAD>
+
+<link rel="stylesheet" href="css.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<TITLE>日历</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+    var month_name=new Array("一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月");
+	var day_in_month= new Array("31","28","31","30","31","30","31","31","30","31","30","31");
+	var this_date=new Date();
+	var this_day=this_date.getDate();
+	var this_month=this_date.getMonth();
+
+function weeknew(y,m,d)//确定某日是星期几
+{
+	w=new Date(y,m,d);
+	return w.getDay();
+}
+
+function makeCalendar(the_day,the_month,the_year)
+{
+    first_of_month=new Date(the_year,the_month,1);
+	day_of_week=first_of_month.getDay();//每月第一天是星期几
+	lastday_of_month=new Date(the_year,the_month,day_in_month[the_month]);
+	lastday_of_week=lastday_of_month.getDay();//每月最后一天是星期几
+
+	if(((the_year%4==0)&&(the_year%100!=0))||(the_year%400==0))//判断是否是闰年
+	{
+	    day_in_month[1]="29";
+	}
+	else
+	{
+	    day_in_month[1]="28";
+	}
+	str="<table cellspacing=2 cellpedding=0 border=0>";
+	str+="<tr bgcolor='#003063'><td  class=headtext>一</td><td  class=headtext>二</td><td  class=headtext>三</td><td  class=headtext>四</td><td  class=headtext>五</td><td  class=headtext>六</td><td  class=headtext>日</td></tr>";
+	str+="<tr align=center>";
+
+	var column=0;//统计使用的表格数，用于换行控制
+	
+	for(i=1;i<day_of_week;i++)//填充日历起始空白
+	{
+	    if(i%2==0)
+		{
+			str+="<td bgcolor='#CECF9C'>&nbsp;</td>";
+			column++;
+		}
+		else
+		{
+			str+="<td bgcolor='#EFEFEF'>&nbsp;</td>";
+			column++;
+		}
+	}
+
+	if(day_of_week==0)
+	{
+		for(i=1;i<=6;i++)
+		{
+			if(i%2==0)
+			{
+				str+="<td bgcolor='#CECF9C'>&nbsp;</td>";
+				column++;
+			}
+			else
+			{
+				str+="<td bgcolor='#EFEFEF'>&nbsp;</td>"
+				column++;
+			}
+		}
+	}
+
+	for(i=1;i<=day_in_month[the_month];i++)//生成日历
+	{
+		if(i==the_day)//&&(the_month==this_month)&&(the_year==this_year))//当前日期加亮
+		{
+			str+="<td bgcolor='#CEFF00'><a href='#' onclick='cta("+i+");ctb("+i+")'>"+i+"</td>";
+        }
+		else
+		{
+			if((weeknew(the_year,the_month,i)==1)||(weeknew(the_year,the_month,i)==3)||(weeknew(the_year,the_month,i)==5)||(weeknew(the_year,the_month,i)==0))
+			{
+				str+="<td bgcolor='#EFEFEF'><a href='#' onclick='cta("+i+");ctb("+i+")'>"+i+"</td>";
+			}
+			else
+			{
+				str+="<td bgcolor='#CECF9C'><a href='#' onclick='cta("+i+");ctb("+i+")'>"+i+"</td>";
+			}
+
+		}
+		column++;
+
+		if(column==7)//换行
+		{
+		    str+="</tr><tr align=center>";
+			column=0;
+		}
+	}
+	
+	if(lastday_of_week>0)//填充后面的空白
+	{
+		for(i=lastday_of_week+1;i<=6;i++)
+		{
+			if(i%2==0)
+			{
+				str+="<td bgcolor='#CECE9C'>&nbsp;</td>";
+			}
+			else
+			{
+				str+="<td bgcolor='#EFEFEF'>&nbsp;</td>";
+			}
+		}
+		str+="<td bgcolor='EFEFEF'>&nbsp;</td>";
+	}
+
+	str+="</tr></table>";
+	
+	return str;
+}
+
+function y2k(number)//取年值
+{
+    if(number<1000)
+	{
+	    number=number+1900;
+	}
+	return number;
+}
+
+	var this_year=y2k(this_date.getYear());
+
+
+function monthDiff()
+{
+	if(parseInt(document.all.selMonth.value)==1)
+	{
+		document.all.selMonth.value=12;
+	}
+	else
+	{
+		document.all.selMonth.value=parseInt(document.all.selMonth.value)-1;
+	}
+	
+	return document.all.selMonth.value;
+}
+
+function monthAdd()
+{
+	if(parseInt(document.all.selMonth.value)==12)
+	{
+		document.all.selMonth.value=1;
+	}
+	else
+	{
+		document.all.selMonth.value=parseInt(document.all.selMonth.value)+1;
+		
+	}
+	
+	return document.all.selMonth.value;
+}
+
+function cta(i)
+{
+	document.all.oldCalendar.innerHTML=makeCalendar(parseInt(i),document.all.selMonth.value-1,document.all.selYear.value);
+}
+
+function ctb(i)
+{
+	document.all.currenttime.innerHTML="当前选择时间："+selYear.value+"年"+selMonth.value+"月"+i+"日";
+	return i
+}
+
+//-->
+</SCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF">
+
+<table width="200" border="0" cellspacing="6" cellpadding="0" align=center>
+  <tr> 
+    <td width="7%" height="2"><a href="#" onclick="document.all.oldCalendar.innerHTML=makeCalendar(1,monthDiff()-1,selYear.value);"><img src="img/left.gif" width="18" height="18" border="0"></a></td>
+    <td width="83%" height="2" align="center" valign="top"> 
+      <select name="selMonth" onchange="document.all.oldCalendar.innerHTML=makeCalendar(1,selMonth.value-1,selYear.value);">
+		<SCRIPT LANGUAGE="JavaScript">
+		<!--
+		
+		for(i=1;i<=12;i++)
+		{
+			if((i-1)==this_month)
+			{
+				document.write("<option value='"+i+"' selected>"+i+"月");
+			}
+			else
+			{
+				document.write("<option value='"+i+"'>"+i+"月");
+			}
+		}
+
+		//-->
+		</SCRIPT>
+      </select>
+
+	  <select name="selYear" onchange="document.all.oldCalendar.innerHTML=makeCalendar(1,selMonth.value-1,selYear.value);">
+		<SCRIPT LANGUAGE="JavaScript">
+		<!--
+
+		for(i=2000;i<=2010;i++)
+		{
+			if(i==this_year)
+			{
+				document.write("<option value='"+i+"' selected>"+i+"年");
+			}
+			else
+			{
+				document.write("<option value='"+i+"'>"+i+"年");
+			}
+		}
+		//-->
+		</SCRIPT>
+      </select>
+    </td>
+    <td width="10%" height="2"><a href="#" onclick="document.all.oldCalendar.innerHTML=makeCalendar(1,monthAdd()-1,selYear.value);"><img src="img/right.gif" width="18" height="18" border="0"></a></td>
+  </tr>
+  <tr> 
+    <td colspan="3" align="center" valign="middle"> 
+      <div id=oldCalendar>
+	  <script language="JavaScript">
+	<!--
+	var this_
+	//document.write("<TABLE BORDER='0'><TR VALIGN=TOP><TD>");
+	makeCalendar(this_day,this_month,this_year); 
+	document.write(str);
+	//document.write("</TD><TD>");                                  
+	//document.write("</TD></TR></TABLE>");
+	//document.close();
+
+	//-->
+	</script>
+	  </div>
+    </td>
+  </tr>
+  <tr align="center"> 
+    <td colspan="3" class="smalltext"><br>
+      <div id="currenttime">当前选择日期：
+	  <SCRIPT LANGUAGE="JavaScript">
+	  <!--
+	  document.write(this_year+'年'+parseInt(this_month+1)+'月'+this_day+'日')
+	  //-->
+	  </SCRIPT>
+	  </div>
+	  </td>
+  </tr>
+  <tr align="center"> 
+    <td colspan="3">选择时间：
+		<select name="selTime">
+        <option value="0" selected>12:00 AM 
+        <SCRIPT LANGUAGE="JavaScript">
+		<!--
+			for(i=1;i<=11;i++)
+			{
+				document.write("<option value='"+i+"'>"+i+":00 AM");
+			}
+		//-->
+		</SCRIPT>
+        <option value="12">12:00 PM 
+        <SCRIPT LANGUAGE="JavaScript">
+		<!--
+			for(i=13;i<=23;i++)
+			{
+				document.write("<option value='"+i+"'>"+(i-12)+":00 PM");
+			}
+		//-->
+		</SCRIPT>
+      </select>
+	</td>
+  </tr>
+  <tr align="center"> 
+    <td colspan="3"><br>
+      <a href="#" onclick="ChangeHiddenField();window.close();"> <input type="image" name="submit" src="img/ca_ok.gif" width="49" height="18" border="0"></a>　<a href="#" onclick="location.reload()"><img src="img/ca_reset.gif" width="49" height="18" border=0></a>　<a href="#" onclick="window.close()"><img src="img/ca_cancel.gif" width="49" height="18" border=0></a></td>
+	
+  </tr>
+</table>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function ChangeHiddenField()
+{
+	var timeX=new String();
+	timeX=document.all.currenttime.innerText;
+	timeA=timeX.split("：");
+	timeZ=timeA[1];
+
+	timeY=timeZ.replace("年","-");
+	timeY=timeY.replace("月","-");
+	timeY=timeY.replace("日","-");
+	timeY=timeY+document.all.selTime.value;
+	
+	timeY=timeY.split("-")
+	timeA=timeY[0]+"-"+timeY[1]+"-"+timeY[2]+" "+timeY[3]+":00";
+
+	window.opener.document.all.selYear.value=timeY[0];
+	window.opener.document.all.selMonth.value=timeY[1];
+	window.opener.document.all.selDay.value=timeY[2];
+	window.opener.document.all.selHour.value=timeY[3];
+
+	timeZ=timeY[0]+"年"+timeY[1]+"月"+timeY[2]+"日"+timeY[3]+"时";
+	
+	window.opener.document.all.selDate.value=timeA;
+	window.opener.document.all.datetime.innerHTML=timeZ;
+}
+
+//-->
+</SCRIPT>
+
+</BODY>
+</HTML>

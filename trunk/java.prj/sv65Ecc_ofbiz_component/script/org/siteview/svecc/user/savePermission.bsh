@@ -1,0 +1,31 @@
+import com.siteview.ecc.service.*;
+import org.ofbiz.base.util.*;
+import org.ofbiz.service.*;
+import java.util.*;
+
+List errorMessages = new ArrayList();
+Map errorMaps = new HashMap();
+
+String id=request.getParameter("id");
+Map map=new HashMap();
+try{
+    Enumeration  pNames=request.getParameterNames();  
+    while(pNames.hasMoreElements()){
+       String name=(String)pNames.nextElement();
+
+	   if( name!=null && name.equals("")==false && name.equals("id")==false){
+	   		map.put(name,"Y".equals(request.getParameter(name)));
+	   }
+   }
+}catch(Exception e){
+}
+dispatcher = request.getAttribute("dispatcher"); 
+callResult = dispatcher.runSync("updUserPermission", UtilMisc.toMap("id", id, "data",map));
+ServiceUtil.addErrors(errorMessages, errorMaps, callResult);
+
+if (errorMessages.size() > 0 || errorMaps.size() > 0) {
+    request.setAttribute(ModelService.ERROR_MESSAGE_LIST, errorMessages);
+    request.setAttribute(ModelService.RESPONSE_MESSAGE, ModelService.RESPOND_ERROR);
+    return "error";
+}
+return "success";

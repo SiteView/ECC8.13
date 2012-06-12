@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- titles -->    
+	<property key="ttl_svAlertDefine">
+	  	<value xml:lang="en">Alert Definition</value>
+        <value xml:lang="zh">告警定义</value>
+    </property>
+	<property key="ttl_svAlertAdd">
+	  	<value xml:lang="en">Add</value>
+        <value xml:lang="zh">添加告警</value>
+    </property>
+	<property key="ttl_svAlertEdit">
+	  	<value xml:lang="en">Edit Alert Define</value>
+        <value xml:lang="zh">告警编辑</value>
+    </property>
+	<property key="ttl_svAlertDefine">
+	  	<value xml:lang="en">Define Alert</value>
+        <value xml:lang="zh">告警定义</value>
+    </property>
+	<property key="ttl_svAlertHistory">
+	  	<value xml:lang="en">Alert History</value>
+        <value xml:lang="zh">告警日志</value>
+    </property>
+    
+	
+	<!-- buttons -->
+	<property key="btn_svAlertManage">
+	  	<value xml:lang="en">Manage Monitors/Groups</value>
+        <value xml:lang="zh">管理</value>
+    </property>
+	<property key="btn_svAlertList">
+	  	<value xml:lang="en">Broswer</value>
+        <value xml:lang="zh">浏览</value>
+    </property>
+	<property key="btn_svAlertAdd">
+	  	<value xml:lang="en">Add</value>
+        <value xml:lang="zh">添加</value>
+    </property>
+	<property key="btn_svAlertDelete">
+	  	<value xml:lang="en">Delete alert definition</value>
+        <value xml:lang="zh">删除</value>
+    </property>
+	<property key="btn_svAlertEdit">
+	  	<value xml:lang="en">Edit alert definition</value>
+        <value xml:lang="zh">编辑</value>
+    </property>
+	<property key="btn_svAlertTest">
+	  	<value xml:lang="en">Test alert definition</value>
+        <value xml:lang="zh">测试</value>
+    </property>
+	<property key="btn_svAlertDisable">
+	  	<value xml:lang="en">Disable</value>
+        <value xml:lang="zh">禁止</value>
+    </property>
+	<property key="btn_svAlertEnable">
+	  	<value xml:lang="en">Enable all alerts previously disabled</value>
+        <value xml:lang="zh">激活</value>
+    </property>
+	<property key="btn_svAlertTestEMail">
+	  	<value xml:lang="en">Send a test E-Mail Alert using current E-Mail Preferences</value>
+        <value xml:lang="zh">EMail测试</value>
+    </property>
+	<property key="btn_svAlertTestPager">
+	  	<value xml:lang="en">Send a test Pager Alert using current Pager Preferences</value>
+        <value xml:lang="zh">寻呼机测试</value>
+    </property>
+	<property key="btn_svAlertTestSNMPTrap">
+	  	<value xml:lang="en">Send a test SNMP Trap Alert using current SNMP Trap Preferences</value>
+        <value xml:lang="zh">Snmp陷阱测试</value>
+    </property>
+	<property key="btn_svAlertReport">
+	  	<value xml:lang="en">View a report of alerts that have been sent</value>
+        <value xml:lang="zh">告警报表</value>
+    </property>
+	<property key="btn_svAlertLog">
+	  	<value xml:lang="en">View the the log of alerts sent</value>
+        <value xml:lang="zh">告警日志</value>
+    </property>
+
+    <!-- labels -->
+	<property key="lbl_svAlertActions">
+	  	<value xml:lang="en">Alert Actions</value>
+        <value xml:lang="zh">告警操作</value>
+    </property>
+	<property key="lbl_svAlertAdd">
+	  	<value xml:lang="en">Add a new alert for one or more monitors or groups</value>
+        <value xml:lang="zh">为一个或多个监视器或监视器分组增加一个告警</value>
+    </property>
+	<property key="lbl_svAlertDisable">
+	  	<value xml:lang="en">Disable all alerts</value>
+        <value xml:lang="zh">禁用全部告警</value>
+    </property>
+	<property key="lbl_svAlertEnable">
+	  	<value xml:lang="en">Enable all alerts previously disabled</value>
+        <value xml:lang="zh">开启被禁止的全部告警</value>
+    </property>
+	<property key="lbl_svAlertTestEMail">
+	  	<value xml:lang="en">Send a test E-Mail Alert using current E-Mail Preferences</value>
+        <value xml:lang="zh">使用当前的email配置，发送一个email告警</value>
+    </property>
+	<property key="lbl_svAlertTestPager">
+	  	<value xml:lang="en">Send a test Pager Alert using current Pager Preferences</value>
+        <value xml:lang="zh">使用当前的寻呼机配置，发送一个寻呼机告警</value>
+    </property>
+	<property key="lbl_svAlertTestSNMPTrap">
+	  	<value xml:lang="en">Send a test SNMP Trap Alert using current SNMP Trap Preferences</value>
+        <value xml:lang="zh">使用当前的Snmp陷阱，发送一个snmp陷阱告警</value>
+    </property>
+	<property key="lbl_svAlertReport">
+	  	<value xml:lang="en">View a report of alerts that have been sent</value>
+        <value xml:lang="zh">查看一个已经发送告警的报表</value>
+    </property>
+	<property key="lbl_svAlertLog">
+	  	<value xml:lang="en">View the the log of alerts sent</value>
+        <value xml:lang="zh">查看告警的发送日志</value>
+    </property>
+    
+    <!-- table names -->
+	<property key="tbt_svAlertList">
+	  	<value xml:lang="en">Alert list</value>
+        <value xml:lang="zh">告警列表</value>
+    </property>
+    <!-- table columns -->
+	<property key="tbc_svAlertDefId">
+	  	<value xml:lang="en">AlertDef ID</value>
+        <value xml:lang="zh">定义ID</value>
+    </property>
+	<property key="tbc_svAlertOn">
+	  	<value xml:lang="en">On</value>
+        <value xml:lang="zh">告警事件</value>
+    </property>
+	<property key="tbc_svAlertGroup">
+	  	<value xml:lang="en">Group</value>
+        <value xml:lang="zh">告警组</value>
+    </property>
+	<property key="tbc_svAlertFor">
+	  	<value xml:lang="en">For</value>
+        <value xml:lang="zh">告警目标</value>
+    </property>
+	<property key="tbc_svAlertDo">
+	  	<value xml:lang="en">Do</value>
+        <value xml:lang="zh">告警动作</value>
+    </property>
+	<property key="tbc_svAlertHistory">
+	  	<value xml:lang="en">History</value>
+        <value xml:lang="zh">历史</value>
+    </property>
+	<property key="tbc_svAlertEdit">
+	  	<value xml:lang="en">Edit</value>
+        <value xml:lang="zh">编辑</value>
+    </property>
+	<property key="tbc_svAlertTest">
+	  	<value xml:lang="en">Test</value>
+        <value xml:lang="zh">测试</value>
+    </property>
+	<property key="tbc_svAlertDelete">
+	  	<value xml:lang="en">Delete</value>
+        <value xml:lang="zh">删除</value>
+    </property>
+</resource>

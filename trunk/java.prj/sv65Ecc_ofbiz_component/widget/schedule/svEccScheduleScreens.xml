@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+    
+    <screen name="schedulePreferences">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                    	<include-menu name="preferencesMenu" location="component://svecc/widget/svPreferencesMenu.xml"/>
+                        <screenlet title="schedulePreferences">
+                            <section>
+                          	
+                            	<actions>
+									<service service-name="getScheduleSettingsList"></service>
+								</actions> 
+							 
+                                 <widgets>
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/schedule/scheduleSettings.ftl" />
+			                            </html>
+			                        </platform-specific>
+                                </widgets>
+                           </section>                            
+                        </screenlet>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="rangeSchedule">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                    	<include-menu name="preferencesMenu" location="component://svecc/widget/svPreferencesMenu.xml"/>
+                        <screenlet title="rangeSchedule">
+                            <section>
+                                 <widgets>
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/schedule/dayPreference.ftl" />
+			                            </html>
+			                        </platform-specific>
+                                </widgets>
+                           </section>                            
+                        </screenlet>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="absoluteSchedule">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                    	<include-menu name="preferencesMenu" location="component://svecc/widget/svPreferencesMenu.xml"/>
+                        <screenlet title="absoluteSchedule">
+                            <section>
+                                 <widgets>
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/schedule/hourPreference.ftl" />
+			                            </html>
+			                        </platform-specific>
+                                </widgets>
+                           </section>                            
+                        </screenlet>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>        
+    <screen name="editAbsoluteSchedule">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                    	<include-menu name="preferencesMenu" location="component://svecc/widget/svPreferencesMenu.xml"/>
+                        <screenlet title="editAbsoluteSchedule">
+                            <section>
+                            
+                            	<actions>
+									<service service-name="editAbsoluteSchedule"></service>
+								</actions>                             
+                            
+                                 <widgets>
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/schedule/editHourPreference.ftl" />
+			                            </html>
+			                        </platform-specific>
+                                </widgets>
+                           </section>                            
+                        </screenlet>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen> 
+    <screen name="editRangeSchedule">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                    	<include-menu name="preferencesMenu" location="component://svecc/widget/svPreferencesMenu.xml"/>
+                        <screenlet title="editRangeSchedule">
+                            <section>
+                            
+                            	<actions>
+									<service service-name="editRangeSchedule"></service>
+								</actions>                             
+                            
+                                 <widgets>
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/schedule/editRangeSchedule.ftl" />
+			                            </html>
+			                        </platform-specific>
+                                </widgets>
+                           </section>                            
+                        </screenlet>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>     
+</screens>
+

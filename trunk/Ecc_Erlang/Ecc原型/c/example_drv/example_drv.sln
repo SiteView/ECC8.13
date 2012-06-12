@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example_drv", "example_drv.vcproj", "{FF9BAA13-0884-49A2-9727-4BB2E2D634E3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FF9BAA13-0884-49A2-9727-4BB2E2D634E3}.Debug.ActiveCfg = Debug|Win32
+		{FF9BAA13-0884-49A2-9727-4BB2E2D634E3}.Debug.Build.0 = Debug|Win32
+		{FF9BAA13-0884-49A2-9727-4BB2E2D634E3}.Release.ActiveCfg = Release|Win32
+		{FF9BAA13-0884-49A2-9727-4BB2E2D634E3}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

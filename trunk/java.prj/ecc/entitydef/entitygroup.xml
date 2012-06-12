@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entitygroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitygroup.xsd">
+
+ <!-- ========================================================= -->
+  <!-- com.siteview.ecc.monitor -->
+  <!-- ========================================================= -->
+
+    <entity-group group="com.siteview.ecc.monitor" entity="SvMasterConfig" />
+    <entity-group group="com.siteview.ecc.monitor" entity="SvStatusType" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvGroup" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvCi" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvCiType" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvCiTypeAttr" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvCiAttr" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvCiMethod" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvCiMethodType" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvCiMethodTypeAttr" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvCiMethodAttr" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvCiTypeCategory" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvLog" />
+    <entity-group group="com.siteview.ecc.monitor" entity="SvCiTypeMethodType" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvCiMethodCondition" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvAlertTask" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvAlert"/>
+	<entity-group group="com.siteview.ecc.monitor" entity="SvAlertAttr" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvAlertType" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvAlertTypeAttr" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvAlertTarget" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvAclData" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvFieldType" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvFieldTypeAttr" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvFieldAttr" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvField" />
+	<entity-group group="com.siteview.ecc.monitor" entity="SvFrequencyUnit" />
+	
+</entitygroup>

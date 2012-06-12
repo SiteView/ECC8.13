@@ -1,0 +1,14 @@
+D:\SiteViewShell\MMC\Source\Microsoft.ManagementConsole\bin\Debug\Microsoft.ManagementConsole.dll
+D:\SiteViewShell\MMC\Source\Microsoft.ManagementConsole\bin\Debug\Microsoft.ManagementConsole.pdb
+D:\SiteViewShell\MMC\Source\Microsoft.ManagementConsole\bin\Debug\MMCFxCommon.dll
+D:\SiteViewShell\MMC\Source\Microsoft.ManagementConsole\bin\Debug\MMCFxCommon.pdb
+D:\SiteViewShell\MMC\Source\Microsoft.ManagementConsole\obj\Debug\ResolveAssemblyReference.cache
+D:\SiteViewShell\MMC\Source\Microsoft.ManagementConsole\obj\Debug\Microsoft.ManagementConsole.dll
+D:\SiteViewShell\MMC\Source\Microsoft.ManagementConsole\obj\Debug\Microsoft.ManagementConsole.pdb
+D:\SiteView.MmcShell\MsMmcSource\Microsoft.ManagementConsole\bin\Debug\Microsoft.ManagementConsole.dll
+D:\SiteView.MmcShell\MsMmcSource\Microsoft.ManagementConsole\bin\Debug\Microsoft.ManagementConsole.pdb
+D:\SiteView.MmcShell\MsMmcSource\Microsoft.ManagementConsole\bin\Debug\MMCFxCommon.dll
+D:\SiteView.MmcShell\MsMmcSource\Microsoft.ManagementConsole\bin\Debug\MMCFxCommon.pdb
+D:\SiteView.MmcShell\MsMmcSource\Microsoft.ManagementConsole\obj\Debug\ResolveAssemblyReference.cache
+D:\SiteView.MmcShell\MsMmcSource\Microsoft.ManagementConsole\obj\Debug\Microsoft.ManagementConsole.dll
+D:\SiteView.MmcShell\MsMmcSource\Microsoft.ManagementConsole\obj\Debug\Microsoft.ManagementConsole.pdb

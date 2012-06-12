@@ -1,0 +1,12 @@
+TopAxisTitle = ("Video Division Sales", dimgrey, Helvetica, 12);
+DataSets = ("Video Division Sales");
+Grid = (gainsboro, white,dimgray),(null,null,dimgray);
+GridLine = (HORIZONTAL,BAR),(VERTICAL);
+DataSet1 = 138720,66162;
+BarLabels = "TVs", "VCRs";
+FooterActiveLabel =
+	("OUTLINE", "../classes/netcharts/demo/division.dat", "LOADPARAMS");
+ActiveLabels1 =
+	("$138,720", "../classes/netcharts/demo/tvs.dat", "LOADPARAMS"),
+	("$66,162", "../classes/netcharts/demo/vcrs.dat", "LOADPARAMS");
+Legend = (OFF);

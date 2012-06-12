@@ -1,0 +1,31 @@
+_encoding=GBK
+_dependsCondition=good
+_nextID=3
+_fileEncoding=UTF-8
+_name=Abc
+#
+_class=PingMonitor
+_id=1
+_encoding=GBK
+_packetSize=32
+_frequency=600
+_dependsCondition=good
+_timeout=5000
+_internalId=83964184
+_name=Ping: 127.0.0.1
+_hostname=127.0.0.1
+#
+_class=SNMPMonitor
+_id=2
+_encoding=GBK
+_snmpversion=V1
+_frequency=15
+_oidIndex=0
+_dependsCondition=good
+_oid=1.3.6.1.2.1.1.1
+_timeout=5
+_internalId=83964188
+_host=192.168.0.249
+_retryDelay=1
+_community=public1
+_name=snmp 192.168.0.249

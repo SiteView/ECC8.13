@@ -1,0 +1,12 @@
+D:\SiteView.MmcShell\SiteView.StartUp\bin\Debug\SiteView.StartUp.exe.config
+D:\SiteView.MmcShell\SiteView.StartUp\bin\Debug\SiteView.StartUp.exe
+D:\SiteView.MmcShell\SiteView.StartUp\bin\Debug\SiteView.StartUp.pdb
+D:\SiteView.MmcShell\SiteView.StartUp\obj\Debug\ResolveAssemblyReference.cache
+D:\SiteView.MmcShell\SiteView.StartUp\obj\Debug\SiteView.StartUp.MainForm.resources
+D:\SiteView.MmcShell\SiteView.StartUp\obj\Debug\SiteView.StartUp.Properties.Resources.resources
+D:\SiteView.MmcShell\SiteView.StartUp\obj\Debug\SiteView.StartUp.csproj.GenerateResource.Cache
+D:\SiteView.MmcShell\SiteView.StartUp\obj\Debug\SiteView.StartUp.exe
+D:\SiteView.MmcShell\SiteView.StartUp\obj\Debug\SiteView.StartUp.pdb
+D:\SiteView.MmcShell\SiteView.StartUp\bin\Debug\SiteView.MmcShell.dll
+D:\SiteView.MmcShell\SiteView.StartUp\bin\Debug\SiteView.MmcShell.pdb
+D:\SiteView.MmcShell\SiteView.StartUp\obj\Debug\SiteView.StartUp.LoginForm.resources

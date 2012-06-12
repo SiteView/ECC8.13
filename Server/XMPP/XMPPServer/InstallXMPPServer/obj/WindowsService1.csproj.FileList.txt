@@ -1,0 +1,14 @@
+bin\Debug\WindowsService1.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\WindowsService1.Installer1.resources
+obj\Debug\WindowsService1.csproj.GenerateResource.Cache
+obj\Debug\WindowsService1.pdb
+bin\Debug\agsXMPP.dll
+bin\Debug\SubServer.pdb
+bin\Debug\agsXMPP.pdb
+bin\Debug\agsXMPP.xml
+bin\Debug\WindowsService1.exe
+bin\Debug\SubServer.exe
+obj\Debug\WindowsService1.exe
+Debug\WindowsService1.exe
+Debug\WindowsService1.pdb

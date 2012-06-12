@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvAlertTask svname="5x8" taskType="2" Description="" Allow0="0" Allow1="1" Allow2="1" Allow3="1" Allow4="1" Allow5="1" Allow6="0" start0="00:00" start1="09:00" start2="09:00" start3="09:00" start4="09:00" start5="09:00" start6="00:00" end0="23:59" end1="18:00" end2="18:00" end3="18:00" end4="18:00" end5="18:00" end6="18:00"/>
+    <SvAlertTask svname="7x24" taskType="2" Description="" Allow0="1" Allow1="1" Allow2="1" Allow3="1" Allow4="1" Allow5="1" Allow6="1" start0="00:00" start1="00:00" start2="00:00" start3="00:00" start4="00:00" start5="00:00" start6="00:00" end0="23:59" end1="23:59" end2="23:59" end3="23:59" end4="23:59" end5="23:59" end6="23:59"/>
+    <SvAlertTask svname="test" taskType="1" Description="test" Allow0="1" Allow1="1" Allow2="1" Allow3="1" Allow4="1" Allow5="1" Allow6="1" start0="15:7" start1="15:7" start2="15:7" start3="15:7" start4="15:7" start5="15:7" start6="15:7"/>
+    <SvAlertTask svname="&#32477;&#23545;&#35745;&#21010;" taskType="1" Description="&#27979;&#35797;&#27979;&#35797;" Allow0="1" Allow1="1" Allow2="1" Allow3="1" Allow4="1" Allow5="0" Allow6="1" start0="0:0" start1="0:0" start2="0:0" start3="0:0" start4="0:0" start5="0:0" start6="1:0"/>
+</entity-engine-xml>

@@ -1,0 +1,2 @@
+sc.exe  create SiteViewControl start= auto displayname= "SiteView Monitor control" binpath= "\"C:\SiteView\SiteView ECC\fcgi-bin\MonitorContrl.exe\" -service" 
+sc.exe  description SiteViewControl "SiteView Monitor control"

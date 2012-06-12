@@ -1,0 +1,7 @@
+H:\SiteView\devicePanel\WindowsService1\bin\Debug\WindowsService1.pdb
+H:\SiteView\devicePanel\WindowsService1\obj\Debug\ResolveAssemblyReference.cache
+H:\SiteView\devicePanel\WindowsService1\obj\Debug\WindowsService1.pdb
+H:\SiteView\devicePanel\WindowsService1\bin\Debug\WindowsService1.dll
+H:\SiteView\devicePanel\WindowsService1\obj\Debug\WindowsService1.dll
+H:\SiteView\devicePanel\WindowsService1\obj\Debug\WindowsService1.Installer1.resources
+H:\SiteView\devicePanel\WindowsService1\obj\Debug\WindowsService1.csproj.GenerateResource.Cache

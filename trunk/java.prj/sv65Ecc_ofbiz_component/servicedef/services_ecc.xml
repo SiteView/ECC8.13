@@ -1,0 +1,985 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/services.xsd">
+	<description>SvEcc Component Services</description>
+	<vendor>DragonFlow</vendor>
+
+	<!-- Group Services define -->
+  <!--
+  功能：创建组
+  输入：
+    name - 组名
+    parentId - 父组ID, 不填写的时候，为TOP组
+    data - 组的属性 必须参照com.dragonflow.SiteView.Group 类的内容
+  输出：
+    message - 输出的错误信息，当无错误时，为新的组的id
+    
+  -->
+	<service name="addGroup" engine="java" 
+		location="com.siteview.svecc.service.Group" invoke="addGroup">
+		<attribute name="name" type="String" mode="IN" optional="false" />
+		<attribute name="parentId" type="String" mode="IN"
+			optional="true" />
+		<attribute name="data" type="java.util.Map" mode="IN"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="false" />
+	</service>
+  <!--
+  功能：得到组的属性，及其缺省值
+  输出：
+    data - 组的属性 参照com.dragonflow.SiteView.Group 类的内容
+    message - 输出的错误信息
+    
+  -->
+  <service name="getGroupAttri" engine="java"
+		location="com.siteview.svecc.service.Group"
+		invoke="getGroupAttri" auth="false">
+		<attribute name="data" mode="OUT" type="Map"
+			optional="true">
+		</attribute>
+		<attribute name="message" mode="OUT" type="String"
+			optional="true">
+		</attribute>
+	</service>
+
+  <!--
+  功能：删除组
+  输入：
+    id - 组id
+  输出：
+    message - 输出的错误信息
+    
+  -->
+  <service name="delGroup" engine="java" 
+		location="com.siteview.svecc.service.Group" invoke="delGroup">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+  <!--
+  功能：得到组，通过组id
+  输入：
+    id - 组id
+  输出：
+    result - 组属性
+    message - 输出的错误信息
+    
+  -->
+  <service name="getGroupById" engine="java" 
+		location="com.siteview.svecc.service.Group" invoke="getGroupById">
+    <attribute name="id" type="String" mode="IN" optional="false" />
+    <attribute name="result" type="java.util.Map" mode="OUT"
+			optional="false" />
+    <attribute name="message" type="String" mode="OUT"
+			optional="true" />
+  </service>
+
+  <!--
+  功能：通过组id，得到它的子组
+  输入：
+    parentId - 父组id
+  输出：
+    result - 组属性列表
+    message - 输出的错误信息
+    
+  -->
+  <service name="getGroupByParentId" engine="java" 
+		location="com.siteview.svecc.service.Group"
+		invoke="getGroupByParentId">
+		<attribute name="parentId" type="String" mode="IN"
+			optional="true" />
+		<attribute name="result" type="java.util.List" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+  <!--
+  功能：得到所有的组
+  输出：
+    result - 组属性列表
+    message - 输出的错误信息
+    
+  -->
+  <service name="getAllGroup" engine="java" 
+		location="com.siteview.svecc.service.Group" invoke="getAllGroup">
+		<attribute name="result" type="java.util.List" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+  <!--
+  功能：更新组
+  输入：
+    id - 组id
+    data - 组的属性 参照com.dragonflow.SiteView.Group 类的内容
+  输出：
+    message - 输出的错误信息
+    
+  -->
+  <service name="updGroup" engine="java" 
+		location="com.siteview.svecc.service.Group" invoke="updGroup">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="data" type="java.util.Map" mode="IN"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+	<!-- Monitor Services define -->
+  <!--
+  功能：创建监视器
+  输入：
+    className - 监视器类名，com\dragonflow\StandardMonitor下的类！带包名
+    groupId - 组ID
+    data - 监视器的属性 必须参照com.dragonflow.SiteView.Monitor 类的内容
+  输出：
+    message - 输出的错误信息，当无错误时，为新的监视器的id
+    
+  -->
+  <service name="addMonitor" engine="java" 
+		location="com.siteview.svecc.service.Monitor" invoke="addMonitor">
+		<attribute name="className" type="String" mode="IN"
+			optional="false" />
+		<attribute name="groupId" type="String" mode="IN"
+			optional="false" />
+		<attribute name="data" type="java.util.Map" mode="IN"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="false" />
+	</service>
+  <!--
+  功能：得到监视器类型
+  输入：
+    keyword - 搜寻关键字
+    bContains - 是否包含该关键字
+    result - 搜寻结果列表
+  输出：
+    message - 输出的错误信息
+    
+  -->
+  <service name="getMonitorType" engine="java" 
+		location="com.siteview.svecc.service.Monitor"
+		invoke="getMonitorType">
+		<attribute name="keyword" type="String" mode="IN"
+			optional="true" />
+		<attribute name="bContains" type="Boolean" mode="IN"
+			optional="false" default-value="true"/>
+		<attribute name="result" type="java.util.List" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+  <!--
+  功能：得到监视器实例，通过类名
+  输入：
+    className - 类名称
+    result - 监视器的属性 必须参照com.dragonflow.SiteView.Monitor 类的内容
+  输出：
+    message - 输出的错误信息
+    
+  -->
+    <service name="getMonitorInstanceByClassName" engine="java" 
+		location="com.siteview.svecc.service.Monitor"
+		invoke="getMonitorInstanceByClassName">
+		<attribute name="className" type="String" mode="IN"
+			optional="false" />
+		<attribute name="result" type="java.util.Map" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+  <!--
+  功能：得到监视器的可编辑属性
+  输入：
+    className - 类名称
+    groupId - 组id
+    id - 监视器id
+    result - 监视器的属性 必须参照com.dragonflow.SiteView.Monitor 类的内容
+  输出：
+    message - 输出的错误信息
+    
+  -->
+  <service name="getMonitorEditProperties" engine="java" 
+		location="com.siteview.svecc.service.Monitor"
+		invoke="getMonitorEditProperties">
+		<attribute name="className" type="String" mode="IN"
+			optional="true" />
+		<attribute name="groupId" type="String" mode="IN"
+			optional="true" />
+		<attribute name="id" type="String" mode="IN"
+			optional="true" />
+		<attribute name="result" type="java.util.Map" mode="OUT"
+			optional="true" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+  <!--
+  功能：删除监视器
+  输入：
+    groupId - 组id
+    id - 监视器id
+  输出：
+    message - 输出的错误信息
+    
+  -->
+  <service name="delMonitor" engine="java" 
+		location="com.siteview.svecc.service.Monitor" invoke="delMonitor">
+		<attribute name="groupId" type="String" mode="IN"
+			optional="false" />
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+  <!--
+  功能：得到监视器，通过id
+  输入：
+    groupId - 组id
+    id - 监视器id
+  输出：
+    result - 监视器的属性 必须参照com.dragonflow.SiteView.Monitor 类的内容
+    message - 输出的错误信息
+  -->
+   <service name="getMonitorById" engine="java" 
+		location="com.siteview.svecc.service.Monitor"
+		invoke="getMonitorById">
+		<attribute name="groupId" type="String" mode="IN"
+			optional="false" />
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="result" type="java.util.Map" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+  <!--
+  功能：得到所有监视器，通过组id
+  输入：
+    groupId - 组id
+  输出：
+    result - 监视器列表。其属性， 必须参照com.dragonflow.SiteView.Monitor 类的内容
+    message - 输出的错误信息
+  -->
+  <service name="getMonitorByGroupId" engine="java" 
+		location="com.siteview.svecc.service.Monitor"
+		invoke="getMonitorByGroupId">
+		<attribute name="groupId" type="String" mode="IN"
+			optional="false" />
+		<attribute name="result" type="java.util.List" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+  <!--
+  功能：得到所有监视器的动态信息(状态等。。。)，通过id
+  输入：
+    groupId - 组id
+    id - 监视器id
+  输出：
+    result - 监视器的动态信息 必须参照com.dragonflow.SiteView.Monitor 类的内容
+    message - 输出的错误信息
+  -->
+  <service name="getMonitorDYNInfoById" engine="java" 
+		location="com.siteview.svecc.service.Monitor"
+		invoke="getMonitorDYNInfoById">
+		<attribute name="groupId" type="String" mode="IN"
+			optional="false" />
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="result" type="java.util.Map" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+  <!--
+  功能：得到所有监视器的动态信息(状态等。。。)，通过组id
+  输入：
+    groupId - 组id
+  输出：
+    result - 监视器的动态信息列表。 必须参照com.dragonflow.SiteView.Monitor 类的内容
+    message - 输出的错误信息
+  -->
+  <service name="getMonitorDYNInfoByGroupId" engine="java" 
+		location="com.siteview.svecc.service.Monitor"
+		invoke="getMonitorDYNInfoByGroupId">
+		<attribute name="groupId" type="String" mode="IN"
+			optional="false" />
+		<attribute name="result" type="java.util.List" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+  <!--
+  功能：更新监视器信息(状态等。。。)，必须参照com.dragonflow.SiteView.Monitor 类的内容
+  输入：
+    groupId - 组id
+    id - 监视器id
+    data - 更新后的监视器信息
+  输出：
+    message - 输出的错误信息
+  -->
+	<service name="updMonitor" engine="java" 
+		location="com.siteview.svecc.service.Monitor" invoke="updMonitor">
+		<attribute name="groupId" type="String" mode="IN"
+			optional="false" />
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="data" type="java.util.Map" mode="IN"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+	<!-- User Services define -->
+  <!--
+  功能：添加一个用户，必须参照必须参照com.siteview.svecc.service.User类的内容
+  输入：
+    data - 用户的个人信息
+  输出：
+    message - 输出的错误信息
+  -->
+	<service name="addUser" engine="java" 
+		location="com.siteview.svecc.service.User" invoke="addUser">
+		<attribute name="data" type="java.util.Map" mode="IN"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="false" />
+	</service>
+  <!--
+  功能：删除一个用户，必须参照必须参照com.siteview.svecc.service.User类的内容
+  输入：
+    data - 用户的id值
+  输出：
+    message - 输出的错误信息
+  -->
+	<service name="delUser" engine="java" 
+		location="com.siteview.svecc.service.User" invoke="delUser">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+  <!--
+  功能：得到所以用户，必须参照必须参照com.siteview.svecc.service.User类的内容
+  输入：
+    result- 所有用户的列表值
+  输出：
+    message - 输出的错误信息
+  -->
+	<service name="getAllUser" engine="java" 
+		location="com.siteview.svecc.service.User" invoke="getAllUser">
+		<attribute name="result" type="java.util.List" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+  <!--
+  功能：通过id值得到具体的一个用户，必须参照必须参照com.siteview.svecc.service.User类的内容
+  输入：
+    id - 用户id值
+    result- 所有用户的列表值
+  输出：
+    message - 输出的错误信息
+  -->
+	<service name="getUserById" engine="java" 
+		location="com.siteview.svecc.service.User" invoke="getUserById">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="result" type="java.util.Map" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+ <!--
+  功能：检查用户名和密码是不是匹配，必须参照必须参照com.siteview.svecc.service.User类的内容
+  输入：
+    username - 用户名
+    password - 用户密码
+    result- 匹配结果，true表示是匹配，false表示不匹配
+  输出：
+    id - 此用户的id值
+    message - 输出的错误信息
+  -->
+	<service name="checkUser" engine="java" 
+		location="com.siteview.svecc.service.User" invoke="checkUser">
+		<attribute name="username" type="String" mode="IN"
+			optional="false" />
+		<attribute name="password" type="String" mode="IN"
+			optional="false" />
+		<attribute name="result" type="java.lang.Boolean" mode="OUT"
+			optional="false" />
+		<attribute name="id" type="String" mode="OUT"
+			optional="true" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+ <!--
+  功能：更新用户信息，必须参照必须参照com.siteview.svecc.service.User类的内容
+  输入：
+    id - 此用户的id值
+    data - 用户信息
+  输出：
+    message - 输出的错误信息
+  -->
+	<service name="updUser" engine="java" 
+		location="com.siteview.svecc.service.User" invoke="updUser">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="data" type="java.util.Map" mode="IN"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+ <!--
+  功能：更改用户秘密，必须参照必须参照com.siteview.svecc.service.User类的内容
+  输入：
+    id - 此用户的id值
+    oldPassword - 用户旧密码
+    newPassword - 用户新密码
+  输出：
+    message - 输出的错误信息
+  -->
+	<service name="chgUserPassword" engine="java" 
+		location="com.siteview.svecc.service.User" invoke="chgUserPassword">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="oldPassword" type="String" mode="IN" optional="false" />
+		<attribute name="newPassword" type="String" mode="IN" optional="false" />
+		<attribute name="message" type="String" mode="OUT" optional="true" />
+	</service>
+ <!--
+  功能：通过用户id得到指定用户的permission信息，必须参照必须参照com.siteview.svecc.service.UserPermission类的内容
+  输入：
+    id - 此用户的id值
+    result - 用户的permission信息
+  输出：
+    message - 输出的错误信息
+  -->
+	<!-- UserPermission Services define -->
+	<service name="getUserPermissionById" engine="java" 
+		location="com.siteview.svecc.service.UserPermission"
+		invoke="getUserPermissionById">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="result" type="java.util.Map" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+ <!--
+  功能：通过用户id得到指定用户的permission信息，必须参照必须参照com.siteview.svecc.service.UserPermission类的内容
+  输入：
+    id - 此用户的id值
+    name - 用户名
+    result - 用户的permission状态（true，false）
+  输出：
+    message - 输出的错误信息
+  -->
+	<service name="getUserPermission" engine="java" 
+		location="com.siteview.svecc.service.UserPermission"
+		invoke="getUserPermission">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="name" type="String" mode="IN" optional="false" />
+		<attribute name="result" type="java.lang.Boolean" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+ <!--
+  功能：通过用户id得到指定用户的permission信息，必须参照必须参照com.siteview.svecc.service.UserPermission类的内容
+  输入：
+    id - 此用户的id值
+    name - 用户名
+    result - 用户的permission状态（true，false）
+  输出：
+    message - 输出的错误信息
+  -->
+	<service name="updUserPermission" engine="java" 
+		location="com.siteview.svecc.service.UserPermission"
+		invoke="updUserPermission">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="data" type="java.util.Map" mode="IN"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+	<!-- Log Services define -->
+	<service name="addLog" engine="java" 
+		location="com.siteview.svecc.service.Log" invoke="addLog">
+		<attribute name="data" type="java.util.Map" mode="IN"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="false" />
+	</service>
+
+	<service name="delLog" engine="java" 
+		location="com.siteview.svecc.service.Log" invoke="delLog">
+		<attribute name="datex" type="Date" mode="IN" optional="false" />
+		<attribute name="serverName" type="String" mode="IN"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+	<service name="getLog" engine="java" 
+		location="com.siteview.svecc.service.Log" invoke="getLog">
+		<attribute name="datex" type="Date" mode="IN" optional="false" />
+		<attribute name="serverName" type="String" mode="IN"
+			optional="false" />
+		<attribute name="result" type="java.util.Map" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+	<service name="getLogByDate" engine="java" 
+		location="com.siteview.svecc.service.Log" invoke="getLogByDate">
+		<attribute name="begin" type="Date" mode="IN" optional="true" />
+		<attribute name="end" type="Date" mode="IN" optional="true" />
+		<attribute name="serverName" type="String" mode="IN"
+			optional="true" />
+		<attribute name="result" type="java.util.List" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+	<!-- Config Services define -->
+	<service name="getConfig" engine="java" 
+		location="com.siteview.svecc.service.Config" invoke="getConfig">
+		<attribute name="attrName" type="String" mode="IN"
+			optional="false" />
+		<attribute name="idx" type="Long" mode="IN" optional="false" />
+		<attribute name="result" type="String" mode="OUT"
+			optional="true" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+	<service name="getConfigByName" engine="java" 
+		location="com.siteview.svecc.service.Config" invoke="getConfigByName">
+		<attribute name="attrName" type="String" mode="IN"
+			optional="false" />
+		<attribute name="result" type="java.util.Map" mode="OUT"
+			optional="true" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+	<service name="updConfig" engine="java" 
+		location="com.siteview.svecc.service.Config" invoke="updConfig">
+		<attribute name="attrName" type="String" mode="IN"
+			optional="false" />
+		<attribute name="idx" type="Long" mode="IN" optional="false" />
+		<attribute name="value" type="String" mode="IN" optional="true" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+	
+	<service name="getMaxMachineIdx" engine="java" 
+		location="com.siteview.svecc.service.Config" invoke="getMaxMachineIdx">
+		<attribute name="attrName" type="String" mode="IN"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+	<!-- Message Services define -->
+	<service name="getMessage" engine="java" 
+		location="com.siteview.svecc.service.Message" invoke="getMessage">
+		<attribute name="messageCode" type="Long" mode="IN"
+			optional="false" />
+		<attribute name="result" type="String" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+
+	<!-- Others Services -->
+	
+	<service name="getMonitorFormsDocument" engine="java" 
+		location="com.siteview.svecc.service.MonitorEditProperties" invoke="getMonitorFormsDocument">
+		<attribute name="className" type="String" mode="IN"
+			optional="false" />
+		<attribute name="groupId" type="String" mode="IN"
+			optional="true" />
+		<attribute name="id" type="String" mode="IN"
+			optional="true" />
+		<attribute name="result" type="org.w3c.dom.Document" mode="OUT"
+			optional="true" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+	<service name="getMonitorFormsString" engine="java" 
+		location="com.siteview.svecc.service.MonitorEditProperties" invoke="getMonitorFormsString">
+		<attribute name="className" type="String" mode="IN"
+			optional="false" />
+		<attribute name="groupId" type="String" mode="IN"
+			optional="true" />
+		<attribute name="id" type="String" mode="IN"
+			optional="true" />
+		<attribute name="result" type="String" mode="OUT"
+			optional="true" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+	
+	<!-- developed by lijian -->
+
+	
+	<service name="getAllPermissionTypeAndAttrValue" engine="java"
+	location="com.siteview.svecc.service.PermissionOperate" invoke="getAllPermissionTypeAndAttrValue">
+		<attribute name="userId" type="String" mode="IN" optional="false" />	
+		<attribute name="result" mode="OUT" type="java.util.List" optional="false"></attribute>
+		<attribute name="message" mode="OUT" type="String" optional="true"></attribute>
+	</service>
+		
+	<service name="setPreferences" engine="java"
+	location="com.siteview.svecc.service.Email" invoke="setPreferences">
+		<attribute name="idx" mode="IN" type="String" optional="false"></attribute>
+		<attribute name="data" mode="IN" type="Map" optional="false"></attribute>
+		<attribute name="message" mode="OUT" type="String" optional="true"></attribute>
+	</service>
+
+<!-- SNMP -->	
+	<service name="getSNMPPreferenceInfoValue" engine="java" location="com.siteview.svecc.service.SNMPOperate"
+		invoke="SNMPDefaultSettingsInfo">
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+	</service>
+	<service name="saveSNMPChangeValue" engine="java" location="com.siteview.svecc.service.SNMPOperate"
+		invoke="saveSNMPChange">
+		<attribute name="result" type="Map" mode="IN" optional="true" />
+	</service>	
+	<service name="getSNMPPrefefencesListValue" engine="java" location="com.siteview.svecc.service.SNMPOperate"
+		invoke="getSNMPPrefefencesList">
+		<attribute name="result" type="java.util.List" mode="OUT" optional="true" />
+	</service>
+	<service name="UpdateAddSNMPSetting" engine="java" location="com.siteview.svecc.service.SNMPOperate"
+		invoke="updateSNMPsetting">
+		<attribute name="idx" type="Long" mode="IN" optional="true" />
+		<attribute name="pagerValue" type="String" mode="IN" optional="true" />
+	</service>
+	<service name="saveAddSNMPSettingValue" engine="java" location="com.siteview.svecc.service.SNMPOperate"
+		invoke="saveSetting">
+		<attribute name="value" type="java.util.Map" mode="IN" optional="true" />
+	</service>	
+	<service name="delSNMPsetingValue" engine="java" location="com.siteview.svecc.service.SNMPOperate"
+		invoke="delSNMPseting">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="String" mode="OUT" optional="true" />
+	</service>	
+	<service name="SNMPSendValue" engine="java" location="com.siteview.svecc.service.SNMPOperate"
+		invoke="SNMPSend">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="message" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="String" mode="OUT" optional="true" />
+	</service>		
+	
+						
+<!-- Pager -->	
+ <!--
+  功能： 得到所有pager的设置列表，必须参照com.siteview.svecc.service.PagerOperate类的内容
+  输入：
+    无
+  输出：
+    设置列表
+    没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="getPagerDefaultPrefefencesValue" engine="java" location="com.siteview.svecc.service.PagerOperate"
+		invoke="getPagerDefaultPrefefences">
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+	</service>
+ <!--
+  功能： 得到所有pager的设置列表，必须参照com.siteview.svecc.service.PagerOperate类的内容
+  输入：
+    无
+  输出：
+    设置列表
+    没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="getPagerPrefefencesListValue" engine="java" location="com.siteview.svecc.service.PagerOperate"
+		invoke="getPagerPrefefencesList">
+		<attribute name="result" type="java.util.List" mode="OUT" optional="true" />
+	</service>	
+ <!--
+  功能： 存储pager修改后的设置值，必须参照com.siteview.svecc.service.PagerOperate类的内容
+  输入：
+    value - 修改后的设置值
+  输出：
+    无
+    没有设置 message - 输出的错误信息，可以自己添加。
+  -->	
+	<service name="savePagerChangeValue" engine="java" location="com.siteview.svecc.service.PagerOperate"
+		invoke="savePagerChange">
+		<attribute name="Value" type="Map" mode="IN" optional="true" />
+	</service>
+ <!--
+  功能： 根据id得到pageSetting的基本设置，必须参照com.siteview.svecc.service.PagerOperate类的内容
+  输入：
+    id - 一个pagesetting的id值
+  输出：
+    一条id值对应的记录
+    没有设置 message - 输出的错误信息，可以自己添加。
+  -->	
+	<service name="pagerSettingInfoValue" engine="java" location="com.siteview.svecc.service.PagerOperate"
+		invoke="pagerSettingInfo">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+	</service>
+ <!--
+  功能： 储存页面设置的值，必须参照com.siteview.svecc.service.PagerOperate类的内容
+  输入：
+    value - pager值
+  输出：
+    无
+    没有设置 message - 输出的错误信息，可以自己添加。
+  -->	
+	<service name="saveAddPagerSettingValue" engine="java" location="com.siteview.svecc.service.PagerOperate"
+		invoke="saveSetting">
+		<attribute name="value" type="java.util.Map" mode="IN" optional="true" />
+	</service>	
+ <!--
+  功能： 更新页面设置，必须参照com.siteview.svecc.service.PagerOperate类的内容
+  输入：
+    idx - 一个page的索引值
+    pagerValue - pager值
+  输出：
+    无
+    没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="UpdateAddPagerSetting" engine="java" location="com.siteview.svecc.service.PagerOperate"
+		invoke="updatePagersetting">
+		<attribute name="idx" type="Long" mode="IN" optional="true" />
+		<attribute name="pagerValue" type="String" mode="IN" optional="true" />
+	</service>	
+ <!--
+  功能： 用发送操作来测试设置，必须参照com.siteview.svecc.service.PagerOperate类的内容
+  输入：
+    id - 一个page的id值
+    message - 发送的信息
+  输出：
+    无
+    没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="sendTest" engine="java" location="com.siteview.svecc.service.PagerOperate"
+		invoke="sendTest">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="message" type="String" mode="IN" optional="true" />
+	</service>
+ <!--
+  功能： 删除page设置，必须参照com.siteview.svecc.service.PagerOperate类的内容
+  输入：
+    id - 一个page的id值
+  输出：
+    result- 输出的错误信息，可以自己添加。
+  -->
+	<service name="delPagerseting" engine="java" location="com.siteview.svecc.service.PagerOperate"
+		invoke="delPagerseting">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+	</service>
+ <!--
+  功能： 得到邮件的设置，必须参照com.siteview.svecc.service.EmailOperate类的内容
+  输入：
+    无
+  输出：
+   result - 输出设置信息
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->	
+	<!-- Email -->		
+	<service name="getEmailDefaultPrefefencesValue" engine="java" location="com.siteview.svecc.service.EmailOperate"
+		invoke="getEmailPreferences">
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+	</service>
+ <!--
+  功能： 保存设置信息，必须参照com.siteview.svecc.service.EmailOperate类的内容
+  输入：
+    value - Email设置信息
+  输出：
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->	
+	<service name="saveEmailChangeValue" engine="java" location="com.siteview.svecc.service.EmailOperate"
+		invoke="setEmailPreferences">
+		<attribute name="Value" type="Map" mode="IN" optional="true" />
+	</service>	
+ <!--
+  功能： 保存设置信息，必须参照com.siteview.svecc.service.EmailOperate类的内容
+  输入：
+    value - Email设置信息
+  输出：
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="saveAddEmailSettingValue" engine="java" location="com.siteview.svecc.service.EmailOperate"
+		invoke="AddEmailSetting">
+		<attribute name="Value" type="Map" mode="IN" optional="true" />
+	</service>	
+	<service name="delAdditionalEmail" engine="java"
+	location="com.siteview.svecc.service.EmailOperate" invoke="delAdditionalEmail">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="result" mode="OUT" type="String" optional="true"></attribute>
+	</service>		
+<!-- Dynamic Update -->	
+ <!--
+  功能： 得到dynamic update的设置列表，必须参照com.siteview.svecc.service.DynamicUpdOperate类的内容
+  输入：
+    无
+  输出：
+   result - 输出的list列表
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="getDynamicUpdPrefefencesListValue" engine="java" location="com.siteview.svecc.service.DynamicUpdOperate"
+		invoke="getDynamicUpdPreferences">
+		<attribute name="result" type="List" mode="OUT" optional="true" />
+	</service>	
+ <!--
+  功能： 根据id值得到dynamic update的一条记录，必须参照com.siteview.svecc.service.DynamicUpdOperate类的内容
+  输入：
+   id - id值
+  输出：
+   result - 输出的一条记录
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="getValueById" engine="java" location="com.siteview.svecc.service.DynamicUpdOperate"
+		invoke="getValueById">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="result" type="Map" mode="OUT" optional="true" />
+	</service>		
+	<service name="addDynamicSet" engine="java" location="com.siteview.svecc.service.DynamicUpdOperate"
+		invoke="addDynamicSet">
+		<attribute name="result" type="Map" mode="IN" optional="true" />
+	</service>		
+ <!--
+  功能： 根据id值删除一条Dynamic记录信息，必须参照com.siteview.svecc.service.DynamicUpdOperate类的内容
+  输入：
+    id - dynamic 的id值
+  输出：
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="editDynamicSet" engine="java" location="com.siteview.svecc.service.DynamicUpdOperate"
+		invoke="editDynamicSet">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="result" type="Map" mode="IN" optional="true" />
+	</service>	
+ <!--
+  功能： 根据id值删除一条Dynamic记录信息，必须参照com.siteview.svecc.service.DynamicUpdOperate类的内容
+  输入：
+    id - dynamic 的id值
+  输出：
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="deleteDynamicSet" engine="java" location="com.siteview.svecc.service.DynamicUpdOperate"
+		invoke="deleteDynamicSet">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+	</service>
+	
+	<!--Log -->	
+ <!--
+  功能：得到一条Log的记录信息，必须参照com.siteview.svecc.service.LogOperate类的内容
+  输入：
+    无输入录
+  输出：
+   输出登录信息
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="getLogPreference" engine="java" location="com.siteview.svecc.service.LogOperate"
+		invoke="getLogPreference">
+		<attribute name="LogInfo" type="Map" mode="OUT" optional="false" />
+	</service>	
+ <!--
+  功能：存储一条Log的记录信息，必须参照com.siteview.svecc.service.LogOperate类的内容
+  输入：
+    value - 输入一条记录
+  输出：
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="saveLogChange" engine="java" location="com.siteview.svecc.service.LogOperate"
+		invoke="saveLogChange">
+		<attribute name="value" type="Map" mode="IN" optional="false" />
+	</service>
+	<!--Schedule -->	
+ <!--
+  功能：存储一条Schedule的记录信息，必须参照com.siteview.svecc.service.ScheduleOperate类的内容
+  输入：
+    value - 输入一条记录
+  输出：
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="saveRangScheduleV" engine="java" location="com.siteview.svecc.service.ScheduleOperate"
+		invoke="saveRangScheduleV">
+		<attribute name="value" type="Map" mode="IN" optional="false" />
+	</service>		
+ <!--
+  功能：存储一条Schedule的记录信息，必须参照com.siteview.svecc.service.ScheduleOperate类的内容
+  输入：
+    value - 输入的指定值
+  输出：
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="saveAbsoluteScheduleV" engine="java" location="com.siteview.svecc.service.ScheduleOperate"
+		invoke="saveAbsoluteScheduleV">
+		<attribute name="value" type="String" mode="IN" optional="false" />
+	</service>	
+ <!--
+  功能：得到Schedule的记录，必须参照com.siteview.svecc.service.ScheduleOperate类的内容
+  输入：
+    无
+  输出：
+   value - Schedule的输出列表
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="getScheduleList" engine="java" location="com.siteview.svecc.service.ScheduleOperate"
+		invoke="getScheduleList">
+		<attribute name="value" type="List" mode="OUT" optional="false" />
+	</service>	
+ <!--
+  功能：通过Schedule的id删除指定Schedule的基本信息，必须参照com.siteview.svecc.service.ScheduleOperate类的内容
+  输入：
+    id - 此Schedule的id值
+  输出：
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="delScheduleV" engine="java" location="com.siteview.svecc.service.ScheduleOperate"
+		invoke="delScheduleV">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+	</service>	
+ <!--
+  功能：通过Scheduleid得到指定Schedule的基本信息，必须参照com.siteview.svecc.service.ScheduleOperate类的内容
+  输入：
+    id - 此Schedule的id值
+    value - Schedule要输出的基本信息（true，false）
+  输出：
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="editAbsoluteScheduleV" engine="java" location="com.siteview.svecc.service.ScheduleOperate"
+		invoke="editAbsoluteScheduleV">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="value"  type="Map" mode="OUT"  optional="false"/>
+	</service>
+ <!--
+  功能：通过Schedule的id对Schedule信息进行修改，必须参照com.siteview.svecc.service.ScheduleOperate类的内容
+  输入：
+    id - 此Schedule的id值
+    value - Schedule的修改后要输入的信息（true，false）
+  输出：
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->
+	<service name="updateAbsoluteScheduleV" engine="java" location="com.siteview.svecc.service.ScheduleOperate"
+		invoke="updateAbsoluteScheduleV">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="value"  type="String" mode="IN"  optional="false"/>
+	</service>
+ <!--
+  功能：通过Scheduleid得到指定Schedule的基本信息，必须参照com.siteview.svecc.service.ScheduleOperate类的内容
+  输入：
+    id - 此Schedule的id值
+    value - Schedule的基本信息（true，false）
+  输出：
+   没有设置 message - 输出的错误信息，可以自己添加。
+  -->	
+	<service name="editRangeScheduleV" engine="java" location="com.siteview.svecc.service.ScheduleOperate"
+		invoke="editRangeScheduleV">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="value"  type="Map" mode="OUT"  optional="false"/>
+	</service>											
+</services>

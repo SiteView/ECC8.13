@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 
+    <property key="svNetWork">
+        <value xml:lang="en">official website</value>
+        <value xml:lang="zh">官方网站</value>
+    </property>
+    <property key="svKeyWords">
+        <value xml:lang="en">Network Management   Flow Analysis   Network Operation and Maintenance    Desktop Management   professional    Network Equipment    Supplier</value>
+        <value xml:lang="zh">网管 流量分析 网络运维 桌面管理 SiteView 专业 网络设备 供应商</value>
+    </property>
+    <property key="svDescription">
+        <value xml:lang="en">Network Management   Flow Analysis   Network Operation and Maintenance    Desktop Management   professional    Network Equipment    Supplier</value>
+        <value xml:lang="zh">网管 流量分析 网络运维 桌面管理 SiteView 专业 网络设备 供应商</value>
+    </property>
+  
+</resource>

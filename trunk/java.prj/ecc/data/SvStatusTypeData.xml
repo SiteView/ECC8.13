@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvStatusType statusTypeId="1" statusTypeName="COMMON_STATUS_NORMAL" statusTypeIcon="normal.gif" lastUpdatedStamp="2008-04-07 17:45:58.0" lastUpdatedTxStamp="2008-04-07 17:45:58.0" createdStamp="2008-04-07 17:45:58.0" createdTxStamp="2008-04-07 17:45:58.0"/>
+    <SvStatusType statusTypeId="2" statusTypeName="COMMON_STATUS_WARNING" statusTypeIcon="warning.gif" lastUpdatedStamp="2008-04-07 17:45:58.0" lastUpdatedTxStamp="2008-04-07 17:45:58.0" createdStamp="2008-04-07 17:45:58.0" createdTxStamp="2008-04-07 17:45:58.0"/>
+    <SvStatusType statusTypeId="3" statusTypeName="COMMON_STATUS_ERROR" statusTypeIcon="error.gif" lastUpdatedStamp="2008-04-07 17:45:58.0" lastUpdatedTxStamp="2008-04-07 17:45:58.0" createdStamp="2008-04-07 17:45:58.0" createdTxStamp="2008-04-07 17:45:58.0"/>
+    <SvStatusType statusTypeId="4" statusTypeName="COMMON_STATUS_DANGER" statusTypeIcon="danger.gif" lastUpdatedStamp="2008-04-07 17:45:58.0" lastUpdatedTxStamp="2008-04-07 17:45:58.0" createdStamp="2008-04-07 17:45:58.0" createdTxStamp="2008-04-07 17:45:58.0"/>
+    <SvStatusType statusTypeId="5" statusTypeName="COMMON_STATUS_DISABLED" statusTypeIcon="disabled.gif" lastUpdatedStamp="2008-04-07 17:45:58.0" lastUpdatedTxStamp="2008-04-07 17:45:58.0" createdStamp="2008-04-07 17:45:58.0" createdTxStamp="2008-04-07 17:45:58.0"/>
+</entity-engine-xml>

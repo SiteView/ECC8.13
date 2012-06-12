@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+    
+    <screen name="userinfo">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.svUserInfoList}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+		                        <include-form name="UserInfo" location="component://svecc/widget/user/UserInfoForm.xml"/> 
+		                        <include-form name="AddUserButton" location="component://svecc/widget/user/UserInfoForm.xml"/> 
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="everyuserinfo">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.svUserInfo}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                            <section>
+								<actions>
+									<service service-name="getEveryUserInfo"></service>
+								</actions>        
+                                <widgets>
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/user/everyuserinfotable.ftl" />
+			                            </html>
+			                        </platform-specific>
+                                </widgets>
+                            </section>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="editUserInfo">
+		<section>     
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.svUserEditInfo}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+		                        <include-form name="EditUserInfo" location="component://svecc/widget/user/UserInfoForm.xml"/> 
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>  
+    <screen name="saveUserInfo">
+		<section>
+			<actions>
+				<service service-name="saveUserInfo"></service>
+			</actions>  
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.svUserSaveInfo}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/user/everyuserinfotable.ftl" />
+			                            </html>
+			                        </platform-specific>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen> 
+    <screen name="changePwd">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.svUserChangePwd}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+			                        <include-form name="changePwd" location="component://svecc/widget/user/UserInfoForm.xml"/> 
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="createUser">
+		<section>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.svUserCreate}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+			                        <include-form name="createUser" location="component://svecc/widget/user/UserInfoForm.xml"/> 
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen> 
+    <screen name="changepermission">
+		<section>     
+			<actions>
+			<!-- 
+			<set field="para" from-field="parameters.name" global="true"/>
+			 -->
+	          <service service-name="getAllPermissionTypeAndAttrValue"></service>
+	        </actions>
+     	        
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+		                   <container style="screenlet-header">
+		                       <label style="boxhead" text="${uiLabelMap.svUserChangepermission}"/>
+		                   </container>
+		                   <container style="screenlet-body">
+                                    <platform-specific>
+			                            <html>
+			                                <html-template location="component://svecc/webapp/ecc/user/permission.ftl" />
+			                            </html>
+			                        </platform-specific>
+		                   </container>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>                
+</screens>
+

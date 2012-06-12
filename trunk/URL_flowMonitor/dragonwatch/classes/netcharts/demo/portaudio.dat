@@ -1,0 +1,6 @@
+DataSets = ("Portable Audio Sales");
+TopAxisTitle = ("Portable Audio Sales", dimgrey, Helvetica, 12);
+DataSet1 = 10531,27615,9314;
+BarLabels = "CD", "Stereo", "Cassette";
+ActiveLabels1 = ("$10,531"), ("$27,615"),("$9,314");
+LeftTitle = ("");

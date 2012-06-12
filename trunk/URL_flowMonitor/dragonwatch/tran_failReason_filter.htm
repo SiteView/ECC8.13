@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+<TITLE>Dragon Wartch - Active Filters</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="Author" content="YuLei numen@263.net kenny kenny.jin@dragonflow.net">
+</HEAD>
+<SCRIPT LANGUAGE="JavaScript" SRC="inc/failreason.js"></SCRIPT>
+<BODY BGCOLOR="#efefdf" TOPMARGIN="0" LEFTMARGIN="0" onLoad="InitActiveFilters()">
+<table bgcolor=white border=0 cellpadding=0 cellspacing=0 width="400" valign="bottom">
+  <tr valign=bottom> 
+    <td colspan=4><img height=6 src="img/Sp_trans.gif"></td>
+  </tr>
+  <tr valign=bottom> 
+    <td valign=bottom width=20>&nbsp;</td>
+    <td valign=bottom width="115"><img border=0 name=TranImage src="img/tb_fail.gif" valign="bottom" width="115" height="24">
+    </td>
+    <td valign=bottom width="236">&nbsp;</td>
+    <td valign=bottom width="29">&nbsp;</td>
+  </tr>
+</table>
+<table bgcolor="#efefdf" border=0 cellpadding=0 cellspacing=0 width="400"  valign="top">
+  <tr> 
+    <td bgcolor="#efefdf" height="12" width="20">&nbsp;</td>
+    <td bgcolor="#efefdf" height="12" width="360">&nbsp;</td>
+    <td bgcolor="#efefdf" height="12" width="20">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#efefdf" width="20">&nbsp;</td>
+    <td bgcolor="#efefdf" width="360"> <IFRAME NAME="iframe_Filters" SRC="tran_failReason_filter_iframe.asp" WIDTH="360" HEIGHT="200"></IFRAME> 
+    </td>
+    <td bgcolor="#efefdf" width="20">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#efefdf" height="12" width="20">&nbsp;</td>
+    <td bgcolor="#efefdf" height="12" width="360">&nbsp;</td>
+    <td bgcolor="#efefdf" height="12" width="20">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td bgcolor="#efefdf" colspan="3">
+      <table align=center border=0 cellpadding=5 cellspacing=1>
+        <tbody> 
+        <tr> 
+          <td align=left><a href="#" onClick="setFilters(true);return nop();"><img border=0 src="img/bu_ok.gif"></a> 
+          </td>
+          <td align=middle> <a href="#" onClick="selectAction('All');return nop();"><img border=0 src="img/bu_all.gif"></a> 
+            <a href="#" onClick="selectAction('Invert');return nop();"><img border=0 src="img/bu_invert.gif"></a> 
+            <a href="#" onClick="selectAction('None');return nop();"><img border=0 src="img/bu_none.gif"></a> 
+          </td>
+          <td align=right> <a href="#" onClick="setFilters(false);return nop()"><img border=0 src="img/bu_cancel.gif"></a> 
+          </td>
+        </tr>
+        </tbody> 
+      </table>
+    </td>
+  </tr>
+</table>
+</BODY>
+</HTML>

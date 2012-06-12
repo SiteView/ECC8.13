@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<!--SvCiTypeCategory-->
+
+	<property key="eccCompanyName">
+		<value xml:lang="en">Dragonflow.com</value>
+		<value xml:lang="zh">北京游龙网网络科技公司</value>
+	</property>
+
+	<property key="eccApplication">
+		<value xml:lang="en">Enterprise Control Console</value>
+		<value xml:lang="zh">面向系统应用的监测</value>
+	</property>
+
+	<property key="eccMainPage">
+		<value xml:lang="en">Main</value>
+		<value xml:lang="zh">首页</value>
+	</property>
+
+	<property key="eccWelcome">
+		<value xml:lang="en">
+			Welcome to Enterprise Control Center
+		</value>
+		<value xml:lang="zh">欢迎使用面向系统应用的监测</value>
+	</property>
+
+	<property key="eccAlerts">
+		<value xml:lang="en">Alerts</value>
+		<value xml:lang="zh">告警</value>
+	</property>
+
+	<property key="eccReports">
+		<value xml:lang="en">Reports</value>
+		<value xml:lang="zh">报表</value>
+	</property>
+
+	<property key="eccViews">
+		<value xml:lang="en">Views</value>
+		<value xml:lang="zh">视图</value>
+	</property>
+
+	<property key="eccPreferences">
+		<value xml:lang="en">Preferences</value>
+		<value xml:lang="zh">设置</value>
+	</property>
+	<property key="eccHelp">
+		<value xml:lang="en">Help</value>
+		<value xml:lang="zh">帮助</value>
+	</property>
+	<property key="groupservices.error_adding_svse">
+		<value xml:lang="zh">增加SVSE错误</value>
+	</property>
+	<property key="groupservices.error_adding_group">
+		<value xml:lang="zh">增加组错误</value>
+	</property>
+
+
+	<property key="eccViews">
+		<value xml:lang="en">Views</value>
+		<value xml:lang="zh">视图</value>
+	</property>
+
+
+	<property key="eccEmailseting">
+		<value xml:lang="en">eccEmailseting</value>
+		<value xml:lang="zh">Email设置</value>
+	</property>
+	<property key="_sendEmail">
+		<value xml:lang="en">sendEmail</value>
+		<value xml:lang="zh">发送邮件</value>
+	</property>
+	<property key="returnemailPreference">
+		<value xml:lang="en">returnEmailPreference</value>
+		<value xml:lang="zh">返回EmailPreference</value>
+	</property>
+	<property key="saveAndTest">
+		<value xml:lang="en">saveAndTest</value>
+		<value xml:lang="zh">保存设置并测试</value>
+	</property>
+	<property key="commitSet">
+		<value xml:lang="en">commitSet</value>
+		<value xml:lang="zh">保存设置</value>
+	</property>
+	<property key="EmailTest">
+		<value xml:lang="en">EmailTest</value>
+		<value xml:lang="zh">Email发送测试</value>
+	</property>
+	<property key="AddEmailSettings">
+		<value xml:lang="en">AddEmailSettings</value>
+		<value xml:lang="zh">添加Email设置</value>
+	</property>
+	<!-- 添加监测器 -->
+	<property key="eccCreatePingPage">
+		<value xml:lang="en">Create Ping Monitor</value>
+		<value xml:lang="zh">创建 Ping 监测器</value>
+	</property>
+
+	<property key="eccMonitorBaseInfo">
+		<value xml:lang="en">Base Information</value>
+		<value xml:lang="zh">基础信息</value>
+	</property>
+
+	<property key="eccAdvanceOption">
+		<value xml:lang="en">Advance option</value>
+		<value xml:lang="zh">高级选项</value>
+	</property>
+
+	<property key="eccTimeout">
+		<value xml:lang="en">Timeout</value>
+		<value xml:lang="zh">超时</value>
+	</property>
+
+	<property key="eccSendBytes">
+		<value xml:lang="en">SendBytes</value>
+		<value xml:lang="zh">发送字节数</value>
+	</property>
+
+	<property key="eccSendNums">
+		<value xml:lang="en">SendNums</value>
+		<value xml:lang="zh">发送次数</value>
+	</property>
+
+	<property key="eccCondition">
+		<value xml:lang="en">Condition</value>
+		<value xml:lang="zh">报警条件</value>
+	</property>
+
+	<property key="eccDeviceName">
+		<value xml:lang="en">Device Name</value>
+		<value xml:lang="zh">设备名称</value>
+	</property>
+
+	<property key="eccProbeFrequency">
+		<value xml:lang="en">Monitor probe frequency</value>
+		<value xml:lang="zh">监测频率</value>
+	</property>
+
+	<property key="eccFrequencyMinute">
+		<value xml:lang="en">Minute</value>
+		<value xml:lang="zh">分钟</value>
+	</property>
+
+	<property key="eccFrequencyUnit">
+		<value xml:lang="en">Unit</value>
+		<value xml:lang="zh">单位</value>
+	</property>
+
+	<property key="eccFrequencySecond">
+		<value xml:lang="en">Second</value>
+		<value xml:lang="zh">秒</value>
+	</property>
+
+	<property key="eccMonitorTitle">
+		<value xml:lang="en">Monitor title</value>
+		<value xml:lang="zh">监测器标题</value>
+	</property>
+
+	<property key="eccConditionError">
+		<value xml:lang="en">Error</value>
+		<value xml:lang="zh">错误</value>
+	</property>
+
+	<property key="eccConditionWarn">
+		<value xml:lang="en">Warn</value>
+		<value xml:lang="zh">危险</value>
+	</property>
+
+	<property key="eccConditionGood">
+		<value xml:lang="en">Good</value>
+		<value xml:lang="zh">正常</value>
+	</property>
+
+	<property key="eccAdd">
+		<value xml:lang="en">Add</value>
+		<value xml:lang="zh">添加</value>
+	</property>
+
+	<property key="eccCancel">
+		<value xml:lang="en">Cancel</value>
+		<value xml:lang="zh">取消</value>
+	</property>
+
+	<property key="editMachine">
+		<value xml:lang="en">Edit Remote NT</value>
+		<value xml:lang="zh">修改监控NT</value>
+	</property>
+	<property key="machineHeadName">
+		<value xml:lang="en">Name</value>
+		<value xml:lang="zh">名称</value>
+	</property>
+	<property key="machineHeadHost">
+		<value xml:lang="en">server</value>
+		<value xml:lang="zh">服务器</value>
+	</property>
+	<property key="machineHeadState">
+		<value xml:lang="en">Status</value>
+		<value xml:lang="zh">状态</value>
+	</property>
+	<property key="machineHeadMethod">
+		<value xml:lang="en">Method</value>
+		<value xml:lang="zh">方法</value>
+	</property>
+	<property key="machineHeadEdit">
+		<value xml:lang="en">Edit</value>
+		<value xml:lang="zh">修改</value>
+	</property>
+	<property key="machineHeadTest">
+		<value xml:lang="en">Test</value>
+		<value xml:lang="zh">测试</value>
+	</property>
+	<property key="machineHeadDel">
+		<value xml:lang="en">Delete</value>
+		<value xml:lang="zh">删除</value>
+	</property>
+	<property key="machineHeadAdd">
+		<value xml:lang="en">Add</value>
+		<value xml:lang="zh">增加</value>
+	</property>
+	<property key="eccEmailpreference">
+		<value xml:lang="en">eccEmailpreference</value>
+		<value xml:lang="zh">Email参数选择</value>
+	</property>
+
+	<!-- 
+		
+		仿照sv65设置
+	-->
+
+
+	<property key="sveccMainPage">
+		<value xml:lang="en">Group/Monitor Tree</value>
+		<value xml:lang="zh">监视器组树形视图</value>
+	</property>
+	<property key="sveccGroupList">
+		<value xml:lang="en">Group List</value>
+		<value xml:lang="zh">组列表</value>
+	</property>
+	<property key="sveccGotoGroupList">
+		<value xml:lang="en">Goto Group List</value>
+		<value xml:lang="zh">跳转到组列表</value>
+	</property>
+
+	<!-- developed by lijian -->
+
+	<property key="sveccCreateMonitor">
+		<value xml:lang="en">Create Monitor</value>
+		<value xml:lang="zh">创建监视器</value>
+	</property>
+	<property key="sveccTestMonitor">
+		<value xml:lang="en">Test Monitor Result</value>
+		<value xml:lang="zh">测试监视器结果</value>
+	</property>
+
+
+	<property key="sveccMonitorList">
+		<value xml:lang="en">Monitor List</value>
+		<value xml:lang="zh">监视器列表</value>
+	</property>
+	<property key="sveccMonitorTypeList">
+		<value xml:lang="en">Monitor Type List</value>
+		<value xml:lang="zh">监视器类型列表</value>
+	</property>
+
+	<!-- add by sjw -->
+	<property key="sveccMonitor">
+		<value xml:lang="en">Monitor</value>
+		<value xml:lang="zh">组名XXXX(WARN)有一个监视器错误</value>
+	</property>
+</resource>

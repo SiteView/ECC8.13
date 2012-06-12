@@ -1,0 +1,10 @@
+D:\SiteView.MmcShell\SiteView.MmcShell\bin\Debug\SiteView.MmcShell.dll
+D:\SiteView.MmcShell\SiteView.MmcShell\bin\Debug\SiteView.MmcShell.pdb
+D:\SiteView.MmcShell\SiteView.MmcShell\obj\Debug\ResolveAssemblyReference.cache
+D:\SiteView.MmcShell\SiteView.MmcShell\obj\Debug\SiteView.MmcShell.ShellUserControl.resources
+D:\SiteView.MmcShell\SiteView.MmcShell\obj\Debug\SiteView.MmcShell.csproj.GenerateResource.Cache
+D:\SiteView.MmcShell\SiteView.MmcShell\obj\Debug\SiteView.MmcShell.dll
+D:\SiteView.MmcShell\SiteView.MmcShell\obj\Debug\SiteView.MmcShell.pdb
+D:\SiteView.MmcShell\SiteView.MmcShell\obj\Debug\SiteView.MmcShell.Properties.Resources.resources
+D:\SiteView.MmcShell\SiteView.MmcShell\obj\Debug\SiteView.MmcShell.NavigatorUserControl.resources
+D:\SiteView.MmcShell\SiteView.MmcShell\obj\Debug\SiteView.MmcShell.ViewUserControl.resources

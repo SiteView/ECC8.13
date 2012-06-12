@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+
+    <!-- developed by lijian --> 
+    <request-map uri="userinfo">  
+        <security https="false" auth="true"/>
+    	<response name="success" type="view" value="userinfo"/>
+    </request-map>
+    <request-map uri="everyUserInfo">
+        <security https="false" auth="true"/>
+    	<response name="success" type="view" value="everyuserinfo"/>
+    </request-map>
+    <request-map uri="editUserInfo">
+        <security https="false" auth="true"/>
+		<response name="success" type="view" value="editUserInfo"/>
+	</request-map>
+	<request-map uri="saveUserInfo">
+        <security https="false" auth="true"/>
+		<response name="success" type="view" value="saveUserInfo"/>		
+	</request-map>
+	<request-map uri="changePwd">
+        <security https="false" auth="true"/>
+		<response name="success" type="view" value="changePwd"/>
+	</request-map>	
+	<request-map uri="savePwd">
+        <security https="false" auth="true"/>
+		<event type="service" invoke="savePwd"/>
+		<response name="success" type="view" value="userinfo"/>
+		<response name="fail" type="view" value="changePwd"/>
+		<response name="error" type="view" value="changePwd"/>
+	</request-map>
+	<request-map uri="createUser">
+        <security https="false" auth="true"/>
+		<response name="success" type="view" value="createUser"/>
+	</request-map>	
+	<request-map uri="saveUser">
+        <security https="false" auth="true"/>
+		<event type="service" invoke="saveUser"/>
+		<response name="success" type="view" value="userinfo"/>
+		<response name="fail" type="view" value="createUser"/>
+		<response name="error" type="view" value="createUser"/>
+	</request-map>
+	<request-map uri="changepermission">
+        <security https="false" auth="true"/>
+		<response name="success" type="view" value="changepermission"/>
+	</request-map>
+	
+	<request-map uri="savePermission">
+        <security https="false" auth="true"/>
+		<event type="bsf" path="" invoke="org/siteview/svecc/user/savePermission.bsh"/>
+		<response name="success" type="view" value="userinfo"/>
+	</request-map>
+	<request-map uri="delUIUser">
+        <security https="false" auth="true"/>
+		<event type="service" invoke="delUIUser"/>
+		<response name="success" type="view" value="userinfo"/>
+	</request-map>
+
+	<!-- developed by lijian -->
+	<view-map name="userLogin" type="screen" page="component://svecc/widget/CommonScreens.xml#login"></view-map>
+	<view-map name="userinfo" type="screen" page="component://svecc/widget/user/svEccUserScreens.xml#userinfo"></view-map>
+	<view-map name="everyuserinfo" type="screen" page="component://svecc/widget/user/svEccUserScreens.xml#everyuserinfo"></view-map>
+	<view-map name="editUserInfo" type="screen" page="component://svecc/widget/user/svEccUserScreens.xml#editUserInfo"></view-map>
+	<view-map name="saveUserInfo" type="screen" page="component://svecc/widget/user/svEccUserScreens.xml#saveUserInfo"></view-map>
+	<view-map name="changePwd" type="screen" page="component://svecc/widget/user/svEccUserScreens.xml#changePwd"></view-map>
+	<view-map name="savePwd" type="screen" page="component://svecc/widget/user/svEccUserScreens.xml#savePwd"></view-map>
+	<view-map name="createUser" type="screen" page="component://svecc/widget/user/svEccUserScreens.xml#createUser"></view-map>
+	<view-map name="changepermission" type="screen" page="component://svecc/widget/user/svEccUserScreens.xml#changepermission"></view-map>
+</site-conf>
+

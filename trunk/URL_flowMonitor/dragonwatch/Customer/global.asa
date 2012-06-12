@@ -1,0 +1,18 @@
+<Script language=VBScript RUNAT=Server>
+	Sub Session_OnStart
+		'-----------Sessions-------------
+		'session("CustName")=""
+		'session("CustId")=0
+		session.timeout=30 '30∑÷÷”
+		'-----------Connection-------------
+		'With dcnDB
+		'	.ConnectionString="Provider=sqloledb;UID=sa;PWD=sayulei;database=test"
+		'	.Open
+		'	.commandtimeout=session.timeout
+		'End With
+	End Sub
+''--------------------------------------
+'	Sub Session_OnEnd
+'		'set dcnDB=Nothing
+'	End Sub
+</Script>

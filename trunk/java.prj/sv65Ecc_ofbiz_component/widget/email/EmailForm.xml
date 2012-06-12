@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-form.xsd">
+
+   <form name="AdditionalEmailSettings" list-name="result" target="" title=""  type="list" paginate-target=""
+        odd-row-style="alternate-row" default-table-style="basic-table hover-bar">
+        <actions >
+          <service service-name="getAdditionalEmailList" >
+          </service>
+        </actions>
+         <field name="_name" title="NAME" ><display/></field>
+
+        <field name="_disabled" use-when="_disabled.equals(&quot;on&quot;)==true" title="STATUS">
+        		<display description="disabled"/>
+        </field>       	
+
+        <field name="_disabled" use-when="_disabled.equals(&quot;on&quot;)==false" title="STATUS">
+        		<display description="scheduled"/>
+        </field>  
+        <field name="_disabled" use-when="_disabled.equals(&quot;no additional e-mail settings&quot;)==true" title="STATUS">
+        		<display description="no additional e-mail settings"/>
+        </field>             	
+       	
+		<field name="_email"  title=" EmailTo" ><display/></field>
+		
+		<field name="q" title="EDIT " widget-style="buttontext" use-when=" _id.equals(&quot;no&quot;)==false">
+			<hyperlink description="EDIT" target="AddEmailSettings?id=${_id}"/>
+		</field>
+		<field name="q" title="EDIT " widget-style="buttontext"  use-when=" _id.equals(&quot;no&quot;)==true">
+			<display/>
+		</field>		
+
+		<field name="p" title="DELETE " widget-style="buttontext" use-when=" _id.equals(&quot;no&quot;)==false">
+			<hyperlink description="DELETE" target="delEmailSettings?id=${_id}"/>
+		</field>
+		<field name="p" title="DELETE " widget-style="buttontext"  use-when=" _id.equals(&quot;no&quot;)==true">
+			<display/>
+		</field>		
+   </form>
+
+   <form name="AddEmailSettings" list-name="listIt" target="" title=""  type="single" paginate-target=""
+        odd-row-style="alternate-row" default-table-style="basic-table">
+
+		<field name="submitButton" title="" widget-style="buttontext">
+		<hyperlink description="${uiLabelMap.AddEmailSettings}" target="AddEmailSettings"/>
+		</field>
+   </form>       
+</forms>

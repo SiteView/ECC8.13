@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entitymodel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitymodel.xsd">
+  
+	<title>Siteview Ecc Component</title>
+    <description>None</description>
+    <copyright>Copyright siteview</copyright>
+    <author>None</author>
+    <version>1.0</version>
+	
+  <!-- ========================================================= -->
+  <!-- com.siteview.ecc.monitor -->
+  <!-- ========================================================= -->
+	<!-- add by hailong.yi 2008/6/11 -->
+
+	<entity entity-name="SvMonitorType"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor type">
+		<field name="className" type="long-varchar"></field>
+		<field name="description" type="very-long"></field>
+		<field name="title" type="long-varchar"></field>
+		<field name="target" type="long-varchar"></field>
+		<field name="toolName" type="long-varchar"></field>
+		<field name="toolDescription" type="very-long"></field>
+		<field name="topazName" type="long-varchar"></field>
+		<field name="topazType" type="long-varchar"></field>
+		<field name="classType" type="long-varchar"></field>
+		<field name="applicationType" type="long-varchar"></field>
+		<field name="toolPageDisable" type="long-varchar"></field>
+		<field name="loadable" type="long-varchar"></field>
+		<field name="defaultFrequency" type="long-varchar"></field>
+		<prim-key field="className"/>
+    </entity>
+
+	<entity entity-name="SvMonitorCommonAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor common attribute">
+		<field name="attrName" type="long-varchar"></field>
+		<field name="label" type="long-varchar"></field>
+		<field name="unit" type="long-varchar"></field>
+		<field name="description" type="very-long"></field>
+		<prim-key field="attrName"/>
+    </entity>
+
+	<entity entity-name="SvMonitorAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor attribute">
+		<field name="className" type="long-varchar"></field>
+		<field name="attrName" type="long-varchar"></field>
+		<field name="label" type="long-varchar"></field>
+		<field name="unit" type="long-varchar"></field>
+		<field name="description" type="very-long"></field>
+		<prim-key field="className"/>
+		<prim-key field="attrName"/>
+		<relation type="one" fk-name="fkSvMonitorAttrClassName"
+			rel-entity-name="SvMonitorType">
+			<key-map field-name="className" rel-field-name="className" />
+		</relation>
+    </entity>
+	
+	<entity entity-name="SvMonitorInstance"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor Instance">
+		<field name="groupId" type="id-ne"></field>
+		<field name="stype" type="id-ne"></field>
+		<field name="id" type="id-ne"></field>
+		<field name="idx" type="numeric"></field>
+		<field name="className" type="long-varchar"></field>
+		<prim-key field="groupId"/>
+		<prim-key field="stype"/>
+		<prim-key field="id"/>
+		<relation type="one" fk-name="fkSvMonitorInstanceClassName"
+			rel-entity-name="SvMonitorType">
+			<key-map field-name="className" rel-field-name="className" />
+		</relation>
+		<relation type="one" fk-name="fkSvMonitorInstanceGroup"
+			rel-entity-name="SvGroup">
+			<key-map field-name="groupId" rel-field-name="id" />
+			<key-map field-name="stype" rel-field-name="stype" />
+		</relation>
+    </entity>
+
+	<entity entity-name="SvMonitorInstanceValue"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor Instance value">
+		<field name="groupId" type="id-ne"></field>
+		<field name="stype" type="id-ne"></field>
+		<field name="id" type="id-ne"></field>
+		<field name="attrName" type="long-varchar"></field>
+		<field name="parentAttrName" type="long-varchar"></field>
+		<field name="idx" type="numeric"></field>
+		<field name="attrValue" type="very-long"></field>
+		<prim-key field="groupId"/>
+		<prim-key field="stype"/>
+		<prim-key field="id"/>
+		<prim-key field="attrName"/>
+		<prim-key field="idx"/>
+		<relation type="one" fk-name="fkSvMonitorInstanceValueGroupId"
+			rel-entity-name="SvMonitorInstance">
+			<key-map field-name="groupId" rel-field-name="groupId" />
+			<key-map field-name="stype" rel-field-name="stype" />
+			<key-map field-name="id" rel-field-name="id" />
+		</relation>
+    </entity>
+
+	<entity entity-name="SvGroupAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="Group attribute">
+		<field name="attrName" type="long-varchar"></field>
+		<field name="label" type="long-varchar"></field>
+		<field name="unit" type="long-varchar"></field>
+		<field name="description" type="very-long"></field>
+		<prim-key field="attrName"/>
+    </entity>
+
+	<entity entity-name="SvGroup"
+            package-name="com.siteview.ecc.monitor"
+            title="Group">
+		<field name="id" type="id-ne"></field>
+		<field name="stype" type="id-ne"></field>
+		<field name="parent" type="id-ne"></field>
+		<field name="idx" type="numeric"></field>
+		<prim-key field="id"/>
+		<prim-key field="stype"/>
+    </entity>
+	<entity entity-name="SvGroupValue"
+            package-name="com.siteview.ecc.monitor"
+            title="Group values">
+		<field name="groupId" type="id-ne"></field>
+		<field name="stype" type="id-ne"></field>
+		<field name="attrName" type="long-varchar"></field>
+		<field name="idx" type="numeric"></field>
+		<field name="attrValue" type="very-long"></field>
+		<prim-key field="groupId"/>
+		<prim-key field="stype"/>
+		<prim-key field="attrName"/>
+		<prim-key field="idx"/>
+		<relation type="one" fk-name="fkSvGroupValueGroupId"
+			rel-entity-name="SvGroup">
+			<key-map field-name="groupId" rel-field-name="id" />
+			<key-map field-name="stype" rel-field-name="stype" />
+		</relation>
+    </entity> 
+    
+	<!-- user -->
+	<!-- add by wan.luo 2008/6/25 -->
+	<!-- edit by hailong.yi 2008/6/27 -->
+	<entity entity-name="SvUser"
+            package-name="com.siteview.ecc.monitor"
+            title="SiteView User">
+		<field name="id" type="id-ne"></field>
+		<field name="disabled" type="indicator"></field>
+		<field name="group" col-name="groupId" type="id-ne"></field>
+		<field name="ldapserver" type="long-varchar"></field>
+		<field name="login" type="long-varchar"></field>
+		<field name="password" type="long-varchar"></field>
+		<field name="realName" type="long-varchar"></field>
+		<field name="securityprincipal" type="long-varchar"></field>
+		<prim-key field="id"/>
+    </entity>	
+
+	<entity entity-name="SvUserPermissionType"
+            package-name="com.siteview.ecc.monitor"
+            title="User Permission">
+		<field name="attrName" type="long-varchar"></field>
+		<field name="label" type="long-varchar"></field>
+		<field name="description" type="very-long"></field>
+		<prim-key field="attrName"/>
+    </entity>	
+    
+	<entity entity-name="SvUserPermission"
+            package-name="com.siteview.ecc.monitor"
+            title="User Permission">
+		<field name="userId" type="id-ne"></field>
+		<field name="attrName" type="long-varchar"></field>
+		<field name="attrValue" type="indicator"></field>
+		<prim-key field="userId"/>
+		<prim-key field="attrName"/>
+		<relation type="one" fk-name="fkSvUserPermissionId"
+			rel-entity-name="SvUser">
+			<key-map field-name="userId" rel-field-name="id" />
+		</relation>
+    </entity>	
+
+	<entity entity-name="SvMasterConfig"
+            package-name="com.siteview.ecc.monitor"
+            title="Master Config">
+		<field name="attrName" type="long-varchar"></field>
+		<field name="idx" type="numeric"></field>
+		<field name="attrValue" type="very-long"></field>
+		<prim-key field="attrName"/>
+		<prim-key field="idx"/>
+    </entity> 
+ 
+	<entity entity-name="SvLoggerType"
+            package-name="com.siteview.ecc.monitor"
+            title="Logger type">
+		<field name="className" type="long-varchar"></field>
+		<prim-key field="className"/>
+    </entity>
+    
+	<entity entity-name="SvLog"
+            package-name="com.siteview.ecc.monitor"
+            title="Logger">
+		<field name="id" type="id-ne"></field>
+		<field name="datex" type="long-varchar"></field>
+		<field name="serverName" type="long-varchar"></field>
+		<field name="className" type="long-varchar"></field>
+		<field name="sample" type="long-varchar"></field>
+		<field name="category" type="long-varchar"></field>
+		<field name="groupName" type="long-varchar"></field>
+		<field name="monitorName" type="long-varchar"></field>
+		<field name="status" type="very-long"></field>
+		<field name="monitorId" type="long-varchar"></field>
+		<field name="value1" type="very-long"></field>
+		<field name="value2" type="very-long"></field>
+		<field name="value3" type="very-long"></field>
+		<field name="value4" type="very-long"></field>
+		<field name="value5" type="very-long"></field>
+		<field name="value6" type="very-long"></field>
+		<field name="value7" type="very-long"></field>
+		<field name="value8" type="very-long"></field>
+		<field name="value9" type="very-long"></field>
+		<field name="value10" type="very-long"></field>
+		<prim-key field="id"/>
+		<!-- 
+		<prim-key field="datex"/>
+		<prim-key field="serverName"/>
+		 -->
+    </entity>
+    
+ 	<entity entity-name="SvLogLinks"
+            package-name="com.siteview.ecc.monitor"
+            title="Logger">
+		<field name="datex" type="long-varchar"></field>
+		<field name="serverName" type="long-varchar"></field>
+		<field name="className" type="long-varchar"></field>
+		<field name="sample" type="long-varchar"></field>
+		<field name="groupName" type="long-varchar"></field>
+		<field name="monitorName" type="long-varchar"></field>
+		<field name="monitorId" type="long-varchar"></field>
+		<field name="url" type="long-varchar"></field>
+		<field name="status" type="long-varchar"></field>
+		<field name="contentType" type="long-varchar"></field>
+		<field name="referenceCount" type="long-varchar"></field>
+		<field name="isExternal" type="long-varchar"></field>
+		<field name="duration" type="long-varchar"></field>
+		<field name="contentSize" type="long-varchar"></field>
+		<field name="source" type="long-varchar"></field>
+		<prim-key field="datex"/>
+		<prim-key field="serverName"/>
+    </entity>
+
+	<entity entity-name="SvMonitorStatusHelp"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor Status Help">
+		<field name="id" type="numeric"></field>
+		<field name="message" type="very-long"></field>
+		<prim-key field="id"/>
+    </entity>
+	<entity entity-name="SvMonitorStatus"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor Status">
+		<field name="id" type="numeric"></field>
+		<field name="status" type="very-long"></field>
+		<prim-key field="id"/>
+    </entity>
+    
+	<entity entity-name="SvMessage"
+            package-name="com.siteview.ecc.monitor"
+            title="Message">
+		<field name="id" type="id-ne"></field>
+		<field name="message" type="very-long"></field>
+		<prim-key field="id"/>
+    </entity>
+
+	<entity entity-name="SvPreferenceType"
+            package-name="com.siteview.ecc.monitor"
+            title="Preference type">
+		<field name="className" type="long-varchar"></field>
+		<prim-key field="className"/>
+    </entity>
+
+	<entity entity-name="SvPreferenceAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="Preference type">
+		<field name="className" type="long-varchar"></field>
+		<field name="attrName" type="long-varchar"></field>
+		<field name="label" type="long-varchar"></field>
+		<field name="unit" type="long-varchar"></field>
+		<field name="description" type="very-long"></field>
+		<prim-key field="className"/>
+		<prim-key field="attrName"/>
+		<relation type="one" fk-name="fkSvPreferenceAttrClassName"
+			rel-entity-name="SvPreferenceType">
+			<key-map field-name="className" rel-field-name="className" />
+		</relation>
+    </entity>
+</entitymodel>

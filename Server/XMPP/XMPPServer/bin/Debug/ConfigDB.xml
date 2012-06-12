@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Logistics>
+  <Version>
+    <Type>Desktop</Type>
+    <Code>0.9</Code>
+  </Version>
+  <Server type="IP">
+    <Name>192.168.6.26</Name>
+    <Port>5222</Port>
+  </Server>
+  <Company>
+    <ID>SiteView</ID>
+    <Name>SiteView</Name>
+  </Company>
+</Logistics>
+

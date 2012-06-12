@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+        
+<!-- developed by lijian -->     
+<!-- DynamicUpdate Preference -->
+	<request-map uri="dynamicUpdatePreference">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="dynamicUpdatePreference"/>
+	</request-map>	
+	<request-map uri="AddDynamicPreferences">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="AddDynamicPreferences"/>
+	</request-map>	
+	<request-map uri="saveSetting">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="saveSet"/>
+		<response name="success" type="view" value="dynamicUpdatePreference"/>
+	</request-map>
+	<request-map uri="checkDynamicseting">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="dynamicUpdatePreference"/>
+	</request-map>	
+	<request-map uri="delDynamicseting">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="delDynamicseting"/>
+		<response name="success" type="view" value="dynamicUpdatePreference"/>
+	</request-map>		
+				
+
+    <view-map name="dynamicUpdatePreference" type="screen" page="component://svecc/widget/dynamicUpdate/svEccDynamicUpdScreens.xml#DynamicUpdPreference"></view-map>
+	<view-map name="AddDynamicPreferences" type="screen" page="component://svecc/widget/dynamicUpdate/svEccDynamicUpdScreens.xml#AddDynamicPreferences"></view-map>	
+</site-conf>
+

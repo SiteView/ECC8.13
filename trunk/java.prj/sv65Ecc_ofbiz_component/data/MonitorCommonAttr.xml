@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvMonitorCommonAttr attrName="acknowledgeAlertDisabled" label="acknowledgeAlertDisabled"/>
+    <SvMonitorCommonAttr attrName="acknowledgeComment" label="acknowledgeComment"/>
+    <SvMonitorCommonAttr attrName="acknowledged" label="acknowledged"/>
+    <SvMonitorCommonAttr attrName="acknowledgedDelay" label="acknowledgedDelay" unit="milliseconds"/>
+    <SvMonitorCommonAttr attrName="acknowledgedState" label="acknowledgedState"/>
+    <SvMonitorCommonAttr attrName="acknowledgeUser" label="acknowledgeUser"/>
+    <SvMonitorCommonAttr attrName="acknowledgeUserIP" label="acknowledgeUserIP"/>
+    <SvMonitorCommonAttr attrName="category" label="category"/>
+    <SvMonitorCommonAttr attrName="customData" label="customData"/>
+    <SvMonitorCommonAttr attrName="diagnosticText" label="diagnosticText"/>
+    <SvMonitorCommonAttr attrName="diagnosticTraceRoute" label="diagnosticTraceRoute"/>
+    <SvMonitorCommonAttr attrName="errorCount" label="errorCount"/>
+    <SvMonitorCommonAttr attrName="errorTimeSinceFirst" label="errorTimeSinceFirst"/>
+    <SvMonitorCommonAttr attrName="forceRefresh" label="forceRefresh"/>
+    <SvMonitorCommonAttr attrName="fullID" label="fullID"/>
+    <SvMonitorCommonAttr attrName="gethostname" label="gethostname"/>
+    <SvMonitorCommonAttr attrName="goodCount" label="goodCount"/>
+    <SvMonitorCommonAttr attrName="groupID" label="groupID"/>
+    <SvMonitorCommonAttr attrName="last" label="last" unit="milliseconds"/>
+    <SvMonitorCommonAttr attrName="lastCategory" label="lastCategory"/>
+    <SvMonitorCommonAttr attrName="maxErrorCount" label="maxErrorCount"/>
+    <SvMonitorCommonAttr attrName="measurement" label="measurement"/>
+    <SvMonitorCommonAttr attrName="monitorDoneTime" label="monitorDoneTime" unit="milliseconds"/>
+    <SvMonitorCommonAttr attrName="monitorRunning" label="monitorRunning"/>
+    <SvMonitorCommonAttr attrName="monitorsInError" label="monitorsInError"/>
+    <SvMonitorCommonAttr attrName="monitorsInGroup" label="monitorsInGroup"/>
+    <SvMonitorCommonAttr attrName="nodata" label="nodata"/>
+    <SvMonitorCommonAttr attrName="ownerID" label="ownerID"/>
+    <SvMonitorCommonAttr attrName="rawMeasurement" label="rawMeasurement"/>
+    <SvMonitorCommonAttr attrName="sample" label="sample"/>
+    <SvMonitorCommonAttr attrName="stateString" label="stateString"/>
+    <SvMonitorCommonAttr attrName="warningCount" label="warningCount"/>
+    <SvMonitorCommonAttr attrName="warningTimeSinceFirst" label="warningTimeSinceFirst"/>
+    <SvMonitorCommonAttr attrName="_alertDisabled" label="_alertDisabled"/>
+    <SvMonitorCommonAttr attrName="_alertLogName" label="_alertLogName"/>
+    <SvMonitorCommonAttr attrName="_applicationErrorCode" label="_applicationErrorCode"/>
+    <SvMonitorCommonAttr attrName="_applicationErrorMessage" label="_applicationErrorMessage"/>
+    <SvMonitorCommonAttr attrName="_argsForFormattedError" label="_argsForFormattedError"/>
+    <SvMonitorCommonAttr attrName="_availabilityErrorCode" label="_availabilityErrorCode"/>
+    <SvMonitorCommonAttr attrName="_baselineDate" label="_baselineDate"/>
+    <SvMonitorCommonAttr attrName="_baselineMean" label="_baselineMean"/>
+    <SvMonitorCommonAttr attrName="_baselineStdDev" label="_baselineStdDev"/>
+    <SvMonitorCommonAttr attrName="_class" label="_class"/>
+    <SvMonitorCommonAttr attrName="_dependsCondition" label="Depends Condition" description="If OK, this monitor is only enabled if the Depends On monitor is OK."/>
+    <SvMonitorCommonAttr attrName="_dependsOn" label="Depends On" description="Choose the monitor that this monitor depends on"/>
+    <SvMonitorCommonAttr attrName="_description" label="Report Description" description="additional description of monitor that appears on Reports and in monitor popup info (optional)"/>
+    <SvMonitorCommonAttr attrName="_disabled" label="Disable" description="temporarily disable monitor sampling and alerting"/>
+    <SvMonitorCommonAttr attrName="_disabledDescription" label="_disabledDescription"/>
+    <SvMonitorCommonAttr attrName="_errorFrequency" label="Update every (on errors)" description="the amount of time between checks whenever the status of the monitor is not ok; the Update value from above is used if this is left blank"/>
+    <SvMonitorCommonAttr attrName="_errorLogName" label="_errorLogName"/>
+    <SvMonitorCommonAttr attrName="_errorTextLimit" label="_errorTextLimit"/>
+    <SvMonitorCommonAttr attrName="_frequency" label="Update every" description="amount of time between checks of a monitor"/>
+    <SvMonitorCommonAttr attrName="_goodTextLimit" label="_goodTextLimit"/>
+    <SvMonitorCommonAttr attrName="_id" label="_id"/>
+    <SvMonitorCommonAttr attrName="_internalId" label="_internalId"/>
+    <SvMonitorCommonAttr attrName="_logOnlyMonitorData" label="_logOnlyMonitorData"/>
+    <SvMonitorCommonAttr attrName="_logOnlyThresholdMeas" label="_logOnlyThresholdMeas"/>
+    <SvMonitorCommonAttr attrName="_maxrun" label="_maxrun" unit="seconds"/>
+    <SvMonitorCommonAttr attrName="_monitorDescription" label="Monitor Description" description="additional description of monitor that appears on Monitor Detail page (optional)"/>
+    <SvMonitorCommonAttr attrName="_name" label="Title" description="title that should appear in the Monitor table (optional)"/>
+    <SvMonitorCommonAttr attrName="_nextID" label="_nextID"/>
+    <SvMonitorCommonAttr attrName="_notLogToTopaz" label="Stop Logging To %1" description="Check this box to not log the data for this monitor to %1"/>
+    <SvMonitorCommonAttr attrName="_numPercent" label="% difference from baseline"/>
+    <SvMonitorCommonAttr attrName="_numStdDev" label="# std deviations from baseline"/>
+    <SvMonitorCommonAttr attrName="_onlyStatusChanges" label="_onlyStatusChanges"/>
+    <SvMonitorCommonAttr attrName="_operationalErrorCode" label="_operationalErrorCode"/>
+    <SvMonitorCommonAttr attrName="_schedule" label="Schedule" description="schedule for the monitor to be enabled - for example, &quot;weekdays, 9-6&quot; enables the monitor to run from 9am to 6pm, Monday - Friday"/>
+    <SvMonitorCommonAttr attrName="_siteviewLogfilePath" label="_siteviewLogfilePath"/>
+    <SvMonitorCommonAttr attrName="_siteViewLogName" label="_siteViewLogName"/>
+    <SvMonitorCommonAttr attrName="_timedDisable" label="_timedDisable"/>
+    <SvMonitorCommonAttr attrName="_urlLogName" label="_urlLogName"/>
+    <SvMonitorCommonAttr attrName="_verifyError" label="Verify Error">
+        <description><![CDATA[if the monitor detects an error, immediately perform the check again to verify the error.
+<LI>WARNINGS: </LI>
+<LI>(1) Activating this feature will cause the logging of this monitor's initial error state to be skipped. Potentially valuable statistical information will be lost. </LI>
+<LI>(2) This feature causes immediate re-execution of the monitor. Promiscuous use of this feature may delay the scheduled runs of other monitors. </LI>
+<LI>(3) This feature is independent from the Update every (on errors) feature below.</LI>]]></description>
+    </SvMonitorCommonAttr>
+    <SvMonitorCommonAttr attrName="_version" label="version"/>
+    <SvMonitorCommonAttr attrName="__template" label="Monitor Template" description="monitor template to use for this monitor"/>
+</entity-engine-xml>

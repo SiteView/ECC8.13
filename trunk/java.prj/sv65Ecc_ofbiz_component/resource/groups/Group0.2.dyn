@@ -1,0 +1,23 @@
+lastSaved=1213340760626
+id=-1
+last=1213340986650
+#
+measurement=6
+sample=97
+monitorDoneTime=1213340986650
+category=good
+percentFailed=0
+warningCount=0
+gethostname=www.sina.com
+status=ok
+percentGood=100
+goodTimeSinceFirst=1213323773843
+id=1
+errorCount=1
+roundTripTime=122.0
+stateString=0.12 sec
+packetsReceived=1
+last=1213340986650
+errorTimeSinceFirst=1213322834778
+lastCategory=good
+goodCount=18

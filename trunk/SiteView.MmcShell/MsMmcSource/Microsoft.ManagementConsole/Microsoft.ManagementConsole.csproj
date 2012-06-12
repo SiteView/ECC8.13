@@ -1,0 +1,433 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.3077</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65024F0E-8964-490D-9289-BE87840DE29B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>Microsoft.ManagementConsole</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <NoStdLib>false</NoStdLib>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Action.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ActionBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ActionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ActionGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ActionSeparator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ActionsPaneExtendedItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ActionsPaneItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ActionsPaneItemCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ActionsPaneItemCollectionChangeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ActionsPaneItemCollectionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ActionStates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Advanced\Console.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Advanced\ExtendsNodeTypeAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Advanced\IWaitDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Advanced\IWaitDialogCancelCallback.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Advanced\MessageBoxParameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Advanced\NamespaceExtension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Advanced\PrimaryScopeNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Advanced\PrimarySnapInDataException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Advanced\PropertySheetExtension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Advanced\WaitCursor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Advanced\WaitDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\AsyncDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\AsyncDelegateQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\AsyncStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\AuxiliarySelectionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\AuxiliarySelectionDataCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\BaseCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ColumnCollectionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\CustomNodeId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\CustomStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\DisplayNameNodeId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\DragAndDropVerb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\FormView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\FormViewContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\FormViewDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\HtmlView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\HtmlViewDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\IFormViewControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ClassLibraryServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\ConsoleDialogHost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SnapInClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SnapInMessagePumpProxy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SnapInUIThreadTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\Strings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\SynchronizationContextCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\TestSnapInPlatform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Internal\Utility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Interop\MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Interop\ModalLoop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Interop\NativeMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Interop\UIState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Interop\UIStateAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Interop\WM.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\IResultNodeComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\LanguageIndependentNameNodeId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\MessageView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\MessageViewDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\MessageViewIcon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\MmcListView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\MmcListViewColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\MmcListViewColumnCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\MmcListViewColumnFormat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\MmcListViewDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\MmcListViewMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\MmcListViewOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\NamespaceSnapInBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Node.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\NodeChangedEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\NodeId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\NodeSubItemDisplayNameCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\NodeSyncManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\NodeTypeAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\PropertyPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\PropertyPageCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\PropertyPageContainerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\PropertySheet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\PropertySheetManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\PublishesNodeTypeAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ResultNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ResultNodeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ResultNodeCollectionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ScopeNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ScopeNodeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ScopeNodeCollectionChangeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ScopeNodeCollectionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SelectedNodeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SelectionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SharedData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SharedDataChangedEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SharedDataChangeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SharedDataItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SharedDataItemBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SnapIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SnapInAboutAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SnapInBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SnapInHelpTopicAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SnapInImageList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SnapInInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SnapInLinkedHelpTopicAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SnapInRegistration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SnapInSettingsAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\StandardVerbs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\Status.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SyncAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SyncActionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\SyncStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\View.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ViewDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ViewDescriptionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ViewDescriptionCollectionChangeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ViewDescriptionCollectionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\ViewMessageClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\WritableSharedData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\WritableSharedDataChangedEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\WritableSharedDataChangeRequestEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\WritableSharedDataChangeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Microsoft\ManagementConsole\WritableSharedDataItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Strings.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MMCFxCommon\MMCFxCommon.csproj">
+      <Project>{F727E002-5F01-4F4D-A33A-BAD978767105}</Project>
+      <Name>MMCFxCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

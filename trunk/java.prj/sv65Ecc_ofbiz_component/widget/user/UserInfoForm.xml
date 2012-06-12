@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-form.xsd">
+
+   <form name="UserInfo" list-name="result" target="" title=""  type="list" paginate-target=""
+        odd-row-style="alternate-row" default-table-style="basic-table hover-bar">
+        <actions>
+          <service service-name="getAllUser" result-map-name="resultmap" result-map-list-name="result">
+          </service>
+        </actions>
+         <field name="id" title="${uiLabelMap.svUserId}" >
+        	<hyperlink also-hidden="false" description="${id}"  target="everyUserInfo?userId=${id}"/>
+        </field>
+        <field name="realName" title="${uiLabelMap.svUserRealName}">	
+        		<display/>
+        </field>
+			
+        <field name="disabled" use-when="disabled==true" title="${uiLabelMap.svUserDisabled}">
+        		<display description="${uiLabelMap.svUserYes}"/>
+        </field>       	
+        <field name="disabled" use-when="disabled==false" title="${uiLabelMap.svUserDisabled}"  >
+        		<display description="${uiLabelMap.svUserNot}"  />
+        </field>       	
+		<field name="o"  title=" " widget-style="buttontext">
+			<hyperlink description="${uiLabelMap.svUserEdit}" target="editUserInfo?userId=${id}"/>
+		</field>
+		<field name="p" title=" " widget-style="buttontext">
+			<hyperlink description="${uiLabelMap.svUserChangePwd}" target="changePwd?userId=${id}"/>
+		</field>
+		<field name="q" title=" "  use-when="id.equals(&quot;administrator&quot;)==false" widget-style="buttontext">
+			<hyperlink description="${uiLabelMap.svUserChangePermission}" target="changepermission?userId=${id}"/>
+		</field>
+		<field name="r" title=" "  use-when="id.equals(&quot;administrator&quot;)==false" widget-style="buttontext">
+			<hyperlink description="${uiLabelMap.svUserDelUser}" target="delUIUser?id=${id}"/>
+		</field>
+   </form>
+   
+   <form name="AddUserButton" list-name="listIt" target="createUser" title=""  type="single" paginate-target=""
+        odd-row-style="alternate-row" default-table-style="basic-table">
+
+		<field name="submitButton" title="" widget-style="buttontext">
+		<hyperlink description="${uiLabelMap.svUserAddUser}" target="createUser"/>
+		</field>
+   </form>  
+   
+    <form name="EditUserInfo" type="single" default-map-name="resultMap.result" target="saveUserInfo"
+    header-row-style="header-row" default-table-style="basic-table">
+    	<actions>
+            <service service-name="getEveryUserInfo" result-map-name="resultMap" >
+                <field-map field-name="userId" env-name="parameters.userId"/>
+            </service>
+            <service service-name="getAllGroup" result-map-name="retMapGroup">
+            </service>
+        </actions>       
+		<field name="id"  title="${uiLabelMap.svUserId}:"><display/></field>
+		<field name="login"  title="${uiLabelMap.svUserLogin}:" tooltip="the login name for this user, if empty, no login name is required"><display/></field>
+		<field name="realName"  title="${uiLabelMap.svUserRealName}:" ><text></text></field>
+		<field name="password"  title="${uiLabelMap.svUserPassword}:" ><hidden/></field>
+		<field name="disabled"  title="${uiLabelMap.svUserDisabled}:" tooltip="Disable logins for this user"><check></check> 
+		</field>
+		<field name="group" title="${uiLabelMap.svUserGroup}:">
+			<display/>
+        </field>
+		<field name="ldapserver"  title="${uiLabelMap.svUserLdapserver}:" tooltip="the LDAP server to connect to (example: ldap://ldap.this-company.com:389) for authentication"><text></text></field>
+		<field name="securityprincipal"  title="${uiLabelMap.svUserSecurityprincipal}:"  tooltip="If using LDAP Authentication then this field is the Security Principal of  
+the type  uid=testuser,ou=TEST,o=this-company.com. "><text></text></field>		
+        <field name="result.submitButton" widget-style="smallSubmit" title="${uiLabelMap.CommonConfirm}" tooltip=" User "><submit button-type="button"/></field>
+        <field name=""  widget-style="smallSubmit">
+			<hyperlink description="${uiLabelMap.CommonGoBack}" target="userinfo"/>
+		</field>   
+    </form>
+    
+    <form name="changePwd" type="single" default-map-name="result" target="savePwd"
+    header-row-style="header-row" default-table-style="basic-table">
+      
+		<field name="userId" entry-name="parameters.userId" title="${uiLabelMap.svUserId}:"><display/></field>
+		<field name="oldPwd" title="${uiLabelMap.svUserOldPwd}:" required-field="true" ><password/></field>
+		<field name="newPwd" title="${uiLabelMap.svUserNewPwd}:" required-field="true" tooltip="the login password for this user. if empty, no password is required 
+If using LDAP Authentication then this field is not used."><password/></field>
+		<field name="confirmPwd" title="${uiLabelMap.svUserConfirmPwd}:" required-field="true" tooltip="enter the login password for this user again"><password/></field>		
+        <field name="result.submitButton" widget-style="smallSubmit" title="${uiLabelMap.CommonConfirm}"><submit button-type="button"/></field>  
+        <field name=""  widget-style="smallSubmit">
+			<hyperlink description="${uiLabelMap.CommonGoBack}" target="userinfo"/>
+		</field>     
+    </form>  
+    
+    <form name="createUser" type="single" default-map-name="result" target="saveUser"
+    header-row-style="header-row" default-table-style="basic-table">
+    	<actions>
+            <service service-name="getAllGroup" result-map-name="retMapGroup">
+            </service>
+        </actions>      
+
+		<field name="login"  title="${uiLabelMap.svUserLogin}:" tooltip="the login name for this user, if empty, no login name is required"><text></text></field>
+		<field name="realName"  title="${uiLabelMap.svUserRealName}:" tooltip="optional title for this user. the title will appear in the Name field of the User Preference table. the default title is the login name"><text></text></field>
+		<field name="password"  title="${uiLabelMap.svUserPassword}:" tooltip="the login password for this user. if empty, no password is required 
+If using LDAP Authentication then this field is not used. "><password/></field>
+		<field name="group" title="${uiLabelMap.svUserGroup}:" tooltip="optional, restrict access to the selected groups - the default allows access to all groups">
+             <drop-down allow-empty="false">
+                <list-options key-name="groupID" list-name="retMapGroup.result" description="${groupID}"/>
+      		  </drop-down>
+        </field>
+		<field name="ldapserver"  title="${uiLabelMap.svUserLdapserver}:" tooltip="the LDAP server to connect to (example: ldap://ldap.this-company.com:389) for authentication"><text></text></field>
+		<field name="securityprincipal"  title="${uiLabelMap.svUserSecurityprincipal}:" tooltip="If using LDAP Authentication then this field is the Security Principal of  
+the type  uid=testuser,ou=TEST,o=this-company.com"><text></text></field>	
+		<field name="disabled" title="${uiLabelMap.svUserDisabled}:" tooltip="Disable logins for this user">
+			<check></check>
+		</field>			
+        <field name="result.submitButton" widget-style="smallSubmit" title="${uiLabelMap.CommonConfirm}" tooltip=" User "><submit button-type="button"/></field> 
+		<field name=""  widget-style="smallSubmit">
+			<hyperlink description="${uiLabelMap.CommonGoBack}" target="userinfo"/>
+		</field>              
+    </form> 
+ 
+
+<!-- 
+    <form name="getAllPermissionType" list-name="result" target="" title=""  type="list" paginate-target=""
+        odd-row-style="alternate-row" default-table-style="basic-table hover-bar">
+        <actions>
+          <service service-name="getAllPermissionT" result-map-name="resultmap" result-map-list-name="result">
+          </service>
+        </actions>
+         <field name="label"><display/></field>         
+         <field name="attrName"><check></check></field>         
+         <field name="description"><display/></field>                  		
+      </form >
+  -->     
+</forms>

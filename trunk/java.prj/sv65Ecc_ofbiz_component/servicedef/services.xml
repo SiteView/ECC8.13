@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/services.xsd">
+    <description>SiteView Ecc Component Services</description>
+    <vendor>siteview</vendor>
+ 	
+<!-- developed by lijian -->
+	<service name="login" engine="java" location="com.siteview.ecc.service.UserUI" invoke="login">
+		<description>this  want to check the User and the pwd</description>
+		<attribute name="name" mode="IN" type="String" optional="true"></attribute>
+		<attribute name="pwd" mode="IN" type="String" optional="true"></attribute>
+		<attribute name="result" mode="OUT" type="Map" optional="true"></attribute>
+	</service>
+    <service name="getEveryUserInfo" engine="java" location="com.siteview.ecc.service.UserUI" invoke="getEveryUserInfo">
+    	<description>This want to get everybody imformation</description>
+        <attribute name="userId" type="String" mode="IN"	optional="false"/>
+		<attribute name="result" mode="OUT" type="Map" optional="false"></attribute>
+    </service>
+    <service name="saveUserInfo" engine="java" location="com.siteview.ecc.service.UserUI" invoke="modifyUserInfo">
+    	<description>this service want to modify User infomation </description>
+   		<attribute name="id" mode="IN" type="String" optional="false"></attribute>
+   		<attribute name="password" mode="IN" type="String" optional="false"></attribute>
+   		<attribute name="disabled" mode="IN" type="String" optional="true"></attribute>
+   		<attribute name="group" mode="IN" type="String" optional="false"></attribute>
+   		<attribute name="ldapserver" mode="IN" type="String" optional="false"></attribute>
+   		<attribute name="login" mode="IN" type="String" optional="false"></attribute>
+   		<attribute name="realName" mode="IN" type="String" optional="false"></attribute>
+   		<attribute name="securityprincipal" mode="IN" type="String" optional="false"></attribute>  		
+   		<attribute name="result" mode="OUT" type="Map" optional="false"></attribute>
+    </service>   
+    <service name="savePwd" engine="java" location="com.siteview.ecc.service.UserUI" invoke="savePwd">
+    	<description>this service want to save User password which has been modified</description>
+   		<attribute name="userId" mode="IN" type="String" optional="false"></attribute>
+   		<attribute name="oldPwd" mode="IN" type="String" optional="true"></attribute>
+   		<attribute name="newPwd" mode="IN" type="String" optional="true"></attribute>
+   		<attribute name="confirmPwd" mode="IN" type="String" optional="true"></attribute>
+ 		<attribute name="id" mode="OUT" type="String" optional="true"></attribute>
+    </service>
+    <service name="saveUser" engine="java" location="com.siteview.ecc.service.UserUI" invoke="saveUser">
+    	<description>this service want to save User  </description>
+   		<attribute name="userId" mode="IN" type="String" optional="true"></attribute>
+   		<attribute name="password" mode="IN" type="String" optional="true"></attribute>
+   		<attribute name="disabled" mode="IN" type="String" optional="true"></attribute>
+   		<attribute name="group" mode="IN" type="String" optional="false"></attribute>
+   		<attribute name="ldapserver" mode="IN" type="String" optional="true"></attribute>
+   		<attribute name="login" mode="IN" type="String" optional="true"></attribute>
+   		<attribute name="realName" mode="IN" type="String" optional="true"></attribute>
+   		<attribute name="securityprincipal" mode="IN" type="String" optional="true"></attribute>  		
+   		<attribute name="result" mode="OUT" type="Map" optional="true"></attribute>
+    </service> 
+     <service name="delUIUser" engine="java" location="com.siteview.ecc.service.UserUI" invoke="delUIUser">
+    	<description>this service want to delete User  </description>
+   		<attribute name="id" mode="IN" type="String" optional="false"></attribute> 
+    </service>    
+	<service name="getUserPermissionByIdForDisp" engine="java" 
+		location="com.siteview.ecc.service.UserUI"
+		invoke="getUserPermissionByIdForDisp">
+		<attribute name="userId" type="String" mode="IN" optional="false" />
+		<attribute name="result" type="java.util.Map" mode="OUT"
+			optional="false" />
+		<attribute name="message" type="String" mode="OUT"
+			optional="true" />
+	</service>
+    
+    <service name="savePermission" engine="java" location="com.siteview.ecc.service.UserUI" invoke="savePermission">
+    	<description>this service want to save User Permission</description>
+    	<attribute name="id" mode="IN" type="String" optional="false"></attribute>
+    
+    	<attribute name="_groupEdit" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_groupRefresh" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_groupDisable" mode="IN" type="String" optional="true"></attribute>
+    	
+    	<attribute name="_monitorEdit" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_monitorRefresh" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_monitorAcknowledge" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_monitorDisable" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_monitorTools" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_tools" mode="IN" type="String" optional="true"></attribute>
+   
+    	<attribute name="_alertList" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_alertEdit" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_alertTest" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_alertDisable" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_alertTempDisable" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_alertRecentReport" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_alertAdhocReport" mode="IN" type="String" optional="true"></attribute>
+    	
+    	<attribute name="_reportGenerate" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_reportToolbar" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_reportEdit" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_reportAdhoc" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_reportDisable" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_monitorRecent" mode="IN" type="String" optional="true"></attribute>
+    	
+    	<attribute name="_preference" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_preferenceTest" mode="IN" type="String" optional="true"></attribute>
+    	
+    	<attribute name="_multiEdit" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_browse" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_progress" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_logs" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_healthView" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_healthEdit" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_healthDisable" mode="IN" type="String" optional="true"></attribute>
+    	<attribute name="_support" mode="IN" type="String" optional="true"></attribute>    	
+    </service>
+
+<!-- Email -->
+	<service name="getEmailPreferences" engine="java"
+	location="com.siteview.ecc.service.EmailUI" invoke="getEmailPreferences">
+		<attribute name="result" mode="OUT" type="Map" optional="false"></attribute>
+	</service>
+	
+	<service name="setEmailPreferences" engine="java"
+	location="com.siteview.ecc.service.EmailUI" invoke="setEmailPreferences">
+		<attribute name="mailServer" type="String" mode="IN" optional="false" />
+		<attribute name="autoEmail" type="String" mode="IN" optional="false" />
+		<attribute name="autoDaily" type="String" mode="IN" optional="true" />
+		<attribute name="autoStartup" type="String" mode="IN" optional="true" />
+		<attribute name="fromAddress" type="String" mode="IN" optional="true" />
+		<attribute name="mailServerBackup" type="String" mode="IN" optional="true" />
+		<attribute name="message" mode="OUT" type="String" optional="true"></attribute>
+	</service>
+	
+	<service name="sendEmail" engine="java"
+	location="com.siteview.ecc.service.EmailUI" invoke="sendEmail">
+		<attribute name="emailAddress" type="String" mode="IN" optional="false" />
+		<attribute name="Mailerver" type="String" mode="IN" optional="false" />
+		<attribute name="BackupMailServer" type="String" mode="IN" optional="false" />
+		<attribute name="Subject" type="String" mode="IN" optional="true" />
+		<attribute name="content" type="String" mode="IN" optional="true" />
+		<attribute name="result" mode="OUT" type="String" optional="true"></attribute>
+	</service>
+	
+	<service name="EmailSettingsInfo" engine="java" location="com.siteview.ecc.service.EmailUI"
+		invoke="EmailSettingsInfo">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+		<attribute name="message" type="String" mode="OUT" 	optional="true" />
+	</service>
+	
+	<service name="AddAdditionalEmailSetting" engine="java"
+	location="com.siteview.ecc.service.EmailUI" invoke="AddEmailSetting">
+		<attribute name="id" mode="IN" type="String" optional="true"></attribute>
+		<attribute name="SettingName" type="String" mode="IN" optional="true" />
+		<attribute name="emailTo" type="String" mode="IN" optional="true" />
+		<attribute name="additionalMailDisabled" type="String" mode="IN" optional="true" />
+		<attribute name="additionalMailTemplate" type="String" mode="IN" optional="true" />
+		
+		<attribute name="select0" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart0" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd0" type="String" mode="IN" optional="true" />
+		
+		<attribute name="select1" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart1" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd1" type="String" mode="IN" optional="true" />
+
+		<attribute name="select2" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart2" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd2" type="String" mode="IN" optional="true" />
+		
+		<attribute name="select3" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart3" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd3" type="String" mode="IN" optional="true" />
+
+		<attribute name="select4" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart4" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd4" type="String" mode="IN" optional="true" />
+
+		<attribute name="select5" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart5" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd5" type="String" mode="IN" optional="true" />
+
+		<attribute name="select6" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart6" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd6" type="String" mode="IN" optional="true" />
+						
+		<attribute name="result" mode="OUT" type="String" optional="false"></attribute>
+		
+	</service>	
+	
+	<service name="delAdditionalEmail" engine="java"
+	location="com.siteview.ecc.service.EmailUI" invoke="delAdditionalEmail">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+		<attribute name="result" mode="OUT" type="String" optional="true"></attribute>
+	</service>
+
+	<service name="getAdditionalEmailList" engine="java"
+	location="com.siteview.ecc.service.EmailUI" invoke="getAdditionalEmailList">
+		<attribute name="result" type="java.util.List" mode="OUT" optional="false" />
+	</service>	
+
+	<!-- SNMP -->
+	<service name="getSNMPPreferenceInfo" engine="java" location="com.siteview.ecc.service.SNMPUI"
+		invoke="SNMPDefaultSettingsInfo">
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+	</service>
+	<service name="saveSNMPChange" engine="java" location="com.siteview.ecc.service.SNMPUI"
+		invoke="saveSNMPChange">
+		<attribute name="_snmpHost" type="String" mode="IN" optional="true" />
+		<attribute name="_snmpObjectID" type="String" mode="IN" optional="true" />
+		<attribute name="_otherSNMPId" type="String" mode="IN" optional="true" />
+		<attribute name="_snmpCommunity" type="String" mode="IN" optional="true" />
+		<attribute name="_snmpGeneric" type="String" mode="IN" optional="true" />
+		<attribute name="_snmpSpecific" type="String" mode="IN" optional="true" />
+		<attribute name="_snmpTrapVersion" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="String" mode="OUT" optional="true" />
+	</service>	
+	
+	<service name="getSNMPPrefefencesList" engine="java" location="com.siteview.ecc.service.SNMPUI"
+		invoke="getSNMPPrefefencesList">
+		<attribute name="result" type="java.util.List" mode="OUT" optional="true" />
+	</service>	
+	
+	<service name="saveSetting" engine="java" location="com.siteview.ecc.service.SNMPUI"
+		invoke="saveSetting">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="settingName" type="String" mode="IN" optional="true" />
+		<attribute name="flag" type="String" mode="IN" optional="true" />
+		<attribute name="Host" type="String" mode="IN" optional="true" />
+		<attribute name="snmpObjectID" type="String" mode="IN" optional="true" />
+		<attribute name="snmpCommunity" type="String" mode="IN" optional="true" />
+		<attribute name="snmpGeneric" type="String" mode="IN" optional="true" />
+		<attribute name="specific" type="String" mode="IN" optional="true" />
+		<attribute name="snmpTrapVersion" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="String" mode="OUT" optional="true" />
+	</service>	
+	<service name="getNeedSNMPSetting" engine="java" location="com.siteview.ecc.service.SNMPUI"
+		invoke="getNeedSNMPSetting">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+	</service>		
+	<service name="SNMPSettingInfo" engine="java" location="com.siteview.ecc.service.SNMPUI"
+		invoke="SNMPSettingInfo">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+	</service>		
+	<service name="delSNMPseting" engine="java" location="com.siteview.ecc.service.SNMPUI"
+		invoke="delSNMPseting">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="String" mode="OUT" optional="true" />
+	</service>		
+	<service name="SNMPSend" engine="java" location="com.siteview.ecc.service.SNMPUI"
+		invoke="SNMPSend">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="message" type="String" mode="IN" optional="true" />
+		<attribute name="_snmpHost" type="String" mode="IN" optional="true" />
+		<attribute name="_snmpObjectID" type="String" mode="IN" optional="true" />
+		<attribute name="_snmpCommunity" type="String" mode="IN" optional="true" />
+		<attribute name="_snmpGeneric" type="String" mode="IN" optional="true" />
+		<attribute name="_snmpSpecific" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="String" mode="OUT" optional="true" />
+	</service>	
+	<!-- Pager -->
+	<service name="getPagerDefaultPrefefences" engine="java" location="com.siteview.ecc.service.PagerUI"
+		invoke="getPagerDefaultPrefefences">
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+	</service>
+	
+	<service name="savePagerChange" engine="java" location="com.siteview.ecc.service.PagerUI"
+		invoke="savePagerChange">
+		<attribute name="pagerPort" type="String" mode="IN" optional="true" />
+		<attribute name="pagerSpeed" type="String" mode="IN" optional="true" />
+		<attribute name="pagerAlphaPhone" type="String" mode="IN" optional="true" />
+		<attribute name="pagerAlphaPIN" type="String" mode="IN" optional="true" />
+		<attribute name="pagerDirectPhone" type="String" mode="IN" optional="true" />
+		<attribute name="pagerOptionPhone" type="String" mode="IN" optional="true" />
+		<attribute name="pagerCustom" type="String" mode="IN" optional="true" />
+		<attribute name="pagerOption" type="String" mode="IN" optional="true" />
+		<attribute name="pagerType" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="String" mode="OUT" optional="true" />
+	</service>		
+	
+	<service name="getPagerPrefefencesList" engine="java" location="com.siteview.ecc.service.PagerUI"
+		invoke="getPagerPrefefencesList">
+		<attribute name="result" type="java.util.List" mode="OUT" optional="true" />
+	</service>	
+	
+	<service name="PagerSettingInfo" engine="java" location="com.siteview.ecc.service.PagerUI"
+		invoke="pagerSettingInfo">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+	</service>
+	
+	<service name="saveAddPagerSetting" engine="java"
+	location="com.siteview.ecc.service.PagerUI" invoke="saveAddPagerSetting">
+		<attribute name="id" mode="IN" type="String" optional="true"></attribute>
+
+		<attribute name="additionalPagerName" type="String" mode="IN" optional="true" />
+		<attribute name="disabled" type="String" mode="IN" optional="true" />
+		<attribute name="pagerAlphaPIN" type="String" mode="IN" optional="true" />
+		<attribute name="pagerAlphaPhone" type="String" mode="IN" optional="true" />
+		<attribute name="pagerCustom" type="String" mode="IN" optional="true" />
+		<attribute name="pagerDirectPhone" type="String" mode="IN" optional="true" />
+		<attribute name="pagerOption" type="String" mode="IN" optional="true" />
+		<attribute name="pagerOptionPhone" type="String" mode="IN" optional="true" />		
+		<attribute name="pagerSpeed" type="String" mode="IN" optional="true" />
+		<attribute name="pagerType" type="String" mode="IN" optional="true" />			
+		
+		<attribute name="select0" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart0" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd0" type="String" mode="IN" optional="true" />
+		
+		<attribute name="select1" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart1" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd1" type="String" mode="IN" optional="true" />
+
+		<attribute name="select2" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart2" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd2" type="String" mode="IN" optional="true" />
+		
+		<attribute name="select3" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart3" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd3" type="String" mode="IN" optional="true" />
+
+		<attribute name="select4" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart4" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd4" type="String" mode="IN" optional="true" />
+
+		<attribute name="select5" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart5" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd5" type="String" mode="IN" optional="true" />
+
+		<attribute name="select6" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart6" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd6" type="String" mode="IN" optional="true" />
+	
+	</service>			
+	<service name="getPagerPreferenceInfo" engine="java" location="com.siteview.ecc.service.PagerUI"
+		invoke="getPagerPreferenceInfo">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="true" />
+	</service>	
+		
+<!-- Dynamic Update -->
+
+	<service name="getDynamicUpdPrefefencesList" engine="java" location="com.siteview.ecc.service.DynamicUpdUI"
+		invoke="getDynamicUpdPrefefencesList">
+		<attribute name="result" type="java.util.List" mode="OUT" optional="true" />
+	</service>	
+	<service name="pagerSettingInfo" engine="java" location="com.siteview.ecc.service.DynamicUpdUI"
+		invoke="pagerSettingInfo">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="result" type="java.util.Map" mode="OUT" optional="false" />
+	</service>	
+	<service name="saveSet" engine="java" location="com.siteview.ecc.service.DynamicUpdUI"
+		invoke="saveSet">
+		<attribute name="id" type="String" mode="IN" optional="true" />
+		<attribute name="set" type="String" mode="IN" optional="true" />
+		<attribute name="otheroid" type="String" mode="IN" optional="true" />
+		<attribute name="dbUserName" type="String" mode="IN" optional="true" />
+		<attribute name="groupSet" type="String" mode="IN" optional="true" />
+		<attribute name="dbQueryTimeout" type="String" mode="IN" optional="true" />
+		<attribute name="dbConnectTimeout" type="String" mode="IN" optional="true" />
+		<attribute name="frequency" type="String" mode="IN" optional="true" />
+		<attribute name="poolIncluded" type="String" mode="IN" optional="true" />
+		<attribute name="oid" type="String" mode="IN" optional="true" />
+		<attribute name="host" type="String" mode="IN" optional="true" />
+		<attribute name="fileEncoding" type="String" mode="IN" optional="true" />
+		<attribute name="group" type="String" mode="IN" optional="true" />
+		<attribute name="dbDriver" type="String" mode="IN" optional="true" />
+		<attribute name="dbConnectionURL" type="String" mode="IN" optional="true" />
+		<attribute name="community" type="String" mode="IN" optional="true" />
+		<attribute name="name" type="String" mode="IN" optional="true" />
+		<attribute name="dbSqlQuery" type="String" mode="IN" optional="true" />
+		<attribute name="excludeIP" type="String" mode="IN" optional="true" />
+		<attribute name="dbPassword" type="String" mode="IN" optional="true" />
+	</service>	
+	<service name="delDynamicseting" engine="java" location="com.siteview.ecc.service.DynamicUpdUI"
+		invoke="delDynamicseting">
+		<attribute name="id" type="String" mode="IN" optional="false" />
+	</service>	
+	
+<!--Log -->
+	<service name="getLogsettings" engine="java" location="com.siteview.ecc.service.LogUI"
+		invoke="getLogSetInfo">
+		<attribute name="setInfo" type="Map" mode="OUT" optional="false" />
+	</service>	
+	<service name="saveLogSetting" engine="java" location="com.siteview.ecc.service.LogUI"
+		invoke="saveLogSetting">
+		<attribute name="dailyLogKeepDays" type="String" mode="IN" optional="true" />
+		<attribute name="dailyLogTotalLimit" type="String" mode="IN" optional="true" />
+		<attribute name="logJdbcURLSiteViewLog" type="String" mode="IN" optional="true" />
+		<attribute name="logJdbcDriverSiteViewLog" type="String" mode="IN" optional="true" />
+		<attribute name="logJdbcUserSiteViewLog" type="String" mode="IN" optional="true" />
+		<attribute name="logJdbcPasswordSiteViewLog" type="String" mode="IN" optional="true" />
+		<attribute name="logJdbcURLBackupSiteViewLog" type="String" mode="IN" optional="true" />
+	</service>
+<!--schedule -->	
+	<service name="saveRangSchedule" engine="java" location="com.siteview.ecc.service.ScheduleUI"
+		invoke="saveRangSchedule">
+		<attribute name="name" mode="IN" type="String" optional="true"></attribute>
+		
+		<attribute name="select0" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart0" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd0" type="String" mode="IN" optional="true" />
+		
+		<attribute name="select1" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart1" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd1" type="String" mode="IN" optional="true" />
+
+		<attribute name="select2" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart2" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd2" type="String" mode="IN" optional="true" />
+		
+		<attribute name="select3" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart3" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd3" type="String" mode="IN" optional="true" />
+
+		<attribute name="select4" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart4" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd4" type="String" mode="IN" optional="true" />
+
+		<attribute name="select5" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart5" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd5" type="String" mode="IN" optional="true" />
+
+		<attribute name="select6" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart6" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd6" type="String" mode="IN" optional="true" />
+	</service>
+	
+	<service name="saveAbsoluteSchedule" engine="java" location="com.siteview.ecc.service.ScheduleUI"
+		invoke="saveAbsoluteSchedule">
+		<attribute name="name" mode="IN" type="String" optional="true"></attribute>
+		
+		<attribute name="scheduleAt0" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleAt1" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleAt2" type="String" mode="IN" optional="true" />		
+		<attribute name="scheduleAt3" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleAt4" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleAt5" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleAt6" type="String" mode="IN" optional="true" />
+	</service>	
+	<service name="getScheduleSettingsList" engine="java" location="com.siteview.ecc.service.ScheduleUI"
+		invoke="getScheduleSettingsList">
+		<attribute name="result" mode="OUT" type="List" optional="false"></attribute>	
+	</service>	
+	<service name="delSchedule" engine="java" location="com.siteview.ecc.service.ScheduleUI"
+		invoke="delSchedule">
+		<attribute name="id" mode="IN" type="String" optional="false"></attribute>	
+	</service>	
+	<service name="editAbsoluteSchedule" engine="java" location="com.siteview.ecc.service.ScheduleUI"
+		invoke="editAbsoluteSchedule">
+		<attribute name="id" mode="IN" type="String" optional="false"></attribute>
+		<attribute name="result" mode="OUT" type="Map" optional="false"></attribute>	
+	</service>
+	<service name="updateAbsoluteSchedule" engine="java" location="com.siteview.ecc.service.ScheduleUI"
+		invoke="updateAbsoluteSchedule">
+		<attribute name="name" mode="IN" type="String" optional="true"></attribute>
+		<attribute name="id" mode="IN" type="String" optional="true"></attribute>
+		<attribute name="scheduleAt0" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleAt1" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleAt2" type="String" mode="IN" optional="true" />		
+		<attribute name="scheduleAt3" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleAt4" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleAt5" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleAt6" type="String" mode="IN" optional="true" />
+	</service>	
+	<service name="editRangeSchedule" engine="java" location="com.siteview.ecc.service.ScheduleUI"
+		invoke="editRangeSchedule">
+		<attribute name="id" mode="IN" type="String" optional="false"></attribute>
+		<attribute name="result" type="Map" mode="OUT" optional="false" />
+	</service>	
+	<service name="updateRangSchedule" engine="java" location="com.siteview.ecc.service.ScheduleUI"
+		invoke="updateRangSchedule">
+		<attribute name="name" mode="IN" type="String" optional="true"/>
+		<attribute name="id" mode="IN" type="String" optional="true"/>
+		<attribute name="select0" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart0" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd0" type="String" mode="IN" optional="true" />
+		
+		<attribute name="select1" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart1" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd1" type="String" mode="IN" optional="true" />
+
+		<attribute name="select2" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart2" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd2" type="String" mode="IN" optional="true" />
+		
+		<attribute name="select3" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart3" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd3" type="String" mode="IN" optional="true" />
+
+		<attribute name="select4" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart4" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd4" type="String" mode="IN" optional="true" />
+
+		<attribute name="select5" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart5" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd5" type="String" mode="IN" optional="true" />
+
+		<attribute name="select6" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleStart6" type="String" mode="IN" optional="true" />
+		<attribute name="scheduleEnd6" type="String" mode="IN" optional="true" />
+	</service>		
+	
+<!-- Reports -->	
+	<service name="editRangeSchedule" engine="java" location="com.siteview.ecc.service.ScheduleUI"
+		invoke="editRangeSchedule">
+		<attribute name="id" mode="IN" type="String" optional="false"></attribute>
+		<attribute name="result" type="Map" mode="OUT" optional="false" />
+	</service>				
+</services>

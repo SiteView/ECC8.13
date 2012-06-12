@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+        
+<!-- developed by lijian -->     
+<!-- schedule -->
+	<request-map uri="schedulePreferences">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="schedulePreferences"/>
+	</request-map>
+	<request-map uri="rangeSchedule">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="rangeSchedule"/>
+	</request-map>
+	<request-map uri="absoluteSchedule">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="absoluteSchedule"/>
+	</request-map>	
+	
+	<request-map uri="saveAbsoluteSchedule">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="saveAbsoluteSchedule"/>
+		<response name="success" type="view" value="schedulePreferences"/>
+	</request-map>		
+	<request-map uri="saveRangSchedule">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="saveRangSchedule"/>
+		<response name="success" type="view" value="schedulePreferences"/>
+	</request-map>
+	<request-map uri="delSchedule">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="delSchedule"/>
+		<response name="success" type="view" value="schedulePreferences"/>
+	</request-map>
+	<request-map uri="editAbsoluteSchedule">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="editAbsoluteSchedule"/>
+	</request-map>	
+	<request-map uri="updateAbsoluteSchedule">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="updateAbsoluteSchedule"/>
+		<response name="success" type="view" value="schedulePreferences"/>
+	</request-map>	
+	<request-map uri="editRangeSchedule">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="editRangeSchedule"/>
+	</request-map>	
+	<request-map uri="updateRangSchedule">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="updateRangSchedule"/>
+		<response name="success" type="view" value="schedulePreferences"/>
+	</request-map>		
+    <view-map name="schedulePreferences" type="screen" page="component://svecc/widget/schedule/svEccScheduleScreens.xml#schedulePreferences"></view-map>
+    <view-map name="rangeSchedule" type="screen" page="component://svecc/widget/schedule/svEccScheduleScreens.xml#rangeSchedule"></view-map>
+    <view-map name="absoluteSchedule" type="screen" page="component://svecc/widget/schedule/svEccScheduleScreens.xml#absoluteSchedule"></view-map>
+	<view-map name="editAbsoluteSchedule" type="screen" page="component://svecc/widget/schedule/svEccScheduleScreens.xml#editAbsoluteSchedule"></view-map>	
+	<view-map name="editRangeSchedule" type="screen" page="component://svecc/widget/schedule/svEccScheduleScreens.xml#editRangeSchedule"></view-map>	
+</site-conf>
+

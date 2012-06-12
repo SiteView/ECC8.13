@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	表 msterconfig 初始化数据
+    wan.luo 2008.5.9
+-->
+
+<entity-engine-xml>
+	<SvMasterConfig name="_activeWatchServerURL" value="=http://tms-siteview.dragonflowinteractive.com/topaz/"/>
+	<SvMasterConfig name="_additionalMail" value="=_disabled= _email=sdfdsfsdf _id=1 _name=sdfsdf _template="/>
+	<SvMasterConfig name="_additionalMail" value="=_disabled= _email=444 _id=4 _name=445 _template="/>
+	<SvMasterConfig name="_additionalMail" value="=_disabled= _email=jdkl,@sina.com _id=10 _name=dk _template="/>
+	<SvMasterConfig name="_additionalMail" value="=_disabled= _email=df,jio,@sina.com _id=11 _name=5455 _template="/>
+	<SvMasterConfig name="_additionalSchedule" value="=_id=1 _name=every_day,_09:00-18:00 _schedule=UD8:00-18:00,MD9:00-18:00,TD9:00-18:00,WD9:00-18:00,RD9:00-18:00,FD9:00-18:00,SE9:00-18:00"/>
+	<SvMasterConfig name="_additionalSchedule" value="=_id=3 _name=weekdays,_all_day _schedule=Uundefined00:00-24:00,Mundefined00:00-24:00,Tundefined00:00-24:00,Wundefined00:00-24:00,Rundefined00:00-24:00,Fundefined00:00-24:00,Sundefined00:00-24:00"/>
+	<SvMasterConfig name="_additionalSchedule" value="=_id=4 _name=weekdays,_09:00-18:00 _schedule=UD00:00-24:00,ME9:00-18:00,TE9:00-18:00,WE9:00-18:00,RE9:00-18:00,FE9:00-18:00,SD00:00-24:00"/>
+	<SvMasterConfig name="_additionalSchedule" value="=_id=14 _name=32 _schedule=*U3:00,T5:00"/>
+	<SvMasterConfig name="_additionalSchedule" value="=_id=18 _name=666 _schedule=UD3:00-5:00,MD3:00-8:00,TD4:00-5:00"/>
+	<SvMasterConfig name="_additionalSchedule" value="=_id=19 _name=cxyTest _schedule=UD13:55-14:00,MD13:55-14:00,TD13:55-14:00,WE13:55-14:00,RD13:55-14:00,FD13:55-14:00,SE13:55-14:00"/>
+	<SvMasterConfig name="_additionalSchedule" value="=_id=20 _name=cxytest113ew _schedule=UD11:00-11:10,MD11:00-11:10,TD16:55-16:58,WD11:00-11:10,RD11:00-11:10,FD11:00-11:10,SE11:00-24:00"/>
+	<SvMasterConfig name="_additionalSchedule" value="=_id=21 _name=dfs _schedule=UE11:00-12:00"/>
+	<SvMasterConfig name="_adminURL" value="=http://192.168.0.248:6666/SiteView"/>
+	<SvMasterConfig name="_alertCondition" value="=disabled and category eq 'error' and errorCount == 1mailto Other jkld;jf @sina.com Default83963326__Health__,human,Health_UIContext=__Health___name=Alert"/>
+	<SvMasterConfig name="_alertCondition" value="=disabled and category eq 'warning' and warningCount == 1mailto _id:1 Default83963327RobinTestMonitors 21,Group0.3,Group0.2_UIContext=_master_name=Alert"/>
+	<SvMasterConfig name="_alertIconLink" value="=CHECKED"/>
+	<SvMasterConfig name="_alertReportDefaultPeriod" value="=86400"/>
+	<SvMasterConfig name="_apacheContentMatch" value="=/CPULoad: (\d*[.]*\d+).*?ReqPerSec: (\d*[.]*\d+).*?BytesPerSec: (\d*[.]*\d+).*?BusyServers: (\d+).*?IdleServers: (\d+)/s"/>
+	<SvMasterConfig name="_autoDaily" value="=false"/>
+	<SvMasterConfig name="_autoEmail" value="=peng.wang@dragonflow.com"/>
+	<SvMasterConfig name="_autoStartup" value="=false"/>
+	<SvMasterConfig name="_backupDyns" value="=NotOnYourLife"/>
+	<SvMasterConfig name="_browsableExeTimeout" value="=45000"/>
+	<SvMasterConfig name="_browser" value="=Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; SV1; .NET CLR 1.1.4322)"/>
+	<SvMasterConfig name="_browseRefreshDefault" value="=0"/>
+	<SvMasterConfig name="_centrascopeDefaultXMLProperties" value="=property=stateString$property=category$propertySet=mainParameters$propertySet=links$property=last$property=_group$property=_id$property=groupID"/>
+<!--
+	<SvMasterConfig name="_centrascopeRefreshMatch" value="=/<HR>(.*)<HR>/s" />
+	<SvMasterConfig name="_centrascopeRemoteNTTestMatch" value="=/network connection.*(<HR>.*<\/H3><P>)/s"/>
+	<SvMasterConfig name="_centrascopeRemoteTestMatch" value="=/(Testing connection.*<\/PRE>)\s+<P>.*<\/HTML>/s"/>
+	<SvMasterConfig name="_centrascopeServiceDetailMatch" value="=/(<br><table>.*<\/table><br>)/s"/>
+	<SvMasterConfig name="_centrascopeTestMatch" value="=/(<PRE>.*<\/PRE>)/s"/>
+	<SvMasterConfig name="_centrascopeToolMatch" value="=/<\/FORM>(.*)<CENTER>.*$/s"/>
+	<SvMasterConfig name="_centrascopeTransWizardMatch" value="=/<\/FORM>(.*)<CENTER>.*$/s"/>
+	<SvMasterConfig name="_configJdbcCreate" value="=CREATE TABLE SiteViewConfig (serverName VARCHAR(255), groupID VARCHAR(255), frameIndex INT, frameID VARCHAR(255), settingName VARCHAR(255), settingLine INT, lineChunk INT, chunkValue VARCHAR(255))"/>
+	<SvMasterConfig name="_configJdbcDelete" value="=DELETE FROM SiteViewConfig WHERE serverName = ? AND groupID = ?"/>
+	<SvMasterConfig name="_configJdbcDriver" value="=com.inet.tds.TdsDriver"/>
+	<SvMasterConfig name="_configJdbcInsert" value="=INSERT INTO SiteViewConfig VALUES(?,?,?,?,?,?,?,?)"/>
+	<SvMasterConfig name="_configJdbcModification" value="=SELECT groupID, chunkValue FROM SiteViewConfig WHERE serverName = ? AND settingName = '_modificationTime' AND frameIndex = 1"/>
+	<SvMasterConfig name="_configJdbcReconnect" value="=600"/>
+	<SvMasterConfig name="_configJdbcSelect" value="=SELECT * FROM SiteViewConfig WHERE serverName = ? AND groupID = ? ORDER BY frameIndex, settingName, settingLine, lineChunk"/>
+	<SvMasterConfig name="_configJdbcUpdateModification" value="=UPDATE SiteViewConfig SET chunkValue = ? WHERE serverName = ? AND groupID = ?  AND frameIndex = 1 AND settingName = '_modificationTime'"/>
+	<SvMasterConfig name="_cpuEnableErrorAt100" value="=true"/>
+	<SvMasterConfig name="_cpuMaxProcessors" value="=16"/>
+	<SvMasterConfig name="_dailyLogKeepDays" value="=40"/>
+	<SvMasterConfig name="_dailyLogTotalLimit" value="="/>
+	<SvMasterConfig name="_dailySiteViewLogs" value="=true"/>
+	<SvMasterConfig name="_databaseMaxColumns" value="=10"/>
+	<SvMasterConfig name="_databaseMaxRows" value="=1"/>
+	<SvMasterConfig name="_databaseMaxSummary" value="=200"/>
+	<SvMasterConfig name="_databaseMonitorCacheConnections" value="=true"/>
+	<SvMasterConfig name="_defaultAuthWhenToAuthenticate" value="=authOnFirst"/>
+	<SvMasterConfig name="_defaultPrecision" value="=0"/>
+	<SvMasterConfig name="_delayBetweenPages" value="=5"/>
+	<SvMasterConfig name="_dnsNameTags" value="=Name:,Nombre:,Navn:,Nome:,Nom :,Nom\u00FF:"/>
+	<SvMasterConfig name="_dnsServerTags" value="=Server:,Servidor:,Serveur:,Serveur\u00FF:"/>
+	<SvMasterConfig name="_dynamicOID" value="=BIGIP-4.1.1PoolIncluded-(1.3.6.1.4.1.3375.1.1.8.2.1.1)"/>
+	<SvMasterConfig name="_enableSNMP" value="=1"/>
+	<SvMasterConfig name="_encoding" value="=GBK"/>
+	<SvMasterConfig name="_eventLogMessagesToSave" value="=10"/>
+	<SvMasterConfig name="_exclusiveMonitorTimeout" value="=300"/>
+	<SvMasterConfig name="_fileCheckFrequency" value="=120"/>
+	<SvMasterConfig name="_fileEncoding" value="=UTF-8"/>
+	<SvMasterConfig name="_fromAddress" value="=peng.wang@dragonflow.com"/>
+	<SvMasterConfig name="_ftpContentMatchMax" value="=50000"/>
+	<SvMasterConfig name="_ftpDownloadLimit" value="=60000"/>
+	<SvMasterConfig name="_ftpMaxThreads" value="=1"/>
+	<SvMasterConfig name="_groupRefreshRate" value="=60"/>
+	<SvMasterConfig name="_healthScheduleMinutes" value="=3"/>
+	<SvMasterConfig name="_healthScheduleMinutesMg" value="=5760"/>
+	<SvMasterConfig name="_httpActivePort" value="=6666"/>
+	<SvMasterConfig name="_httpCharSetOption" value="=default,"/>
+	<SvMasterConfig name="_httpKeepAliveEnabled" value="=true"/>
+	<SvMasterConfig name="_httpPort" value="=6666"/>
+	<SvMasterConfig name="_httpSecureKeyPassword" value="=(0x)MGNCOIMKMGMGNOOAMK"/>
+	<SvMasterConfig name="_httpSecureKeystorePassword" value="=(0x)MDMKOHNIMDMLOBNBNIKL"/>
+	<SvMasterConfig name="_httpTimeOutNoTrafficMS" value="=120000"/>
+	<SvMasterConfig name="_httpTimeOutToConnectMS" value="=120000"/>
+	<SvMasterConfig name="_id" value="=SiteView"/>
+	<SvMasterConfig name="_includeAlertLogOld" value="=true"/>
+	<SvMasterConfig name="_initialMonitorDelay" value="=300"/>
+	<SvMasterConfig name="_installed" value="=1"/>
+	<SvMasterConfig name="_installTime" value="=1129188359"/>
+	<SvMasterConfig name="_isI18N" value="=GBK"/>
+	<SvMasterConfig name="_J2EEMonitorMaxCounterNameLen" value="=600"/>
+	<SvMasterConfig name="_J2EERealtimeMonitorChunkSize" value="=500"/>
+	<SvMasterConfig name="_J2EEReportMonitorMaxCounters" value="=500"/>
+	<SvMasterConfig name="_licenseSalesURL" value="=http://www.dragonflowinteractive.com/company/contact_us"/>
+	<SvMasterConfig name="_linkSummaryMax" value="=500"/>
+	<SvMasterConfig name="_localeEnabled" value="=NOTCHECKED"/>
+	<SvMasterConfig name="_localPortRetryCount" value="=25"/>
+	<SvMasterConfig name="_logCollectorRefresh" value="=60"/>
+	<SvMasterConfig name="_logCollectorThreads" value="=10"/>
+	<SvMasterConfig name="_logDailyFileBufferDuration" value="=0"/>
+	<SvMasterConfig name="_logDailyFileMaxBufferSize" value="=0"/>
+	<SvMasterConfig name="_logFileBufferDuration" value="=0"/>
+	<SvMasterConfig name="_logFileMaxBufferSize" value="=0"/>
+	<SvMasterConfig name="_logJdbcAutoCommitSiteViewLog" value="=20"/>
+	<SvMasterConfig name="_logJdbcCreateSiteViewLog" value="=CREATE TABLE SiteViewLog (datex VARCHAR(255), serverName VARCHAR(255), class VARCHAR(255), sample VARCHAR(255), category VARCHAR(255), groupName VARCHAR(255), monitorName VARCHAR(255), status VARCHAR(255), monitorID VARCHAR(255), value1 VARCHAR(255), value2 VARCHAR(255), value3 VARCHAR(255), value4 VARCHAR(255), value5 VARCHAR(255), value6 VARCHAR(255), value7 VARCHAR(255), value8 VARCHAR(255), value9 VARCHAR(255), value10 VARCHAR(255))"/>
+	<SvMasterConfig name="_logJdbcDriverSiteViewLog" value="=org.gjt.mm.mysql.Driver"/>
+	<SvMasterConfig name="_logJdbcInsertSiteViewLog" value="=INSERT INTO SiteViewLog VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"/>
+	<SvMasterConfig name="_logJdbcPasswordSiteViewLog" value="="/>
+	<SvMasterConfig name="_logJdbcReconnectSiteViewLog" value="=600"/>
+	<SvMasterConfig name="_logJdbcURLBackupSiteViewLog" value="="/>
+	<SvMasterConfig name="_logJdbcURLSiteViewLog" value="=jdbc:mysql://localhost/test"/>
+	<SvMasterConfig name="_logJdbcUserSiteViewLog" value="=root"/>
+	<SvMasterConfig name="_logKeepDays" value="=0"/>
+	<SvMasterConfig name="_logMonitorDetailsMax" value="=1000"/>
+	<SvMasterConfig name="_mailServer" value="=mail.dragonflow.com"/>
+	<SvMasterConfig name="_mailServerBackup" value="=vip.163.com"/>
+	<SvMasterConfig name="_mailSubjectMax" value="=160"/>
+	<SvMasterConfig name="_mainGaugesPerRow" value="=3"/>
+	<SvMasterConfig name="_mainRefreshRate" value="=60"/>
+	<SvMasterConfig name="_maxAmountToRead" value="=50000"/>
+	<SvMasterConfig name="_maxAuxLogSize" value="=1000000"/>
+	<SvMasterConfig name="_maximumReports" value="=10"/>
+	<SvMasterConfig name="_maxLogSize" value="=16000000"/>
+	<SvMasterConfig name="_maxMonitorProcesses" value="=5"/>
+	<SvMasterConfig name="_maxMonitorSkips" value="=6"/>
+	<SvMasterConfig name="_maxMonitorsRunning" value="=100"/>
+	<SvMasterConfig name="_maxNumberGroupNameLines" value="=2"/>
+	<SvMasterConfig name="_maxReportErrors" value="=100"/>
+	<SvMasterConfig name="_maxReportWarnings" value="=100"/>
+	<SvMasterConfig name="_maxScriptAlertProcesses" value="=5"/>
+	<SvMasterConfig name="_maxWordLength" value="=24"/>
+	<SvMasterConfig name="_memoryPageSize" value="=8192"/>
+	<SvMasterConfig name="_monitorDelayBetweenRefresh" value="=1000"/>
+	<SvMasterConfig name="_monitorProcessCheckDelay" value="=180"/>
+	<SvMasterConfig name="_nextAdditionalMailID" value="=12"/>
+	<SvMasterConfig name="_nextAdditionalScheduleID" value="=23"/>
+	<SvMasterConfig name="_nextConditionID" value="=2"/>
+	<SvMasterConfig name="_nextDynamicID" value="=64"/>
+	<SvMasterConfig name="_nextNTRemoteID" value="=11"/>
+	<SvMasterConfig name="_nextRemoteID" value="=29"/>
+	<SvMasterConfig name="_nextReportID" value="=16"/>
+	<SvMasterConfig name="_noCheckDefaultThresholds" value="=true"/>
+	<SvMasterConfig name="_NTCounterMonitorMaxCounters" value="=8"/>
+	<SvMasterConfig name="_NTCounterSummaryMax" value="=3"/>
+	<SvMasterConfig name="_NTEventLogMonitorDetailsMax" value="=1000"/>
+	<SvMasterConfig name="_overviewBGColor" value="=#000000"/>
+	<SvMasterConfig name="_overviewColumns" value="=1"/>
+	<SvMasterConfig name="_overviewGroupFont" value="=-1"/>
+	<SvMasterConfig name="_overviewOptions" value="=toolbar=no,width=400,height=400,directories=no,status=no,scrollbars=yes,resizable=1,menubar=no"/>
+	<SvMasterConfig name="_overviewRefreshRate" value="=60"/>
+	<SvMasterConfig name="_overviewServerFont" value="=+0"/>
+	<SvMasterConfig name="_overviewTableOptions" value="=border=0 cellspacing=0"/>
+	<SvMasterConfig name="_pagerAlphaMax" value="=128"/>
+	<SvMasterConfig name="_pagerAttemptDelay" value="=120"/>
+	<SvMasterConfig name="_pagerAttempts" value="=4"/>
+	<SvMasterConfig name="_pagerTimeout" value="=60"/>
+	<SvMasterConfig name="_pingPacketsInitial" value="=1"/>
+	<SvMasterConfig name="_pingPacketsRetry" value="=5"/>
+	<SvMasterConfig name="_portalFirstRun" value="=true"/>
+	<SvMasterConfig name="_portMonitor" value="=7EchoEcho test\r\nEcho test"/>
+	<SvMasterConfig name="_portMonitor" value="=13Daytime"/>
+	<SvMasterConfig name="_portMonitor" value="=21FTP220"/>
+	<SvMasterConfig name="_portMonitor" value="=23Telnet"/>
+	<SvMasterConfig name="_portMonitor" value="=25SMTP220"/>
+	<SvMasterConfig name="_portMonitor" value="=70Gopher\r\n1"/>
+	<SvMasterConfig name="_portMonitor" value="=110POP3+OK"/>
+	<SvMasterConfig name="_portMonitor" value="=119News200"/>
+	<SvMasterConfig name="_portMonitor" value="=143IMAP4"/>
+	<SvMasterConfig name="_portMonitor" value="=1494CitrixICA"/>
+	<SvMasterConfig name="_portMonitor" value="=6667IRC"/>
+	<SvMasterConfig name="_portMonitor" value="=1645RADIUS\x01S\x00\x2cSiteViewRADIUS1\x01\x06test\x02\x12password01234567\x02S\x00UDP"/>
+	<SvMasterConfig name="_postAttemptDelay" value="=120"/>
+	<SvMasterConfig name="_postAttempts" value="=4"/>
+	<SvMasterConfig name="_processPoolDebugLevel" value="=1"/>
+	<SvMasterConfig name="_processPoolKillTimeout" value="=120000"/>
+	<SvMasterConfig name="_processPoolMaxPerPool" value="=50"/>
+	<SvMasterConfig name="_progressRefreshRate" value="=20"/>
+	<SvMasterConfig name="_readmeDate" value="=0"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=connection_successful_some_commands_failed _sshPort=22 _os=Linux _id=10 _version2= _trace=on _sshClient=java _method=ssh _sshCommand= _keyFile=/SiteViewOld.res/groups/identity_ _password=(0x)LHNLNFMMMFNH _sshConnectionsLimit=3 _login=root _host=192.168.5.189 _sshAuthMethod=password _name=dragon"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=connection_successful_some_commands_failed _sshPort=22 _os=Linux _id=11 _version2= _trace=on _sshClient=java _method=ssh _sshCommand= _keyFile=/SiteViewOld.res/groups/identity_ _password=(0x)LHNLNFMMMFNH _sshConnectionsLimit=3 _login=root _host=192.168.5.189 _sshAuthMethod=password _name=192.168.5.189"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=remote_command_error_unable_to_reach_server_(-993) _sshPort=22 _os=AIX _id=12 _version2= _encoding=GBK _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password=(0x)LEMNOBMOME _sshConnectionsLimit=3 _login=admin _host=123123123 _sshAuthMethod=password _name=111111111111111"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=13 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=22222222 _sshAuthMethod=password _name=22222222"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=14 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=3333333 _sshAuthMethod=password _name=3333333"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=15 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=44444444 _sshAuthMethod=password _name=44444444"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=16 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=55555555 _sshAuthMethod=password _name=55555555"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=17 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=66666 _sshAuthMethod=password _name=66666"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=18 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=1111 _sshAuthMethod=password _name=1111"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=19 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=9999999 _sshAuthMethod=password _name=9999999"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=20 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=88888 _sshAuthMethod=password _name=88888"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=21 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=777 _sshAuthMethod=password _name=777"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=22 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=00000 _sshAuthMethod=password _name=00000"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=23 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=98798 _sshAuthMethod=password _name=98798"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=24 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=dsadsadas _sshAuthMethod=password _name=dsadsadas"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=25 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=yututy _sshAuthMethod=password _name=yututy"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=26 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=tretretert _sshAuthMethod=password _name=tretretert"/>
+	<SvMasterConfig name="_remoteMachine" value="=_disableCache= _status=unknown _sshPort=22 _os=AIX _id=27 _version2= _trace= _sshClient=java _method=telnet _sshCommand= _keyFile=/SiteView/groups/identity_ _password= _sshConnectionsLimit=3 _login= _host=fdhgfhfgh _sshAuthMethod=password _name=fdhgfhfgh"/>
+	<SvMasterConfig name="_remoteNTMachine" value="=_disableCache= _status=remote_server_not_found _sshPort=22 _os=NT _id=10 _version2= _trace= _sshClient=java _method=NetBIOS _sshCommand= _keyFile=.\groups\identity_ _password=(0x)MAMKOINJIGJLJGKO _sshConnectionsLimit=3 _login=192.168.0.216\administrator _host=\\localhost _sshAuthMethod=password _name=localhost"/>
+	<SvMasterConfig name="_reportDefaultSamples" value="=20"/>
+	<SvMasterConfig name="_reportDelimiter" value="=,"/>
+	<SvMasterConfig name="_reportFormat" value="=_id=noBorders _title=color_background,_no_table_borders _reportTableHTML=CELLSPACING=1_BORDER=0"/>
+	<SvMasterConfig name="_reportFormat" value="=_id=whiteBackground _title=white_background _reportGraphBackgroundColor=#FFFFFF _reportTableHeaderHTML=BGCOLOR="#FFFFFF" _reportTableDataHTML=BGCOLOR="#FFFFFF""/>
+	<SvMasterConfig name="_reportGraphBackgroundColor" value="=#DDDDDD"/>
+	<SvMasterConfig name="_reportGraphDisabledColor" value="=#44AACC"/>
+	<SvMasterConfig name="_reportGraphErrorColor" value="=#EE8888"/>
+	<SvMasterConfig name="_reportGraphGoodColor" value="=#88CC99"/>
+	<SvMasterConfig name="_reportGraphMaxColor" value="=#CCCCCC"/>
+	<SvMasterConfig name="_reportGraphNoDataColor" value="=#FFFFFF"/>
+	<SvMasterConfig name="_reportGraphWarningColor" value="=#EEEE77"/>
+	<SvMasterConfig name="_reportHideLogo" value="=TRUE"/>
+	<SvMasterConfig name="_reportIconLink" value="=CHECKED"/>
+	<SvMasterConfig name="_reportImageType" value="=jpg"/>
+	<SvMasterConfig name="_reportMaxBuckets" value="=100"/>
+	<SvMasterConfig name="_reportScale" value="=1,2,5,10,20,50,100,200,500,1000,2000,5000,10000,20000,50000,100000"/>
+	<SvMasterConfig name="_reportTableDataHTML" value="=BGCOLOR="#DDDDDD""/>
+	<SvMasterConfig name="_reportTableDisabledColor" value="=#44AACC"/>
+	<SvMasterConfig name="_reportTableErrorColor" value="=#EE8888"/>
+	<SvMasterConfig name="_reportTableGoodColor" value="=#88CC99"/>
+	<SvMasterConfig name="_reportTableHeaderHTML" value="=BGCOLOR="#88AA99""/>
+	<SvMasterConfig name="_reportTableHTML" value="=BORDER=1 CELLSPACING=0"/>
+	<SvMasterConfig name="_reportTableNoDataColor" value="=#FFFFFF"/>
+	<SvMasterConfig name="_reportTableWarningColor" value="=#EEEE77"/>
+	<SvMasterConfig name="_scriptMonitorLinesToSave" value="=25"/>
+	<SvMasterConfig name="_scriptMonitorReplacementChars" value="=$ %"/>
+	<SvMasterConfig name="_serverReadPause" value="=1000"/>
+	<SvMasterConfig name="_serverReadRefresh" value="=60000"/>
+	<SvMasterConfig name="_serverReadThreadCount" value="=5"/>
+	<SvMasterConfig name="_shutdownMailSent" value="=true"/>
+	<SvMasterConfig name="_shutdownOnSkips" value="=true"/>
+	<SvMasterConfig name="_shutdownTimeout" value="=60"/>
+	<SvMasterConfig name="_shutdownWarningSent" value="=true"/>
+	<SvMasterConfig name="_silverstreamContentMatch" value="=/hits:(\d+).*?bytes:(\d+).*?Request processing times:.*?avg.*?max.*?<th align="center">\d+<th align="center">(\d+).*?Thread counts:.*?free.*?idle.*?total.*?<th align="center">(\d+)<th align="center">(\d+)<th align="center">(\d+).*?Memory status:.*?Free memory.*?Total memory.*?GC Count.*?<th align="center">(\d+).*?<th align="center">(\d+).*?<th align="center">(\d+).*?Current load:(\d+).*?Idle sessions.*?Total sessions.*?<th align="center">(\d+).*?<th align="center">(\d+)/s"/>
+	<SvMasterConfig name="_siteseerHidden" value="=true"/>
+	<SvMasterConfig name="_siteseerTitle" value="=SiteSeer"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.1.1system.sysDescr"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.1.3system.sysUpTime"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.4.3ip.ipInReceives"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.4.6ip.ipForwDatagrams"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.2.2.1.8ifSpecific.ifOperStatus"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.2.2.1.5ifSpecific.ifSpeed"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.2.2.1.10ifSpecific.ifInOctets"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.2.2.1.11ifSpecific.ifInPackets"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.2.2.1.13ifSpecific.ifInDiscards"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.2.2.1.14ifSpecific.ifInErrors"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.2.2.1.16ifSpecific.ifOutOctets"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.2.2.1.17ifSpecific.ifOutPackets"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.2.2.1.19ifSpecific.ifOutDiscards"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.2.1.2.2.1.20ifSpecific.ifOutErrors"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.1.8cisco.system.freeMem"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.1.58cisco.cpu.avgBusy5"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.1.57cisco.cpu.avgBusy1"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.1.79cisco.system.envTestPt1Measure"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.2.1.1.6cisco.locIfInBitsSec"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.2.1.1.7cisco.locIfInPktsSec"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.2.1.1.8cisco.locIfOutBitsSec"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.2.1.1.9cisco.locIfOutPktsSec"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.2.1.1.14cisco.locIfInOverrun"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.2.1.1.25cisco.locIfCollisions"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.2.1.1.26cisco.locIfInputQueueDrops"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.2.1.1.27cisco.locIfOutputQueueDrops"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.2.1.1.44cisco.locIfipInOctets"/>
+	<SvMasterConfig name="_snmpMonitor" value="=1.3.6.1.4.1.9.2.2.1.1.45cisco.locIfipOutOctets"/>
+	<SvMasterConfig name="_snmpMonitorMaximum" value="=10"/>
+	<SvMasterConfig name="_SNMPTrapMonitorDetailsMax" value="=1000"/>
+	<SvMasterConfig name="_sslAcceptAllUntrustedCerts" value="=false"/>
+	<SvMasterConfig name="_sslgetMaximum" value="=4"/>
+	<SvMasterConfig name="_sslJavaEnabled" value="=true"/>
+	<SvMasterConfig name="_sslSessionKeepAlive" value="=true"/>
+	<SvMasterConfig name="_tempDirMaxSize" value="=10000"/>
+	<SvMasterConfig name="_threadPoolMaxIdle" value="=100"/>
+	<SvMasterConfig name="_timeZoneOffset" value="=-999"/>
+	<SvMasterConfig name="_topazAlertsEnabled" value="=0"/>
+	<SvMasterConfig name="_topazConfigHistoryMaxSize1" value="=50000000"/>
+	<SvMasterConfig name="_topazConfigInterval" value="=30"/>
+	<SvMasterConfig name="_topazConfigSize" value="=100"/>
+	<SvMasterConfig name="_topazLogMonitorCache" value="=100"/>
+	<SvMasterConfig name="_topazLogTimeCache" value="=60"/>
+	<SvMasterConfig name="_topazMaxOldDirs" value="=10"/>
+	<SvMasterConfig name="_topazMaxPersistenceDirSize" value="=1000"/>
+	<SvMasterConfig name="_topazSyncFrequency" value="=300"/>
+	<SvMasterConfig name="_topazWatchdogExistInTms" value="=false"/>
+	<SvMasterConfig name="_urlContentMatchDisplayMax" value="=150"/>
+	<SvMasterConfig name="_urlContentMatchMax" value="=50000"/>
+	<SvMasterConfig name="_urlHeaderLinesToSave" value="=15"/>
+	<SvMasterConfig name="_urlItemErrorDisplayMax" value="=2"/>
+	<SvMasterConfig name="_urlKeepAlive" value="=0"/>
+	<SvMasterConfig name="_urlLoadThreads" value="=1"/>
+	<SvMasterConfig name="_urlLocation" value="=,this server"/>
+	<SvMasterConfig name="_urlOtherHeader" value="=Pragma: No-Cache"/>
+	<SvMasterConfig name="_urlRedirectMax" value="=10"/>
+	<SvMasterConfig name="_URLRemoteLocationsMax" value="=6"/>
+	<SvMasterConfig name="_urlRemoteRequestMax" value="=4"/>
+	<SvMasterConfig name="_URLSequenceMonitorSteps" value="=20"/>
+	<SvMasterConfig name="_URLUserAgent" value="=Mozilla/4.0 (compatible; MSIE 4.01; Windows NT)"/>
+	<SvMasterConfig name="_userURL" value="=http://192.168.0.248:6666/SiteView/userhtml/SiteView.html"/>
+	<SvMasterConfig name="_useThreadPool" value="=yes"/>
+	<SvMasterConfig name="_verifySleepDuration" value="=5000"/>
+	<SvMasterConfig name="_version" value="=750"/>
+	<SvMasterConfig name="_vugenPath" value="=\Siteview\tools\dispatcher\bin\"/>
+	<SvMasterConfig name="_webserverAddress" value="=192.168.0.248"/>
+-->
+</entity-engine-xml>

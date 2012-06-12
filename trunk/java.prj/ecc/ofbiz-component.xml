@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+-->
+
+<ofbiz-component name="ecc"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/ofbiz-component.xsd">
+    <resource-loader name="main" type="component"/>
+    <classpath type="jar" location="build/lib/*"/>
+	<classpath type="jar" location="monitor/lib/ext/*"/>
+    <classpath type="dir" location="config"/>
+    <classpath type="dir" location="script"/>
+	
+    <entity-resource type="model" reader-name="main" loader="main" location="entitydef/entitymodel.xml"/>
+    <entity-resource type="group" reader-name="main" loader="main" location="entitydef/entitygroup.xml"/>
+    		
+	<!-- wan.luo 2008.5.15 Sv entity 的初始化数据 -->
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/MasterConfigData.xml"/> 
+
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvGroupData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvLogData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvStatusTypeData.xml"/>
+		
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvFieldAttrData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvFieldTypeAttrData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvFieldTypeData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvFieldData.xml"/>
+		
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvAlertAttrData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvAlertTypeAttrData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvAlertTypeData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvAlertData.xml"/>
+	
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvAlertTargetData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvAlertTaskData.xml"/>
+
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvCiAttrData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvCiTypeAttrData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvCiTypeData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvCiData.xml"/>
+	
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvCiMethodAttrData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvCiMethodTypeAttrData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvCiMethodTypeData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvCiMethodData.xml"/>
+
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvCiMethodConditionData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvCiTypeMethodTypeData.xml"/>
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvCiTypeCategoryData.xml"/>
+	
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/SvMonitorFrequencyUnitData.xml"/>	
+	<!-- 
+	<entity-resource type="data" reader-name="seed" loader="main" location="data/EccData.xml"/> 
+	-->
+	
+	<service-resource type="model" loader="main" location="servicedef/services.xml"/>
+    <service-resource type="eca" loader="main" location="servicedef/secas.xml"/>
+	<test-suite loader="main" location="testdef/GroupTest.xml"/>
+	
+    <webapp name="ecc"
+        title="siteview_ecc"
+        server="default-server"
+        location="webapp/ecc"
+        mount-point="/ecc"/>
+</ofbiz-component>

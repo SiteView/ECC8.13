@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="byName">
+
+	<import resource="classpath:org/codehaus/xfire/spring/xfire.xml" />  
+
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="urlMap">
+            <map>
+                <!--entry key="/InterfaceEccService" >
+                	<ref bean="EccWebService" />
+                </entry-->
+                <entry key="/eccapi" >
+                	<ref bean="EccWebService" />
+                </entry>
+
+			</map>
+        </property>
+		<property name="mappings">
+           <value>/eccapi=EccWebService</value>
+        </property>
+    </bean>
+
+	<bean id="EccService"
+		class="com.siteview.eccservice.EccService">
+	</bean>
+
+      <bean id="EccWebService" 	class="org.codehaus.xfire.spring.remoting.XFireExporter" lazy-init="false"  >
+    	<property name="serviceFactory">
+    		<ref bean="xfire.serviceFactory" />
+    	</property>
+    	<property name="xfire">
+    		<ref bean="xfire" />
+    	</property>
+    	<property name="style">
+    		<value>wrapped</value>
+    	</property>
+    	<property name="serviceBean">
+    		<ref bean="EccService" />
+    	</property>
+    	<property name="serviceClass">
+    		<value>com.siteview.eccservice.InterfaceEccService</value>
+    	</property>
+    </bean>
+
+</beans>

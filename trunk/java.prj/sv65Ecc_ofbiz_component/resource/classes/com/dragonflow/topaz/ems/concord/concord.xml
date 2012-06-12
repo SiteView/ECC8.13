@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Monitor name="concord" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   emsFolderName="concord"  xsi:noNamespaceSchemaLocation="../../../../../../../../ems/Monitor.xsd">
+	<MeasurementConfigFilePathProperty/>
+	<StringProperty isAdvanced="false" name="_pDbUrl" isEditable="true" label="db_url_concord_label" description="db_url_description"/>
+	<StringProperty isAdvanced="false" name="_pDbDriverName" isEditable="true" label="driver_name_label" description="driver_name_description"/>
+	<StringProperty isAdvanced="false" name="_pDbUserName" isEditable="true" label="db_user_name_label" description="db_user_name_description"/>
+	<StringProperty isAdvanced="false" name="_pDbPassword" isEditable="true" label="db_password_label" description="db_password_description"/>
+	<StringProperty isAdvanced="true" name="_pDbSelect" isEditable="true" label="db_select_label" description="db_select_description" value="*"/>
+	<StringProperty isAdvanced="true" name="_pDbWhere" isEditable="true" label="db_where_label" description="db_where_description"/>
+	<TimeDiffProperty/>
+	<HiddenStringProperty name="pStartTime" value="-1"/>
+	<IntProperty isAdvanced="false" name="pCollected" isEditable="false" value="0" stateOptions="1" label="title_collected_measurements"/>
+</Monitor>

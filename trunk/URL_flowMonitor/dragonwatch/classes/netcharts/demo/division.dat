@@ -1,0 +1,23 @@
+TopAxisTitle = ("Divisional Sales", dimgrey, Helvetica, 12);
+Footer            = ("Press Here To Go Back", white, Helvetica, 11);
+FooterBox         = (gray, RAISED, 1);
+FooterActiveLabel = ("", "../classes/netcharts/demo/top.dat", "LOADPARAMS");
+BarLabels = "Audio", "Video";
+Grid = (gainsboro, white,dimgray),(null,null,dimgray);
+GridLine = (HORIZONTAL,BAR),(VERTICAL);
+ActiveLabels1 =
+	("$209,973", "../classes/netcharts/demo/audiodiv.dat", "LOADPARAMS"),
+	("$204,882", "../classes/netcharts/demo/videodiv.dat", "LOADPARAMS");
+LineSets = ;
+DataSets = ("Divisional Sales", null, TRIANGLEBAR);
+BarWidth = 60;
+Bar3DDepth = 10;
+Grid = (gainsboro, white,dimgray),(null,null,dimgray);
+GridLine = (HORIZONTAL,BAR),(VERTICAL);
+Grid3DDepth = 3;
+DataSet1 = 209973, 204882;
+LeftTics = ("ON",black, "Helvetica", 10);
+LeftColor = black;
+LeftFormat = (INTEGER);
+NoteSets = ;
+Legend = (OFF);

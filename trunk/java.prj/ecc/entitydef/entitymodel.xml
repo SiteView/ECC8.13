@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entitymodel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitymodel.xsd">
+  
+	<title>Siteview Ecc Component</title>
+    <description>None</description>
+    <copyright>Copyright siteview</copyright>
+    <author>None</author>
+    <version>1.0</version>
+	
+  <!-- ========================================================= -->
+  <!-- com.siteview.ecc.monitor -->
+  <!-- ========================================================= -->
+
+	<!-- MasterConfig 的数据结构定义 
+		wan.luo 2008.5.9 
+	-->
+	<entity entity-name="SvMasterConfig"
+            package-name="com.siteview.ecc.monitor"
+            title="ECC master config Entity">
+		<field name="name" type="short-varchar" ></field>
+		<field name="value" type="long-varchar1024" ></field>
+		<prim-key field="name"/>
+    </entity>
+	
+    <entity entity-name="SvStatusType"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor Status Define">
+      <field name="statusTypeId" type="id-ne"></field>
+      <field name="statusTypeName" type="long-varchar"></field>
+	  <field name="statusTypeIcon" type="long-varchar"></field>
+      <prim-key field="statusTypeId"/>
+    </entity>
+
+    <entity entity-name="SvGroup"
+            package-name="com.siteview.ecc.monitor"
+            title="Device SVGroup Table">
+      <field name="group_id" type="id-ne"></field>
+      <field name="group_name" type="long-varchar"></field>
+	  <field name="disabled" type="indicator"></field>
+	  <field name="status_type_id" type="id"></field>
+	  <field name="dependon" type="id"></field>
+	  <field name="dependon_status" type="id"></field> 	
+	  <field name="parent_group_id" type="id"></field>		
+	 <!--copy start-->
+		<field name="sub_monitor_null_sum" type="numeric"/>
+	    <field name="sub_monitor_error_sum" type="numeric"/>
+	    <field name="sub_entity_sum" type="numeric"/>
+		<field name="sub_monitor_sum" type="numeric"/>
+		<field name="sub_point_reduce_sum" type="numeric"/>
+		<field name="sv_description" type="long-varchar"/>
+		<field name="grp_type" type="short-varchar"/>
+		<field name="sub_network_sum" type="numeric"/>
+		<field name="sub_monitor_ok_sum" type="numeric"/>
+		<field name="sub_monitor_warning_sum" type="numeric"/>
+		<field name="sub_monitor_disable_sum" type="numeric"/>
+		<field name="sv_index" type="numeric"/>
+		<field name="has_son" type="indicator"/>		
+	 <!--copy over-->				
+		  <prim-key field="group_id"/>
+		  <relation type="one" fk-name="ref_parent_group" rel-entity-name="SvGroup">
+				<key-map field-name="parent_group_id" rel-field-name="group_id"/>
+		  </relation>
+	   <!--relation type="one" fk-name="ref_stat_typid" rel-entity-name="SvStatusType">
+        <key-map field-name="status_type_id" rel-field-name="status_type_id"/>
+      </relation-->
+	
+	  <!--relation type="one" title="Depend" rel-entity-name="SvGroup">
+        <key-map field-name="dependon" rel-field-name="group_id"/>
+      </relation-->
+	  <!--relation type="one" rel-entity-name="SvStatusType">
+        <key-map field-name="dependon_status" rel-field-name="status_type_id"/>
+      </relation-->	
+    </entity>	
+   
+	<entity entity-name="SvCiTypeCategory"
+            package-name="com.siteview.ecc.monitor"
+            title="Device Type Category Table">
+      <field name="sv_id" type="id-ne"></field>
+	  <field name="sv_name" type="long-varchar"></field>
+      <field name="sv_label" type="long-varchar"></field>
+	  <field name="sv_description" type="very-long"></field>
+	  <field name="sv_index" type="numeric"></field>
+	  <field name="sv_hidden" type="indicator"></field>
+	  <field name="file_name" type="long-varchar"></field>
+	  <field name="sv_func" type="short-varchar"></field>	
+      <prim-key field="sv_id"/>
+    </entity>
+	
+<!-- SvCi* -->
+	 <entity entity-name="SvCi"
+            package-name="com.siteview.ecc.monitor"
+            title="Device Instance Table">
+      <field name="ci_id" type="id-ne"></field>
+	  <field name="ciTypeId" type="short-varchar"></field>
+      <field name="ci_name" type="long-varchar"></field>
+	  <field name="parent_group_id" type="id"></field>
+	  <field name="ci_desciption" type="long-varchar"></field>
+	   <field name="sv_status" type="id-ne"></field>
+	  <field name="ci_depend" type="id"></field>
+	  <field name="ci_depend_status" type="id"></field> 	
+	  <field name="has_son" type="indicator"></field>
+      <field name="sv_disable" type="indicator"></field>		 	 
+      <field name="sv_network" type="indicator"></field>
+	  <!--statStart-->
+	  <field name="sub_monitor_null_sum" type="numeric"/>
+	  <field name="sub_monitor_sum" type="numeric"/>
+	  <field name="sub_monitor_ok_sum" type="numeric"/>
+	  <field name="sub_monitor_warning_sum" type="numeric"/>
+	  <field name="sub_monitor_disable_sum" type="numeric"/>
+	  <field name="sub_monitor_error_sum" type="numeric"/>
+	  <!--statEnd-->	 		
+		 		
+      <prim-key field="ci_id"/>
+		 
+      <relation type="one" fk-name="CI_CI_TYP" rel-entity-name="SvCiType">
+        <key-map field-name="ciTypeId" rel-field-name="ciTypeId"/>
+      </relation>
+	  <relation type="many" rel-entity-name="SvCiAttr">
+        <key-map field-name="ci_id" rel-field-name="ci_id"/>
+      </relation>
+	<!--		
+	  <relation type="one" fk-name="ref_ciParentGrp" title="Parent" rel-entity-name="SvGroup">
+        <key-map field-name="parent_group_id" rel-field-name="group_id"/>
+      </relation>
+    -->
+      <index name="CI_ID_IDX">
+        <index-field name="ci_id"/>
+      </index>
+      <index name="CI_parent_group">
+        <index-field name="parent_group_id"/>
+      </index>
+    </entity>
+	
+    <entity entity-name="SvCiType"
+            package-name="com.siteview.ecc.monitor"
+            title="Device Define Table">
+      <field name="ciTypeId" type="short-varchar"></field>
+      <field name="cat_id" type="id-ne"></field>		
+      <field name="hasTable" type="indicator"></field>
+      <field name="sv_name" type="long-varchar"></field>		
+	  <field name="sv_label" type="long-varchar"></field>
+	  <field name="sv_description" type="very-long"></field>
+		
+      <prim-key field="ciTypeId"/>
+
+	  <relation type="many" rel-entity-name="SvCiTypeAttr">
+			<key-map field-name="ciTypeId" rel-field-name="ciTypeId"/>
+      </relation>			
+	 <!-- 
+	  <relation type="one" fk-name="CI_TYPE_Category" rel-entity-name="SvCiTypeCategory">
+        <key-map field-name="cat_id" rel-field-name="sv_id"/>
+      </relation>
+	 -->
+    </entity>
+
+	<entity entity-name="SvCiAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="Deview Attribute Entity">
+      <field name="ci_id" type="id-ne"></field>
+      <field name="attrName" type="long-varchar"></field>
+      <field name="attrValue" type="value"></field>
+		 
+      <prim-key field="ci_id"/>
+      <prim-key field="attrName"/>
+	<!--
+      <relation type="one" fk-name="CI_ATTR" rel-entity-name="SvCi">
+        <key-map field-name="ci_id" rel-field-name="ci_id"/>
+      </relation>
+      <relation type="many" rel-entity-name="SvCiTypeAttr">
+        <key-map field-name="attrName" rel-field-name="attrName"/>
+      </relation>
+		-->
+    </entity>
+	
+	<entity entity-name="SvCiTypeAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="Device Attribute Define Table">
+      <field name="ciTypeId" type="short-varchar"></field>
+	  <field name="attrName" type="long-varchar"></field>
+	  <field name="sv_value" type="very-long"></field>
+	  <field name="sv_type" type="short-varchar"></field>			
+	  <field name="metaid" type="id-ne"></field>
+		
+      <prim-key field="ciTypeId"/>
+      <prim-key field="attrName"/>
+		
+	  <!--
+      <relation type="one" fk-name="CI_TYP_ATTR" rel-entity-name="SvCiType">
+        <key-map field-name="ciTypeId" rel-field-name="ciTypeId"/>
+      </relation>
+      <relation type="many" rel-entity-name="SvCiAttr">
+        <key-map field-name="attrName" rel-field-name="attrName"/>
+      </relation>		
+	  -->		
+	<!-- 这个关系不可能实现
+	  <relation type="one" rel-entity-name="SvField">
+        <key-map field-name="metaid" rel-field-name="fieldid"/>
+      </relation>
+	 -->
+    </entity>	
+		
+<!-- SvCiMethod* -->
+  <entity entity-name="SvCiMethod"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor Instance Table">
+      <field name="method_id" type="id-ne"></field>
+	  <field name="ci_id" type="id-ne"></field>
+	  <field name="methodTypeId" type="id-ne"></field>
+      <field name="method_name" type="long-varchar"></field>
+	  <field name="method_status" type="id"></field>
+	  <field name="dependon" type="id"></field>
+	  <field name="dependon_status" type="id"></field> 	
+	  <field name="sv_intpos" type="numeric"></field>
+	  <field name="sv_name" type="long-varchar"></field>
+	  <field name="sv_disable" type="indicator"></field>
+	  <field name="sv_starttime" type="short-varchar"></field>
+      <field name="sv_endtime" type="short-varchar"></field>
+	  <field name="KLS_times" type="numeric"></field>
+      <field name="KLS_seconds" type="numeric"></field>
+		      
+	  <prim-key field="method_id"/>
+	  
+	  <!--
+	  <relation type="one" fk-name="ref_method_ci" rel-entity-name="SvCi">
+        <key-map field-name="ci_id" rel-field-name="ci_id"/>
+      </relation>	  
+      -->
+	  <relation type="one" fk-name="CIMeth_CIMeth_TYP" rel-entity-name="SvCiMethodType">
+        <key-map field-name="methodTypeId" rel-field-name="methodTypeId"/>
+      </relation>
+	   <relation type="many" rel-entity-name="SvCiMethodTypeAttr">
+        <key-map field-name="methodTypeId" rel-field-name="methodTypeId"/>
+      </relation>
+    </entity>		
+ 
+	<entity entity-name="SvCiMethodType"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor Define Table">
+      <field name="methodTypeId" type="id-ne"></field>
+	  <field name="sv_label" type="long-varchar"/>
+	  <field name="sv_description" type="very-long"/>	
+	  <field name="sv_extrafunc" type="short-varchar"/>
+	  <field name="sv_name" type="long-varchar"/>
+	  <field name="sv_helplink" type="long-varchar"/>
+	  <field name="sv_func" type="short-varchar"/>	
+	  <field name="sv_dll" type="short-varchar"/>
+	  <field name="sv_class" type="short-varchar"/>
+	  <field name="sv_extradll" type="short-varchar"/>
+	  <field name="sv_extrasave" type="short-varchar"/>
+      <field name="hasTable" type="indicator"/>
+      <prim-key field="methodTypeId"/>
+
+	  <relation type="many" rel-entity-name="SvCiMethodTypeAttr">
+			<key-map field-name="methodTypeId" rel-field-name="methodTypeId"/>
+      </relation>			
+    </entity>
+		
+	 <entity entity-name="SvCiMethodTypeAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor Attribute Define Table">
+      <field name="methodTypeId" type="id-ne"></field>
+	  <field name="attrName" type="long-varchar"></field>
+	  <field name="sv_value" type="very-long"></field>
+	  <field name="sv_type" type="short-varchar"></field>			
+	  <field name="sv_group" type="short-varchar"></field>			
+	  <field name="metaid" type="id-ne"></field>
+		 
+      <prim-key field="methodTypeId"/>
+      <prim-key field="attrName"/>
+	  <prim-key field="sv_group"/>
+		 	
+	  <!--	 
+      <relation type="one" fk-name="CIMethod_TYP_ATTR" rel-entity-name="SvCiMethodType">
+        <key-map field-name="methodTypeId" rel-field-name="methodTypeId"/>
+      </relation>
+      <relation type="many" rel-entity-name="SvCiMethodAttr">
+        <key-map field-name="attrName" rel-field-name="attrName"/>
+      </relation>
+      <relation type="many" rel-entity-name="SvCiMethod">
+        <key-map field-name="methodTypeId" rel-field-name="methodTypeId"/>
+      </relation>	
+	 -->
+	<!-- 这个关系不可能
+	  <relation type="one" rel-entity-name="SvField">
+        <key-map field-name="metaid" rel-field-name="fieldid"/>
+      </relation>
+	-->	 		  
+    </entity>	
+	
+	 <entity entity-name="SvCiMethodAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor Attribute Entity">
+		 
+      <field name="method_id" type="id-ne"></field>
+      <field name="attrName" type="long-varchar"></field>
+      <field name="attrValue" type="value"></field>
+		 
+      <prim-key field="method_id"/>
+      <prim-key field="attrName"/>
+	
+	<!-- 
+      <relation type="one" fk-name="MONITOR_ATTR" rel-entity-name="SvCiMethod">
+			<key-map field-name="method_id" rel-field-name="method_id"/>
+      </relation>
+      <relation type="many" rel-entity-name="SvCiMethodTypeAttr">
+			<key-map field-name="attrName" rel-field-name="attrName"/>
+      </relation>
+	-->
+    </entity>
+
+<!-- SvCiMethodCondition -->
+	<entity entity-name="SvCiMethodCondition"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor Condition Table">
+		<field name="method_id" type="id-ne"></field>  
+		<field name="idx" type="numeric"></field>
+		<field name="sv_status" type="short-varchar"></field>    
+		<field name="sv_relation" type="short-varchar"></field>
+		<field name="sv_paramname" type="long-varchar"></field>  
+		<field name="sv_operate" type="short-varchar"></field>
+		<field name="sv_paramvalue" type="long-varchar"></field>    
+		
+		<prim-key field="method_id"/>
+		<prim-key field="sv_status"/>  
+		<prim-key field="idx"/>
+		
+		<index name="idx_MethodCondition">
+			<index-field name="method_id"/>
+		</index>    
+	  </entity>	  
+		
+	 <entity entity-name="SvLog"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor Log Data">
+      <field name="monitorID" type="id-ne"></field>
+      <field name="CreateTime" type="long-varchar"></field>
+      <field name="RecordState" type="short-varchar"></field>
+      <field name="keyValueStr" type="very-long"></field>
+		 
+      <prim-key field="monitorID"/>
+      <prim-key field="CreateTime"/>
+		 
+      <index name="log_monitorID_IDX">
+        <index-field name="monitorID"/>
+      </index>
+      <index name="log_CreateTime_IDX">
+        <index-field name="CreateTime"/>
+      </index>
+    </entity>
+
+<!-- SvCiTypeMethod* -->
+	<entity entity-name="SvCiTypeMethodType"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor and Device relation">
+      <field name="ciTypeId" type="short-varchar"></field>
+	  <field name="methodTypeId" type="id-ne"></field>	
+		
+      <prim-key field="ciTypeId"/>
+      <prim-key field="methodTypeId"/>
+      
+      <relation type="one" rel-entity-name="SvCiMethodType">
+        <key-map field-name="methodTypeId" rel-field-name="methodTypeId"/>
+      </relation>
+		
+      <relation type="one" rel-entity-name="SvCiType">
+        <key-map field-name="ciTypeId" rel-field-name="ciTypeId"/>
+      </relation>		
+
+      <index name="CiTypeMethodType1">
+        <index-field name="methodTypeId"/>
+      </index>
+      <index name="CiTypeMethodType2">
+        <index-field name="ciTypeId"/>
+      </index>
+    </entity>
+	
+<!--alert-->	
+	<entity entity-name="SvAlert"
+            package-name="com.siteview.ecc.monitor"
+            title="Alert setting">
+      	<field name="alertId" type="id-ne"></field>
+		<field name="alertName" type="long-varchar"></field>
+		<field name="alertType" type="id-ne"></field>
+		<field name="alertCond" type="indicator"></field>
+		<field name="alertCategory" type="short-varchar"></field>
+		<field name="alertState" type="indicator"></field>
+		<field name="alwaysTimes" type="numeric"></field>
+		<field name="onlyTimes" type="numeric"></field>
+		<field name="selTimes1" type="numeric"></field>
+		<field name="selTimes2" type="numeric"></field>
+      <prim-key field="alertId"/>
+				
+      <relation type="one" rel-entity-name="SvAlertType">
+        <key-map field-name="alertType" rel-field-name="alertType"/>
+      </relation>		
+    </entity>	
+		
+	<entity entity-name="SvAlertType"
+            package-name="com.siteview.ecc.monitor"
+            title="alert type Table">
+      <field name="alertType" type="id-ne"></field>
+      <field name="hasTable" type="indicator"></field>
+      <prim-key field="alertType"/>
+		
+	  <!--
+	  <relation type="many" rel-entity-name="SvAlert">
+        <key-map field-name="alertType" rel-field-name="alertType"/>
+      </relation>	
+	  -->	  
+	  <relation type="many" rel-entity-name="SvAlertTypeAttr">
+        <key-map field-name="alertType" rel-field-name="alertType"/>
+      </relation>	
+    </entity>	
+	
+	<entity entity-name="SvAlertTypeAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="alert type attribute Table">
+      <field name="alertType" type="id-ne"></field>
+      <field name="attrName" type="long-varchar"></field>
+	  <field name="sv_value" type="very-long"></field>
+	  <field name="sv_type" type="short-varchar"></field>			
+	  <field name="metaid" type="id-ne"></field>
+		
+      <prim-key field="alertType"/>
+      <prim-key field="attrName"/>
+		
+	  <!--	
+      <relation type="one" rel-entity-name="SvAlertType">
+        <key-map field-name="alertType" rel-field-name="alertType"/>
+      </relation>
+		
+      <relation type="many" rel-entity-name="SvAlertAttr">
+        <key-map field-name="attrName" rel-field-name="attrName"/>
+      </relation>
+	  -->
+	  <relation type="one" rel-entity-name="SvField">
+        <key-map field-name="metaid" rel-field-name="fieldid"/>
+      </relation>		
+    </entity>
+	
+	<entity entity-name="SvAlertAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="alert attribute">
+      <field name="alertId" type="id-ne"></field>
+      <field name="attrName" type="long-varchar"></field>
+      <field name="attrValue" type="value"></field>
+		
+      <prim-key field="alertId"/>
+      <prim-key field="attrName"/>
+	<!--	
+      <relation type="one" rel-entity-name="SvAlert">
+        <key-map field-name="alertId" rel-field-name="alertId"/>
+      </relation>
+      <relation type="many" rel-entity-name="SvAlertTypeAttr">
+        <key-map field-name="attrName" rel-field-name="attrName"/>
+      </relation>
+		-->
+    </entity>
+
+<!-- SvAlertTask -->
+	<entity entity-name="SvAlertTask"
+            package-name="com.siteview.ecc.monitor"
+            title="alert Task Setting">
+      	<field name="svname" type="id-ne"></field>
+		<field name="taskType" type="id-ne"></field>
+		<field name="Description" type="very-long"></field>
+		<field name="Allow0" type="indicator"></field>
+		<field name="Allow1" type="indicator"></field>
+		<field name="Allow2" type="indicator"></field>
+		<field name="Allow3" type="indicator"></field>
+		<field name="Allow4" type="indicator"></field>
+		<field name="Allow5" type="indicator"></field>
+		<field name="Allow6" type="indicator"></field>
+		<field name="start0" type="short-varchar"></field>
+		<field name="start1" type="short-varchar"></field>
+		<field name="start2" type="short-varchar"></field>
+		<field name="start3" type="short-varchar"></field>
+		<field name="start4" type="short-varchar"></field>
+		<field name="start5" type="short-varchar"></field>
+		<field name="start6" type="short-varchar"></field>
+		<field name="end0" type="short-varchar"></field>
+		<field name="end1" type="short-varchar"></field>
+		<field name="end2" type="short-varchar"></field>
+		<field name="end3" type="short-varchar"></field>
+		<field name="end4" type="short-varchar"></field>
+		<field name="end5" type="short-varchar"></field>
+		<field name="end6" type="short-varchar"></field>
+      <prim-key field="svname"/>
+    </entity>
+	
+	<entity entity-name="SvAlertTarget"
+            package-name="com.siteview.ecc.monitor"
+            title="alert's target mobitor">
+      <field name="alertId" type="id-ne"></field>
+	  <field name="target_id" type="id-ne"></field>	
+		
+      <prim-key field="alertId"/>
+      <prim-key field="target_id"/>
+      
+<!--relation type="one" rel-entity-name="SvCiMethod">
+        <key-map field-name="method_id" rel-field-name="method_id"/>
+</relation-->
+		
+      <relation type="one" rel-entity-name="SvAlert">
+        <key-map field-name="alertId" rel-field-name="alertId"/>
+      </relation>
+		
+      <index name="SvAlertTarget1">
+        <index-field name="alertId"/>
+      </index>
+		
+      <index name="SvAlertTarget2">
+        <index-field name="target_id"/>
+      </index>
+    </entity>
+	
+<!-- SvAclData -->	
+	<entity entity-name="SvAclData"
+            package-name="com.siteview.ecc.monitor"
+            title="user's acl data">
+         <field name="userId" type="id-ne"></field>
+		 <field name="dataId" type="id-ne"></field>
+		 <field name="dataType" type="id-ne"></field>
+
+	  <prim-key field="userId"/>
+      <prim-key field="dataId"/>
+      <prim-key field="dataType"/>
+				
+      <index name="SvAclData1">
+		  <index-field name="userId"/>
+      </index>
+      <index name="SvAclData2">
+		  <index-field name="dataId"/>
+      </index>
+	</entity>
+
+<!--component-->
+	<entity entity-name="SvField"
+            package-name="com.siteview.ecc.monitor"
+            title="field data">
+      	<field name="fieldid" type="id-ne"></field>
+		<field name="fieldType" type="id-ne"></field>
+		
+		<prim-key field="fieldid"/>
+		
+		<relation type="one" rel-entity-name="SvFieldType">
+			<key-map field-name="fieldType" rel-field-name="fieldType"/>
+		</relation>		
+		<relation type="many" rel-entity-name="SvFieldAttr">
+			<key-map field-name="fieldid" rel-field-name="fieldid"/>
+		</relation>		
+    </entity>	
+		
+	<entity entity-name="SvFieldType"
+            package-name="com.siteview.ecc.monitor"
+            title="FieldType">
+	  
+      <field name="fieldType" type="id-ne"></field>
+      <field name="hasTable" type="indicator"></field>
+      <field name="parentTypeId" type="id-ne"></field>
+
+      <prim-key field="fieldType"/>
+			  
+<!--
+	  <relation type="many" rel-entity-name="SvField">
+			<key-map field-name="fieldType" rel-field-name="fieldType"/>
+      </relation>	
+-->
+	  <relation type="many" rel-entity-name="SvFieldTypeAttr">
+			<key-map field-name="fieldType" rel-field-name="fieldType"/>
+      </relation>	
+
+	  <relation type="one" title="Parent" rel-entity-name="SvFieldType">
+			<key-map field-name="parentTypeId" rel-field-name="fieldType"/>
+      </relation>
+    </entity>	
+	
+	<entity entity-name="SvFieldTypeAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="Field Type Attr">
+      <field name="fieldType" type="id-ne"></field>
+      <field name="attrName" type="long-varchar"></field>		
+		
+      <prim-key field="fieldType"/>
+      <prim-key field="attrName"/>
+		
+<!--
+      <relation type="one" rel-entity-name="SvFieldType">
+        <key-map field-name="fieldType" rel-field-name="fieldType"/>
+      </relation>
+		
+      <relation type="many" rel-entity-name="SvFieldAttr">
+        <key-map field-name="attrName" rel-field-name="attrName"/>
+      </relation>
+-->
+    </entity>
+    
+	
+	<entity entity-name="SvFieldAttr"
+            package-name="com.siteview.ecc.monitor"
+            title="field data ext">
+      <field name="fieldid" type="id-ne"></field>
+      <field name="attrName" type="long-varchar"></field>
+      <field name="attrValue" type="value"></field>
+      <prim-key field="fieldid"/>
+      <prim-key field="attrName"/>
+		
+<!--
+      <relation type="one" rel-entity-name="SvField">
+        <key-map field-name="fieldid" rel-field-name="fieldid"/>
+      </relation>
+      <relation type="many" rel-entity-name="SvFieldTypeAttr">
+        <key-map field-name="attrName" rel-field-name="attrName"/>
+      </relation>
+-->
+    </entity>
+
+<!-- 检测频率的单位（分钟、秒） -->
+	<entity entity-name="SvFrequencyUnit"
+            package-name="com.siteview.ecc.monitor"
+            title="Monitor frequency unit">
+      <field name="id" type="id-ne"></field>
+      <field name="frequencyName" type="short-varchar"></field>
+      <prim-key field="id"/>
+    </entity>
+	
+</entitymodel>

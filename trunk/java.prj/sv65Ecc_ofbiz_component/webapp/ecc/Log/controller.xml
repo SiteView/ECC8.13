@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/site-conf.xsd">
+        
+<!-- developed by lijian -->     
+<!-- Log -->
+	<request-map uri="logPreference">
+		<security https="false" auth="true"/>
+		<response name="success" type="view" value="logPreference"/>
+	</request-map>
+
+	<request-map uri="saveLogSetting">
+		<security https="false" auth="true"/>
+		<event type="service" invoke="saveLogSetting"/>
+		<response name="success" type="view" value="dispGeneral"/>
+	</request-map>
+
+    <view-map name="logPreference" type="screen" page="component://svecc/widget/Log/svEccLogScreens.xml#logPreference"></view-map>
+			
+</site-conf>
+

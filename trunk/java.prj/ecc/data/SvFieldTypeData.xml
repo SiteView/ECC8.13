@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SvFieldType fieldType="13" hasTable="F"/>
+    <SvFieldType fieldType="41" hasTable="F"/>
+    <SvFieldType fieldType="checkbox" hasTable="F"/>
+    <SvFieldType fieldType="combobox" hasTable="F"/>
+    <SvFieldType fieldType="Float" hasTable="F"/>
+    <SvFieldType fieldType="Int" hasTable="F"/>
+    <SvFieldType fieldType="password" hasTable="F"/>
+    <SvFieldType fieldType="String" hasTable="F"/>
+    <SvFieldType fieldType="textarea" hasTable="F"/>
+    <SvFieldType fieldType="textbox" hasTable="F"/>
+</entity-engine-xml>

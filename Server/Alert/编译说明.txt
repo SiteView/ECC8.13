@@ -1,0 +1,8 @@
+所有工程编译是需要添加include目录
+YOUR_DIR/Ecc_Common
+
+编译AlertServer时因为使用了json_spirit库
+需要Boost库的支持，需要添加Boost库到include目录
+
+SMS目录中的工程有使用oracle的，需要安装oracle的客户端
+具体见相应的目录。
